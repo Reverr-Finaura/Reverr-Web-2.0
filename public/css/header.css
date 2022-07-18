@@ -16,11 +16,12 @@ body {
 }
 
 .topnav {
-  overflow: hidden;
-  margin: 0% 2%;
-  margin-top: 2%;
+  height: fit-content;
+  /* margin: 0% 2%; */
+  width: 95%;
+  margin: 2% auto;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
 }
 
@@ -40,8 +41,8 @@ body {
 .topnav a {
   float: left;
   text-align: center;
-  padding: 10px 12px !important;
-  margin: 0% 4px;
+  padding: 10px 10px !important;
+  margin: 0% 5px;
   text-decoration: none;
   font-size: 14px;
   color: white;
@@ -52,6 +53,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  gap: 1rem;
 }
 
 .topnav-right a.active {
@@ -101,42 +103,61 @@ body {
   border-radius: 10px;
 }
 
-.btn-blue {
+.registerBtn {
   font-size: 16px !important;
   background: linear-gradient(
     236.51deg,
     #012437 24.72%,
     rgba(140, 150, 253, 0.42) 100%
   ) !important;
-  border-radius: 10px;
-  padding: 2% 3%;
+  padding: 8% 0;
   border-radius: 8px;
   font-weight: 700;
   width: 12rem;
   color: white;
   cursor: pointer;
   text-align: center;
-  margin: 1%;
-  text-decoration: none;
+  height: max-content;
+}
+
+.header_dropdown {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: relative;
 }
 
-.register-menu {
+#register_options, #register_options_phn {
   position: absolute;
-  top: 10;
+  height: fit-content;
+  z-index: 999;
+  display: none;
+  padding: 2rem 0;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(
+    236.51deg,
+    #012437 24.72%,
+    rgba(140, 150, 253, 0.42) 100%
+  ) !important;
+  border-radius: 1rem;
+  margin-top: 4rem;
 }
 
+.register_option {
+  padding: 0.5rem;
+  font-weight: 700;
+  width: 11rem;
+  text-align: center;
+  cursor: pointer;
+}
 
-.btn-blue a {
+.registerBtn a {
   text-decoration: none;
   color: white;
 }
 
-.btn-blue:hover {
-  color: white !important;
-}
-
-.btn-blue a:hover {
+.registerBtn a:hover {
   color: white !important;
 }
 
@@ -166,7 +187,13 @@ body {
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 865px) {
+  .topnav-right {
+    gap: 0.1rem;
+  }
+}
+
+@media (max-width: 1024px) {
   .topnav {
     display: flex;
     flex-direction: column;

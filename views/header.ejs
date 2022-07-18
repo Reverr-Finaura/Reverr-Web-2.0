@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title></title>
+    <title>Reverr</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -16,12 +16,27 @@
     <link rel="stylesheet" href="/css/footer.css" />
   </head>
   <script>
+    var isOpen=false;
+    function toggleDropdown () {
+        console.log("ha bol");
+        if(isOpen){
+            document.getElementById("register_options").style.display="none";
+            document.getElementById("register_options_phn").style.display="none";
+            isOpen = false;
+        }
+        else{
+            document.getElementById("register_options").style.display="flex";
+            document.getElementById("register_options_phn").style.display="flex";
+            isOpen = true;  
+        }
+    }
     function show(){
         document.getElementById("phnnav").style.display="flex";
     }
     function closes(){
           document.getElementById("phnnav").style.display="none";
     }
+
 </script>
   <body>
     <div class="topnav desk">
@@ -37,7 +52,18 @@
         <a href="/blog">Blog</a>
         <a href="/about">About</a>
         <div class="memberBtnWrapper" href="/mentorform"><div class="memberBtn">Be a mentor</div></div>
-        <div class="btn-blue">Register Now</div>
+        <div class="header_dropdown">
+            <div onclick="toggleDropdown()" class="registerBtn">
+            <div>Register Now</div>
+            </div>
+            <div id="register_options">
+                <div class="register_option">Become a Mentor</div>
+                <div class="register_option">Get Funded</div>
+                <div class="register_option">Sign The Newsletter</div>
+                <div class="register_option">Join our Community</div>
+            </div>
+    </div>
+    
       </div>
     </div>
 
@@ -60,7 +86,7 @@
           "
           onclick="show()"
         >
-          <a> <img src="/images/logo.png" style="width: 60px" alt="" /></a>
+          <a> <img src="/images/logo.png" style="width: 60px" alt="logo" /></a>
           <a><h1 class="headingphn">&nbsp;Reverr</h1> </a>
         </div>
       </div>
@@ -70,6 +96,7 @@
           display: none;
           width: 100%;
           flex-direction: column;
+          align-items: center;
           text-align: center;
           padding: 2%;
         "
@@ -79,13 +106,21 @@
         <a class="navitem" style="margin: 3% 0%" href="/#solution">Solution</a>
         <a class="navitem" style="margin: 3% 0%" href="/blog">Blog</a>
         <a class="navitem" style="margin: 3% 0%" href="/about">About</a>
-        <div
-          class="memberBtn
-          style="margin: 3% 25%; padding: 2% 4%; text-decoration: none"
-        >
-          <a href="/mentorform"></a>Be a mentor
+        <div class="memberBtnWrapper">     <div
+            class="memberBtn
+            style="margin: 3% 25%; padding: 2% 4%; text-align:center:"
+          >
+            <a href="/mentorform"></a>Be a mentor
+          </div></div>
+          <div class="header_dropdown">
+        <div onclick="toggleDropdown()" style="margin: 10% 5%; padding: 5% 2%;" class="registerBtn">Register Now</div>
+        <div style="margin:5rem" id="register_options_phn">
+            <div class="register_option">Become a Mentor</div>
+            <div class="register_option">Get Funded</div>
+            <div class="register_option">Sign The Newsletter</div>
+            <div class="register_option">Join our Community</div>
         </div>
-        <a class="btn-blue" style="margin: 3% 25%" href="/register">Join us</a>
+    </div>
         <div style="cursor: pointer; margin: 3% 0%" onclick="closes()">
           <a>Close</a>
         </div>

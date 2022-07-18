@@ -76,9 +76,10 @@ a {
   height: fit-content;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 865px) {
   .footer__main {
     flex-direction: column;
+    width: 100%;
   }
   .footer__main_left {
     align-items: center;
