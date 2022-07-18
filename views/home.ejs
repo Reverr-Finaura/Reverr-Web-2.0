@@ -1,99 +1,33 @@
 <%- include('header'); -%>
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title></title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Gideon+Roman&family=Montserrat&family=Philosopher&family=Poppins:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="/css/header.css" />
-    <link rel="stylesheet" href="/css/footer.css" />
-  </head>
-  <script>
-    function show(){
-        document.getElementById("phnnav").style.display="flex";
-    }
-    function closes(){
-          document.getElementById("phnnav").style.display="none";
-    }
-</script>
-  <body>
-    <div class="topnav desk">
-      <a href="/"
-        ><img src="/images/logo.png" alt="" />
-        <p class="brand-name">REVERR</p></a
-      >
 
-      <div class="topnav-right">
-        <a class="active" href="/">Home</a>
-        <a href="/#product">Product</a>
-        <a href="/#solution">Solution</a>
-        <a href="/blog">Blog</a>
-        <a href="/about">About</a>
-        <div class="memberBtnWrapper" href="/mentorform"><div class="memberBtn">Be a mentor</div></div>
-        <div class="btn-blue">Register Now</div>
-      </div>
+<section class="hero__main">
+  <div class="grid">
+    <div class="item1 hero__heading">
+      Making your startup journey feel like a walk in the garden
+    </div>
+    <div class="item2 hero__para flex">
+      Strive to bring you the best mentorship, guidance, and insights for the
+      startups you're building
+      <div><button class="item3 hero__button">Download our app</button></div>
     </div>
 
-    <section class="nav phn" id="phnheader">
-      <div
-        style="
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between;
-          align-items: center;
-          justify-content: center;
-        "
-      >
-        <div
-          style="
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            cursor: pointer;
-          "
-          onclick="show()"
-        >
-          <a> <img src="/images/logo.png" style="width: 60px" alt="" /></a>
-          <a><h1 class="headingphn">&nbsp;Reverr</h1> </a>
-        </div>
-      </div>
-      <div
-        id="phnnav"
-        style="
-          display: none;
-          width: 100%;
-          flex-direction: column;
-          text-align: center;
-          padding: 2%;
-        "
-      >
-        <a class="navitem" style="margin: 3% 0%" href="/">Home </a>
-        <a class="navitem" style="margin: 3% 0%" href="/#product">Product</a>
-        <a class="navitem" style="margin: 3% 0%" href="/#solution">Solution</a>
-        <a class="navitem" style="margin: 3% 0%" href="/blog">Blog</a>
-        <a class="navitem" style="margin: 3% 0%" href="/about">About</a>
-        <div
-          class="memberBtn
-          style="margin: 3% 25%; padding: 2% 4%; text-decoration: none"
-        >
-          <a href="/mentorform"></a>Be a mentor
-        </div>
-        <a class="btn-blue" style="margin: 3% 25%" href="/register">Join us</a>
-        <div style="cursor: pointer; margin: 3% 0%" onclick="closes()">
-          <a>Close</a>
-        </div>
-      </div>
-    </section>
-  </body>
-</html>
-
+    <div class="item4 hero__image-background">
+      <img src="/images/elipse223.png" class="hero__image" alt="" />
+      <div class="hero__image-para">Become a Mentor</div>
+    </div>
+    <div class="item5 hero__image-background">
+      <img src="/images/elipse223.png " class="hero__image" alt="" />
+      <div class="hero__image-para">Become a Mentor</div>
+    </div>
+    <div class="item6 hero__image-background">
+      <img src="/images/elipse223.png" class="hero__image" alt="" />
+      <div class="hero__image-para">Become a Mentor</div>
+    </div>
+    <div class="item7 hero__image-background">
+      <img src="/images/elipse223.png" class="hero__image" alt="" />
+      <div class="hero__image-para">Become a Mentor</div>
+    </div>
+  </div>
+</section>
 
 <%- include('footer'); -%>
