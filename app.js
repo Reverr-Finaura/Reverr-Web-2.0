@@ -1,10 +1,14 @@
-var express = require('express');
+var express = require("express");
 var app = express();
+var path = require("path");
 
-app.set('view engine', 'ejs');
+app.set("views", path.join(__dirname, "views"));
+app.set("view engine", "ejs");
 
-app.get('/', function(req, res) {
-res.render('pages/home');
+app.get("/", function (req, res) {
+  res.render("home");
 });
 
-app.listen(8080);
+app.listen(3000, (req, res) => {
+  console.log("Server up and running at port 3000");
+});
