@@ -12,10 +12,12 @@
   gap: none;
 }
 .item1 {
+  width: 19em;
   grid-column: 1 / span 2;
   grid-row: 1 / span 2;
 }
 .item2 {
+  width: 30em;
   grid-column: 1 / span 2;
   grid-row: 2;
 }
