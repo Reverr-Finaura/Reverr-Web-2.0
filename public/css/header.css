@@ -1,0 +1,176 @@
+body {
+  margin: 0;
+  background: linear-gradient(
+    63.18deg,
+    #000c12 0%,
+    rgba(0, 6, 10, 0.7) 43.89%,
+    rgba(0, 100, 151, 0.440331) 78.03%,
+    rgba(0, 135, 203, 0.21896) 86.48%,
+    rgba(0, 170, 255, 0) 100%
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white !important;
+  font-family: "Poppins", sans-serif !important;
+}
+
+.topnav {
+  overflow: hidden;
+  margin: 0% 2%;
+  margin-top: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand-name {
+  font-family: "Philosopher";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  margin-top: 0;
+}
+
+.topnav a img {
+  width: 70px;
+}
+
+.topnav a {
+  float: left;
+  text-align: center;
+  padding: 10px 12px !important;
+  margin: 0% 4px;
+  text-decoration: none;
+  font-size: 14px;
+  color: white;
+  transition: ease 0.3s;
+}
+
+.topnav-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.topnav-right a.active {
+  width: 43px;
+  height: 18px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  color: #2a72de;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.topnav-right a:hover {
+  border-bottom: 1px solid white;
+}
+
+.active {
+  color: #0077b7;
+  font-weight: 700;
+}
+
+.memberBtnWrapper {
+  border: 3px solid transparent;
+  border-image: linear-gradient(
+    45deg,
+    rgba(140, 150, 253, 0.42),
+    rgba(1, 36, 55, 1)
+  );
+  border-image-slice: 1;
+  border-radius: 10px !important;
+}
+
+.memberBtn {
+  font-size: 16px !important;
+  background: transparent !important;
+  color: #2a72de !important;
+  padding: 10px 0;
+  width: 12rem;
+  text-align: center;
+  font-weight: 600;
+  border-radius: 10px;
+}
+
+.btn-blue {
+  font-size: 16px !important;
+  background: linear-gradient(
+    236.51deg,
+    #012437 24.72%,
+    rgba(140, 150, 253, 0.42) 100%
+  ) !important;
+  border-radius: 10px;
+  padding: 2% 3%;
+  border-radius: 8px;
+  font-weight: 700;
+  width: 12rem;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  margin: 1%;
+  text-decoration: none;
+  position: relative;
+}
+
+.register-menu {
+  position: absolute;
+  top: 10;
+}
+
+
+.btn-blue a {
+  text-decoration: none;
+  color: white;
+}
+
+.btn-blue:hover {
+  color: white !important;
+}
+
+.btn-blue a:hover {
+  color: white !important;
+}
+
+#phnheader {
+  margin: 1% 2%;
+}
+
+.navitem {
+  color: white;
+  text-decoration: none;
+}
+
+#phnheader {
+  display: none;
+}
+
+.phn {
+  display: none !important;
+}
+
+@media (max-width: 768px) {
+  .desk {
+    display: none !important;
+  }
+  .phn {
+    display: block !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .topnav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
