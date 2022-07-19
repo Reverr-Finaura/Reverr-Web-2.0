@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+body {
+  font-family: "Poppins", "sans-serif";
+  background: linear-gradient(
+    63.18deg,
+    #000c12 0%,
+    rgba(0, 6, 10, 0.7) 43.89%,
+    rgba(0, 100, 151, 0.440331) 78.03%,
+    rgba(0, 135, 203, 0.21896) 86.48%,
+    rgba(0, 170, 255, 0) 100%
+  );
+  color: #fff;
+}
+
+.contactus-header {
+  display: flex;
+  padding: 0 76px;
+}
+
+.contactus-para {
+  flex: 50%;
+}
+
+.contactus-title {
+  font-weight: 600;
+  font-size: 46px;
+  margin-bottom: 5px;
+}
+
+.contactus-info {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+}
+
+.contact-connect {
+  display: flex;
+  margin-top: 14px;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.contact-connect img {
+  background-color: #fff;
+  border: 5px solid #fff;
+  border-radius: 100%;
+  z-index: 999;
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+}
+
+.contact-image {
+  flex: 50%;
+}
+
+.contactus-float-img {
+  position: absolute;
+  top: 90px;
+  right: 100px;
+  width: 500px;
+  height: 500px;
+}
+
+.contactus-float-text {
+  position: absolute;
+  transform: rotate(16.61deg);
+  font-size: 22px;
+  top: 210px;
+  right: 400px;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 24px;
+  /* margin-left: 73px; */
+}
+
+.contact-sociallinks {
+  margin-left: 73px;
+}
+
+.contact-link {
+  margin-right: 10px;
+}
+
+.contact-link-img {
+  background-color: #fff;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  z-index: 999;
+}
+
+.contact-form {
+  background-color: #1d263b;
+  padding: 30px 50px;
+  width: 60%;
+  margin: 40px auto;
+
+  border-radius: 10px;
+}
+
+.input-container {
+  display: flex;
+  margin: 30px 0;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+  flex: 50%;
+  margin-left: 20px;
+}
+
+.input-box input,
+textarea {
+  background: #343c4f;
+  border-radius: 4px;
+  outline: none;
+  height: 34px;
+  width: 90%;
+  margin-top: 10px;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  padding-left: 10px;
+}
+
+.input-box label {
+  font-size: 16px;
+}
+
+.input-box .input-subject {
+  width: 95%;
+}
+
+.input-box textarea {
+  width: 95%;
+  height: auto;
+  padding: 10px;
+}
+
+/* for mobile phones */
+@media (max-width: 481px) {
+  .contactus-float-img,
+  .contactus-float-text {
+    display: none;
+  }
+
+  .contactus-header {
+    display: block;
+    padding: 0 20px;
+  }
+  .contactus-para {
+    flex: 1;
+  }
+
+  .contactus-title {
+    font-size: 29px;
+  }
+
+  .contactus-info {
+    font-size: 12px;
+  }
+
+  .contact-connect img {
+    width: 23px;
+    height: 23px;
+  }
+
+  .contact-connect p {
+    font-size: 14px;
+  }
+
+  .contact-sociallinks {
+    margin-left: 20px;
+  }
+
+  .contact-form {
+    width: 70%;
+    padding: 20px;
+    margin: 30px 20px 30px 40px;
+  }
+
+  .input-container {
+    display: block;
+  }
+
+  .input-box {
+    margin: 10px 0;
+  }
+
+  .input-box label {
+    margin-top: 0;
+    font-size: 14px;
+  }
+
+  .input-box textarea {
+    width: 90%;
+  }
+}
+
+/* tablets */
+@media (max-width: 768px) and (min-width: 482px) {
+  .contactus-float-img {
+    position: relative;
+    width: 350px;
+    top: -50px;
+    right: 10px;
+    height: 350px;
+    margin: 0;
+  }
+
+  .contactus-float-text {
+    position: relative;
+    font-size: 18px;
+    right: -20px;
+    top: -285px;
+  }
+
+  .contactus-title {
+    font-size: 30px;
+  }
+
+  .contactus-info {
+    font-size: 12px;
+  }
+
+  .contact-connect img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .contact-connect p {
+    font-size: 13px;
+  }
+} ;
