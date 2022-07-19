@@ -3,13 +3,39 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title></title>
+    <title>Knowledge</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="/css/knowledge.css" />
   </head>
   <body>
     <%- include('header'); -%>
+    <section id="knowledge__intro">
+      <div class="knowledge__main">
+        <div class="knowledge__main_left">
+          <div class="knowledge__intro_heading">
+            <h1>Knowledge</h1>
+          </div>
+          <div class="knowledge__text_content">
+            <p>
+              I'm a paragraph. Click here to add your own text and edit me. It's
+              easy. Just click “Edit Text” or double click me to add your own
+              content and make changes to the font. Feel free to drag and drop
+              anywhere you like on your page.
+            </p>
+          </div>
+        </div>
+        <div class="knowledge__buttons">
+          <button class="knowledge__buttons_know_more"><a>Know More</a></button>
+          <button class="knowledge__buttons_contact_us">
+            <a href="/contactus">Contact Us</a>
+          </button>
+        </div>
+      </div>
+      <div class="knowledge__image">
+        <img src="/images/Saly-16.png" alt="knowledge" />
+      </div>
+    </section>
     <%- include('footer'); -%>
   </body>
 </html>
