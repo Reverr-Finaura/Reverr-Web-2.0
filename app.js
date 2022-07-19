@@ -14,6 +14,10 @@ app.get("/contactus", function (req, res) {
   res.render("contact");
 });
 
+app.get("/knowledge", function (req, res) {
+  res.render("knowledge");
+});
+
 app.listen(3000, (req, res) => {
   console.log("Server up and running at port 3000");
 });
