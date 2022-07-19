@@ -62,10 +62,81 @@
   object-fit: contain;
 }
 
+#howitworks{
+    width: 93%;
+    margin: auto !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 1rem 0;
+}
+
+.howitworks__heading{
+    font-size: 50px;
+    color:rgba(42, 114, 222, 1);
+    text-align: center;
+}
+
+.howitworks__text_content{
+    font-size: 25px;
+    text-align: center;
+    line-height: 45px;
+}
+
+.howitworks__icons_down{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.howitworks__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.howitworks__main{
+    display: flex;
+    align-items: center;
+}
+
+.hiw__icon{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 1rem;
+}
+
+.book > img{
+  background: white;
+  border-radius: 100%;
+}
+
+
+.hiw__icon > img{
+    height: 6rem;
+    width: 6.5rem;
+}
+
+.hiw__icon > p{
+  width: 70%;
+}
+
+
 @media (max-width: 1200px) {
   .knowledge__image > img {
     height: 30rem;
   }
+}
+
+@media(max-width: 1024px){
+  .howitworks__icons_down{
+    flex-direction: column;
+    align-items: center;
+}
 }
 
 @media (max-width: 975px) {
@@ -92,6 +163,15 @@
 }
 
 @media (max-width: 768px) {
+
+  .howitworks__image > img {
+    height: 20rem;
+  }
+
+  .howitworks__heading{
+    font-size: 30px;
+  }
+
   .knowledge__intro_heading > h1 {
     font-size: 30px;
     margin: 2.5rem 0;
@@ -102,6 +182,13 @@
     line-height: 24px;
   }
 
+  .howitworks__text_content {
+    width: 80%;
+    font-size: 16px;
+    line-height: 24px;
+    margin: auto;
+  }
+
   .knowledge__main {
     align-items: center;
   }
@@ -109,6 +196,11 @@
     flex-direction: column;
     align-items: center;
   }
+
+  .howitworks__main{
+    flex-direction: column;
+    align-items: center;
+}
 
   .knowledge__buttons > button {
     margin: 1rem 0;
