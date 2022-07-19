@@ -1,0 +1,98 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/contact.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <%- include('header'); -%>
+    <section class="contactus-container">
+      <div class="contactus-header">
+        <div class="contactus-para">
+          <h2 class="contactus-title">Contact Us</h2>
+          <p class="contactus-info">
+            I'm a paragraph. Click here to add your own text and edit me. It's
+            easy. Just click “Edit Text” or double click me to add your own
+            content and make changes to the font. Feel free to drag and drop
+            anywhere you like on your page.
+          </p>
+          <div class="contact-connect">
+            <img src="images/github-logo.png" />
+            <p>Connect on GitHub</p>
+          </div>
+          <div class="contact-connect">
+            <img src="images/discord-logo.png" />
+            <p>Join our Discord Community</p>
+          </div>
+        </div>
+        <div class="contact-image">
+          <img src="images/Saly-6.png" class="contactus-float-img" />
+          <p class="contactus-float-text">Connect Now</p>
+        </div>
+      </div>
+      <div class="contact-sociallinks">
+        <h3>Follow Us</h3>
+        <a class="contact-link"
+          ><img src="images/image 11.png" class="contact-link-img"
+        /></a>
+        <a class="contact-link"
+          ><img src="images/image 12.png" class="contact-link-img"
+        /></a>
+        <a class="contact-link"
+          ><img src="images/image 13.png" class="contact-link-img"
+        /></a>
+        <a class="contact-link"
+          ><img src="images/image 14.png" class="contact-link-img"
+        /></a>
+      </div>
+      <div class="contact-form-container">
+        <form method="post" class="contact-form">
+          <div class="input-container">
+            <div class="input-box">
+              <label>First Name</label>
+              <input type="text" name="fname" placeholder="John" />
+            </div>
+            <div class="input-box">
+              <label>Last Name</label>
+              <input type="text" name="lname" placeholder="Doe" />
+            </div>
+          </div>
+          <div class="input-container">
+            <div class="input-box">
+              <label>Phone Number</label>
+              <input type="text" name="phn" placeholder="0011-999112" />
+            </div>
+            <div class="input-box">
+              <label>E-mail</label>
+              <input type="email" name="email" placeholder="johndoe@info.com" />
+            </div>
+          </div>
+          <div class="input-container">
+            <div class="input-box">
+              <label>Subject</label>
+              <input
+                type="text"
+                class="input-subject"
+                name="subject"
+                placeholder="Join Community"
+              />
+            </div>
+          </div>
+          <div class="input-container">
+            <div class="input-box">
+              <label>Your Message</label>
+              <textarea
+                rows="4"
+                name="message"
+                placeholder="Type your message here..."
+              ></textarea>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <%- include('footer'); -%>
+  </body>
+</html>

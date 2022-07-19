@@ -1,0 +1,133 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/testimonials.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="carousel-container">
+      <p class="carousel-title">Testimonials</p>
+      <button class="pre-btn">
+        <img src="images/Vector.svg" class="btn-img" alt="" />
+      </button>
+      <button class="nxt-btn">
+        <img src="images/Vector.svg" class="btn-img" alt="" />
+      </button>
+      <div class="carousel-content">
+        <div class="carousel-row">
+          <img
+            src="images/Ellipse 172.png"
+            alt="person-1"
+            class="carousel-img"
+          />
+          <p class="carousel-name">Harris Dmitrius</p>
+          <p class="carousel-review">
+            I'm a Testimonial. Click here to add your own text and edit me. It's
+            easy. Just click “Edit Text” or double click me to add your own
+            content.I'm a Testimonial. Click here to add your own text and edit
+            me. It's easy. Just click “Edit Text” or double click me to add your
+            own content.
+          </p>
+        </div>
+
+        <div class="carousel-row">
+          <img
+            src="images/Ellipse 173.png"
+            alt="person-1"
+            class="carousel-img"
+          />
+          <p class="carousel-name">Lily kiminsky</p>
+          <p class="carousel-review">
+            I'm a Testimonial. Click here to add your own text and edit me. It's
+            easy. Just click “Edit Text” or double click me to add your own
+            content.I'm a Testimonial. Click here to add your own text and edit
+            me. It's easy. Just click “Edit Text” or double click me to add your
+            own content.
+          </p>
+        </div>
+
+        <div class="carousel-row">
+          <img
+            src="images/Ellipse 174.png"
+            alt="person-1"
+            class="carousel-img"
+          />
+          <p class="carousel-name">Susan ray</p>
+          <p class="carousel-review">
+            I'm a Testimonial. Click here to add your own text and edit me. It's
+            easy. Just click “Edit Text” or double click me to add your own
+            content.I'm a Testimonial. Click here to add your own text and edit
+            me. It's easy. Just click “Edit Text” or double click me to add your
+            own content.
+          </p>
+        </div>
+
+        <div class="carousel-row">
+          <img
+            src="images/Ellipse 172.png"
+            alt="person-1"
+            class="carousel-img"
+          />
+          <p class="carousel-name">Harris Dmitrius</p>
+          <p class="carousel-review">
+            I'm a Testimonial. Click here to add your own text and edit me. It's
+            easy. Just click “Edit Text” or double click me to add your own
+            content.I'm a Testimonial. Click here to add your own text and edit
+            me. It's easy. Just click “Edit Text” or double click me to add your
+            own content.
+          </p>
+        </div>
+        <div class="carousel-row">
+          <img
+            src="images/Ellipse 173.png"
+            alt="person-1"
+            class="carousel-img"
+          />
+          <p class="carousel-name">Lily kiminsky</p>
+          <p class="carousel-review">
+            I'm a Testimonial. Click here to add your own text and edit me. It's
+            easy. Just click “Edit Text” or double click me to add your own
+            content.I'm a Testimonial. Click here to add your own text and edit
+            me. It's easy. Just click “Edit Text” or double click me to add your
+            own content.
+          </p>
+        </div>
+        <div class="carousel-row">
+          <img
+            src="images/Ellipse 174.png"
+            alt="person-1"
+            class="carousel-img"
+          />
+          <p class="carousel-name">Susan ray</p>
+          <p class="carousel-review">
+            I'm a Testimonial. Click here to add your own text and edit me. It's
+            easy. Just click “Edit Text” or double click me to add your own
+            content.I'm a Testimonial. Click here to add your own text and edit
+            me. It's easy. Just click “Edit Text” or double click me to add your
+            own content.
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script>
+    const container = [...document.querySelectorAll(".carousel-content")];
+    const nxtBtn = [...document.querySelectorAll(".nxt-btn")];
+    const preBtn = [...document.querySelectorAll(".pre-btn")];
+
+    container.forEach((item, i) => {
+      let containerDimensions = item.getBoundingClientRect();
+      let containerWidth = containerDimensions.width;
+
+      nxtBtn[i].addEventListener("click", () => {
+        item.scrollLeft += containerWidth;
+      });
+
+      preBtn[i].addEventListener("click", () => {
+        item.scrollLeft -= containerWidth;
+      });
+    });
+  </script>
+</html>
