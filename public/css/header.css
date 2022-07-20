@@ -81,6 +81,12 @@ body {
   font-weight: 700;
 }
 
+#products {
+  font-family: "Poppins", sans-serif;
+  outline: none;
+  border: none;
+}
+
 .memberBtnWrapper {
   border: 3px solid transparent;
   border-image: linear-gradient(
@@ -127,7 +133,8 @@ body {
   position: relative;
 }
 
-#register_options, #register_options_phn {
+#register_options,
+#register_options_phn {
   position: absolute;
   height: fit-content;
   z-index: 999;
