@@ -61,7 +61,7 @@
   padding: 30px;
   margin-left: 50px;
   width: 350px;
-  height: 320px;
+  /* height: 320px; */
   margin-bottom: 5%;
   position: relative;
 }
@@ -127,7 +127,7 @@
 @media (max-width: 768px) and (min-width: 482px) {
   .carousel-row {
     width: 290px;
-    height: 270px;
+    /* height: 270px; */
     padding: 16px;
   }
 
