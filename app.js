@@ -18,6 +18,10 @@ app.get("/knowledge", function (req, res) {
   res.render("knowledge");
 });
 
+app.get("/about", function (req, res) {
+  res.render("about");
+});
+
 app.get("/community", function (req, res) {
   res.render("community");
 });
