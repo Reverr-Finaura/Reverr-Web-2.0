@@ -1,0 +1,371 @@
+#funding_page__intro {
+  margin: auto;
+  width: 93%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.funding_page__main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  width: 50%;
+}
+
+.funding_page__intro_heading > h1 {
+  font-size: 50px;
+  margin: 2.5rem 0;
+}
+
+.funding_page__text_content > p {
+  font-size: 22px;
+  line-height: 36px;
+}
+
+.funding_page__buttons {
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.funding_page__buttons > button {
+  height: 4rem;
+  width: 14rem;
+  margin: 5.5rem 1rem 5.5rem 0;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  font-size: 24px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+
+.funding_page__buttons_know_more {
+  background: rgba(0, 119, 183, 1);
+  color: white;
+}
+
+.funding_page__buttons_contact_us {
+  background: white;
+}
+
+.funding_page__buttons_contact_us > a {
+  text-decoration: none;
+  color: rgba(0, 119, 183, 1) !important;
+}
+
+.funding_page__image > img {
+  object-fit: contain;
+}
+
+#howitworks {
+  width: 93%;
+  margin: auto !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin: 1rem 0;
+}
+
+.howitworks__heading {
+  font-size: 50px;
+  color: rgba(42, 114, 222, 1);
+  text-align: center;
+}
+
+.howitworks__text_content {
+  font-size: 25px;
+  text-align: center;
+  line-height: 45px;
+}
+
+.howitworks__icons_down {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 75%;
+}
+
+.hiw__icon_section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.howitworks__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.howitworks__main {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.hiw__icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+  gap: 1rem;
+  text-align: center;
+}
+
+.book > img {
+  background: white;
+  border-radius: 100%;
+}
+
+.hiw__icon > img {
+  height: 6rem;
+  width: 6.5rem;
+}
+
+.hiw__icon > p {
+  width: 70%;
+}
+
+#hygf {
+  margin: 5rem auto;
+}
+
+.main-text > h1 {
+  max-width: 90%;
+  font-size: 50px;
+  text-align: center;
+  color: #2a72de;
+  margin: 0 auto;
+}
+
+.main-text > p {
+  font-size: 20px;
+  text-align: center;
+  max-width: 40%;
+  margin: 0 auto 0.5em;
+}
+
+.card-container {
+  max-width: 80%;
+  gap: 4rem;
+  margin: auto;
+}
+
+.card-row,
+.card-row-1 {
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.card-row-1 {
+  border-radius: 12px;
+  padding: 3%;
+}
+
+.card-img > img {
+  background-color: #fff;
+  border: 5px solid #2a72de;
+  padding: 0.6em;
+  height: 8rem;
+  border-radius: 100%;
+}
+
+.card-title {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 48px;
+}
+
+.card-para {
+  font-size: 18px;
+  margin: 0 auto;
+}
+
+#capitalists {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.capitalists__heading > h1 {
+  font-size: 50px;
+  color: rgba(42, 114, 222, 1);
+  text-align: center;
+}
+
+.capitalists__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.capitalist {
+  background: linear-gradient(
+    45deg,
+    rgba(42, 114, 222, 0),
+    rgba(42, 114, 222, 0.75)
+  );
+  border-radius: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem;
+}
+
+.captalist__text_content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.1rem;
+}
+
+.capitalist {
+  height: fit-content;
+}
+
+.capitalist__name {
+  font-size: 32px;
+  line-height: 48px;
+  font-weight: 600;
+  margin: 0.5rem 0;
+}
+
+.capitalist__designation {
+  font-size: 24px;
+  line-height: 36px;
+  margin: 0.5rem 0;
+}
+
+@media (max-width: 1300px) {
+  .capitalists__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem 0;
+  }
+}
+
+@media (max-width: 1200px) {
+  .funding_page__image > img {
+    height: 20rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .howitworks__icons_down {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 975px) {
+  #funding_page__intro {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .funding_page__main {
+    align-items: center;
+    text-align: center;
+  }
+  .funding_page__image > img {
+    height: 15rem;
+  }
+
+  .funding_page__buttons > button {
+    margin: 1rem 1rem;
+    height: 2rem;
+    width: 7rem;
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
+
+@media (max-width: 768px) {
+  .funding_page__intro_heading > h1 {
+    font-size: 30px;
+    margin: 2.5rem 0;
+  }
+
+  .capitalists__heading > h1 {
+    font-size: 30px;
+    margin: 2.5rem 0;
+  }
+
+  .funding_page__text_content > p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .funding_page__main {
+    align-items: center;
+  }
+  .funding_page__buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .funding_page__buttons > button {
+    margin: 1rem 0;
+    height: 2rem;
+    width: 7rem;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .funding__main_left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .howitworks__image > img {
+    height: 20rem;
+  }
+
+  .howitworks__heading {
+    font-size: 32px;
+  }
+
+  .howitworks__text_content {
+    width: 80%;
+    font-size: 16px;
+    line-height: 24px;
+    margin: auto;
+  }
+
+  .howitworks__main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .capitalists__heading > h1 {
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 769px) {
+  .card-container {
+    display: flex;
+  }
+}
+
+@media (max-width: 425px) {
+  .capitalist {
+    padding: 0;
+  }
+}
