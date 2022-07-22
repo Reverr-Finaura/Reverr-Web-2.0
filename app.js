@@ -30,6 +30,10 @@ app.get("/networking", function (req, res) {
   res.render("networking");
 });
 
+app.get("/funding", function (req, res) {
+  res.render("funding");
+});
+
 app.listen(3000, (req, res) => {
   console.log("Server up and running at port 3000");
 });
