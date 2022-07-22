@@ -38,6 +38,10 @@ app.get("/blog", function (req, res) {
   res.render("blog");
 });
 
+app.get("/mentorship", function (req, res) {
+  res.render("mentorship");
+});
+
 app.listen(3000, (req, res) => {
   console.log("Server up and running at port 3000");
 });
