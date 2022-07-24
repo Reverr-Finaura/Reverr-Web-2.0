@@ -7,7 +7,7 @@
   grid-template-columns: auto auto auto auto;
   grid-template-rows: auto auto auto auto;
   gap: 30px;
-  width: 80%;
+  max-width: 80%;
   margin: auto;
 }
 .item3 {
@@ -79,25 +79,109 @@
   height: 13.125rem;
 }
 
+@media (max-width: 768px) {
+  .grid {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero__heading {
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+    line-height: 40px;
+  }
+  .hero__para {
+    width: 100%;
+    font-size: 25px;
+    text-align: center;
+    padding-bottom: 5px;
+  }
+  .hero__button {
+    margin-top: 10px;
+  }
+
+  .hero__image-background {
+    margin: auto;
+    width: 100%;
+  }
+  .hero__image {
+    /* margin: 0 auto; */
+    width: 40%;
+    padding: 0;
+    margin-top: 10px;
+    /* padding-left: 55px;
+    padding-top: 30px; */
+  }
+}
+@media (max-width: 481px) {
+  .grid {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero__heading {
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+    line-height: 40px;
+  }
+  .hero__para {
+    width: 100%;
+    font-size: 25px;
+    text-align: center;
+    padding-bottom: 5px;
+  }
+  .hero__button {
+    margin-top: 10px;
+  }
+
+  .hero__image-background {
+    margin: auto;
+    width: 100%;
+  }
+  .hero__image {
+    /* margin: 0 auto; */
+    width: 40%;
+    padding: 0;
+    margin-top: 10px;
+    /* padding-left: 55px;
+    padding-top: 30px; */
+  }
+}
+
 /* Aim page */
 
 .aim__heading {
-  font-weight: 600;
+  /* font-weight: 600;
   font-size: 32px;
   line-height: 90px;
   /* or 281% */
 
+  /* text-align: center;
+ 
+  color: #000000; */
   text-align: center;
-  /* margin-bottom: 6%; */
   color: #000000;
+  font-size: 32px;
+  font-weight: 600;
 }
 
-.aim__image {
-  width: 761px;
-  height: 570px;
+/* .aim__image {
+  max-width: 50%;
+  height: 50%;
   margin-left: auto;
   margin-right: auto;
   display: block;
+} */
+
+.aim__para--position {
+  background: url("/images/image57.png");
+  background-repeat: no-repeat;
+  overflow: visible;
+  background-size: contain;
+  background-position: center;
+  padding: 10%;
 }
 
 .aim__para {
@@ -110,13 +194,33 @@
 
   color: #ffffff;
 }
-.aim__para--position {
+/* .aim__para--position {
   position: relative;
   /* top: 130%; */
-  bottom: 370px;
-  /* left: 10%; */
-}
+/* bottom: 370px; */
+/* left: 10%; */
 
+/* @media (max-width: 414px) {
+  .aim__image {
+    width: 70%;
+    height: 100px;
+  }
+} */
+@media (max-width: 481px) {
+  .aim__heading {
+    font-size: 20px;
+    width: 100%;
+  }
+
+  .aim__para {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .video__heading {
+    font-size: 20px;
+  }
+}
 /* video */
 
 .video__heading {
@@ -126,13 +230,17 @@
   text-align: center;
   margin-bottom: 6%;
 }
-
+@media (max-width: 481px) {
+  .video__heading {
+    font-size: 35px;
+  }
+}
 .video {
   margin: 6% 2%;
 }
 .video__video {
-  width: 100%;
-  height: 710px;
+  width: 80%;
+  height: 50%;
   display: block;
   margin: auto;
 }
@@ -142,6 +250,7 @@
 .stats {
   margin: 8% 2%;
 }
+
 .stats__heading {
   font-family: "Poppins";
   font-style: normal;
@@ -151,6 +260,11 @@
   color: #2a72de;
   text-align: center;
   margin-bottom: 6%;
+}
+@media (max-width: 481px) {
+  .stats__heading {
+    font-size: 30px;
+  }
 }
 .flex_stats {
   display: flex;
@@ -182,12 +296,10 @@
     flex-direction: column;
   }
   .stats__card {
-    min-width: fit-content;
+    min-width: 80%;
+    margin: auto;
+    margin-bottom: 15px;
   }
-
-  /* .grid{
-
-  } */
 }
 
 .stats__card--heading {
@@ -263,6 +375,14 @@
   text-align: center;
 }
 
+@media (max-width: 481px) {
+  .flex__tagline {
+    flex-direction: column;
+  }
+  .tagline__para {
+    font-size: 20px;
+  }
+}
 /* funding */
 
 .funding {
@@ -317,6 +437,23 @@
   /* or 65px */
 
   color: #ffffff;
+}
+
+@media (max-width: 481px) {
+  .grid__funding {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+  .funding__card {
+    width: 300px;
+    margin: auto;
+    text-align: center;
+  }
+  .funding {
+    width: 100%;
+    margin: auto;
+  }
 }
 
 /* corousal */
