@@ -17,18 +17,33 @@
     <link rel="stylesheet" href="/css/home.css">
   </head>
   <script>
-    var isOpen=false;
+    var isBtnDropdownOpen=false;
+    var isProductsDropdownOpen=false;
     function toggleDropdown () {
         console.log("ha bol");
-        if(isOpen){
+        if(isBtnDropdownOpen){
             document.getElementById("register_options").style.display="none";
             document.getElementById("register_options_phn").style.display="none";
-            isOpen = false;
+            isBtnDropdownOpen = false;
         }
         else{
             document.getElementById("register_options").style.display="flex";
             document.getElementById("register_options_phn").style.display="flex";
-            isOpen = true;  
+            isBtnDropdownOpen = true;  
+        }
+    }
+
+    function toggleProductsDropdown () {
+        console.log("ha bol");
+        if(isProductsDropdownOpen){
+            document.getElementById("product_options").style.display="none";
+            document.getElementById("product_options_phn").style.display="none";
+            isProductsDropdownOpen = false;
+        }
+        else{
+            document.getElementById("product_options").style.display="flex";
+            document.getElementById("product_options_phn").style.display="flex";
+            isProductsDropdownOpen = true;  
         }
     }
     function show(){
@@ -48,17 +63,22 @@
 
       <div class="topnav-right">
         <a class="active" href="/">Home</a>
-        <select name="products" id="products">
-          <option value="products" disabled selected hidden>Products</option>
-          <option value="mentoship">Mentoship</option>
-          <option value="networking">Networking</option>
-          <option value="knowledge">Knowledge</option>
-          <option value="funding">Funding</option>
-        </select>
+        <div class="products_dropdown">
+          <div onclick="toggleProductsDropdown()" class="productBtn">
+          <div>Products</div>
+        </div>
+        <div id="product_options">
+          <a href="/mentorship"><div class="product_option">Mentorship</div></a>
+          <a href="/networking"><div class="product_option">Networking</div></a>
+          <a href="/knowledge"><div class="product_option">Knowledge</div></a>
+          <a href="/funding"><div class="product_option">Funding</div></a>
+      </div>
+        </div>
         <a href="/community">Community</a>
         <a href="/blog">Blog</a>
         <a href="/about">About</a>
-        <div class="memberBtnWrapper" href="/mentorform"><div class="memberBtn">Be a mentor</div></div>
+        <a class="link-btn"><div class="memberBtnWrapper" href="/mentorform"><div class="memberBtn">Be a mentor</div></div></a>
+       
         <div class="header_dropdown">
             <div onclick="toggleDropdown()" class="registerBtn">
             <div>Register Now</div>
@@ -109,13 +129,17 @@
         "
       >
         <a class="navitem" style="margin: 3% 0%" href="/">Home </a>
-        <select name="products" id="products">
-          <option value="products" disabled selected hidden>Products</option>
-          <option value="mentoship">Mentoship</option>
-          <option value="networking">Networking</option>
-          <option value="knowledge">Knowledge</option>
-          <option value="funding">Funding</option>
-        </select>
+        <div class="products_dropdown">
+          <div onclick="toggleProductsDropdown()" class="productBtn">
+          <div>Products</div>
+        </div>
+        <div id="product_options_phn">
+          <a href="/mentorship"><div class="product_option">Mentorship</div></a>
+          <a href="/networking"><div class="product_option">Networking</div></a>
+          <a href="/knowledge"><div class="product_option">Knowledge</div></a>
+          <a href="/funding"><div class="product_option">Funding</div></a>
+      </div>
+        </div>
         <a class="navitem" style="margin: 3% 0%" href="/#solution">Community</a>
         <a class="navitem" style="margin: 3% 0%" href="/blog">Blog</a>
         <a class="navitem" style="margin: 3% 0%" href="/about">About</a>

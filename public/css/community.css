@@ -1,9 +1,13 @@
 #community__intro {
-  margin: auto;
+  margin: -3.5rem auto 2rem auto;
   width: 93%;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+  background-image: url("/images/Ellipse 149.png"),
+    url("/images/Ellipse 148.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: 0 0, 35rem 15rem;
 }
 
 .community__main {
@@ -31,16 +35,18 @@
   justify-content: space-evenly;
 }
 
-.community__buttons > button {
-  height: 4rem;
-  width: 14rem;
+.community__buttons > a > button {
+  padding: 8% 0;
+  font-size: 16px;
+  height: max-content;
+  width: 12rem;
   margin: 5.5rem 1rem 5.5rem 0;
-  border-radius: 0.5rem;
+  border-radius: 8px;
   border: none;
   outline: none;
-  font-size: 20px;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
+  cursor: pointer;
 }
 
 .community__buttons_blue_btn {
@@ -50,6 +56,7 @@
 
 .community__buttons_contact_us {
   background: white;
+  color: rgba(0, 119, 183, 1);
 }
 
 .community__buttons_contact_us > a {
@@ -69,9 +76,13 @@
   gap: 1rem;
 }
 
+.community__images_div > img {
+  width: 7rem;
+}
+
 #whyourcommunity__intro {
-  margin: auto;
-  width: 93%;
+  margin: 1rem auto;
+  width: 85%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -190,14 +201,14 @@
   line-height: 45px;
 }
 
-.section3__buttons {
+/* .section3__buttons {
   width: auto;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
 
-.section3__buttons > button {
+/* .section3__buttons > button {
   height: 4rem;
   width: 14rem;
   margin: 1rem 1rem 1rem 0;
@@ -207,9 +218,9 @@
   font-size: 25px;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
-}
+} */
 
-.section3__buttons_know_more {
+/* .section3__buttons_know_more {
   background: rgba(0, 119, 183, 1);
   color: white;
 }
@@ -221,7 +232,7 @@
 .section3__buttons_contact_us > a {
   text-decoration: none;
   color: rgba(0, 119, 183, 1) !important;
-}
+}  */
 
 .section3__image {
   width: 40%;
@@ -250,7 +261,8 @@
 .community__carousel-content {
   overflow-x: auto;
   scroll-behavior: smooth;
-  width: 100%;
+  width: 80%;
+  margin: auto;
   display: flex;
 }
 
@@ -272,12 +284,12 @@
 }
 
 .pre-btn {
-  left: 0;
+  left: 3rem;
   margin-left: 10px;
 }
 
 .nxt-btn {
-  right: 0;
+  right: 3rem;
   margin-right: 10px;
 }
 
@@ -445,6 +457,7 @@
 
 @media (max-width: 1024px) {
   #community__intro {
+    margin: auto;
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -461,6 +474,7 @@
 
   .community__buttons {
     margin: auto;
+    width: 80%;
   }
   .community__images {
     display: flex;
@@ -479,11 +493,12 @@
     object-fit: contain;
   }
 
-  .community__buttons > button {
+  .community__buttons > a > button {
     margin: 1rem 1rem;
     height: 4rem;
     width: 7rem;
-    font-size: 16px;
+    padding: 1%;
+    font-size: 14px;
     font-weight: 400;
   }
 
@@ -558,14 +573,14 @@
 }
 
 @media (max-width: 650px) {
-  .community__buttons > button {
+  /* .community__buttons > a>  button {
     margin: 0.5em 0.5rem;
     height: fit-content;
     width: fit-content;
     padding: 1rem;
     font-size: 14px;
     font-weight: 400;
-  }
+  } */
 
   .community__images_div > img {
     display: none;

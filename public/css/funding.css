@@ -4,6 +4,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-image: url("/images/Ellipse 148.png"),
+    url("/images/Ellipse 149.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: 0 -1.5rem, 45rem 0rem;
 }
 
 .funding_page__main {
@@ -31,16 +35,18 @@
   justify-content: space-evenly;
 }
 
-.funding_page__buttons > button {
-  height: 4rem;
-  width: 14rem;
+.funding_page__buttons > a > button {
+  padding: 8% 0;
+  font-size: 16px;
+  height: max-content;
+  width: 12rem;
   margin: 5.5rem 1rem 5.5rem 0;
-  border-radius: 0.5rem;
+  border-radius: 8px;
   border: none;
   outline: none;
-  font-size: 24px;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
+  cursor: pointer;
 }
 
 .funding_page__buttons_know_more {
@@ -50,6 +56,7 @@
 
 .funding_page__buttons_contact_us {
   background: white;
+  color: rgba(0, 119, 183, 1);
 }
 
 .funding_page__buttons_contact_us > a {
@@ -69,6 +76,10 @@
   align-items: center;
   justify-content: space-around;
   margin: 1rem 0;
+  background-image: url("/images/Ellipse 149.png");
+
+  background-repeat: no-repeat;
+  background-position: 0rem 20rem;
 }
 
 .howitworks__heading {
@@ -81,6 +92,8 @@
   font-size: 25px;
   text-align: center;
   line-height: 45px;
+  width: 85%;
+  margin: auto;
 }
 
 .howitworks__icons_down {
@@ -270,6 +283,15 @@
     flex-direction: column;
     align-items: center;
   }
+
+  .funding_page__buttons > a > button {
+    margin: 1rem 1rem;
+    height: 4rem;
+    width: 7rem;
+    padding: 1%;
+    font-size: 16px;
+    font-weight: 400;
+  }
 }
 
 @media (max-width: 975px) {
@@ -284,14 +306,6 @@
   }
   .funding_page__image > img {
     height: 15rem;
-  }
-
-  .funding_page__buttons > button {
-    margin: 1rem 1rem;
-    height: 2rem;
-    width: 7rem;
-    font-size: 16px;
-    font-weight: 400;
   }
 }
 
@@ -313,18 +327,6 @@
 
   .funding_page__main {
     align-items: center;
-  }
-  .funding_page__buttons {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .funding_page__buttons > button {
-    margin: 1rem 0;
-    height: 2rem;
-    width: 7rem;
-    font-size: 16px;
-    font-weight: 400;
   }
 
   .funding__main_left {

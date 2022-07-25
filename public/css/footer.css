@@ -19,6 +19,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  padding: 2rem 0;
 }
 
 .footer__main_brand_name {
@@ -42,7 +43,7 @@ a {
 }
 
 .footer__main_text_content {
-  width: 15rem;
+  width: 25rem;
   font-size: 20px;
 }
 
