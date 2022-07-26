@@ -1,4 +1,4 @@
-body{
+body {
   background: linear-gradient(
     63.18deg,
     #000c12 0%,
@@ -144,7 +144,7 @@ body{
 }
 
 #howitworks {
-  width: 93%;
+  width: 100%;
   margin: auto !important;
   display: flex;
   flex-direction: column;
@@ -153,8 +153,8 @@ body{
   margin: 1rem 0;
   background-image: url("/images/Ellipse 149.png");
 
-background-repeat: no-repeat;
-background-position: 0rem 20rem;
+  background-repeat: no-repeat;
+  background-position: -10rem 28rem;
 }
 
 .howitworks__heading {

@@ -10,6 +10,7 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  /* background-position: center; */
 }
 
 
@@ -85,7 +86,7 @@ body{
 }
 
 #howitworks {
-  width: 93%;
+  width: 95%;
   margin: auto !important;
   display: flex;
   flex-direction: column;
