@@ -35,16 +35,18 @@
   justify-content: space-evenly;
 }
 
-.aboutus__buttons > button {
-  height: 4rem;
-  width: 14rem;
+.aboutus__buttons > a > button {
+  padding: 8% 0;
+  font-size: 16px;
+  height: max-content;
+  width: 12rem;
   margin: 5.5rem 1rem 5.5rem 0;
-  border-radius: 0.5rem;
+  border-radius: 8px;
   border: none;
   outline: none;
-  font-size: 24px;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
+  cursor: pointer;
 }
 
 .aboutus__buttons_know_more {
@@ -54,10 +56,6 @@
 
 .aboutus__buttons_contact_us {
   background: white;
-}
-
-.aboutus__buttons_contact_us > a {
-  text-decoration: none;
   color: rgba(0, 119, 183, 1) !important;
 }
 
@@ -101,12 +99,11 @@
 }
 
 .wwd-main {
-  /* width: 80%; */
   margin: auto;
   margin-left: 5rem;
+  margin-bottom: 0%;
   display: flex;
-  align-self: center;
-  justify-content: space-between;
+  align-items: center;
 }
 
 .wwd-main-content {
@@ -145,25 +142,12 @@
   object-fit: contain;
 }
 
-.wwd-join-btn {
-  background-color: #2a72de;
-  color: #fff;
-  height: 4rem;
-  width: 14rem;
-  margin: 0rem 0rem 5.5rem 0;
-  border-radius: 0.5rem;
-  border: none;
-  outline: none;
-  font-size: 24px;
-  font-weight: 600;
-}
-
 #mission-section {
   display: flex;
   justify-content: space-between;
   /* align-items: center; */
   width: 93%;
-  margin: auto 0 3rem auto;
+  margin: auto 5rem auto;
   background-repeat: no-repeat;
   background-image: url("/images/Ellipse 157.png");
   /* background-position: top; */
@@ -229,6 +213,11 @@
   outline: none;
   font-size: 24px;
   font-weight: 600;
+}
+
+.vision-btn {
+  margin-left: -17%;
+  margin-top: -6%;
 }
 
 #team-section {
@@ -450,8 +439,8 @@
   align-items: center;
   flex-direction: column;
   background-image: url("/images/Ellipse 150.png");
-  background-position: center;
-  background-size: 70rem;
+  background-position: top;
+  background-size: 80rem;
   background-repeat: no-repeat;
 }
 
@@ -495,9 +484,9 @@
   display: flex;
 }
 
-.about-btns > button > a {
+/* .about-btns > button > a {
   font-size: 24px;
-}
+} */
 
 .about-btn-join {
   background-color: #2a72de;
@@ -528,13 +517,12 @@
   .aboutus__image > img {
     height: 20rem;
   }
+}
 
-  .aboutus__buttons > button {
-    margin: 1rem 1rem;
-    height: 2rem;
-    width: 7rem;
-    font-size: 16px;
-    font-weight: 400;
+@media (max-width: 1024px) {
+  .aboutus__buttons {
+    margin: auto;
+    width: 80%;
   }
 }
 
@@ -557,15 +545,12 @@
   .aboutus__main {
     align-items: center;
   }
-  .aboutus__buttons {
-    flex-direction: column;
-    align-items: center;
-  }
 
-  .aboutus__buttons > button {
-    margin: 1rem 0;
-    height: 2rem;
-    width: 9rem;
+  .aboutus__buttons > a > button {
+    margin: 1rem 1rem;
+    height: 4rem;
+    padding: 1%;
+    width: 8rem;
     font-size: 16px;
     font-weight: 400;
   }
@@ -608,15 +593,8 @@
 
   .wwd-main-img > img {
     height: 20rem;
+    margin-bottom: 2rem;
     width: 100%;
-  }
-
-  .wwd-join-btn {
-    height: 2rem;
-    width: 9rem;
-    font-size: 16px;
-    font-weight: 400;
-    margin-bottom: 1rem;
   }
 
   #mission-section {
@@ -790,7 +768,7 @@
 
   #about-end {
     padding: 1rem;
-    background-size: 40rem;
+    background-size: 30rem;
     background-position: top;
   }
 

@@ -31,16 +31,18 @@
   justify-content: space-evenly;
 }
 
-.mentorship_page__buttons > button {
-  height: 4rem;
-  width: 14rem;
+.mentorship_page__buttons > a > button {
+  padding: 8% 0;
+  font-size: 16px;
+  height: max-content;
+  width: 12rem;
   margin: 5.5rem 1rem 5.5rem 0;
-  border-radius: 0.5rem;
+  border-radius: 8px;
   border: none;
   outline: none;
-  font-size: 24px;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
+  cursor: pointer;
 }
 
 .mentorship_page__buttons_know_more {
@@ -50,11 +52,7 @@
 
 .mentorship_page__buttons_contact_us {
   background: white;
-}
-
-.mentorship_page__buttons_contact_us > a {
-  text-decoration: none;
-  color: rgba(0, 119, 183, 1) !important;
+  color: #0077b7;
 }
 
 .mentorship_page__image > img {
@@ -82,6 +80,8 @@
   font-size: 25px;
   text-align: center;
   line-height: 45px;
+  width: 85%;
+  margin: auto;
 }
 
 .howitworks__icons_down {
@@ -232,15 +232,11 @@ b {
     align-items: center;
   }
 
-  .mentorship_page__buttons {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .mentorship_page__buttons > button {
-    margin: 1rem 0;
-    height: 2rem;
-    width: 7rem;
+  .mentorship_page__buttons > a > button {
+    margin: 1rem 1rem;
+    height: 4rem;
+    padding: 1%;
+    width: 8rem;
     font-size: 16px;
     font-weight: 400;
   }
