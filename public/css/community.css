@@ -170,6 +170,7 @@ body{
   width: 40%;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   gap: 2rem;
 }
 
@@ -178,6 +179,14 @@ body{
   align-items: center;
   justify-content: space-around;
   gap: 1rem;
+}
+
+.whyourcommunity__icon > img {
+  width: 5.5rem;
+}
+
+.whyourcommunity__icon > div > p {
+  font-size: 24px;
 }
 
 #section3__intro {
@@ -336,6 +345,7 @@ body{
 }
 
 .community__carousel-box > img {
+  height: 7.5rem;
   width: 15rem;
 }
 
@@ -578,7 +588,12 @@ body{
     width: 80%;
     display: flex;
     flex-direction: column;
+    margin: 2rem auto;
     gap: 2rem;
+  }
+
+  .whyourcommunity__icon > div > p {
+    font-size: 16px;
   }
 
   .section3__image > img {

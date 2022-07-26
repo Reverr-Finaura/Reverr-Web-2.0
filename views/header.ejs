@@ -13,14 +13,12 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/css/header.css" />
-    <!-- <link rel="stylesheet" href="/css/footer.css" />
-    <link rel="stylesheet" href="/css/home.css"> -->
   </head>
   <script>
     var isBtnDropdownOpen=false;
     var isProductsDropdownOpen=false;
     function toggleDropdown () {
-        console.log("ha bol");
+
         if(isBtnDropdownOpen){
             document.getElementById("register_options").style.display="none";
             document.getElementById("register_options_phn").style.display="none";
@@ -34,7 +32,7 @@
     }
 
     function toggleProductsDropdown () {
-        console.log("ha bol");
+      
         if(isProductsDropdownOpen){
             document.getElementById("product_options").style.display="none";
             document.getElementById("product_options_phn").style.display="none";
@@ -77,7 +75,7 @@
         <a href="/community">Community</a>
         <a href="/blog">Blog</a>
         <a href="/about">About</a>
-        <a class="link-btn"><div class="memberBtnWrapper" href="/mentorform"><div class="memberBtn">Be a mentor</div></div></a>
+        <a class="link-btn"><div class="memberBtnWrapper" href="/mentorform"><div class="memberBtn">Get Funded</div></div></a>
        
         <div class="header_dropdown">
             <div onclick="toggleDropdown()" class="registerBtn">
