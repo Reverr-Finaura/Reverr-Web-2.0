@@ -3,6 +3,7 @@
   background-color: rgba(10, 14, 20, 1);
   min-height: fit-content;
   padding: 0.5rem 0;
+  color: white;
 }
 
 a {
@@ -58,10 +59,26 @@ a {
   margin: 1rem 0;
 }
 
+.footer__main_link > a {
+  text-decoration: none;
+  color: white;
+}
+
 .footer__main_social_links {
   display: flex;
   align-items: center;
 }
+
+.footer__main_social {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer__main_social > div > p {
+  margin-left: 0.5rem;
+}
+
 .footer__main_social_link > a > img {
   width: 1.5rem;
   object-fit: contain;
@@ -77,7 +94,7 @@ a {
   height: fit-content;
 }
 
-@media (max-width: 865px) {
+@media (max-width: 1024px) {
   .footer__main {
     flex-direction: column;
     width: 100%;

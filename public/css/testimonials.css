@@ -1,3 +1,8 @@
+#carousel-container {
+  margin: auto;
+  width: 80%;
+}
+
 .carousel-title {
   font-size: 50px;
   text-align: center;
@@ -6,50 +11,51 @@
   font-weight: 600;
 }
 
-.carousel-content {
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  width: 100%;
-  display: flex;
+/* SLIDER */
+.slider {
+  height: 30rem;
+  margin: 0 auto;
+  position: relative;
+  /* IN THE END */
+  overflow: hidden;
 }
 
-.carousel-content::-webkit-scrollbar {
-  display: none;
-}
-
-.pre-btn,
-.nxt-btn {
-  border: none;
-  width: 40px;
-  height: 40px;
-  margin-top: 150px;
+.slide {
   position: absolute;
   display: flex;
-  justify-content: center;
+  margin-left: 10%;
   align-items: center;
-  background: white;
+  justify-content: center;
+  /* THIS creates the animation! */
+  transition: transform 1s;
+}
+
+.slider__btn {
+  position: absolute;
+  top: 40%;
+  z-index: 9;
+  border: none;
+  background: #ffffff;
   border-radius: 100%;
   cursor: pointer;
-  z-index: 8;
+  padding: 1%;
 }
 
-.btn-img {
-  width: 15px;
-  height: 15px;
+.slider__btn > img {
+  height: 1rem;
 }
 
-.pre-btn {
-  left: 0;
-  margin-left: 10px;
-  transform: rotate(180deg);
+.slider__btn--left {
+  left: 6%;
+  transform: translate(-50%, -50%);
 }
 
-.nxt-btn {
-  right: 0;
-  margin-right: 10px;
+.slider__btn--right {
+  right: 6%;
+  transform: translate(50%, -50%);
 }
 
-.carousel-row {
+.carousel-card {
   background: linear-gradient(
     226.01deg,
     rgba(42, 114, 222, 0.75) 0%,
@@ -61,7 +67,7 @@
   padding: 30px;
   margin-left: 50px;
   width: 350px;
-  /* height: 320px; */
+  height: 387px;
   margin-bottom: 5%;
   position: relative;
 }
@@ -92,10 +98,17 @@
 
 /* for mobile phones */
 @media (max-width: 481px) {
-  .carousel-row {
-    width: 250px;
-    height: 280px;
-    padding: 16px;
+  #carousel-container {
+    width: 100%;
+  }
+
+  .slider {
+    height: 20rem;
+  }
+
+  .carousel-card {
+    margin-left: 3%;
+    width: 80%;
   }
 
   .carousel-img {
@@ -104,12 +117,12 @@
   }
 
   .carousel-name {
-    font-size: 14px;
+    font-size: 13px;
     margin-top: 10px;
   }
 
   .carousel-review {
-    font-size: 12px;
+    font-size: 10px;
   }
 
   .carousel-title {
@@ -117,36 +130,38 @@
     margin-left: 20px;
   }
 
-  .pre-btn,
-  .nxt-btn {
-    width: 30px;
-    height: 30px;
-  }
-}
-
-@media (max-width: 768px) and (min-width: 482px) {
-  .carousel-row {
-    width: 290px;
-    /* height: 270px; */
-    padding: 16px;
+  .slider__btn > img {
+    height: 0.7rem;
   }
 
-  .carousel-img {
-    width: 70px;
-    height: 70px;
-  }
+  @media (max-width: 768px) and (min-width: 482px) {
+    .slide {
+      margin-left: 0;
+    }
+    .carousel-card {
+      width: 290px;
+      /* height: 270px; */
+      /* margin-left: 0; */
+      padding: 16px;
+    }
 
-  .carousel-name {
-    font-size: 18px;
-    margin-top: 10px;
-  }
+    .carousel-img {
+      width: 70px;
+      height: 70px;
+    }
 
-  .carousel-review {
-    font-size: 14px;
-  }
+    .carousel-name {
+      font-size: 18px;
+      margin-top: 10px;
+    }
 
-  .carousel-title {
-    font-size: 32px;
-    margin-left: 20px;
+    .carousel-review {
+      font-size: 14px;
+    }
+
+    .carousel-title {
+      font-size: 32px;
+      margin-left: 20px;
+    }
   }
 }

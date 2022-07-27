@@ -1,3 +1,17 @@
+body {
+  background: linear-gradient(
+    63.18deg,
+    #000c12 0%,
+    rgba(0, 6, 10, 0.7) 43.89%,
+    rgba(0, 100, 151, 0.440331) 78.03%,
+    rgba(0, 135, 203, 0.21896) 86.48%,
+    rgba(0, 170, 255, 0) 100%
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 #knowledge__intro {
   margin: auto;
   width: 93%;
@@ -130,7 +144,7 @@
 }
 
 #howitworks {
-  width: 93%;
+  width: 100%;
   margin: auto !important;
   display: flex;
   flex-direction: column;
@@ -139,8 +153,8 @@
   margin: 1rem 0;
   background-image: url("/images/Ellipse 149.png");
 
-background-repeat: no-repeat;
-background-position: 0rem 20rem;
+  background-repeat: no-repeat;
+  background-position: -10rem 28rem;
 }
 
 .howitworks__heading {

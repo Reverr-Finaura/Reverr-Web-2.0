@@ -1,5 +1,22 @@
+body{
+  background: linear-gradient(
+    63.18deg,
+    #000c12 0%,
+    rgba(0, 6, 10, 0.7) 43.89%,
+    rgba(0, 100, 151, 0.440331) 78.03%,
+    rgba(0, 135, 203, 0.21896) 86.48%,
+    rgba(0, 170, 255, 0) 100%
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+
+
 #community__intro {
-  margin: -3.5rem auto 2rem auto;
+  /* margin: -3.5rem auto 2rem auto; */
+  margin: auto;
   width: 93%;
   display: flex;
   align-items: flex-start;
@@ -65,6 +82,7 @@
 }
 
 .community__images {
+  margin: -3.5rem 1rem 2rem auto;
   display: flex;
   gap: 2rem;
 }
@@ -152,6 +170,7 @@
   width: 40%;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   gap: 2rem;
 }
 
@@ -160,6 +179,14 @@
   align-items: center;
   justify-content: space-around;
   gap: 1rem;
+}
+
+.whyourcommunity__icon > img {
+  width: 5.5rem;
+}
+
+.whyourcommunity__icon > div > p {
+  font-size: 24px;
 }
 
 #section3__intro {
@@ -318,6 +345,7 @@
 }
 
 .community__carousel-box > img {
+  height: 7.5rem;
   width: 15rem;
 }
 
@@ -560,7 +588,12 @@
     width: 80%;
     display: flex;
     flex-direction: column;
+    margin: 2rem auto;
     gap: 2rem;
+  }
+
+  .whyourcommunity__icon > div > p {
+    font-size: 16px;
   }
 
   .section3__image > img {
