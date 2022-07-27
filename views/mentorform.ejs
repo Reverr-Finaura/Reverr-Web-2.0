@@ -1,0 +1,563 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/mentorform.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <%- include('header'); -%>
+    <div class="desk" style="padding: 2% 30%; padding-bottom: 8%">
+      <% if(successful == true) {%>
+      <div
+        style="
+          background-color: #03c04a;
+          text-align: center;
+          padding: 0.5% 0.7%;
+          margin-top: 25%;
+        "
+      >
+        <h3 style="color: white">Registration Successful</h3>
+      </div>
+      <div style="text-align: center">
+        <a href="/" style="text-decoration: none"
+          ><h1 style="color: white">Click here to go HOME</h1></a
+        >
+      </div>
+      <% } else { %>
+      <div style="text-align: center">
+        <h1>Mentor Signup Form</h1>
+        <img src="./images/mentorform.png" width="40%" alt="" />
+      </div>
+
+      <form action="/mentor" method="post" class="form">
+        <p>Full Name <span style="color: red">*</span></p>
+        <input
+          type="text"
+          name="name"
+          placeholder="Your Name"
+          class="forminput"
+          required
+        />
+        <p>Email <span style="color: red">*</span></p>
+        <input
+          type="text"
+          name="email"
+          placeholder="Your Email"
+          class="forminput"
+          required
+        />
+        <p>Contact Number <span style="color: red">*</span></p>
+        <input
+          type="text"
+          name="mobile"
+          placeholder="Your Contact Number"
+          class="forminput"
+          required
+        />
+        <p>Linkedin Profile Link <span style="color: red">*</span></p>
+        <input
+          type="text"
+          name="linkedin"
+          placeholder="https://www.linkedin.com/"
+          class="forminput"
+          required
+        />
+
+        <p>Gender <span style="color: red">*</span></p>
+        <input type="radio" name="gender" value="male" id="radio1" />
+        <label for="radio1">Male</label>
+        <input type="radio" name="gender" value="female" id="radio1" />
+        <label for="radio1">Female</label>
+        <input type="radio" name="gender" value="other" id="radio1" />
+        <label for="radio1">Other</label>
+        <p>Date of Birth <span style="color: red">*</span></p>
+        <input type="date" name="dob" class="forminput" required />
+        <p>Industry <span style="color: red">*</span></p>
+        <input
+          type="text"
+          name="industry"
+          placeholder="Your Industry of Interest"
+          class="forminput"
+          required
+          id="Industry2"
+          list="industries"
+        />
+        <datalist id="industries">
+          <option value="Advertising">Advertising</option>
+          <option value="Aeronnautics Aerospace & Defense">
+            Aeronnautics Aerospace & Defense
+          </option>
+          <option value="Agriculture & Allied Industries">
+            Agriculture & Allied Industries
+          </option>
+          <option value="Al">Al</option>
+          <option value="Airport Operations">Airport Operations</option>
+          <option value="Analytics">Analytics</option>
+          <option value="Animation">Animation</option>
+          <option value="AR VR (Augmented + Virtual Reality)">
+            AR VR (Augmented + Virtual Reality)
+          </option>
+          <option value="Architecture Interior Design">
+            Architecture Interior Design
+          </option>
+          <option value="Art & Photography">Art & Photography</option>
+          <option value="Automotive">Automotive</option>
+          <option value="Banking">Banking</option>
+          <option value="Biotechnology">Biotechnology</option>
+          <option value="BPM">BPM</option>
+          <option value="Cement">Cement</option>
+          <option value="Chemicals">Chemicals</option>
+          <option value="Computer vision">Computer vision</option>
+          <option value="Construction">Construction</option>
+          <option value="Consumer Durables">Consumer Durables</option>
+          <option value="Dating matrimonial">Dating matrimonial</option>
+          <option value="Design">Design</option>
+          <option value="Edtech">Edtech</option>
+          <option value="Education">Education</option>
+          <option value="Electronics system design &">
+            Electronics system design &
+          </option>
+          <option value="Manufacturina">Manufacturina</option>
+          <option value="Enterprise software">Enterprise software</option>
+          <option value="Engineering & Capital Goods">
+            Engineering & Capital Goods
+          </option>
+          <option value="Events">Events</option>
+          <option value="Fashion">Fashion</option>
+          <option value="Finance">Finance</option>
+          <option value="Fintech">Fintech</option>
+          <option value="FMCG">FMCG</option>
+          <option value="Food and beverages">Food and beverages</option>
+          <option value="Government">Government</option>
+          <option value="Gems & Jewellery">Gems & Jewellery</option>
+          <option value="Green Technology">Green Technology</option>
+          <option value="Healthcare & lifesciences">
+            Healthcare & lifesciences
+          </option>
+          <option value="House-Hold services">House-Hold services</option>
+          <option value="Horticulture">Horticulture</option>
+          <option value="Human resources">Human resources</option>
+          <option value="Indic languages startups">
+            Indic languages startups
+          </option>
+          <option value="InTravel and tourism">InTravel and tourism</option>
+          <option value="Waste management">Waste management</option>
+          <option value="Internet of things">Internet of things</option>
+          <option value="Insurance">Insurance</option>
+          <option value="IT Services">IT Services</option>
+          <option value="Logistics">Logistics</option>
+          <option value="Manufacturing">Manufacturing</option>
+          <option value="Marketing">Marketing</option>
+          <option value="Media and entertainment">
+            Media and entertainment
+          </option>
+          <option value="Metals & Mining">Metals & Mining</option>
+          <option value="Nanotechnology">Nanotechnology</option>
+          <option value="Natural Sciences">Natural Sciences</option>
+          <option value="Non-Renewable energy">Non-Renewable energy</option>
+          <option value="NGO">NGO</option>
+          <option value="NPO">NPO</option>
+          <option value="Other speciality retailers">
+            Other speciality retailers
+          </option>
+          <option value="Passenger experience">Passenger experience</option>
+          <option value="Pets & animals">Pets & animals</option>
+          <option value="Pharmaceuticals">Pharmaceuticals</option>
+          <option value="professional & Commercial services">
+            professional & Commercial services
+          </option>
+          <option value="Real estate">Real estate</option>
+          <option value="Renewable energy">Renewable energy</option>
+          <option value="robotics">robotics</option>
+          <option value="Rural development">Rural development</option>
+          <option value="safety">safety</option>
+          <option value="security solutions">security solutions</option>
+          <option value="Social impact">Social impact</option>
+          <option value="social network">social network</option>
+          <option value="sports">sports</option>
+          <option value="Technology hardware">Technology hardware</option>
+          <option value="Telecommunications & Networking">
+            Telecommunications & Networking
+          </option>
+          <option value="Apparel and Textiles">Apparel and Textiles</option>
+          <option value="Toys and games">Toys and games</option>
+          <option value="Transportation & Storage">
+            Transportation & Storage
+          </option>
+          <option value="Travel and tourism">Travel and tourism</option>
+          <option value="Waste management">Waste management</option>
+          <option value="Others">Others</option>
+        </datalist>
+
+        <p>Domain Expertise <span style="color: red">*</span></p>
+        <input
+          type="text"
+          name="domain"
+          placeholder="Your Domain Expertise in"
+          class="forminput"
+          required
+          id="domain"
+          list="domains"
+        />
+        <datalist id="domains">
+          <option value="Brand & Public Relations">
+            Brand & Public Relations
+          </option>
+          <option value="Career Advice & Self Mastery">
+            Career Advice & Self Mastery
+          </option>
+          <option value="Culture">Culture</option>
+          <option value="Data Science & Analytics">
+            Data Science & Analytics
+          </option>
+          <option value="Finance, Accounting & Controlling">
+            Finance, Accounting & Controlling
+          </option>
+          <option value="Human Resources & Recruiting">
+            Human Resources & Recruiting
+          </option>
+          <option value="Infrastructure & Security Leadership & Management">
+            Infrastructure & Security Leadership & Management
+          </option>
+          <option value="Legal, Risk Management, Compliance">
+            Legal, Risk Management, Compliance
+          </option>
+          <option value="Marketing & Growth">Marketing & Growth</option>
+          <option value="Product Management">Product Management</option>
+          <option value="Sales">Sales</option>
+          <option value="Social Entrepreneurship & Charity">
+            Social Entrepreneurship & Charity
+          </option>
+          <option value="Software Engineering & Charity">
+            Software Engineering & Charity
+          </option>
+          <option value="Startup: Founding & Funding">
+            Startup: Founding & Funding
+          </option>
+          <option value="Strategy & Business Development">
+            Strategy & Business Development
+          </option>
+          <option value="Sustainability">Sustainability</option>
+          <option value="Team Structure & Work Methodologies">
+            Team Structure & Work Methodologies
+          </option>
+          <option value="Transformation">Transformation</option>
+          <option value="UX, Design & User Research">
+            UX, Design & User Research
+          </option>
+        </datalist>
+        <p>Current Designation <span style="color: red">*</span></p>
+        <input
+          type="text"
+          name="designation"
+          placeholder="Current Designation"
+          class="forminput"
+          required
+        />
+        <br />
+        <br />
+
+        <p>
+          Would you be in favour of offering a brief introductory session free
+          of cost?<span style="color: red">*</span>
+        </p>
+        <input type="radio" name="introSession" value="yes" id="radio1" />
+        <label for="radio1">Yes</label>&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="radio" name="introSession" value="no" id="radio1" />
+        <label for="radio1">No</label><br /><br />
+
+        <p>
+          Would you be willing to offer half-an hour sessions?<span
+            style="color: red"
+            >*</span
+          >
+        </p>
+        <input type="radio" name="halfSession" value="yes" id="radio1" />
+        <label for="radio1">Yes</label>&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="radio" name="halfSession" value="no" id="radio1" />
+        <label for="radio1">No</label> <br /><br />
+
+        <p>
+          Would you be willing to offer a refund to unsatisfied clients post 2
+          sessions?<span style="color: red">*</span>
+        </p>
+        <input type="radio" name="refund" value="yes" id="radio1" />
+        <label for="radio1">Yes</label>&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="radio" name="refund" value="no" id="radio1" />
+        <label for="radio1">No</label> <br />
+        <br />
+
+        <p>
+          What will be your charges per hour (in rupee)<span style="color: red"
+            >*</span
+          >
+        </p>
+        <input
+          type="text"
+          name="perHrCharges"
+          placeholder="Your charges per hour"
+          class="forminput"
+          required
+        />
+        <br /><br />
+        <p>
+          Which packages are you willing to offer? (select all that are
+          applicable) <span style="color: red">*</span>
+        </p>
+        <input type="checkbox" name="packages" value="Monthly" id="monthly" />
+        <label for="monthly">Monthly</label><br />
+        <input type="checkbox" name="packages" value="Quaterly" id="quaterly" />
+        <label for="quaterly">Quaterly</label><br />
+        <input
+          type="checkbox"
+          name="packages"
+          value="Semi-annual"
+          id="semiAnnual"
+        />
+        <label for="semiAnnual">Semi-annual</label><br /><br />
+        <p>Graduation <span style="color: red">*</span></p>
+        <input
+          type="text"
+          name="college"
+          placeholder="University/College"
+          class="forminput"
+          required
+        />
+        <input
+          type="text"
+          name="degree"
+          placeholder="Degree"
+          class="forminput"
+          required
+        />
+        <input
+          type="text"
+          name="passout"
+          placeholder="Passout Year"
+          class="forminput"
+          required
+        />
+        <p>Post Graduation</p>
+        <input
+          type="text"
+          name="PGcollege"
+          placeholder="University/College"
+          class="forminput"
+        />
+        <input
+          type="text"
+          name="PGdegree"
+          placeholder="Degree"
+          class="forminput"
+        />
+        <input
+          type="text"
+          name="PGpassout"
+          placeholder="Passout Year"
+          class="forminput"
+        />
+        <p>
+          Write a short bio about yourself <span style="color: red">*</span>
+        </p>
+        <textarea name="bio" rows="8" class="forminput" required> </textarea>
+        <button
+          type="submit"
+          class="btn-blue"
+          style="float: right; margin-right: 0%"
+        >
+          Apply
+        </button>
+      </form>
+      <%}%>
+    </div>
+    <div class="phn" style="padding: 2% 10%; padding-bottom: 16%">
+      <div style="text-align: center">
+        <h1 style="font-size: 24px">Mentor Signup Form</h1>
+        <img src="./images/mentorform.png" width="40%" alt="" />
+      </div>
+      <form action="/mentor" method="post" class="form">
+        <p>Full Name <span style="color: red">*</span></p>
+        <input
+          type="text"
+          name="name"
+          placeholder="Your Name"
+          class="forminput"
+          required
+        />
+        <p>Email <span style="color: red">*</span></p>
+        <input
+          type="text"
+          name="email"
+          placeholder="Your Email"
+          class="forminput"
+          required
+        />
+        <p>Contact Number <span style="color: red">*</span></p>
+        <input
+          type="text"
+          name="mobile"
+          placeholder="Your Contact Number"
+          class="forminput"
+          required
+        />
+        <p>Linkedin Profile Link <span style="color: red">*</span></p>
+        <input
+          type="text"
+          name="linkedin"
+          placeholder="https://www.linkedin.com/"
+          class="forminput"
+          required
+        />
+
+        <p>Gender <span style="color: red">*</span></p>
+        <input type="radio" name="gender" value="male" id="radio1" />
+        <label for="radio1">Male</label>
+        <input type="radio" name="gender" value="female" id="radio1" />
+        <label for="radio1">Female</label>
+        <input type="radio" name="gender" value="other" id="radio1" />
+        <label for="radio1">Other</label>
+        <p>Date of Birth <span style="color: red">*</span></p>
+        <input type="date" name="dob" class="forminput" required />
+        <p>Industry <span style="color: red">*</span></p>
+        <input
+          type="text"
+          name="industry"
+          placeholder="Your Industry of Interest"
+          class="forminput"
+          required
+        />
+
+        <p>Domain Expertise <span style="color: red">*</span></p>
+        <input
+          type="text"
+          name="domain"
+          placeholder="Your Domain Expertise in"
+          class="forminput"
+          required
+        />
+        <p>Current Designation <span style="color: red">*</span></p>
+        <input
+          type="text"
+          name="designation"
+          placeholder="Current Designation"
+          class="forminput"
+          required
+        />
+        <br /><br />
+        <p>
+          Would you be in favour of offering a brief introductory session free
+          of cost?<span style="color: red">*</span>
+        </p>
+        <input type="radio" name="introSession" value="yes" id="radio1" />
+        <label for="radio1">Yes</label>&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="radio" name="introSession" value="no" id="radio1" />
+        <label for="radio1">No</label>
+        <br /><br />
+        <p>
+          Would you be willing to offer half-an hour sessions?<span
+            style="color: red"
+            >*</span
+          >
+        </p>
+        <input type="radio" name="halfSession" value="yes" id="radio1" />
+        <label for="radio1">Yes</label>&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="radio" name="halfSession" value="no" id="radio1" />
+        <label for="radio1">No</label>
+        <br />
+        <br />
+
+        <p>
+          Would you be willing to offer a refund to unsatisfied clients post 2
+          sessions?<span style="color: red">*</span>
+        </p>
+        <input type="radio" name="refund" value="yes" id="radio1" />
+        <label for="radio1">Yes</label>&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="radio" name="refund" value="no" id="radio1" />
+        <label for="radio1">No</label>
+        <br /><br />
+        <p>
+          What will be your charges per hour <span style="color: red">*</span>
+        </p>
+        <input
+          type="text"
+          name="perHrCharges"
+          placeholder="Your charges per hour"
+          class="forminput"
+          required
+        />
+        <br /><br />
+        <p>
+          Which packages are you willing to offer? (select all that are
+          applicable) <span style="color: red">*</span>
+        </p>
+        <input type="checkbox" name="packages" value="Monthly" id="monthly" />
+        <label for="monthly">Monthly</label><br />
+        <input type="checkbox" name="packages" value="Quaterly" id="quaterly" />
+        <label for="quaterly">Quaterly</label><br />
+        <input
+          type="checkbox"
+          name="packages"
+          value="Semi-annual"
+          id="semiAnnual"
+        />
+        <label for="semiAnnual">Semi-annual</label><br />
+        <br />
+        <p>Graduation <span style="color: red">*</span></p>
+        <input
+          type="text"
+          name="college"
+          placeholder="University/College"
+          class="forminput"
+          required
+        />
+        <input
+          type="text"
+          name="degree"
+          placeholder="Degree"
+          class="forminput"
+          required
+        />
+        <input
+          type="text"
+          name="passout"
+          placeholder="Passout Year"
+          class="forminput"
+          required
+        />
+        <p>Post Graduation</p>
+        <input
+          type="text"
+          name="PGcollege"
+          placeholder="University/College"
+          class="forminput"
+        />
+        <input
+          type="text"
+          name="PGdegree"
+          placeholder="Degree"
+          class="forminput"
+        />
+        <input
+          type="text"
+          name="PGpassout"
+          placeholder="Passout Year"
+          class="forminput"
+        />
+        <p>
+          Write a short bio about yourself <span style="color: red">*</span>
+        </p>
+        <textarea name="bio" rows="8" class="forminput" required> </textarea>
+        <button
+          type="submit"
+          class="btn-blue"
+          style="float: right; margin-right: 0%"
+        >
+          Apply
+        </button>
+      </form>
+    </div>
+    <%- include('footer'); -%>
+  </body>
+</html>
