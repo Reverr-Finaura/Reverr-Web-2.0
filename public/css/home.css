@@ -320,6 +320,7 @@ body {
 .stats__card {
   width: 20%;
   padding: 1%;
+  padding-bottom: 5%;
   display: block;
   background: linear-gradient(
     236.51deg,
@@ -591,6 +592,7 @@ img {
   text-align: center;
   font-size: 25px;
   padding: 10px 50px;
+  opacity: 0.8;
 }
 
 .text {
