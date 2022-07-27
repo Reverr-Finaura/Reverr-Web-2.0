@@ -34,6 +34,10 @@ app.get("/funding", function (req, res) {
   res.render("funding");
 });
 
+app.get("/fundingform", function (req, res) {
+  res.render("fundingform");
+});
+
 app.get("/blog", function (req, res) {
   res.render("blog");
 });
