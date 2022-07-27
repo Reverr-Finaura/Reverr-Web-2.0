@@ -1,4 +1,4 @@
-body{
+body {
   background: linear-gradient(
     63.18deg,
     #000c12 0%,
@@ -11,7 +11,6 @@ body{
   background-size: cover;
   background-attachment: fixed;
 }
-
 
 #aboutus__intro {
   margin: auto auto auto 5rem;
@@ -408,8 +407,9 @@ body{
 }
 
 .cv_text > p {
-  margin: 10% 0 0 10%;
+  margin: 30% 0 0 20%;
   font-size: 25px;
+  width: 60%;
 }
 
 .cv_cards {
@@ -434,8 +434,8 @@ body{
   );
   border-radius: 20px;
   padding: 2rem;
-  height: 13rem;
-  width: 12rem;
+  height: 10rem;
+  width: 8rem;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -444,13 +444,14 @@ body{
 
 .cv_card > img {
   height: 5rem;
+  margin-bottom: 2.6rem;
 }
 
 #about-end {
   width: 93%;
   margin: auto;
   display: flex;
-  padding: 4rem;
+  padding: 2rem;
   align-items: center;
   flex-direction: column;
   background-image: url("/images/Ellipse 150.png");
@@ -824,5 +825,16 @@ body{
 
   #about-end {
     background: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .adv-img {
+    height: 13rem;
+  }
+
+  .adv-img-badge {
+    left: 9rem;
+    top: -4rem;
   }
 }
