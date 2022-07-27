@@ -27,14 +27,32 @@
           </div>
         </div>
         <div class="community__buttons">
-          <a href=""
+          <a href="https://play.google.com/store/apps/details?id=com.reverr"
             ><button class="community__buttons_blue_btn">
               Download our app
             </button></a
           >
-          <a href="/contactus"
-            ><button class="community__buttons_contact_us">Join Us</button></a
+          <a
+            ><button
+              onclick="toggleJoinUsDropdown()"
+              class="community__buttons_join_us"
+            >
+              Join Us
+            </button></a
           >
+          <div class="joinus_dropdown">
+            <div id="joinus_options">
+              <a href="/mentorform"
+                ><div class="joinus_option">Be a Mentor</div></a
+              >
+              <a href="/fundingform"
+                ><div class="joinus_option">Get Funded</div></a
+              >
+              <a href="/newsletterform"
+                ><div class="joinus_option">Sign the Newsletter</div></a
+              >
+            </div>
+          </div>
         </div>
       </div>
       <div class="community__images">
@@ -114,7 +132,7 @@
             </p>
           </div>
           <div class="community__buttons">
-            <a
+            <a href="https://chat.whatsapp.com/GYG93rm4dVSH5521jNvtej"
               ><button class="community__buttons_blue_btn">
                 Our Community
               </button></a
@@ -192,9 +210,11 @@
         <img src="/images/community-image-2.svg" alt="image" />
         <div class="provides__button">
           <div class="provides__btn">
-            <button class="community__buttons_blue_btn">
-              <a>Explore our community </a>
-            </button>
+            <a href="https://chat.whatsapp.com/GYG93rm4dVSH5521jNvtej"
+              ><button class="community__buttons_blue_btn">
+                Explore our community
+              </button></a
+            >
           </div>
         </div>
       </div>
@@ -228,5 +248,16 @@
         item.scrollLeft -= containerWidth;
       });
     });
+
+    var isJoinUsDropdownOpen = false;
+    function toggleJoinUsDropdown() {
+      if (isJoinUsDropdownOpen) {
+        document.getElementById("joinus_options").style.display = "none";
+        isJoinUsDropdownOpen = false;
+      } else {
+        document.getElementById("joinus_options").style.display = "flex";
+        isJoinUsDropdownOpen = true;
+      }
+    }
   </script>
 </html>

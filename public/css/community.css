@@ -1,4 +1,4 @@
-body{
+body {
   background: linear-gradient(
     63.18deg,
     #000c12 0%,
@@ -12,10 +12,7 @@ body{
   background-attachment: fixed;
 }
 
-
-
 #community__intro {
-  /* margin: -3.5rem auto 2rem auto; */
   margin: auto;
   width: 93%;
   display: flex;
@@ -71,12 +68,12 @@ body{
   color: white;
 }
 
-.community__buttons_contact_us {
+.community__buttons_join_us {
   background: white;
   color: rgba(0, 119, 183, 1);
 }
 
-.community__buttons_contact_us > a {
+.community__buttons_join_us > a {
   text-decoration: none;
   color: rgba(0, 119, 183, 1) !important;
 }
@@ -96,6 +93,48 @@ body{
 
 .community__images_div > img {
   width: 7rem;
+}
+
+.joinus_dropdown {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0.95;
+  right: 7rem;
+}
+
+#joinus_options,
+#joinus_options_phn {
+  height: fit-content;
+  z-index: 999;
+  display: none;
+  padding: 1rem 0;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  border-radius: 1rem;
+  margin-top: -2.6rem;
+}
+
+#joinus_options > a,
+#joinus_options_phn > a {
+  text-decoration: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  color: white;
+}
+
+#joinus_options > a:hover {
+  border: none !important;
+}
+
+.joinus_option {
+  padding: 0.5rem;
+  font-weight: 700;
+  width: 11rem;
+  text-align: center;
+  cursor: pointer;
+  color: rgba(0, 119, 183, 1) !important;
 }
 
 #whyourcommunity__intro {
@@ -387,7 +426,7 @@ body{
   line-height: 60px;
 }
 
-.provides__btn > button {
+.provides__btn > a > button {
   height: 4rem;
   width: fit-content;
   border-radius: 0.5rem;
@@ -397,6 +436,7 @@ body{
   font-size: 20px;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
+  cursor: pointer;
 }
 
 /* for mobile phones */
@@ -435,7 +475,7 @@ body{
     height: 30px;
   }
 
-  .provides__btn > button {
+  .provides__btn > a > button {
     height: 4rem;
     width: fit-content;
     border-radius: 0.5rem;
@@ -445,6 +485,7 @@ body{
     font-weight: 600;
     font-family: "Poppins", sans-serif;
     font-size: 16px;
+    cursor: pointer;
   }
 }
 
@@ -503,6 +544,7 @@ body{
   .community__buttons {
     margin: auto;
     width: 80%;
+    align-items: flex-start;
   }
   .community__images {
     display: flex;
@@ -527,6 +569,23 @@ body{
     width: 7rem;
     padding: 1%;
     font-size: 14px;
+    font-weight: 400;
+  }
+
+  #joinus_options,
+  #joinus_options_phn {
+    margin: auto;
+  }
+
+  .joinus_dropdown {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    right: 0;
+  }
+
+  .joinus_option {
     font-weight: 400;
   }
 

@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/css/fundingform.css" />
+  </head>
+  <body>
+    <%- include('header'); -%>
+    <div class="desk" style=" padding: 2% 25%; padding-bottom: 8%;">
+        <div style="text-align:center">
+        <h1> Funding Form</h1>
+        <img src="/images/fundingform.png" width="40%" alt="">
+        </div>
+        <form action="/funding" method="post" class="form">
+            <h1>Startup Details</h1>
+            <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                <div class="left">
+                    <p>Name <span style="color: red;">*</span></p>
+                    <input type="text" name="name" placeholder="Name" class="forminput2" required>
+                </div>
+                <div class="right">
+                    <p>Year of Establishment <span style="color: red;">*</span></p>
+                    <input type="text" name="year_est" placeholder="Year of Establishment" class="forminput2" required>
+                </div>
+            </div>
+
+            <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                <div class="left">
+                    <p>Website <span style="color: red;">*</span></p>
+                    <input type="text" name="website" placeholder="https://www.Yourwebsite.com" class="forminput2" required>
+                </div>
+                <div class="right">
+                    <p>Business model<span style="color: red;">*</span></p>
+                    <select name="Businessmodel" style="width: 240px;" class="forminput2" required>
+                        <option value="B2B">B2B</option>
+                        <option value="B2C">B2C</option>
+                        <option value="B2G">B2G</option>
+                        <option value="B2B2C">B2B and B2C</option>
+                      </select>
+                </div>
+            </div>
+
+            <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                <div class="left">
+                    <p>Country <span style="color: red;">*</span></p>
+                    <input type="text" name="country" placeholder="Country" class="forminput2" required>
+                </div>
+                <div class="right">
+                    <p>State<span style="color: red;">*</span></p>
+                    <input type="text" name="state" placeholder="State" class="forminput2" required>
+                </div>
+            </div>
+
+            <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                <div class="left">
+                    <p>Industry <span style="color: red;">*</span></p>
+                    <!-- <input type="text" name="industry" placeholder="Industry" class="forminput2" required> -->
+                    <select name="industry" style="width: 240px;" class="forminput2" required>
+                        <option value="Agritech">Agritech</option>
+                        <option value="AI-ML-M2M">AI-ML-M2M</option>
+                        <option value="Biotech">Biotech</option>
+                        <option value="Consumer Tech">Consumer Tech</option>
+                        <option value="Cybersecurity">Cybersecurity</option>
+                        <option value="Deep Tech">Deep Tech</option>
+                        <option value="Devices Electronics and Robotics">Devices Electronics and Robotics</option>
+                        <option value="Education">Education</option>
+                        <option value="Energy Resources Waste">Energy Resources Waste</option>
+                        <option value="Enterprise Solutions">Enterprise Solutions</option>
+                        <option value="EV/ Auto Tech">EV/ Auto Tech</option>
+                        <option value="Financial Services">Financial Services</option>
+                        <option value="Fintech">Fintech</option>
+                        <option value="FMCG">FMCG</option>
+                        <option value="Food and Hospitality">Food and Hospitality</option>
+                        <option value="Health">Health</option>
+                        <option value="HR Tech">HR Tech</option>
+                        <option value="Infrastructure / Security">Infrastructure / Security</option>
+                        <option value="IoT">IoT</option>
+                        <option value="Legal Tech">Legal Tech</option>
+                        <option value="Life Sciences">Life Sciences</option>
+                        <option value="Logistics">Logistics</option>
+                        <option value="Manufacturing Tech">Manufacturing Tech</option>
+                        <option value="Marketing Tech">Marketing Tech</option>
+                        <option value="Media, Entertainment and Advertising">Media, Entertainment and Advertising</option>
+                        <option value="Medtech">Medtech</option>
+                        <option value="NLP">NLP</option>
+                        <option value="Pharma">Pharma</option>
+                        <option value="Real Tech">Real Tech</option>
+                        <option value="Retail Tech">Retail Tech</option>
+                        <option value="Social impact">Social impact</option>
+                        <option value="Telecom">Telecom</option>
+                        <option value="Textiles">Textiles</option>
+                        <option value="Transport Tech/Mobility">Transport Tech/Mobility</option>
+                        <option value="Travel">Travel</option>
+                        <option value="D2C">D2C</option>
+                        <option value="Social Commerce">Social Commerce</option>
+                        <option value="Personal Care">Personal Care</option>
+                        <option value="Others">Others</option>
+                      </select>
+                </div>
+                <div class="right">
+                    <p>Sector </p>
+                    <input type="text" name="sector" placeholder="sector" class="forminput2" >
+                </div>
+            </div>
+
+            <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                <div class="left">
+                    <p>Company stage <span style="color: red;">*</span></p>
+                    <!-- <input type="text" name="stage" placeholder="stage" class="forminput2" required> -->
+                    <select name="stage" style="width: 240px;" class="forminput2" required>
+                        <option value="Idea">Idea</option>
+                        <option value="Prototype">Prototype</option>
+                        <option value="Minimum Viable Product">Minimum Viable Product</option>
+                        <option value="Pre-Revenue">Pre-Revenue</option>
+                        <option value="Revenue Generating">Revenue Generating</option>
+                        <option value="Growth">Growth</option>
+                    </select>
+                </div>
+                <div class="right">
+                    <p>Offering<span style="color: red;">*</span></p>
+                    <select name="Businessmodel" style="width: 240px;" class="forminput2" required>
+                        <option value="Product">Product</option>
+                        <option value="Product as a Service">Product as a Service</option>
+                        <option value="Service">Service</option>
+                        <option value="Other">Other</option>
+                      </select>
+                </div>
+            </div>
+
+            <!-- <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                <div class="left">
+                    <p>Elevator Pitch <span style="color: red;">*</span></p>
+                    <input type="file" name="file" id="file" class="file">
+                    <div class="d-flex">
+                      <input type="text" name="file-name" id="file-name" class="file-name" readonly="readonly">
+                      <input type="button" class="btn09" value="select">
+                    </div>   
+                </div>
+                
+  
+                <div class="right">
+                    <p>Pitch Deck<span style="color: red;">*</span></p>
+                    <input type="file" name="PitchDeck" placeholder="Pitch Deck" class="forminput2" required>
+                </div>
+            </div>
+             -->
+
+            <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                <div class="left">
+                    <p>Elevator Pitch </p>
+                    <input type="file" name="filename-ElevatorPitch" id="file1" class="file">
+                    <div class="d-flex">
+                      <input type="text" name="file-name" id="file-name1" class="file-name" readonly="readonly">
+                      <input type="button" id="btn09" class="btn09" value="select">
+                    </div>   
+                </div>
+                
+                <input type="text" name="pitchdeck" id="pitch1" style="display: none;">
+                <input type="text" name="ElevatorPitch" id="elevator1" style="display: none;">
+
+
+                <div class="right">
+                    <p>Pitch Deck<span style="color: red;">*</span></p>
+                    <input type="file" name="filename-pitchdeck" id="file2" class="file">
+                    <div class="d-flex">
+                      <input type="text" name="file-name" id="file-name2" class="file-name" readonly="readonly">
+                      <input type="button" id="btn10" class="btn09" value="select">
+                    </div>   
+                </div>
+            </div>
+          
+            
+  
+
+            <!-- <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                <div class="left">
+                    <p>Elevator Pitch <span style="color: red;">*</span></p>
+                    <input type="file" name="ElevatorPitch" placeholder="ElevatorPitch" class="forminput2" required>
+                </div>
+                <div class="right">
+                    <p>Pitch Deck<span style="color: red;">*</span></p>
+                    <input type="file" name="PitchDeck" placeholder="Pitch Deck" class="forminput2" required>
+                </div>
+            </div> -->
+
+            <p>Demo video link</p>
+            <input type="text" name="demovideo" placeholder="Demo video link" class="forminput">
+
+            <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                <div class="left">
+                    <p>Entity details <span style="color: red;">*</span></p>
+                    <input type="text" name="Entitydetail" placeholder="Entity Details" class="forminput2" required>
+                </div>
+                <div class="right">
+                    <p>Team size<span style="color: red;">*</span></p>
+                    <input type="text" name="teamsize" placeholder="Team size" class="forminput2" required>
+                </div>
+            </div>
+
+            <h1>Founder Details</h1>
+
+            <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                <div class="left">
+                    <p>Name <span style="color: red;">*</span></p>
+                    <input type="text" name="foundername" placeholder="Name" class="forminput2" required>
+                </div>
+                <div class="right">
+                    <p>Title <span style="color: red;">*</span></p>
+                    <input type="text" name="Title" placeholder="Title" class="forminput2" required>
+                </div>
+            </div>
+
+            <p>Linkedin Profile Link <span style="color: red;">*</span></p>
+            <input type="text" name="linkedin" placeholder="https://www.linkedin.com/" class="forminput" required>
+            
+            <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                <div class="left">
+                    <p>Contact Number <span style="color: red;">*</span></p>
+                    <input type="text" name="contactnumber" placeholder="Contact Number" class="forminput2" required>
+                </div>
+                <div class="right">
+                    <p>Email Address <span style="color: red;">*</span></p>
+                    <input type="text" name="Email" placeholder="Email Address" class="forminput2" required>
+                </div>
+            </div>
+
+            <button type="submit" class="btn-blue" style="float: right; margin-right: 0% ;">Apply</button>
+        </form>
+    </div>
+    <div class="phn" style=" padding: 2% 15%; padding-bottom: 18%;">
+        <div style="text-align:center">
+        <!-- <h1 style="font-size: 24px;">Mentor Signup Form</h1> -->
+        <img src="./image/fundingform.png" width="40%" alt="">
+        </div>
+        <form action="/funding" method="post" class="form">
+            <h1>Startup Details</h1>
+            <div>
+                <div class="left">
+                    <p>Name <span style="color: red;">*</span></p>
+                    <input type="text" name="name" placeholder="Name" class="forminput2" required>
+                </div>
+                <div class="right">
+                    <p>Year of Establishment <span style="color: red;">*</span></p>
+                    <input type="text" name="year_est" placeholder="Year of Establishment" class="forminput2" required>
+                </div>
+            </div>
+
+            <div>
+                <div class="left">
+                    <p>Website <span style="color: red;">*</span></p>
+                    <input type="text" name="website" placeholder="https://www.Yourwebsite.com" class="forminput2" required>
+                </div>
+                <div class="right">
+                    <p>Business model<span style="color: red;">*</span></p>
+                    <select name="Businessmodel" style="width: 240px;" class="forminput2" required>
+                        <option value="B2B">B2B</option>
+                        <option value="B2C">B2C</option>
+                        <option value="B2G">B2G</option>
+                        <option value="B2B2C">B2B and B2C</option>
+                      </select>
+                </div>
+            </div>
+
+            <div>
+                <div class="left">
+                    <p>Country <span style="color: red;">*</span></p>
+                    <input type="text" name="country" placeholder="Country" class="forminput2" required>
+                </div>
+                <div class="right">
+                    <p>State<span style="color: red;">*</span></p>
+                    <input type="text" name="state" placeholder="State" class="forminput2" required>
+                </div>
+            </div>
+
+            <div>
+                <div class="left">
+                    <p>Industry <span style="color: red;">*</span></p>
+                    <input type="text" name="industry" placeholder="Industry" class="forminput2" required>
+                </div>
+                <div class="right">
+                    <p>Sector<span style="color: red;">*</span></p>
+                    <input type="text" name="sector" placeholder="sector" class="forminput2" required>
+                </div>
+            </div>
+
+            <div>
+                <div class="left">
+                    <p>Company stage <span style="color: red;">*</span></p>
+                    <input type="text" name="stage" placeholder="stage" class="forminput2" required>
+                </div>
+                <div class="right">
+                    <p>Offering<span style="color: red;">*</span></p>
+                    <select name="Businessmodel" style="width: 240px;" class="forminput2" required>
+                        <option value="Product">Product</option>
+                        <option value="Product as a Service">Product as a Service</option>
+                        <option value="Service">Service</option>
+                        <option value="Other">Other</option>
+                      </select>
+                </div>
+            </div>
+
+            <!-- <div>
+                <div class="left">
+                    <p>Elevator Pitch <span style="color: red;">*</span></p>
+                    <input type="file" name="file" id="file" class="file">
+                    <div class="d-flex">
+                      <input type="text" name="file-name" id="file-name" class="file-name" readonly="readonly">
+                      <input type="button" class="btn09" value="select">
+                    </div>   
+                </div>
+                
+  
+                <div class="right">
+                    <p>Pitch Deck<span style="color: red;">*</span></p>
+                    <input type="file" name="PitchDeck" placeholder="Pitch Deck" class="forminput2" required>
+                </div>
+            </div>
+             -->
+
+            <div>
+                <div class="left">
+                    <p>Elevator Pitch <span style="color: red;">*</span></p>
+                    <input type="file" name="file-ElevatorPitch" id="file1" class="file">
+                    <div class="d-flex">
+                        <input type="text" name="file-name" id="file-name1" class="file-name" readonly="readonly">
+                        <input type="button" id="btn09" class="btn09" value="select">
+                    </div>   
+                </div>
+                
+                
+                
+                
+                <div class="right">
+                    <p>Pitch Deck<span style="color: red;">*</span></p>
+                    <input type="file" name="file-pitchdeck" id="file2" class="file">
+                    <div class="d-flex">
+                        <input type="text" name="file-name2" id="file-name2" class="file-name" readonly="readonly">
+                        <input type="button" id="btn10" class="btn09" value="select">
+                    </div>   
+                </div>
+            </div>
+            
+            <input type="text" name="pitchdeck" id="pitch" style="display: none;">
+            <input type="text" name="ElevatorPitch" id="elevator" style="display: none;">
+            
+  
+
+            <!-- <div>
+                <div class="left">
+                    <p>Elevator Pitch <span style="color: red;">*</span></p>
+                    <input type="file" name="ElevatorPitch" placeholder="ElevatorPitch" class="forminput2" required>
+                </div>
+                <div class="right">
+                    <p>Pitch Deck<span style="color: red;">*</span></p>
+                    <input type="file" name="PitchDeck" placeholder="Pitch Deck" class="forminput2" required>
+                </div>
+            </div> -->
+
+            <p>Demo video link</p>
+            <input type="text" name="demovideo" placeholder="Demo video link" class="forminput">
+
+            <div>
+                <div class="left">
+                    <p>Entity details <span style="color: red;">*</span></p>
+                    <input type="text" name="Entitydetail" placeholder="Entity Details" class="forminput2" required>
+                </div>
+                <div class="right">
+                    <p>Team size<span style="color: red;">*</span></p>
+                    <input type="text" name="teamsize" placeholder="Team size" class="forminput2" required>
+                </div>
+            </div>
+
+            <h1>Founder Details</h1>
+
+            <div>
+                <div class="left">
+                    <p>Name <span style="color: red;">*</span></p>
+                    <input type="text" name="foundername" placeholder="Name" class="forminput2" required>
+                </div>
+                <div class="right">
+                    <p>Title <span style="color: red;">*</span></p>
+                    <input type="text" name="Title" placeholder="Title" class="forminput2" required>
+                </div>
+            </div>
+
+            <p>Linkedin Profile Link <span style="color: red;">*</span></p>
+            <input type="text" name="linkedin" placeholder="https://www.linkedin.com/" class="forminput" required>
+            
+            <div>
+                <div class="left">
+                    <p>Contact Number <span style="color: red;">*</span></p>
+                    <input type="text" name="contactnumber" placeholder="Contact Number" class="forminput2" required>
+                </div>
+                <div class="right">
+                    <p>Email Address <span style="color: red;">*</span></p>
+                    <input type="text" name="Email" placeholder="Email Address" class="forminput2" required>
+                </div>
+            </div>
+
+            <button type="submit" class="btn-blue" style="float: right; margin-right: 0% ; margin-top: 5%;">Apply</button>
+        </form>
+    </div>
+</body>
+<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-storage.js"></script>
+
+<script>
+    var firebaseConfig = {
+        apiKey: "AIzaSyAG7aYqGunCEEqMePnR7YN_uMsn8yvwtcM",
+        authDomain: "reverr-25fb3.firebaseapp.com",
+        databaseURL: "https://reverr-25fb3-default-rtdb.firebaseio.com",
+        projectId: "reverr-25fb3",
+        storageBucket: "reverr-25fb3.appspot.com",
+        messagingSenderId: "710745964607",
+        appId: "1:710745964607:web:9c0b08192f30bb97bab88a",
+        measurementId: "G-7S7P5C52RG"
+      };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    console.log(firebase);  
+    function uploadImage(file,id) {
+      const ref = firebase.storage().ref();
+      const name = +new Date() + "-" + file.name;
+      const metadata = {
+        contentType: file.type
+      };
+      const task = ref.child(name).put(file, metadata);
+      task
+        .then(snapshot => snapshot.ref.getDownloadURL())
+        .then(url => {
+          console.log(url);
+          $(id).val(url);
+          $(id+'1').val(url);
+        })
+        .catch(console.error);
+    }
+</script>
+<script>
+    $(document).ready(function() {
+  $('#btn09').on('click', function() {
+    $('#file1').trigger('click');
+  });
+  $('#file1').on('change', function() {
+    var fileName = $(this)[0].files[0].name;    
+    $('#file-name1').val(fileName);
+    uploadImage($(this)[0].files[0],'#elevator');
+  });
+});
+  $(document).ready(function() {
+  $('#btn10').on('click', function() {
+    $('#file2').trigger('click');
+  });
+  $('#file2').on('change', function() {
+    var fileName = $(this)[0].files[0].name;    
+    $('#file-name2').val(fileName);
+    uploadImage($(this)[0].files[0],'#pitch');
+  });
+});
+</script>
+    <%- include('footer'); -%>
+  </body>
+</html>
