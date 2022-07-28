@@ -10,6 +10,26 @@
   </head>
   <body>
     <%- include('header'); -%>
+    <% if(successful == true) {%>
+    <div
+    style="
+      background-color: #03c04a;
+      text-align: center;
+      padding: 0.5% 0.7%;
+      margin-top: 5%;
+      width: 50%;
+      margin: auto;
+      border-radius: 5rem;
+    "
+  >
+    <h3 style="color: white">Registration Successful</h3>
+  </div>
+  <div style="text-align: center">
+    <a href="/" style="text-decoration: none"
+      ><p style="color: white">Click here to go <b>HOME</b></p></a
+    >
+  </div>
+  <% } else { %>
     <div class="desk" style=" padding: 2% 25%; padding-bottom: 8%;">
         <div style="text-align:center">
         <h1> Funding Form</h1>
@@ -403,6 +423,7 @@
 
             <button type="submit" class="btn-blue" style="float: right; margin-right: 0% ; margin-top: 5%;">Apply</button>
         </form>
+        <%}%>
     </div>
 </body>
 <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>

@@ -97,7 +97,7 @@ app.get("/funding", function (req, res) {
 });
 
 app.get("/fundingform", function (req, res) {
-  res.render("fundingform");
+  res.render("fundingform", { successful: false });
 });
 
 app.get("/blog", function (req, res) {
@@ -245,7 +245,8 @@ app.post("/funding", async (req, res) => {
     };
 
     Email(user3);
-    return res.redirect("/");
+    // return res.redirect("/");
+    return res.render("fundingform", { successful: true });
   } catch (err) {
     return res.json(err);
   }
