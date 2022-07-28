@@ -52,25 +52,54 @@
         /></a>
       </div>
       <div class="contact-form-container">
+        <% if(successful == true) {%>
+        <div
+          style="
+            background-color: #03c04a;
+            text-align: center;
+            padding: 0.5% 0.7%;
+            margin: auto;
+            margin-top: 5%;
+            width: 50%;
+          "
+        >
+          <h3 style="color: white; font-size: 20px">Registration Successful</h3>
+        </div>
+        <div style="text-align: center">
+          <a href="/" style="text-decoration: none"
+            ><h1 style="color: white">Click here to go HOME</h1></a
+          >
+        </div>
+        <% } else { %>
         <form method="post" class="contact-form">
           <div class="input-container">
             <div class="input-box">
               <label>First Name</label>
-              <input type="text" name="fname" placeholder="John" />
+              <input type="text" name="fname" placeholder="John" required />
             </div>
             <div class="input-box">
               <label>Last Name</label>
-              <input type="text" name="lname" placeholder="Doe" />
+              <input type="text" name="lname" placeholder="Doe" required />
             </div>
           </div>
           <div class="input-container">
             <div class="input-box">
               <label>Phone Number</label>
-              <input type="text" name="phn" placeholder="0011-999112" />
+              <input
+                type="text"
+                name="phn"
+                placeholder="0011-999112"
+                required
+              />
             </div>
             <div class="input-box">
               <label>E-mail</label>
-              <input type="email" name="email" placeholder="johndoe@info.com" />
+              <input
+                type="email"
+                name="email"
+                placeholder="johndoe@info.com"
+                required
+              />
             </div>
           </div>
           <div class="input-container">
@@ -81,6 +110,7 @@
                 class="input-subject"
                 name="subject"
                 placeholder="Join Community"
+                required
               />
             </div>
           </div>
@@ -88,6 +118,7 @@
             <div class="input-box">
               <label>Your Message</label>
               <textarea
+                required
                 rows="4"
                 name="message"
                 placeholder="Type your message here..."
@@ -96,6 +127,7 @@
           </div>
           <button class="send-btn"><a>Send Message</a></button>
         </form>
+        <%}%>
       </div>
     </section>
     <%- include('footer'); -%>
