@@ -45,7 +45,7 @@ body {
   gap: 1rem;
 }
 
-.topnav-right a.active {
+.topnav-right a.active-link {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
@@ -63,12 +63,12 @@ body {
   border-bottom: 1px solid white;
 }
 
-.active {
+.active-link {
   color: #0077b7;
   font-weight: 700;
 }
 
-.active:hover {
+.active-link:hover {
   border-bottom: 1px solid #0077b7 !important;
 }
 
@@ -183,7 +183,8 @@ body {
   margin-top: 2.5rem;
 }
 
-#product_options > a, #product_options_phn > a {
+#product_options > a,
+#product_options_phn > a {
   text-decoration: none !important;
   padding: 0 !important;
   margin: 0 !important;

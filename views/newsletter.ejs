@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/css/fundingform.css">
+    </head>
+    <body>
+        <style>
+          .newsInput{
+            width: 50%;
+            background: #323544;
+      border: none;
+      padding: 2% 2%;
+      color: white;
+      border-radius: 5px;
+      margin-bottom: 2%;
+          }
+        </style>
+    <%- include('header'); -%>
+        <section class="Myheading desk" style="text-align: center; margin-top: 10%;">
+          <h1 style="font-size: 40px; line-height: 30px;">  Newsletter Signup &nbsp; <i class="fas fa-newspaper fa-x"></i></h1>
+            <p class="lead">
+                Enter your info to get our awesome monthly newsletter
+              </p>
+       
+        </section>
+        <section class="newslettersection desk" style="padding: 2% 25%;  text-align: center;">
+            <form action="/newsletter" method="POST" style="margin: 2% 5%">
+                <div class="form-group">
+                  <div class="input-group mb-3">
+                    <input type="text" class="form-control newsInput" name="firstName" id="first-name"  placeholder="First Name"
+                    required autocomplete="off" />
+                  </div>
+                  <div class="input-group mb-3">
+                    <input type="text" class="form-control newsInput" name="lastName" id="last-name"  placeholder="Last Name"
+                    required autocomplete="off" />
+                  </div>
+                  <div class="input-group mb-3">
+                    <input class="form-control newsInput" type="email" name="email" id="email" class="form-control" placeholder="Email" required autocomplete="off" />
+                    
+                  </div>
+                  
+                <button type="submit" class="btn-blue" style="padding: 1% 4%;">
+                  Register
+                </button>
+              </form>
+        </section>
+    
+        <section class="Myheading phn" style="text-align: center; margin-top: 10%; padding: 0% 10%;">
+          <h1 style="font-size: 24px; line-height: 30px;">  Newsletter Signup &nbsp; <i class="fas fa-newspaper fa-x"></i></h1>
+            <p class="lead" >
+                Enter your info to get our awesome monthly newsletter
+              </p>
+       
+        </section>
+        <section class="newslettersection phn" style="padding: 2% 0%;  text-align: center;">
+            <form action="/newsletter" method="POST" style="margin: 2% 5%">
+                <div class="form-group">
+                  <div class="input-group mb-3" style="margin: 5% 0%;">
+                    <input type="text" class="form-control newsInput" name="firstName" id="first-name"  placeholder="First Name"
+                    required autocomplete="off" />
+                  </div>
+                  <div class="input-group mb-3" style="margin: 5% 0%;">
+                    <input type="text" class="form-control newsInput" name="lastName" id="last-name"  placeholder="Last Name"
+                    required autocomplete="off" />
+                  </div>
+                  <div class="input-group mb-3" style="margin: 5% 0%;">
+                    <input class="form-control newsInput" type="email" name="email" id="email" class="form-control" placeholder="Email" required autocomplete="off" />
+                    
+                  </div>
+                  
+                <button type="submit" class="btn-blue" style="padding: 1% 4%;">
+                  Register
+                </button>
+              </form>
+        </section>
+        <%- include('footer'); -%> 
+    </body>
+</html>
