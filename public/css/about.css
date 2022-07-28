@@ -828,7 +828,7 @@ body {
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1024px) and (min-width: 769px) {
   .adv-img {
     height: 13rem;
   }
