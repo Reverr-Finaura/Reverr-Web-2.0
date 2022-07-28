@@ -50,8 +50,9 @@ app.get("/contactus", function (req, res) {
   res.render("contact", { successful: false });
 });
 
-app.post("contactus", async function (req, res) {
+app.post("/contactus", async function (req, res) {
   const message = req.body;
+
   try {
     await Message.add(message);
     const user = {
@@ -70,9 +71,9 @@ app.post("contactus", async function (req, res) {
     };
 
     Email(user);
-    return res.render("contactus", { successful: true });
+    return res.render("contact", { successful: true });
   } catch (err) {
-    return res.json({ err });
+    return res.json(err.message);
   }
 });
 
