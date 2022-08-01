@@ -16,15 +16,14 @@ app.set("view engine", "ejs");
 function Email(user) {
   var defaultClient = SibApiV3Sdk.ApiClient.instance;
   var apiKey = defaultClient.authentications["api-key"];
-  apiKey.apiKey =
-    "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";
+
 
   // console.log(apiKey.apiKey);
   const transEmailApi = new SibApiV3Sdk.TransactionalEmailsApi();
 
   const sender = {
-    email: "noreply@reverrapp.com",
     name: "Reverr",
+    email: "noreply@reverrapp.com",
   };
   const receiver = [
     {
@@ -121,10 +120,41 @@ app.get("/mentorform", (req, res) => {
   res.render("mentorform", { successful: false });
 });
 
+// app.post("/email", (req,res)=>{
+//   const user = {
+//     email: "mauricerana@gmail.com",
+//     subject: "Signup Request",
+//     text: `<h1>Thanks for being Awesome!</h1>
+//         <p>Hi Maurice, We have received your message to sign up as a mentor and would like to thank you for writing to us. </p>
+//         <p>We will contact you shortly.</p>
+//         <br>
+//         <p>Regards</p>
+//         <p>Team Reverr</p>`,
+//   };
+
+//   Email(user);
+
+//   res.send("done");
+// })
+
 app.post("/newsletter", async (req, res) => {
   const newsletter = req.body;
   try {
     await Newsletter.add(newsletter);
+
+    const user = {
+      email: req.body.email,
+      subject: "Successfully Added to Reverr's Newsletter",
+      text: `<h1>Thanks for being Awesome!</h1>
+          <p>Hi ${req.body.name}, You have been successfully added to Reverr's Newsletter. </p>
+          <p>If You wish to unsubscribe email back to us at support@reverrapp.com .</p>
+          <br>
+          <p>Regards</p>
+          <p>Team Reverr</p>`,
+    };
+
+    Email(user);
+
     return res.redirect("/");
   } catch (err) {
     return res.json({ err });
