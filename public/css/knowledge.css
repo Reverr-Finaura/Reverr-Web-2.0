@@ -246,7 +246,7 @@ body {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .howitworks__image > img {
     height: 20rem;
   }

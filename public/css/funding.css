@@ -318,7 +318,7 @@ body{
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .funding_page__intro_heading > h1 {
     font-size: 30px;
     margin: 2.5rem 0;

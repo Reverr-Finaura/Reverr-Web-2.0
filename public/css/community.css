@@ -489,10 +489,6 @@ body {
     padding: 16px;
   }
 
-  .community__carousel-title {
-    font-size: 25px;
-  }
-
   .community__carousel-img {
     width: 15rem;
     height: 10rem;
@@ -507,14 +503,7 @@ body {
     font-size: 14px;
   }
 
-  .community__carousel-title {
-    font-size: 32px;
-  }
 
-  .section3__heading > h1 {
-    font-size: 30px;
-    color: rgba(42, 114, 222, 1);
-  }
 }
 
 @media (max-width: 1024px) {
@@ -612,7 +601,7 @@ body {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .whyourcommunity__main {
     margin: auto;
     display: flex;
@@ -650,6 +639,15 @@ body {
 
   .section3__image > img {
     width: 20rem;
+  }
+
+  .section3__heading > h1 {
+    font-size: 30px;
+    color: rgba(42, 114, 222, 1);
+  }
+
+  .community__carousel-title {
+    font-size: 32px;
   }
 
   #provides {
