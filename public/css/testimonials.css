@@ -97,7 +97,7 @@
 }
 
 /* for mobile phones */
-@media (max-width: 481px) {
+@media (max-width: 425px) {
   #carousel-container {
     width: 100%;
   }
@@ -107,8 +107,9 @@
   }
 
   .carousel-card {
-    margin-left: 3%;
-    width: 80%;
+    margin-left: 30px;
+    width: 200px;
+    height: 300px;
   }
 
   .carousel-img {
@@ -118,11 +119,12 @@
 
   .carousel-name {
     font-size: 13px;
-    margin-top: 10px;
+    margin-top: 18px;
   }
 
   .carousel-review {
     font-size: 10px;
+    margin-top: 10px;
   }
 
   .carousel-title {
@@ -133,35 +135,38 @@
   .slider__btn > img {
     height: 0.7rem;
   }
+}
+@media (max-width: 1024px) and (min-width: 426px) {
+  .slide {
+    margin-left: 0;
+  }
 
-  @media (max-width: 768px) and (min-width: 482px) {
-    .slide {
-      margin-left: 0;
-    }
-    .carousel-card {
-      width: 290px;
-      /* height: 270px; */
-      /* margin-left: 0; */
-      padding: 16px;
-    }
+  .slider {
+    height: 25rem;
+  }
+  .carousel-card {
+    width: 280px;
+    height: 350px;
+    /* margin-left: 0; */
+    padding: 16px;
+  }
 
-    .carousel-img {
-      width: 70px;
-      height: 70px;
-    }
+  .carousel-img {
+    width: 70px;
+    height: 70px;
+  }
 
-    .carousel-name {
-      font-size: 18px;
-      margin-top: 10px;
-    }
+  .carousel-name {
+    font-size: 18px;
+    margin-top: 10px;
+  }
 
-    .carousel-review {
-      font-size: 14px;
-    }
+  .carousel-review {
+    font-size: 14px;
+  }
 
-    .carousel-title {
-      font-size: 32px;
-      margin-left: 20px;
-    }
+  .carousel-title {
+    font-size: 32px;
+    margin-left: 20px;
   }
 }

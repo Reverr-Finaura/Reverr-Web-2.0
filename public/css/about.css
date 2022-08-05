@@ -529,9 +529,14 @@ body {
 }
 
 @media (max-width: 1024px) {
-  .aboutus__buttons {
-    margin: auto;
-    width: 80%;
+  .aboutus__intro_heading > h1,
+  #what-we-do > h1,
+  .mission_intro > h1,
+  .vision_img > h1,
+  .team-title > h1,
+  .advisor-title > h1,
+  .cv_intro > h1 {
+    font-size: 36px;
   }
 }
 

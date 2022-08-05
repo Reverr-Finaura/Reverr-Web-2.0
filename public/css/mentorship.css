@@ -1,4 +1,4 @@
-body{
+body {
   background: #000c12;
   background-repeat: no-repeat;
   background-size: cover;
@@ -218,7 +218,7 @@ b {
   border: 6px solid #fff;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   #mentorship_page__intro {
     flex-direction: column;
   }
@@ -323,12 +323,12 @@ b {
     /* background-color: #fff;
     border: 5px solid #2a72de; */
     padding: 0.6em;
-    height: 8rem;
+    height: 5rem;
     border-radius: 100%;
   }
 
   .card-title {
-    font-size: 23px;
+    font-size: 18px;
     font-weight: 600;
   }
 
@@ -338,7 +338,7 @@ b {
   }
 
   .contact-link-img {
-    height: 2rem;
+    height: 1rem;
   }
 }
 
