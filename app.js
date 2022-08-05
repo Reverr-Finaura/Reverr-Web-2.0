@@ -3,7 +3,7 @@ var app = express();
 var path = require("path");
 const cors = require("cors");
 const bodyparser = require("body-parser");
-const { Mentors, Funding, Newsletter, Message } = require("./config");
+const { Mentors, Funding, Newsletter, Message, Blogs } = require("./config");
 var SibApiV3Sdk = require("sib-api-v3-sdk");
 
 app.use(cors());
@@ -16,7 +16,6 @@ app.set("view engine", "ejs");
 function Email(user) {
   var defaultClient = SibApiV3Sdk.ApiClient.instance;
   var apiKey = defaultClient.authentications["api-key"];
-
 
   // console.log(apiKey.apiKey);
   const transEmailApi = new SibApiV3Sdk.TransactionalEmailsApi();
@@ -100,8 +99,18 @@ app.get("/fundingform", function (req, res) {
   res.render("fundingform", { successful: false });
 });
 
-app.get("/blog", function (req, res) {
-  res.render("blog");
+app.get("/blog", async function (req, res) {
+  const content = await Blogs.get();
+  var blogs = [];
+  content.forEach((doc) => {
+    blogs.push(doc.data());
+  });
+  res.render("blog", {
+    sectionOneFirstRow: [blogs[0], blogs[1], blogs[2]],
+    sectionOneSecondRow: [blogs[3], blogs[4], blogs[5]],
+    sectionTwoFirstRow: [blogs[6], blogs[7], blogs[8]],
+    sectionTwoSecondRow: [blogs[9]],
+  });
 });
 
 app.get("/mentorship", function (req, res) {

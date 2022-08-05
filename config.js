@@ -15,4 +15,5 @@ const Mentors = db.collection("Mentors");
 const Message = db.collection("Message");
 const Funding = db.collection("Funding");
 const Newsletter = db.collection("Newsletter");
-module.exports = { Mentors, Funding, Newsletter, Message };
+const Blogs = db.collection("Blogs");
+module.exports = { Mentors, Funding, Newsletter, Message, Blogs };

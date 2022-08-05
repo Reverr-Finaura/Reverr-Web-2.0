@@ -68,10 +68,15 @@ body {
 
 .sample-blog-img {
   width: 27rem;
+  border-radius: 1rem;
 }
+
 
 .blog-content > p {
   font-size: 24px;
+  max-height: 20rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .blog-content > h1 {
@@ -108,8 +113,14 @@ body {
   margin: auto auto 3rem;
 }
 
+.blog{
+  width: 20rem;
+}
+
 .blog > img {
-  height: 20rem;
+  height: 15rem;
+  max-width: 20rem;
+  object-fit: contain;
 }
 
 .blog > p {
@@ -122,6 +133,9 @@ body {
 
 .blog-text {
   font-size: 18px !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 20rem;
 }
 
 @media (max-width: 768px) {

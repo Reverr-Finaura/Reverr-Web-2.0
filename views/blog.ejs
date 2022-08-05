@@ -26,99 +26,73 @@
         <div class="blog-slider">
           <img src="/images/caret1.png" alt="" class="left-caret" />
           <img
-            src="/images/Rectangle 177.png"
+            src="<%= sectionOneFirstRow[0].image %>"
             alt="blog-img"
             class="sample-blog-img"
           />
           <img src="/images/caret2.png" alt="" class="right-caret" />
         </div>
         <div class="blog-content">
-          <p>July 03,2022</p>
-          <h1>I'm a Heading. Click here to add your own text and edit me.</h1>
-          <p>
-            I'm a paragraph. Click here to add your own text and edit me. It's
-            easy. Just click “Edit Text” or double click me to add your own
-            content and make changes to the font. Feel free to drag and drop
-            anywhere you like on your page.
-          </p>
+          <h1><%= sectionOneFirstRow[0].heading %></h1>
+          <p><%= sectionOneFirstRow[0].body %></p>
         </div>
       </div>
       <div class="blog-section-btns">
-        <a><button>Section 01</button></a>
-        <a><button style="opacity: 0.3">Section 02</button></a>
-        <a><button style="opacity: 0.3">Section 03</button></a>
+        <a><button id="sectionOneBtn">Section 01</button></a>
+        <a
+          ><button id="sectionTwoBtn">
+            Section 02
+          </button></a
+        >
+        <a
+          ><button id="sectionThreeBtn">
+            Section 03
+          </button></a
+        >
       </div>
-      <div class="blog-container">
-        <div class="blog">
-          <img src="/images/Rectangle 178.png" alt="" />
-          <p>July 03,2022</p>
-          <h1>I'm a Heading. Click here to add your own text and edit me.</h1>
-          <p class="blog-text">
-            I'm a paragraph. Click here to add your own text and edit me. It's
-            easy. Just click “Edit Text” or double click me to add your own
-            content and make changes to the font. Feel free to drag and drop
-            anywhere you like on your page.
-          </p>
+      <section id="sectionOne">
+        <div class="blog-container">
+          <% for (item of sectionOneFirstRow) { %>
+          <div class="blog">
+            <img src="<%=item.image %>" alt="" />
+            <h1><%= item.heading %></h1>
+            <p class="blog-text"><%= item.body %> ...</p>
+          </div>
+          <% } %>
         </div>
-        <div class="blog">
-          <img src="/images/Rectangle 179.png" alt="" />
-          <p>July 03,2022</p>
-          <h1>I'm a Heading. Click here to add your own text and edit me.</h1>
-          <p class="blog-text">
-            I'm a paragraph. Click here to add your own text and edit me. It's
-            easy. Just click “Edit Text” or double click me to add your own
-            content and make changes to the font. Feel free to drag and drop
-            anywhere you like on your page.
-          </p>
+        <div class="blog-container">
+          <% for (item of sectionOneSecondRow) { %>
+          <div class="blog">
+            <img src="<%=item.image %>" alt="" />
+            <h1><%= item.heading %></h1>
+            <p class="blog-text"><%= item.body %> ...</p>
+          </div>
+          <% } %>
         </div>
-        <div class="blog">
-          <img src="/images/Rectangle 180.png" alt="" />
-          <p>July 03,2022</p>
-          <h1>I'm a Heading. Click here to add your own text and edit me.</h1>
-          <p class="blog-text">
-            I'm a paragraph. Click here to add your own text and edit me. It's
-            easy. Just click “Edit Text” or double click me to add your own
-            content and make changes to the font. Feel free to drag and drop
-            anywhere you like on your page.
-          </p>
+      </section>
+      <section id="sectionTwo">
+        <div class="blog-container">
+          <% for (item of sectionTwoFirstRow) { %>
+          <div class="blog">
+            <img src="<%=item.image %>" alt="" />
+            <h1><%= item.heading %></h1>
+            <p class="blog-text"><%= item.body %> ...</p>
+          </div>
+          <% } %>
         </div>
-      </div>
-      <div class="blog-container">
-        <div class="blog">
-          <img src="/images/Rectangle 1565.png" alt="" />
-          <p>July 03,2022</p>
-          <h1>I'm a Heading. Click here to add your own text and edit me.</h1>
-          <p class="blog-text">
-            I'm a paragraph. Click here to add your own text and edit me. It's
-            easy. Just click “Edit Text” or double click me to add your own
-            content and make changes to the font. Feel free to drag and drop
-            anywhere you like on your page.
-          </p>
+        <div class="blog-container">
+          <% for (item of sectionTwoSecondRow) { %>
+          <div class="blog">
+            <img src="<%=item.image %>" alt="" />
+            <h1><%= item.heading %></h1>
+            <p class="blog-text"><%= item.body %> ...</p>
+          </div>
+          <% } %>
         </div>
-        <div class="blog">
-          <img src="/images/Rectangle 1566.png" alt="" />
-          <p>July 03,2022</p>
-          <h1>I'm a Heading. Click here to add your own text and edit me.</h1>
-          <p class="blog-text">
-            I'm a paragraph. Click here to add your own text and edit me. It's
-            easy. Just click “Edit Text” or double click me to add your own
-            content and make changes to the font. Feel free to drag and drop
-            anywhere you like on your page.
-          </p>
-        </div>
-        <div class="blog">
-          <img src="/images/Rectangle 1567.png" alt="" />
-          <p>July 03,2022</p>
-          <h1>I'm a Heading. Click here to add your own text and edit me.</h1>
-          <p class="blog-text">
-            I'm a paragraph. Click here to add your own text and edit me. It's
-            easy. Just click “Edit Text” or double click me to add your own
-            content and make changes to the font. Feel free to drag and drop
-            anywhere you like on your page.
-          </p>
-        </div>
-      </div>
+      </section>
+      <section id="sectionThree"></section>
     </section>
     <%-include("footer")-%>
   </body>
+  <script></script>
 </html>
