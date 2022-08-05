@@ -39,16 +39,8 @@
       </div>
       <div class="blog-section-btns">
         <a><button id="sectionOneBtn">Section 01</button></a>
-        <a
-          ><button id="sectionTwoBtn">
-            Section 02
-          </button></a
-        >
-        <a
-          ><button id="sectionThreeBtn">
-            Section 03
-          </button></a
-        >
+        <a><button id="sectionTwoBtn">Section 02</button></a>
+        <a><button id="sectionThreeBtn">Section 03</button></a>
       </div>
       <section id="sectionOne">
         <div class="blog-container">
@@ -94,5 +86,50 @@
     </section>
     <%-include("footer")-%>
   </body>
-  <script></script>
+  <script>
+    const sectionOneBtn = document.querySelector("#sectionOneBtn");
+    const sectionTwoBtn = document.querySelector("#sectionTwoBtn");
+    const sectionThreeBtn = document.querySelector("#sectionThreeBtn");
+
+    sectionOneBtn.style.opacity = "1";
+    sectionTwoBtn.style.opacity = "0.3";
+    sectionThreeBtn.style.opacity = "0.3";
+
+    const sectionOne = document.querySelector("#sectionOne");
+    const sectionTwo = document.querySelector("#sectionTwo");
+    const sectionThree = document.querySelector("#sectionThree");
+
+    sectionOne.style.display = "block";
+    sectionTwo.style.display = "none";
+    sectionThree.style.display = "none";
+
+    const handleS1 = () => {
+      sectionOne.style.display = "block";
+      sectionTwo.style.display = "none";
+      sectionThree.style.display = "none";
+      sectionOneBtn.style.opacity = "1";
+      sectionTwoBtn.style.opacity = "0.3";
+      sectionThreeBtn.style.opacity = "0.3";
+    };
+    const handleS2 = () => {
+      sectionOne.style.display = "none";
+      sectionTwo.style.display = "block";
+      sectionThree.style.display = "none";
+      sectionOneBtn.style.opacity = "0.3";
+      sectionTwoBtn.style.opacity = "1";
+      sectionThreeBtn.style.opacity = "0.3";
+    };
+    const handleS3 = () => {
+      sectionOne.style.display = "none";
+      sectionTwo.style.display = "none";
+      sectionThree.style.display = "block";
+      sectionOneBtn.style.opacity = "0.3";
+      sectionTwoBtn.style.opacity = "0.3";
+      sectionThreeBtn.style.opacity = "1";
+    };
+
+    sectionOneBtn.addEventListener("click", handleS1);
+    sectionTwoBtn.addEventListener("click", handleS2);
+    sectionThreeBtn.addEventListener("click", handleS3);
+  </script>
 </html>
