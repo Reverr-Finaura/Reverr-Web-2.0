@@ -33,7 +33,11 @@
           <img src="/images/caret2.png" alt="" class="right-caret" />
         </div>
         <div class="blog-content">
-          <h1><%= sectionOneFirstRow[0].heading %></h1>
+          <h1>
+            <a href="/blog/<%= sectionOneFirstRow[0].id %>"
+              ><%= sectionOneFirstRow[0].heading %></a
+            >
+          </h1>
           <p><%= sectionOneFirstRow[0].body %></p>
         </div>
       </div>
@@ -46,8 +50,10 @@
         <div class="blog-container">
           <% for (item of sectionOneFirstRow) { %>
           <div class="blog">
-            <img src="<%=item.image %>" alt="" />
-            <h1><%= item.heading %></h1>
+            <a href="/blog/<%= item.id %>"
+              ><img src="<%=item.image %>" alt=""
+            /></a>
+            <h1><a href="/blog/<%= item.id %>"><%= item.heading %></a></h1>
             <p class="blog-text"><%= item.body %> ...</p>
           </div>
           <% } %>
@@ -55,8 +61,10 @@
         <div class="blog-container">
           <% for (item of sectionOneSecondRow) { %>
           <div class="blog">
-            <img src="<%=item.image %>" alt="" />
-            <h1><%= item.heading %></h1>
+            <a href="/blog/<%= item.id %>"
+              ><img src="<%=item.image %>" alt=""
+            /></a>
+            <h1><a href="/blog/<%= item.id %>"><%= item.heading %></a></h1>
             <p class="blog-text"><%= item.body %> ...</p>
           </div>
           <% } %>
@@ -66,8 +74,10 @@
         <div class="blog-container">
           <% for (item of sectionTwoFirstRow) { %>
           <div class="blog">
-            <img src="<%=item.image %>" alt="" />
-            <h1><%= item.heading %></h1>
+            <a href="/blog/<%= item.id %>"
+              ><img src="<%=item.image %>" alt=""
+            /></a>
+            <h1><a href="/blog/<%= item.id %>"><%= item.heading %></a></h1>
             <p class="blog-text"><%= item.body %> ...</p>
           </div>
           <% } %>
@@ -75,8 +85,10 @@
         <div class="blog-container">
           <% for (item of sectionTwoSecondRow) { %>
           <div class="blog">
-            <img src="<%=item.image %>" alt="" />
-            <h1><%= item.heading %></h1>
+            <a href="/blog/<%= item.id %>"
+              ><img src="<%=item.image %>" alt=""
+            /></a>
+            <h1><a href="/blog/<%= item.id %>"><%= item.heading %></a></h1>
             <p class="blog-text"><%= item.body %> ...</p>
           </div>
           <% } %>

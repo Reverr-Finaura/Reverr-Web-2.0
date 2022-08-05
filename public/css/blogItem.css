@@ -1,0 +1,26 @@
+body {
+  background: #000c12;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#content {
+  width: 70%;
+  margin: 5rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+}
+
+#content > img {
+    height:30rem;
+    border-radius: 1rem;
+}
+
+#content > p{
+    line-height: 30px;
+    font-size: 16px;
+}

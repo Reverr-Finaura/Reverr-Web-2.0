@@ -113,6 +113,16 @@ app.get("/blog", async function (req, res) {
   });
 });
 
+app.get("/blog/:id", async function (req, res) {
+  const id = req.params["id"];
+  const content = await Blogs.where("id", "==", id).get();
+  var blog;
+  content.forEach((doc) => {
+    blog = doc.data();
+  });
+  res.render("blogItem", { data: blog });
+});
+
 app.get("/mentorship", function (req, res) {
   res.render("mentorship");
 });

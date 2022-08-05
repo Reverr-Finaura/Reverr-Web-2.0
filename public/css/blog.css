@@ -2,6 +2,11 @@ body {
   background-color: #000c12 !important;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 #blog-intro {
   width: 93%;
   margin: auto;
@@ -71,7 +76,6 @@ body {
   border-radius: 1rem;
 }
 
-
 .blog-content > p {
   font-size: 24px;
   max-height: 20rem;
@@ -113,11 +117,11 @@ body {
   margin: auto auto 3rem;
 }
 
-.blog{
+.blog {
   width: 20rem;
 }
 
-.blog > img {
+.blog > a > img {
   height: 15rem;
   max-width: 20rem;
   object-fit: contain;
