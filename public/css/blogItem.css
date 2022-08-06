@@ -7,7 +7,7 @@ body {
 
 #content {
   width: 70%;
-  margin: 5rem auto;
+  margin: auto auto 5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -15,12 +15,48 @@ body {
   gap: 2rem;
 }
 
-#content > img {
-    height:30rem;
-    border-radius: 1rem;
+#content > h1 {
+  font-size: 32px;
+  color: #2a72de;
+  text-transform: capitalize;
 }
 
-#content > p{
-    line-height: 30px;
-    font-size: 16px;
+#content > img {
+  height: 30rem;
+  border-radius: 1rem;
+}
+
+#content > p {
+  line-height: 30px;
+  font-size: 16px;
+}
+
+.blog-author {
+  font-size: 24px !important;
+  margin-bottom: 0;
+}
+
+@media (max-width: 1024px) {
+  #content > img {
+    height: 20rem;
+  }
+
+  #content > h1 {
+    font-size: 24px;
+  }
+
+  #content > p {
+    font-size: 14px;
+  }
+
+  .blog-author {
+    font-size: 20px !important;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 425px) {
+  #content > img {
+    height: 13rem;
+  }
 }
