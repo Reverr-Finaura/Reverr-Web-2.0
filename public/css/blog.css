@@ -153,8 +153,11 @@ a {
     font-size: 18px;
   }
 
-  .blog > img {
-    height: 14rem;
+  .blog-container {
+    gap: 3rem;
+  }
+  .blog > a > img {
+    height: 12rem;
   }
 
   .blog > p {
@@ -236,9 +239,9 @@ a {
     width: 50%;
   }
 
-  .blog > img {
+  .blog > a > img {
     height: 16.2rem;
-    margin-left: 14%;
+    /* margin-left: 14%; */
   }
 
   .blog > p {
@@ -267,8 +270,13 @@ a {
 }
 
 @media (max-width: 425px) {
-  .blog > img {
-    margin-left: 0;
+  .blog > a > img {
+    margin-left: 4%;
     height: 12.5rem;
+  }
+
+  .blog-container {
+    width: 80%;
+    margin: auto;
   }
 }
