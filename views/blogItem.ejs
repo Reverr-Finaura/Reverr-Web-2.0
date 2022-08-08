@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title><%= data.heading %></title>
+    <title>Blog</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="/css/blogItem.css" />
@@ -12,7 +12,7 @@
     <%-include("header")-%>
     <section id="content">
       <h1><%= data.heading %></h1>
-      <img src="<%= data.image %>" />
+      <img src="<%= data.image.imageUrl %>" />
       <p class="blog-author"><b><%= data.author %></b></p>
       <p><%= data.body %></p>
     </section>

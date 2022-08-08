@@ -26,7 +26,7 @@
         <div class="blog-slider">
           <img src="/images/caret1.png" alt="" class="left-caret" />
           <img
-            src="<%= sectionOneFirstRow[0].image %>"
+            src="<%= sectionOneFirstRow[0].image.imageUrl %>"
             alt="blog-img"
             class="sample-blog-img"
           />
@@ -51,7 +51,7 @@
           <% for (item of sectionOneFirstRow) { %>
           <div class="blog">
             <a href="/blog/<%= item.id %>"
-              ><img src="<%=item.image %>" alt=""
+              ><img src="<%=item.image.imageUrl %>" alt=""
             /></a>
             <h1><a href="/blog/<%= item.id %>"><%= item.heading %></a></h1>
             <p class="blog-text"><%= item.body %> ...</p>
@@ -62,7 +62,7 @@
           <% for (item of sectionOneSecondRow) { %>
           <div class="blog">
             <a href="/blog/<%= item.id %>"
-              ><img src="<%=item.image %>" alt=""
+              ><img src="<%=item.image.imageUrl %>" alt=""
             /></a>
             <h1><a href="/blog/<%= item.id %>"><%= item.heading %></a></h1>
             <p class="blog-text"><%= item.body %> ...</p>
@@ -75,7 +75,7 @@
           <% for (item of sectionTwoFirstRow) { %>
           <div class="blog">
             <a href="/blog/<%= item.id %>"
-              ><img src="<%=item.image %>" alt=""
+              ><img src="<%=item.image.imageUrl %>" alt=""
             /></a>
             <h1><a href="/blog/<%= item.id %>"><%= item.heading %></a></h1>
             <p class="blog-text"><%= item.body %> ...</p>
@@ -86,7 +86,7 @@
           <% for (item of sectionTwoSecondRow) { %>
           <div class="blog">
             <a href="/blog/<%= item.id %>"
-              ><img src="<%=item.image %>" alt=""
+              ><img src="<%=item.image.imageUrl %>" alt=""
             /></a>
             <h1><a href="/blog/<%= item.id %>"><%= item.heading %></a></h1>
             <p class="blog-text"><%= item.body %> ...</p>
