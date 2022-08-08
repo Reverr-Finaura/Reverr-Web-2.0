@@ -106,10 +106,7 @@ app.get("/blog", async function (req, res) {
     blogs.push(doc.data());
   });
   res.render("blog", {
-    sectionOneFirstRow: [blogs[0], blogs[1], blogs[2]],
-    sectionOneSecondRow: [blogs[3], blogs[4], blogs[5]],
-    sectionTwoFirstRow: [blogs[6], blogs[7], blogs[8]],
-    sectionTwoSecondRow: [blogs[9]],
+    data: blogs,
   });
 });
 

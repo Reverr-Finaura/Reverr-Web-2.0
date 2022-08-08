@@ -26,7 +26,7 @@
         <div class="blog-slider">
           <img src="/images/caret1.png" alt="" class="left-caret" />
           <img
-            src="<%= sectionOneFirstRow[0].image.imageUrl %>"
+            src="<%= data[0].image.imageUrl %>"
             alt="blog-img"
             class="sample-blog-img"
           />
@@ -34,11 +34,10 @@
         </div>
         <div class="blog-content">
           <h1>
-            <a href="/blog/<%= sectionOneFirstRow[0].id %>"
-              ><%= sectionOneFirstRow[0].heading %></a
-            >
+            <a href="/blog/<%= data[0].id %>"><%= data[0].heading %></a>
           </h1>
-          <p><%= sectionOneFirstRow[0].body %></p>
+          <p><%= data[0].publishedOn %></p>
+          <p><%= data[0].body %></p>
         </div>
       </div>
       <div class="blog-section-btns">
@@ -48,53 +47,94 @@
       </div>
       <div id="sectionOne">
         <div class="blog-container">
-          <% for (item of sectionOneFirstRow) { %>
+          <% for (var i = 0; i < 3; i++) { %>
           <div class="blog">
-            <a href="/blog/<%= item.id %>"
-              ><img src="<%=item.image.imageUrl %>" alt=""
+            <a href="/blog/<%= data[i].id %>"
+              ><img src="<%=data[i].image.imageUrl %>" alt=""
             /></a>
-            <h1><a href="/blog/<%= item.id %>"><%= item.heading %></a></h1>
-            <p class="blog-text"><%= item.body %> ...</p>
+            <h1>
+              <a href="/blog/<%= data[i].id %>"><%= data[i].heading %></a>
+            </h1>
+            <p><%= data[i].publishedOn %></p>
+            <p class="blog-text"><%= data[i].body %> ...</p>
           </div>
           <% } %>
         </div>
         <div class="blog-container">
-          <% for (item of sectionOneSecondRow) { %>
+          <% for (var i = 3; i < 6; i++) { %>
           <div class="blog">
-            <a href="/blog/<%= item.id %>"
-              ><img src="<%=item.image.imageUrl %>" alt=""
+            <a href="/blog/<%= data[i].id %>"
+              ><img src="<%=data[i].image.imageUrl %>" alt=""
             /></a>
-            <h1><a href="/blog/<%= item.id %>"><%= item.heading %></a></h1>
-            <p class="blog-text"><%= item.body %> ...</p>
+            <h1>
+              <a href="/blog/<%= data[i].id %>"><%= data[i].heading %></a>
+            </h1>
+            <p><%= data[i].publishedOn %></p>
+            <p class="blog-text"><%= data[i].body %> ...</p>
           </div>
           <% } %>
         </div>
       </div>
       <div id="sectionTwo">
         <div class="blog-container">
-          <% for (item of sectionTwoFirstRow) { %>
+          <% for (var i = 6; i < 9; i++) { %>
           <div class="blog">
-            <a href="/blog/<%= item.id %>"
-              ><img src="<%=item.image.imageUrl %>" alt=""
+            <a href="/blog/<%= data[i].id %>"
+              ><img src="<%=data[i].image.imageUrl %>" alt=""
             /></a>
-            <h1><a href="/blog/<%= item.id %>"><%= item.heading %></a></h1>
-            <p class="blog-text"><%= item.body %> ...</p>
+            <h1>
+              <a href="/blog/<%= data[i].id %>"><%= data[i].heading %></a>
+            </h1>
+            <p><%= data[i].publishedOn %></p>
+            <p class="blog-text"><%= data[i].body %> ...</p>
           </div>
           <% } %>
         </div>
         <div class="blog-container">
-          <% for (item of sectionTwoSecondRow) { %>
+          <% for (var i = 9; i < 11; i++) { %>
           <div class="blog">
-            <a href="/blog/<%= item.id %>"
-              ><img src="<%=item.image.imageUrl %>" alt=""
+            <a href="/blog/<%= data[i].id %>"
+              ><img src="<%=data[i].image.imageUrl %>" alt=""
             /></a>
-            <h1><a href="/blog/<%= item.id %>"><%= item.heading %></a></h1>
-            <p class="blog-text"><%= item.body %> ...</p>
+            <h1>
+              <a href="/blog/<%= data[i].id %>"><%= data[i].heading %></a>
+            </h1>
+            <p><%= data[i].publishedOn %></p>
+            <p class="blog-text"><%= data[i].body %> ...</p>
           </div>
           <% } %>
         </div>
       </div>
-      <div id="sectionThree"></div>
+      <div id="sectionThree">
+        <div class="blog-container">
+          <% for (var i = 11; i < 14; i++) { %>
+          <div class="blog">
+            <a href="/blog/<%= data[i]?.id %>"
+              ><img src="<%=data[i]?.image.imageUrl %>" alt=""
+            /></a>
+            <h1>
+              <a href="/blog/<%= data[i]?.id %>"><%= data[i]?.heading %></a>
+            </h1>
+            <p><%= data[i]?.publishedOn %></p>
+            <p class="blog-text"><%= data[i]?.body %> ...</p>
+          </div>
+          <% } %>
+        </div>
+        <div class="blog-container">
+          <% for (var i = 14; i < 17; i++) { %>
+          <div class="blog">
+            <a href="/blog/<%= data[i]?.id %>"
+              ><img src="<%=data[i]?.image.imageUrl %>" alt=""
+            /></a>
+            <h1>
+              <a href="/blog/<%= data[i]?.id %>"><%= data[i]?.heading %></a>
+            </h1>
+            <p><%= data[i]?.publishedOn %></p>
+            <p class="blog-text"><%= data[i]?.body %> ...</p>
+          </div>
+          <% } %>
+        </div>
+      </div>
     </section>
     <%-include("footer")-%>
   </body>

@@ -31,9 +31,18 @@ body {
   font-size: 16px;
 }
 
+.details{
+  display: flex;
+  gap: 1rem;
+}
+
 .blog-author {
   font-size: 24px !important;
   margin-bottom: 0;
+}
+
+.date{
+  font-size: 24px !important;
 }
 
 @media (max-width: 1024px) {

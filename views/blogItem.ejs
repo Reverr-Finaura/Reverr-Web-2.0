@@ -13,7 +13,10 @@
     <section id="content">
       <h1><%= data.heading %></h1>
       <img src="<%= data.image.imageUrl %>" />
-      <p class="blog-author"><b><%= data.author %></b></p>
+      <div class="details">
+        <p class="blog-author"><b><%= data.author %></b></p>
+        <p class="date"><b><%= data.publishedOn %></b></p>
+      </div>
       <p><%= data.body %></p>
     </section>
     <%-include("footer")-%>
