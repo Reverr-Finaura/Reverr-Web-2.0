@@ -69,7 +69,7 @@
             <h1>
               <a href="/blog/<%= data[i].id %>"><%= data[i].heading %></a>
             </h1>
-            <p><%= data[i].publishedOn %></p>
+            <p><%= data[i]?.publishedOn %></p>
             <p class="blog-text"><%= data[i].body %> ...</p>
           </div>
           <% } %>
