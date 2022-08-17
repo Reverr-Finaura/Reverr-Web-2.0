@@ -1,5 +1,5 @@
 body {
-  background: #000c12;
+  background: #f6f6f6;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -9,10 +9,11 @@ body {
   margin: auto auto auto 5rem;
   /* width: 93%; */
   display: flex;
+  color: black;
   align-items: flex-start;
   justify-content: space-between;
   background-repeat: no-repeat;
-  background-image: url("/images/Ellipse 157.png");
+  background-image: url("/images/Ellipse 157.svg");
   background-position: right;
   background-size: contain;
 }
@@ -49,7 +50,7 @@ body {
   width: 12rem;
   margin: 5.5rem 1rem 5.5rem 0;
   border-radius: 8px;
-  border: none;
+  /* border: none; */
   outline: none;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
@@ -59,11 +60,13 @@ body {
 .aboutus__buttons_know_more {
   background: #0077b7;
   color: white;
+  border: none;
 }
 
 .aboutus__buttons_contact_us {
+  border: 2px solid #0077b7;
   background: white;
-  color: rgba(0, 119, 183, 1) !important;
+  color: #0077b7 !important;
 }
 
 .aboutus__image {
@@ -85,8 +88,9 @@ body {
   align-items: center;
   justify-content: space-between;
   background-repeat: no-repeat;
-  background-image: url("/images/Ellipse 147.png");
+  background-image: url("/images/Ellipse 147.svg");
   /* background-position: top; */
+  color: black;
   background-position-x: left;
   background-position-y: top;
   background-size: 30rem;
@@ -100,6 +104,7 @@ body {
 .wwd-text-content > p {
   margin: auto;
   margin-left: 5rem;
+  text-align: center;
   font-size: 25px;
   display: flex;
   align-items: center;
@@ -127,6 +132,7 @@ body {
   margin-right: 0.7rem;
   background-color: #fff;
   border-radius: 100%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .wwd-left-img > img {
@@ -156,22 +162,20 @@ body {
   width: 93%;
   margin: auto 5rem auto;
   background-repeat: no-repeat;
-  background-image: url("/images/Ellipse 157.png");
-  /* background-position: top; */
-  background-position-x: right;
-  background-position-y: center;
+  background-image: url("/images/Ellipse 158.svg");
+  background-position: right;
   background-size: contain;
 }
 
 .mission_intro > h1 {
   font-size: 50px;
-
   color: #2a72de;
 }
 
 .mission_intro > p {
   font-size: 18px;
   width: 90%;
+  color: black;
 }
 
 .mission_img > img {
@@ -181,11 +185,11 @@ body {
 #vision-section {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
   width: 93%;
   margin: auto auto auto 0;
   background-repeat: no-repeat;
-  background-image: url("/images/Ellipse 159.png");
+  background-image: url("/images/Ellipse 159.svg");
   /* background-position: top; */
   background-position-x: left;
   background-position-y: bottom;
@@ -207,6 +211,7 @@ body {
   font-size: 18px;
   width: 70%;
   margin: auto 0 3rem auto;
+  color: black;
 }
 
 .vision_intro > button {
@@ -227,6 +232,10 @@ body {
   margin-top: -6%;
 }
 
+.vision_intro > img {
+  margin-left: 17%;
+}
+
 #team-section {
   width: 93%;
   margin: auto;
@@ -240,8 +249,9 @@ body {
 
 .team-title > h1 {
   margin-bottom: 0;
+  color: black;
   font-size: 50px;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .team-title > img {
@@ -322,6 +332,7 @@ body {
 .advisor-title > h1 {
   font-size: 50px;
   font-weight: 700;
+  color: #2a72de;
 }
 
 .advisor-details {
@@ -349,6 +360,7 @@ body {
 
 .adv-info {
   margin-left: 4rem;
+  color: black;
 }
 .adv-info > h3 {
   font-size: 24px;
@@ -359,10 +371,6 @@ body {
 .adv-info > p {
   font-size: 16px;
   margin: 0;
-}
-
-#core_values {
-  background-color: #000c12;
 }
 
 .cv_container {
@@ -382,6 +390,7 @@ body {
 
 .cv_intro > h1 {
   font-size: 50px;
+  color: black;
 }
 
 .cv_main {
@@ -392,8 +401,9 @@ body {
   display: flex;
   margin-right: 2rem;
   width: 50%;
+  color: black;
   flex-direction: column;
-  background-image: url("/images/Ellipse 149.png");
+  background-image: url("/images/Ellipse 149.svg");
   background-repeat: no-repeat;
   background-position: top;
   background-size: 30rem;
@@ -420,24 +430,27 @@ body {
 }
 
 .cv_card {
-  background: linear-gradient(
-    226.01deg,
-    rgba(42, 114, 222, 0.75) 0%,
-    rgba(42, 114, 222, 0) 100%
-  );
+  background: #f6f6f6;
   border-radius: 20px;
   padding: 2rem;
   height: 10rem;
-  width: 8rem;
+  border: 4px solid #2a72de;
+  width: 9rem;
   display: flex;
   align-items: center;
   flex-direction: column;
   margin-bottom: 2rem;
 }
 
+.cv_card > p {
+  font-weight: 600;
+  color: #202020;
+  font-size: 24px;
+}
+
 .cv_card > img {
   height: 5rem;
-  margin-bottom: 2.6rem;
+  margin-bottom: 1rem;
 }
 
 #about-end {
@@ -447,7 +460,7 @@ body {
   padding: 2rem;
   align-items: center;
   flex-direction: column;
-  background-image: url("/images/Ellipse 150.png");
+  background-image: url("/images/Ellipse 150.svg");
   background-position: top;
   background-size: 80rem;
   background-repeat: no-repeat;
@@ -460,6 +473,9 @@ body {
 
 .about-quote > p {
   font-size: 36px;
+  color: #202020;
+  font-weight: 600;
+
   width: 70%;
   text-align: center;
 }
@@ -476,17 +492,18 @@ body {
 .q2 {
   top: 2rem;
 }
-.about-btns > button {
-  height: 4rem;
-  width: max-content;
-  margin: 2rem 1rem;
+.about-btns > a > button {
+  padding: 8% 0;
+  font-size: 16px;
+  height: max-content;
+  width: 12rem;
+  margin: 5.5rem 1rem 5.5rem 0;
   border-radius: 40px;
-  border: none;
-  padding: 1rem;
+  /* border: none; */
   outline: none;
-  font-size: 24px;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
+  cursor: pointer;
 }
 
 .about-btns {
@@ -498,6 +515,7 @@ body {
 } */
 
 .about-btn-join {
+  border: none;
   background-color: #2a72de;
   color: #fff;
   margin-right: 10rem;
@@ -505,6 +523,8 @@ body {
 
 .about-btn-app {
   color: #2a72de;
+  background-color: #f6f6f6;
+  border: 2px solid #2a72de;
 }
 
 @media (max-width: 1200px) {
@@ -638,7 +658,7 @@ body {
 
   #vision-section {
     flex-direction: column;
-    /* align-items: center; */
+    align-items: center;
     width: 50%;
     background: none;
     margin: auto;
@@ -660,12 +680,20 @@ body {
     text-align: center;
   }
 
+  .vision_intro > img {
+    height: 7rem;
+  }
   .vision_intro > button {
     height: 2rem;
     width: 9rem;
     font-size: 16px;
     font-weight: 400;
     margin: 2rem 0 2rem 7rem;
+  }
+
+  .vision-btn {
+    margin-top: 2%;
+    margin-left: 1%;
   }
 
   #team-section {
@@ -761,7 +789,8 @@ body {
   }
 
   .cv_text > p {
-    font-size: 16px;
+    font-size: 20px;
+    width: 100%;
     margin: auto;
     text-align: center;
   }
@@ -797,13 +826,13 @@ body {
   .about-btns {
     flex-direction: column;
   }
-  .about-btns > button {
-    margin: 1rem 0;
-    height: 2rem;
-    padding: 0;
-    width: 10rem;
+  .about-btns > a > button {
+    margin: 1rem 1rem;
+    height: 4rem;
+    padding: 1%;
+    width: 8rem;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 400;
   }
 
   .about-btns > button > a {
@@ -824,6 +853,10 @@ body {
   #about-end {
     background: none;
   }
+
+  .vision_intro > img {
+    margin-left: 1%;
+  }
 }
 
 @media (max-width: 1024px) and (min-width: 769px) {
@@ -834,5 +867,9 @@ body {
   .adv-img-badge {
     left: 9rem;
     top: -4rem;
+  }
+
+  .vision_intro > img {
+    height: 7rem;
   }
 }
