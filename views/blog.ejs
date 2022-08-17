@@ -33,10 +33,10 @@
           <img src="/images/caret2.png" alt="" class="right-caret" />
         </div>
         <div class="blog-content">
+          <p><%= data[0].publishedOn %></p>
           <h1>
             <a href="/blog/<%= data[0].id %>"><%= data[0].heading %></a>
           </h1>
-          <p><%= data[0].publishedOn %></p>
           <p><%= data[0].body %></p>
         </div>
       </div>
@@ -52,10 +52,10 @@
             <a href="/blog/<%= data[i].id %>"
               ><img src="<%=data[i].image.imageUrl %>" alt=""
             /></a>
+            <p><%= data[i]?.publishedOn %></p>
             <h1>
               <a href="/blog/<%= data[i].id %>"><%= data[i].heading %></a>
             </h1>
-            <p><%= data[i]?.publishedOn %></p>
             <p class="blog-text"><%= data[i].body %> ...</p>
           </div>
           <% } %>

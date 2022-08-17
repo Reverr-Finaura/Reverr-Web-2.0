@@ -1,5 +1,5 @@
 body {
-  background: #000c12;
+  background: #f6f6f6;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -13,6 +13,7 @@ body {
   align-items: center;
   text-align: center;
   gap: 2rem;
+  color: black;
 }
 
 #content > h1 {
@@ -24,6 +25,7 @@ body {
 #content > img {
   height: 30rem;
   border-radius: 1rem;
+  filter: drop-shadow(0px 4px 4px rgba(5, 5, 5, 0.25));
 }
 
 #content > p {
@@ -31,7 +33,7 @@ body {
   font-size: 16px;
 }
 
-.details{
+.details {
   display: flex;
   gap: 1rem;
 }
@@ -41,7 +43,7 @@ body {
   margin-bottom: 0;
 }
 
-.date{
+.date {
   font-size: 24px !important;
 }
 

@@ -1,5 +1,8 @@
 body {
-  background-color: #000c12 !important;
+  background-color: #f6f6f6 !important;
+  background-image: url("/images/Rectangle 2807.svg");
+  background-repeat: no-repeat;
+  background-position: top;
 }
 
 a {
@@ -23,7 +26,7 @@ a {
 .blog-heading > h1 {
   font-family: "Philosopher", "sans-serif";
   font-size: 64px;
-  color: #2a72de;
+  color: #ffffff;
   font-weight: 700;
 }
 
@@ -41,10 +44,12 @@ a {
 #recent-post {
   width: 93%;
   margin: 5rem auto auto;
+  color: black;
 }
 
 #recent-post > h1 {
   font-size: 40px;
+  color: #fff;
   margin-left: 4%;
 }
 
@@ -73,6 +78,7 @@ a {
 
 .sample-blog-img {
   width: 27rem;
+  filter: drop-shadow(0px 4px 4px rgba(5, 5, 5, 0.25));
   border-radius: 1rem;
 }
 
@@ -83,8 +89,9 @@ a {
   text-overflow: ellipsis;
 }
 
-.blog-content > h1 {
+.blog-content > h1 > a {
   font-size: 38px;
+  color: black;
 }
 
 .blog-section-btns {
@@ -131,8 +138,9 @@ a {
   font-size: 24px;
 }
 
-.blog > h1 {
+.blog > h1 > a {
   font-size: 28px;
+  color: black;
 }
 
 .blog-text {
