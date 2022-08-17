@@ -56,11 +56,7 @@
 }
 
 .carousel-card {
-  background: linear-gradient(
-    226.01deg,
-    rgba(42, 114, 222, 0.75) 0%,
-    rgba(42, 114, 222, 0) 100%
-  );
+  background: #0077b7;
   border-radius: 12px;
   text-align: left;
   flex: 0 0 auto;
