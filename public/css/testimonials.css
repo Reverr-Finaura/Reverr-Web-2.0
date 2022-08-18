@@ -56,18 +56,14 @@
 }
 
 .carousel-card {
-  background: linear-gradient(
-    226.01deg,
-    rgba(42, 114, 222, 0.75) 0%,
-    rgba(42, 114, 222, 0) 100%
-  );
+  background: #0077b7;
   border-radius: 12px;
   text-align: left;
   flex: 0 0 auto;
   padding: 30px;
   margin-left: 50px;
-  width: 350px;
-  height: 387px;
+  width: 451px;
+  height: 365px;
   margin-bottom: 5%;
   position: relative;
 }
@@ -97,7 +93,7 @@
 }
 
 /* for mobile phones */
-@media (max-width: 481px) {
+@media (max-width: 425px) {
   #carousel-container {
     width: 100%;
   }
@@ -107,8 +103,9 @@
   }
 
   .carousel-card {
-    margin-left: 3%;
-    width: 80%;
+    margin-left: 30px;
+    width: 230px;
+    height: 210px;
   }
 
   .carousel-img {
@@ -118,11 +115,12 @@
 
   .carousel-name {
     font-size: 13px;
-    margin-top: 10px;
+    margin-top: 18px;
   }
 
   .carousel-review {
     font-size: 10px;
+    margin-top: 10px;
   }
 
   .carousel-title {
@@ -133,35 +131,38 @@
   .slider__btn > img {
     height: 0.7rem;
   }
+}
+@media (max-width: 1024px) and (min-width: 426px) {
+  .slide {
+    margin-left: 0;
+  }
 
-  @media (max-width: 768px) and (min-width: 482px) {
-    .slide {
-      margin-left: 0;
-    }
-    .carousel-card {
-      width: 290px;
-      /* height: 270px; */
-      /* margin-left: 0; */
-      padding: 16px;
-    }
+  .slider {
+    height: 25rem;
+  }
+  .carousel-card {
+    width: 340px;
+    height: 300px;
+    /* margin-left: 0; */
+    padding: 16px;
+  }
 
-    .carousel-img {
-      width: 70px;
-      height: 70px;
-    }
+  .carousel-img {
+    width: 70px;
+    height: 70px;
+  }
 
-    .carousel-name {
-      font-size: 18px;
-      margin-top: 10px;
-    }
+  .carousel-name {
+    font-size: 18px;
+    margin-top: 10px;
+  }
 
-    .carousel-review {
-      font-size: 14px;
-    }
+  .carousel-review {
+    font-size: 14px;
+  }
 
-    .carousel-title {
-      font-size: 32px;
-      margin-left: 20px;
-    }
+  .carousel-title {
+    font-size: 32px;
+    margin-left: 20px;
   }
 }

@@ -1,5 +1,5 @@
 body {
-  background: #000c12;
+  background: #ffffff;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -11,10 +11,6 @@ body {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  background-image: url("/images/Ellipse 149.png"),
-    url("/images/Ellipse 148.png");
-  background-repeat: no-repeat, no-repeat;
-  background-position: 0 0, 35rem 15rem;
 }
 
 .community__main {
@@ -49,7 +45,6 @@ body {
   width: 12rem;
   margin: 5.5rem 1rem 5.5rem 0;
   border-radius: 8px;
-  border: none;
   outline: none;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
@@ -57,13 +52,15 @@ body {
 }
 
 .community__buttons_blue_btn {
-  background: rgba(0, 119, 183, 1);
+  background: #2A72DE;
   color: white;
+  border: none;
 }
 
 .community__buttons_join_us {
   background: white;
   color: rgba(0, 119, 183, 1);
+  border: 3px solid rgba(42, 114, 222, 1);
 }
 
 .community__buttons_join_us > a {
@@ -311,7 +308,7 @@ body {
   justify-content: center;
   margin: auto;
   font-weight: 600;
-  background: url("/images/Ellipse 150.png");
+  background: url("/images/Ellipse 149.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -389,7 +386,7 @@ body {
   font-size: 14px;
   font-weight: 400;
   margin-top: 10px;
-  color: #ffffff;
+  color: black;
   font-family: "Poppins", "sans-serif";
 }
 

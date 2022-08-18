@@ -3,7 +3,7 @@ var app = express();
 var path = require("path");
 const cors = require("cors");
 const bodyparser = require("body-parser");
-const { Mentors, Funding, Newsletter, Message } = require("./config");
+const { Mentors, Funding, Newsletter, Message, Blogs } = require("./config");
 var SibApiV3Sdk = require("sib-api-v3-sdk");
 
 app.use(cors());
@@ -16,7 +16,6 @@ app.set("view engine", "ejs");
 function Email(user) {
   var defaultClient = SibApiV3Sdk.ApiClient.instance;
   var apiKey = defaultClient.authentications["api-key"];
-
 
   // console.log(apiKey.apiKey);
   const transEmailApi = new SibApiV3Sdk.TransactionalEmailsApi();
@@ -100,8 +99,25 @@ app.get("/fundingform", function (req, res) {
   res.render("fundingform", { successful: false });
 });
 
-app.get("/blog", function (req, res) {
-  res.render("blog");
+app.get("/blog", async function (req, res) {
+  const content = await Blogs.get();
+  var blogs = [];
+  content.forEach((doc) => {
+    blogs.push(doc.data());
+  });
+  res.render("blog", {
+    data: blogs,
+  });
+});
+
+app.get("/blog/:id", async function (req, res) {
+  const id = req.params["id"];
+  const content = await Blogs.where("id", "==", id).get();
+  var blog;
+  content.forEach((doc) => {
+    blog = doc.data();
+  });
+  res.render("blogItem", { data: blog });
 });
 
 app.get("/mentorship", function (req, res) {

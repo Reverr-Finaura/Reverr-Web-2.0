@@ -7,6 +7,7 @@
     <title>Reverr | Blogs</title>
   </head>
   <body>
+    <%-include("contactheader")-%>
     <%-include("header")-%>
 
     <section id="blog-intro">
@@ -26,99 +27,162 @@
         <div class="blog-slider">
           <img src="/images/caret1.png" alt="" class="left-caret" />
           <img
-            src="/images/Rectangle 177.png"
+            src="<%= data[0].image.imageUrl %>"
             alt="blog-img"
             class="sample-blog-img"
           />
           <img src="/images/caret2.png" alt="" class="right-caret" />
         </div>
         <div class="blog-content">
-          <p>July 03,2022</p>
-          <h1>I'm a Heading. Click here to add your own text and edit me.</h1>
-          <p>
-            I'm a paragraph. Click here to add your own text and edit me. It's
-            easy. Just click “Edit Text” or double click me to add your own
-            content and make changes to the font. Feel free to drag and drop
-            anywhere you like on your page.
-          </p>
+          <p><%= data[0].publishedOn %></p>
+          <h1>
+            <a href="/blog/<%= data[0].id %>"><%= data[0].heading %></a>
+          </h1>
+          <p><%= data[0].body %></p>
         </div>
       </div>
       <div class="blog-section-btns">
-        <a><button>Section 01</button></a>
-        <a><button style="opacity: 0.3">Section 02</button></a>
-        <a><button style="opacity: 0.3">Section 03</button></a>
+        <a><button id="sectionOneBtn">Section 01</button></a>
+        <a><button id="sectionTwoBtn">Section 02</button></a>
+        <a><button id="sectionThreeBtn">Section 03</button></a>
       </div>
-      <div class="blog-container">
-        <div class="blog">
-          <img src="/images/Rectangle 178.png" alt="" />
-          <p>July 03,2022</p>
-          <h1>I'm a Heading. Click here to add your own text and edit me.</h1>
-          <p class="blog-text">
-            I'm a paragraph. Click here to add your own text and edit me. It's
-            easy. Just click “Edit Text” or double click me to add your own
-            content and make changes to the font. Feel free to drag and drop
-            anywhere you like on your page.
-          </p>
+      <div id="sectionOne">
+        <div class="blog-container">
+          <% for (var i = 0; i < 3; i++) { %>
+          <div class="blog">
+            <a href="/blog/<%= data[i].id %>"
+              ><img src="<%=data[i].image.imageUrl %>" alt=""
+            /></a>
+            <p><%= data[i]?.publishedOn %></p>
+            <h1>
+              <a href="/blog/<%= data[i].id %>"><%= data[i].heading %></a>
+            </h1>
+            <p class="blog-text"><%= data[i].body %> ...</p>
+          </div>
+          <% } %>
         </div>
-        <div class="blog">
-          <img src="/images/Rectangle 179.png" alt="" />
-          <p>July 03,2022</p>
-          <h1>I'm a Heading. Click here to add your own text and edit me.</h1>
-          <p class="blog-text">
-            I'm a paragraph. Click here to add your own text and edit me. It's
-            easy. Just click “Edit Text” or double click me to add your own
-            content and make changes to the font. Feel free to drag and drop
-            anywhere you like on your page.
-          </p>
-        </div>
-        <div class="blog">
-          <img src="/images/Rectangle 180.png" alt="" />
-          <p>July 03,2022</p>
-          <h1>I'm a Heading. Click here to add your own text and edit me.</h1>
-          <p class="blog-text">
-            I'm a paragraph. Click here to add your own text and edit me. It's
-            easy. Just click “Edit Text” or double click me to add your own
-            content and make changes to the font. Feel free to drag and drop
-            anywhere you like on your page.
-          </p>
+        <div class="blog-container">
+          <% for (var i = 3; i < 6; i++) { %>
+          <div class="blog">
+            <a href="/blog/<%= data[i].id %>"
+              ><img src="<%=data[i].image.imageUrl %>" alt=""
+            /></a>
+            <h1>
+              <a href="/blog/<%= data[i].id %>"><%= data[i].heading %></a>
+            </h1>
+            <p><%= data[i]?.publishedOn %></p>
+            <p class="blog-text"><%= data[i].body %> ...</p>
+          </div>
+          <% } %>
         </div>
       </div>
-      <div class="blog-container">
-        <div class="blog">
-          <img src="/images/Rectangle 1565.png" alt="" />
-          <p>July 03,2022</p>
-          <h1>I'm a Heading. Click here to add your own text and edit me.</h1>
-          <p class="blog-text">
-            I'm a paragraph. Click here to add your own text and edit me. It's
-            easy. Just click “Edit Text” or double click me to add your own
-            content and make changes to the font. Feel free to drag and drop
-            anywhere you like on your page.
-          </p>
+      <div id="sectionTwo">
+        <div class="blog-container">
+          <% for (var i = 6; i < 9; i++) { %>
+          <div class="blog">
+            <a href="/blog/<%= data[i].id %>"
+              ><img src="<%=data[i].image.imageUrl %>" alt=""
+            /></a>
+            <h1>
+              <a href="/blog/<%= data[i].id %>"><%= data[i].heading %></a>
+            </h1>
+            <p><%= data[i].publishedOn %></p>
+            <p class="blog-text"><%= data[i].body %> ...</p>
+          </div>
+          <% } %>
         </div>
-        <div class="blog">
-          <img src="/images/Rectangle 1566.png" alt="" />
-          <p>July 03,2022</p>
-          <h1>I'm a Heading. Click here to add your own text and edit me.</h1>
-          <p class="blog-text">
-            I'm a paragraph. Click here to add your own text and edit me. It's
-            easy. Just click “Edit Text” or double click me to add your own
-            content and make changes to the font. Feel free to drag and drop
-            anywhere you like on your page.
-          </p>
+        <div class="blog-container">
+          <% for (var i = 9; i < 11; i++) { %>
+          <div class="blog">
+            <a href="/blog/<%= data[i].id %>"
+              ><img src="<%=data[i].image.imageUrl %>" alt=""
+            /></a>
+            <h1>
+              <a href="/blog/<%= data[i].id %>"><%= data[i].heading %></a>
+            </h1>
+            <p><%= data[i].publishedOn %></p>
+            <p class="blog-text"><%= data[i].body %> ...</p>
+          </div>
+          <% } %>
         </div>
-        <div class="blog">
-          <img src="/images/Rectangle 1567.png" alt="" />
-          <p>July 03,2022</p>
-          <h1>I'm a Heading. Click here to add your own text and edit me.</h1>
-          <p class="blog-text">
-            I'm a paragraph. Click here to add your own text and edit me. It's
-            easy. Just click “Edit Text” or double click me to add your own
-            content and make changes to the font. Feel free to drag and drop
-            anywhere you like on your page.
-          </p>
+      </div>
+      <div id="sectionThree">
+        <div class="blog-container">
+          <% for (var i = 11; i < 14; i++) { %>
+          <div class="blog">
+            <a href="/blog/<%= data[i]?.id %>"
+              ><img src="<%=data[i]?.image.imageUrl %>" alt=""
+            /></a>
+            <h1>
+              <a href="/blog/<%= data[i]?.id %>"><%= data[i]?.heading %></a>
+            </h1>
+            <p><%= data[i]?.publishedOn %></p>
+            <p class="blog-text"><%= data[i]?.body %> ...</p>
+          </div>
+          <% } %>
+        </div>
+        <div class="blog-container">
+          <% for (var i = 14; i < 17; i++) { %>
+          <div class="blog">
+            <a href="/blog/<%= data[i]?.id %>"
+              ><img src="<%=data[i]?.image.imageUrl %>" alt=""
+            /></a>
+            <h1>
+              <a href="/blog/<%= data[i]?.id %>"><%= data[i]?.heading %></a>
+            </h1>
+            <p><%= data[i]?.publishedOn %></p>
+            <p class="blog-text"><%= data[i]?.body %> ...</p>
+          </div>
+          <% } %>
         </div>
       </div>
     </section>
     <%-include("footer")-%>
   </body>
+  <script>
+    const sectionOneBtn = document.querySelector("#sectionOneBtn");
+    const sectionTwoBtn = document.querySelector("#sectionTwoBtn");
+    const sectionThreeBtn = document.querySelector("#sectionThreeBtn");
+
+    sectionOneBtn.style.opacity = "1";
+    sectionTwoBtn.style.opacity = "0.3";
+    sectionThreeBtn.style.opacity = "0.3";
+
+    const sectionOne = document.querySelector("#sectionOne");
+    const sectionTwo = document.querySelector("#sectionTwo");
+    const sectionThree = document.querySelector("#sectionThree");
+
+    sectionOne.style.display = "block";
+    sectionTwo.style.display = "none";
+    sectionThree.style.display = "none";
+
+    const handleS1 = () => {
+      sectionOne.style.display = "block";
+      sectionTwo.style.display = "none";
+      sectionThree.style.display = "none";
+      sectionOneBtn.style.opacity = "1";
+      sectionTwoBtn.style.opacity = "0.3";
+      sectionThreeBtn.style.opacity = "0.3";
+    };
+    const handleS2 = () => {
+      sectionOne.style.display = "none";
+      sectionTwo.style.display = "block";
+      sectionThree.style.display = "none";
+      sectionOneBtn.style.opacity = "0.3";
+      sectionTwoBtn.style.opacity = "1";
+      sectionThreeBtn.style.opacity = "0.3";
+    };
+    const handleS3 = () => {
+      sectionOne.style.display = "none";
+      sectionTwo.style.display = "none";
+      sectionThree.style.display = "block";
+      sectionOneBtn.style.opacity = "0.3";
+      sectionTwoBtn.style.opacity = "0.3";
+      sectionThreeBtn.style.opacity = "1";
+    };
+
+    sectionOneBtn.addEventListener("click", handleS1);
+    sectionTwoBtn.addEventListener("click", handleS2);
+    sectionThreeBtn.addEventListener("click", handleS3);
+  </script>
 </html>

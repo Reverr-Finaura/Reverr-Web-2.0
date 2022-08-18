@@ -1,5 +1,5 @@
-body{
-  background: #000c12;
+body {
+  background: #f6f6f6;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -8,6 +8,7 @@ body{
 #mentorship_page__intro {
   margin: auto;
   width: 93%;
+  color: black;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -45,7 +46,7 @@ body{
   width: 12rem;
   margin: 5.5rem 1rem 5.5rem 0;
   border-radius: 8px;
-  border: none;
+  /* border: none; */
   outline: none;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
@@ -55,11 +56,13 @@ body{
 .mentorship_page__buttons_know_more {
   background: rgba(0, 119, 183, 1);
   color: white;
+  border: none;
 }
 
 .mentorship_page__buttons_contact_us {
   background: white;
   color: #0077b7;
+  border: 2px solid #2a72de;
 }
 
 .mentorship_page__image > img {
@@ -71,6 +74,7 @@ body{
   width: 93%;
   margin: auto !important;
   display: flex;
+  color: black;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
@@ -112,6 +116,10 @@ body{
   align-items: center;
 }
 
+.howitworks__image > img {
+  height: 35rem;
+}
+
 .hiw__icon {
   display: flex;
   align-items: center;
@@ -137,10 +145,12 @@ b {
 #section_whyus {
   margin-top: 4rem;
   width: 100%;
+  color: black;
 }
 
 #mentor-section {
   margin: 5rem auto;
+  color: black;
 }
 
 .main-text > h1 {
@@ -172,11 +182,8 @@ b {
 }
 
 .card-row-1 {
-  background: linear-gradient(
-    226.01deg,
-    rgba(42, 114, 222, 0.75) 0%,
-    rgba(42, 114, 222, 0) 100%
-  );
+  background: #f6f6f6;
+  border: 4px solid #2a72de;
   border-radius: 12px;
   padding: 3%;
 }
@@ -214,11 +221,12 @@ b {
 
 .contact-link-img {
   background-color: #fff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 50%;
   border: 6px solid #fff;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   #mentorship_page__intro {
     flex-direction: column;
   }
@@ -323,12 +331,12 @@ b {
     /* background-color: #fff;
     border: 5px solid #2a72de; */
     padding: 0.6em;
-    height: 8rem;
+    height: 5rem;
     border-radius: 100%;
   }
 
   .card-title {
-    font-size: 23px;
+    font-size: 18px;
     font-weight: 600;
   }
 
@@ -338,7 +346,7 @@ b {
   }
 
   .contact-link-img {
-    height: 2rem;
+    height: 1rem;
   }
 }
 

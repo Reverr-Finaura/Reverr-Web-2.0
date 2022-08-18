@@ -1,28 +1,46 @@
 body {
-  background: #000c12;
+  background: #f6f6f6;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
 
+#contactus-container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
 .contactus-header {
   display: flex;
-  padding: 0 76px;
+  /* padding: 0 76px; */
 }
 
 .contactus-para {
   flex: 50%;
+  color: black;
 }
 
-.contactus-title {
+.contactus_title {
+  display: flex;
+  align-items: center;
+}
+
+.contactus_title > img {
+  margin-left: 3%;
+  margin-top: 4%;
+}
+
+.contactus_title > h2 {
   font-weight: 600;
-  font-size: 46px;
+  font-size: 56px;
   margin-bottom: 5px;
 }
 
 .contactus-info {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 28px;
 }
 
@@ -33,13 +51,17 @@ body {
   margin-bottom: 0;
 }
 
+.contact-connect > a {
+  font-size: 24px;
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+}
+
 .contact-connect img {
-  background-color: #fff;
-  border: 5px solid #fff;
-  border-radius: 100%;
+  /* border-radius: 100%; */
   z-index: 999;
-  width: 35px;
-  height: 35px;
+  height: 3.4rem;
   margin-right: 10px;
 }
 
@@ -49,7 +71,7 @@ body {
 
 .contactus-float-img {
   position: absolute;
-  top: 90px;
+  top: 190px;
   right: 100px;
   width: 500px;
   height: 500px;
@@ -59,18 +81,16 @@ body {
   position: absolute;
   transform: rotate(16.61deg);
   font-size: 22px;
-  top: 210px;
+  top: 310px;
   right: 400px;
+  color: white;
 }
 
 h3 {
   font-weight: 500;
   font-size: 24px;
+  color: black;
   /* margin-left: 73px; */
-}
-
-.contact-sociallinks {
-  margin-left: 73px;
 }
 
 .contact-link {
@@ -78,6 +98,7 @@ h3 {
 }
 
 .contact-link-img {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   background-color: #fff;
   border-radius: 50%;
   border: 6px solid #fff;
@@ -85,7 +106,8 @@ h3 {
 }
 
 .contact-form {
-  background-color: #1d263b;
+  background-color: #2a72de;
+  color: #fff;
   padding: 2%;
   width: 60%;
   margin: 40px auto;
@@ -106,14 +128,14 @@ h3 {
 
 .input-box input,
 textarea {
-  background: #343c4f;
+  background: #f6f6f6;
   border-radius: 4px;
   outline: none;
   height: 34px;
   width: 90%;
   margin-top: 10px;
   border: none;
-  color: #fff;
+  color: black;
   font-size: 14px;
   padding-left: 10px;
 }
@@ -137,6 +159,7 @@ textarea {
   font-size: 16px;
   height: max-content;
   width: 10rem;
+  background-color: #f6f6f6;
   margin-left: 73%;
   border-radius: 6px;
   border: none;
@@ -144,6 +167,7 @@ textarea {
   font-weight: 600;
   font-family: "Poppins", sans-serif;
   cursor: pointer;
+  color: #2a72de;
 }
 
 /* for mobile phones */
@@ -161,8 +185,12 @@ textarea {
     flex: 1;
   }
 
-  .contactus-title {
+  .contactus_title > h2 {
     font-size: 29px;
+  }
+
+  .contactus_title > img {
+    height: 5rem;
   }
 
   .contactus-info {
@@ -212,11 +240,15 @@ textarea {
 
 /* tablets */
 @media (max-width: 768px) and (min-width: 482px) {
+  .contactus_title {
+    justify-content: center;
+  }
+
   .contactus-float-img {
     position: relative;
     width: 350px;
-    top: -30px;
-    right: -10px;
+    top: 0px;
+    right: 0%;
     height: 350px;
     margin: 0;
   }
@@ -224,12 +256,30 @@ textarea {
   .contactus-float-text {
     position: relative;
     font-size: 18px;
-    right: -35px;
+    right: 13%;
     top: -265px;
   }
 
-  .contactus-title {
+  .contactus-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contactus_title > h2 {
     font-size: 30px;
+    text-align: center;
+  }
+
+  .contactus_title > img {
+    height: 5rem;
+  }
+
+  .contact-sociallinks {
+    text-align: center;
+  }
+
+  .contact-connect {
+    justify-content: center;
   }
 
   .contactus-info {
@@ -250,14 +300,17 @@ textarea {
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1024px) and (min-width: 769px) {
   .contactus-float-img {
-    top: 190px;
+    top: 290px;
     right: -10px;
   }
 
   .contactus-float-text {
     right: 270px;
-    top: 325px;
+    top: 420px;
+  }
+  .send-btn {
+    width: 8rem;
   }
 }

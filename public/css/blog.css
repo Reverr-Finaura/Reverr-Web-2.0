@@ -1,5 +1,13 @@
 body {
-  background-color: #000c12 !important;
+  background-color: #f6f6f6 !important;
+  background-image: url("/images/Rectangle 2807.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+a {
+  text-decoration: none;
+  color: white;
 }
 
 #blog-intro {
@@ -18,7 +26,7 @@ body {
 .blog-heading > h1 {
   font-family: "Philosopher", "sans-serif";
   font-size: 64px;
-  color: #2a72de;
+  color: #ffffff;
   font-weight: 700;
 }
 
@@ -30,16 +38,19 @@ body {
 #blog-intro > p {
   font-size: 24px;
   width: 50%;
+  color: #fff;
   text-align: center;
 }
 
 #recent-post {
   width: 93%;
   margin: 5rem auto auto;
+  color: black;
 }
 
 #recent-post > h1 {
   font-size: 40px;
+  color: black;
   margin-left: 4%;
 }
 
@@ -68,14 +79,20 @@ body {
 
 .sample-blog-img {
   width: 27rem;
+  filter: drop-shadow(0px 4px 4px rgba(5, 5, 5, 0.25));
+  border-radius: 1rem;
 }
 
 .blog-content > p {
   font-size: 24px;
+  max-height: 20rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.blog-content > h1 {
+.blog-content > h1 > a {
   font-size: 38px;
+  color: black;
 }
 
 .blog-section-btns {
@@ -108,20 +125,59 @@ body {
   margin: auto auto 3rem;
 }
 
-.blog > img {
-  height: 20rem;
+.blog {
+  width: 20rem;
+}
+
+.blog > a > img {
+  height: 15rem;
+  max-width: 20rem;
+  object-fit: contain;
 }
 
 .blog > p {
   font-size: 24px;
 }
 
-.blog > h1 {
+.blog > h1 > a {
   font-size: 28px;
+  color: black;
 }
 
 .blog-text {
   font-size: 18px !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 20rem;
+}
+
+@media (max-width: 1024px) and (min-width: 425px) {
+  .sample-blog-img {
+    width: 22rem;
+  }
+  .blog-content > h1 {
+    font-size: 28px;
+  }
+  .blog-content > p {
+    font-size: 18px;
+  }
+
+  .blog-container {
+    gap: 3rem;
+  }
+  .blog > a > img {
+    height: 12rem;
+  }
+
+  .blog > p {
+    font-size: 20px;
+  }
+  .blog > h1 {
+    font-size: 24px;
+  }
+  .blog-text {
+    font-size: 16px !important;
+  }
 }
 
 @media (max-width: 768px) {
@@ -192,9 +248,9 @@ body {
     width: 50%;
   }
 
-  .blog > img {
+  .blog > a > img {
     height: 16.2rem;
-    margin-left: 14%;
+    /* margin-left: 14%; */
   }
 
   .blog > p {
@@ -223,8 +279,13 @@ body {
 }
 
 @media (max-width: 425px) {
-  .blog > img {
-    margin-left: 0;
+  .blog > a > img {
+    margin-left: 4%;
     height: 12.5rem;
+  }
+
+  .blog-container {
+    width: 80%;
+    margin: auto;
   }
 }
