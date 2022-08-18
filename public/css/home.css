@@ -6,7 +6,7 @@ body {
 }
 
 .hero__main {
-  margin: 6% 2%;
+  margin: 6% 5%;
 }
 
 .grid {
@@ -188,6 +188,15 @@ body {
   font-weight: 600;
 }
 
+.aim__btn {
+  margin: auto;
+  display: block;
+  width: 180px;
+  height: 40px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
 /* .aim__image {
   max-width: 50%;
   height: 50%;
@@ -227,6 +236,7 @@ body {
     height: 100px;
   }
 } */
+
 @media (max-width: 681px) {
   .aim__heading {
     font-size: 20px;
@@ -244,10 +254,30 @@ body {
 }
 /* video */
 
+.video__flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+.video__btn {
+  cursor: pointer;
+  font-size: 16px !important;
+  background-color: #2a72de;
+  color: #ffffff;
+  padding: 15px 0;
+  width: 12rem;
+  margin: auto;
+  display: block;
+  text-align: center;
+  font-weight: 600;
+  border-radius: 10px;
+  border: none;
+}
+
 .video__heading {
   font-weight: 600;
-  font-size: 64px;
-  line-height: 90px;
+  font-size: 44px;
+  /* line-height: 10px; */
   text-align: center;
   margin-bottom: 6%;
 }
@@ -255,13 +285,23 @@ body {
   .video__heading {
     font-size: 35px;
   }
+  .video__flex {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
 }
 .video {
   margin: 6% 2%;
 }
+.video__para {
+  text-align: center;
+}
+
 .video__video {
+  padding: 0px 20px;
   width: 80%;
-  height: 50%;
+  height: 80%;
   display: block;
   margin: auto;
 }
@@ -592,7 +632,7 @@ img {
   cursor: pointer;
   margin: auto;
   margin: 40px auto;
-  font-size: 20px !important;
+  font-size: 20px;
   background-color: #2a72de;
   color: #ffffff;
   padding: 15px 0;
@@ -628,6 +668,27 @@ img {
   background-size: cover;
   background-repeat: no-repeat;
 } */
+
+@media (max-width: 769px) {
+  .slideshow-container {
+    width: 80%;
+  }
+  .carousal__heading {
+    font-size: 25px;
+  }
+  .carousal__para {
+    font-size: 15px;
+  }
+  .text {
+    border-radius: 2px;
+    border: none;
+    padding-top: 5px;
+    text-align: center;
+    font-size: 12px;
+    height: 20px;
+    width: 100px;
+  }
+}
 .myslides1 {
   background-image: url("/images/carousal1.png");
   background-size: cover;
