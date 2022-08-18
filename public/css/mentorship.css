@@ -9,9 +9,6 @@ body {
   margin: auto;
   width: 93%;
   color: black;
-  background-image: url("/images/Ellipse 149.png");
-  background-repeat: no-repeat;
-  background-position: right;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -49,7 +46,7 @@ body {
   width: 12rem;
   margin: 5.5rem 1rem 5.5rem 0;
   border-radius: 8px;
-  border: none;
+  /* border: none; */
   outline: none;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
@@ -59,11 +56,13 @@ body {
 .mentorship_page__buttons_know_more {
   background: rgba(0, 119, 183, 1);
   color: white;
+  border: none;
 }
 
 .mentorship_page__buttons_contact_us {
   background: white;
   color: #0077b7;
+  border: 2px solid #2a72de;
 }
 
 .mentorship_page__image > img {
@@ -76,9 +75,6 @@ body {
   margin: auto !important;
   display: flex;
   color: black;
-  background-image: url("/images/Ellipse 149.png");
-  background-repeat: no-repeat;
-  background-position: left;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;

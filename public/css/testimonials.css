@@ -62,8 +62,8 @@
   flex: 0 0 auto;
   padding: 30px;
   margin-left: 50px;
-  width: 350px;
-  height: 387px;
+  width: 451px;
+  height: 365px;
   margin-bottom: 5%;
   position: relative;
 }
@@ -104,8 +104,8 @@
 
   .carousel-card {
     margin-left: 30px;
-    width: 200px;
-    height: 300px;
+    width: 230px;
+    height: 210px;
   }
 
   .carousel-img {
@@ -141,8 +141,8 @@
     height: 25rem;
   }
   .carousel-card {
-    width: 280px;
-    height: 350px;
+    width: 340px;
+    height: 300px;
     /* margin-left: 0; */
     padding: 16px;
   }

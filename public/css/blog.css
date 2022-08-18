@@ -38,6 +38,7 @@ a {
 #blog-intro > p {
   font-size: 24px;
   width: 50%;
+  color: #fff;
   text-align: center;
 }
 
@@ -49,7 +50,7 @@ a {
 
 #recent-post > h1 {
   font-size: 40px;
-  color: #fff;
+  color: black;
   margin-left: 4%;
 }
 

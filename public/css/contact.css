@@ -41,7 +41,6 @@ body {
 .contactus-info {
   font-weight: 400;
   font-size: 18px;
-
   line-height: 28px;
 }
 
@@ -72,7 +71,7 @@ body {
 
 .contactus-float-img {
   position: absolute;
-  top: 90px;
+  top: 190px;
   right: 100px;
   width: 500px;
   height: 500px;
@@ -82,8 +81,9 @@ body {
   position: absolute;
   transform: rotate(16.61deg);
   font-size: 22px;
-  top: 210px;
+  top: 310px;
   right: 400px;
+  color: white;
 }
 
 h3 {
@@ -107,6 +107,7 @@ h3 {
 
 .contact-form {
   background-color: #2a72de;
+  color: #fff;
   padding: 2%;
   width: 60%;
   margin: 40px auto;
@@ -301,13 +302,13 @@ textarea {
 
 @media (max-width: 1024px) and (min-width: 769px) {
   .contactus-float-img {
-    top: 190px;
+    top: 290px;
     right: -10px;
   }
 
   .contactus-float-text {
     right: 270px;
-    top: 325px;
+    top: 420px;
   }
   .send-btn {
     width: 8rem;
