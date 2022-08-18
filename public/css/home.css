@@ -82,6 +82,7 @@ body {
 }
 .hero__image-para {
   text-align: center;
+  color: white;
 }
 .hero__image-background {
   background: linear-gradient(
@@ -183,7 +184,7 @@ body {
  
   color: #000000; */
   text-align: center;
-  color: #000000;
+  color: white;
   font-size: 32px;
   font-weight: 600;
 }
@@ -262,7 +263,7 @@ body {
 .video__btn {
   cursor: pointer;
   font-size: 16px !important;
-  background-color: #2a72de;
+  background-color: #0077b7;
   color: #ffffff;
   padding: 15px 0;
   width: 12rem;
@@ -277,6 +278,7 @@ body {
 .video__heading {
   font-weight: 600;
   font-size: 44px;
+  color: white;
   /* line-height: 10px; */
   text-align: center;
   margin-bottom: 6%;
@@ -296,6 +298,7 @@ body {
 }
 .video__para {
   text-align: center;
+  color: white;
 }
 
 .video__video {
@@ -318,7 +321,7 @@ body {
   font-weight: 600;
   font-size: 64px;
   line-height: 90px;
-  color: #2a72de;
+  color: #0077b7;
   text-align: center;
   margin-bottom: 6%;
 }
@@ -337,11 +340,8 @@ body {
     width: 20%;
 
     display: block;
-    background: linear-gradient(
-      236.51deg,
-      #012437 24.72%,
-      rgba(140, 150, 253, 0.42) 100%
-    );
+
+    background: #0077b7;
     border-radius: 6px;
   }
 }
@@ -355,11 +355,7 @@ body {
   padding: 1%;
   padding-bottom: 5%;
   display: block;
-  background: linear-gradient(
-    236.51deg,
-    #012437 24.72%,
-    rgba(140, 150, 253, 0.42) 100%
-  );
+  background: #0077b7;
   border-radius: 6px;
 }
 
@@ -389,6 +385,7 @@ body {
   line-height: 30px;
   margin-top: 10px;
   margin-bottom: 20px;
+  color: white;
 }
 
 /* .stats__card--imageBlue {
@@ -418,6 +415,7 @@ body {
   margin-left: 70%;
   margin-top: 200px; */
   content: "";
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   display: inline-block;
   width: 20%;
   margin-left: 70%;
@@ -440,10 +438,12 @@ body {
 } */
 
 .blue_blob_text {
+  color: white;
   font-size: 40px;
   text-align: center;
   font-weight: 800;
   background-image: url("../images/stats_blue.png");
+
   background-repeat: no-repeat;
   background-size: 40%;
   padding: 15%;
@@ -459,6 +459,7 @@ body {
   margin-bottom: 7%;
   margin-left: 8%;
   margin-right: 8%;
+  color: white;
 }
 .flex__tagline {
   display: flex;
@@ -498,14 +499,14 @@ body {
 .funding__card {
   /* margin-left: 15%;
   margin: 5%; */
-  background: linear-gradient(
-    226.01deg,
-    rgba(42, 114, 222, 0.75) 0%,
-    rgba(42, 114, 222, 0) 100%
-  );
+  background: #0077b7;
   border-radius: 12px;
   width: 100%;
   padding: 15px;
+}
+
+.funding__para {
+  color: white;
 }
 
 .funding__button {
@@ -524,8 +525,8 @@ body {
   margin-right: auto;
   margin: 10px 0;
   font-size: 16px !important;
-  background-color: #2a72de;
-  color: #ffffff;
+  background-color: white;
+  color: #0077b7;
   padding: 15px 0;
   width: 12rem;
   text-align: center;
@@ -633,7 +634,7 @@ img {
   margin: auto;
   margin: 40px auto;
   font-size: 20px;
-  background-color: #2a72de;
+  background-color: #0077b7;
   color: #ffffff;
   padding: 15px 0;
   width: 12rem;
