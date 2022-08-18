@@ -1,5 +1,5 @@
 body {
-  background: #000c12;
+  background: #ffffff;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -11,10 +11,8 @@ body {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  background-image: url("/images/Ellipse 148.png"),
-    url("/images/Ellipse 149.png");
-  background-repeat: no-repeat, no-repeat;
-  background-position: 0 -1.5rem, 45rem 0rem;
+  background-repeat: no-repeat;
+  background-position:45rem 0rem;
 }
 
 .knowledge__main {
@@ -49,7 +47,6 @@ body {
   width: 12rem;
   margin: 5.5rem 1rem 5.5rem 0;
   border-radius: 8px;
-  border: none;
   outline: none;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
@@ -57,13 +54,15 @@ body {
 }
 
 .knowledge__buttons_know_more {
-  background: rgba(0, 119, 183, 1);
+  background: rgba(42, 114, 222, 1);
   color: white;
+  border: none;
 }
 
 .knowledge__buttons_contact_us {
   background: white;
   color: rgba(0, 119, 183, 1);
+  border:2px solid rgba(42, 114, 222, 1);
 }
 
 .knowledge__image > img {
@@ -109,13 +108,10 @@ body {
 }
 
 .card-row-1 {
-  background: linear-gradient(
-    226.01deg,
-    rgba(42, 114, 222, 0.75) 0%,
-    rgba(42, 114, 222, 0) 100%
-  );
+  background: #F6F6F6;
   border-radius: 12px;
   padding: 3%;
+  border:4px solid rgba(42, 114, 222, 1);
 }
 
 .card-img > img {
@@ -144,8 +140,6 @@ body {
   align-items: center;
   justify-content: space-around;
   margin: 1rem 0;
-  background-image: url("/images/Ellipse 149.png");
-
   background-repeat: no-repeat;
   background-position: -10rem 28rem;
 }

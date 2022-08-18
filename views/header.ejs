@@ -21,13 +21,13 @@
     function toggleDropdown () {
 
         if(isBtnDropdownOpen){
-            document.getElementById("register_options").style.display="none";
-            document.getElementById("register_options_phn").style.display="none";
+            document.getElementById("resources_options").style.display="none";
+            document.getElementById("resources_options_phn").style.display="none";
             isBtnDropdownOpen = false;
         }
         else{
-            document.getElementById("register_options").style.display="flex";
-            document.getElementById("register_options_phn").style.display="flex";
+            document.getElementById("resources_options").style.display="flex";
+            document.getElementById("resources_options_phn").style.display="flex";
             isBtnDropdownOpen = true;  
         }
     }
@@ -56,13 +56,13 @@
   <body>
     <div class="topnav desk">
       <a href="/"
-        ><img src="/images/logo.png" alt="" />
+        ><img src="/images/ReverrBlack2.svg" alt="" />
         <p class="brand-name">REVERR</p></a
       >
 
       <div class="topnav-right">
         <a class="active-link" href="/">Home</a>
-        <div class="products_dropdown">
+        <!-- <div class="products_dropdown">
           <div onclick="toggleProductsDropdown()" class="productBtn">
           <div>Products</div>
         </div>
@@ -72,25 +72,25 @@
           <a href="/knowledge"><div class="product_option">Knowledge</div></a>
           <a href="/funding"><div class="product_option">Funding</div></a>
       </div>
-        </div>
+        </div> -->
+        <a href="/mentorship">Mentorship</a>
+        <a href="/networking">Networking</a>
         <a href="/community">Community</a>
-        <a href="/blog">Blog</a>
-        <a href="/about">About</a>
-        <a href="/fundingform" class="link-btn"><div class="memberBtnWrapper"><div class="memberBtn">Get Funded</div></div></a>
-       
+        <a href="/knowledge">Knowledge</a>
+               
         <div class="header_dropdown">
-            <div onclick="toggleDropdown()" class="registerBtn">
-            <div>Register Now</div>
-            </div>
-            <div id="register_options">
-              <a class="dropdown-link" href="/mentorship"><div class="register_option">Become a Mentor</div></a>
-              <a class="dropdown-link" href="/funding"><div class="register_option">Get Funded</div></a>
-              <a class="dropdown-link" href="/newsletter"><div class="register_option">Sign The Newsletter</div></a>
-              <a class="dropdown-link" href="/community"><div class="register_option">Join our Community</div></a>
-            </div>
-    </div>
+          <div onclick="toggleDropdown()" class="resourcesBtn">
+          <div>Resources <img src="/images/dropdown.svg" alt="dropdown" /></div>
+          </div>
+          <div id="resources_options">
+            <a class="dropdown-link" href="/blog"><div class="resources_option">Blog</div></a>
+            <a class="dropdown-link" href="/about"><div class="resources_option">About Us</div></a>
+            <a class="dropdown-link" href="/newsletter"><div class="resources_option">Sign The Newsletter</div></a>
+          </div>
+  </div>
     
       </div>
+      <a href="/fundingform" class="link-btn"><div class="memberBtn">Get Funded</div></div></a>
     </div>
 
     <section class="nav phn" id="phnheader">
@@ -112,7 +112,7 @@
           "
           onclick="show()"
         >
-          <a> <img src="/images/logo.png" style="width: 60px" alt="logo" /></a>
+          <a> <img src="/images/ReverrBlack2.svg" style="width: 60px" alt="logo" /></a>
           <a><h1 class="headingphn">&nbsp;Reverr</h1> </a>
         </div>
       </div>
@@ -125,10 +125,11 @@
           align-items: center;
           text-align: center;
           padding: 2%;
+          color: black;
         "
       >
         <a class="navitem" style="margin: 3% 0%" href="/">Home </a>
-        <div class="products_dropdown">
+        <!-- <div class="products_dropdown">
           <div onclick="toggleProductsDropdown()" class="productBtn">
           <div>Products</div>
         </div>
@@ -138,23 +139,22 @@
           <a href="/knowledge"><div class="product_option">Knowledge</div></a>
           <a href="/funding"><div class="product_option">Funding</div></a>
       </div>
-        </div>
-        <a class="navitem" style="margin: 3% 0%" href="/#solution">Community</a>
-        <a class="navitem" style="margin: 3% 0%" href="/blog">Blog</a>
-        <a class="navitem" style="margin: 3% 0%" href="/about">About</a>
-        <div class="memberBtnWrapper">     <div
+        </div> -->
+        <a class="navitem" style="margin: 3% 0%" href="/mentorship">Mentorship</a>
+        <a class="navitem" style="margin: 3% 0%" href="/networking">Networking</a>
+        <a class="navitem" style="margin: 3% 0%" href="/community">Community</a>
+        <a class="navitem" style="margin: 3% 0%" href="/knowledge">Knowledge</a>
+        <div
             class="memberBtn
             style="margin: 3% 25%; padding: 2% 4%; text-align:center:"
           >
-            <a href="/mentorform"></a>Be a mentor
-          </div></div>
+            <a href="/fundingform"></a>Get Funded</div>
           <div class="header_dropdown">
-        <div onclick="toggleDropdown()" style="margin: 10% 5%; padding: 5% 2%;" class="registerBtn">Register Now</div>
-        <div style="margin:5rem" id="register_options_phn">
-            <div class="register_option">Become a Mentor</div>
-            <div class="register_option">Get Funded</div>
-            <div class="register_option">Sign The Newsletter</div>
-            <div class="register_option">Join our Community</div>
+        <div onclick="toggleDropdown()" style="margin: 10% 5%; padding: 5% 2%;" class="resourcesBtn">Resources <img src="/images/dropdown.svg" alt="dropdown" /></div>
+        <div style="margin:5rem" id="resources_options_phn">
+            <div class="resources_option"><a href="/blog">Blog</a></div>
+            <div class="resources_option"><a href="/about">About Us</a></div>
+            <div class="resources_option"><a href="/newsletter">Sign The Newsletter</a></div>
         </div>
     </div>
         <div style="cursor: pointer; margin: 3% 0%" onclick="closes()">
