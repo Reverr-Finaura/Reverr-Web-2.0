@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Reverr</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Gideon+Roman&family=Montserrat&family=Philosopher&family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/header-white.css" />
+  </head>
+  <script>
+    var isBtnDropdownOpen=false;
+    var isProductsDropdownOpen=false;
+    function toggleDropdown () {
+
+        if(isBtnDropdownOpen){
+            document.getElementById("resources_options").style.display="none";
+            document.getElementById("resources_options_phn").style.display="none";
+            isBtnDropdownOpen = false;
+        }
+        else{
+            document.getElementById("resources_options").style.display="flex";
+            document.getElementById("resources_options_phn").style.display="flex";
+            isBtnDropdownOpen = true;  
+        }
+    }
+
+    function toggleProductsDropdown () {
+      
+        if(isProductsDropdownOpen){
+            document.getElementById("product_options").style.display="none";
+            document.getElementById("product_options_phn").style.display="none";
+            isProductsDropdownOpen = false;
+        }
+        else{
+            document.getElementById("product_options").style.display="flex";
+            document.getElementById("product_options_phn").style.display="flex";
+            isProductsDropdownOpen = true;  
+        }
+    }
+    function show(){
+        document.getElementById("phnnav").style.display="flex";
+    }
+    function closes(){
+          document.getElementById("phnnav").style.display="none";
+    }
+
+</script>
+  <body>
+    <div class="topnav desk">
+      <a href="/"
+        ><img src="/images/ReverrWhite.svg" alt="" />
+        <p class="brand-name">REVERR</p></a
+      >
+
+      <div class="topnav-right">
+        <a class="active-link" href="/">Home</a>
+        <!-- <div class="products_dropdown">
+          <div onclick="toggleProductsDropdown()" class="productBtn">
+          <div>Products</div>
+        </div>
+        <div id="product_options">
+          <a href="/mentorship"><div class="product_option">Mentorship</div></a>
+          <a href="/networking"><div class="product_option">Networking</div></a>
+          <a href="/knowledge"><div class="product_option">Knowledge</div></a>
+          <a href="/funding"><div class="product_option">Funding</div></a>
+      </div>
+        </div> -->
+        <a href="/mentorship">Mentorship</a>
+        <a href="/networking">Networking</a>
+        <a href="/community">Community</a>
+        <a href="/knowledge">Knowledge</a>
+               
+        <div class="header_dropdown">
+          <div onclick="toggleDropdown()" class="resourcesBtn">
+          <div>Resources <img src="/images/dropdown.svg" alt="dropdown" /></div>
+          </div>
+          <div id="resources_options">
+            <a class="dropdown-link" href="/blog"><div class="resources_option">Blog</div></a>
+            <a class="dropdown-link" href="/about"><div class="resources_option">About Us</div></a>
+            <a class="dropdown-link" href="/newsletter"><div class="resources_option">Sign The Newsletter</div></a>
+          </div>
+  </div>
+    
+      </div>
+      <a href="/fundingform" class="link-btn"><div class="memberBtn">Get Funded</div></div></a>
+    </div>
+
+    <section class="nav phn" id="phnheader">
+      <div
+        style="
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          justify-content: center;
+        "
+      >
+        <div
+          style="
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            cursor: pointer;
+          "
+          onclick="show()"
+        >
+          <a> <img src="/images/ReverrWhite.svg" style="width: 60px" alt="logo" /></a>
+          <a><h1 class="headingphn" style="color: white;">&nbsp;Reverr</h1> </a>
+        </div>
+      </div>
+      <div
+        id="phnnav"
+        style="
+          display: none;
+          width: 100%;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          padding: 2%;
+          color: white;
+        "
+      >
+        <a class="navitem" style="margin: 3% 0%" href="/">Home </a>
+        <!-- <div class="products_dropdown">
+          <div onclick="toggleProductsDropdown()" class="productBtn">
+          <div>Products</div>
+        </div>
+        <div id="product_options_phn">
+          <a href="/mentorship"><div class="product_option">Mentorship</div></a>
+          <a href="/networking"><div class="product_option">Networking</div></a>
+          <a href="/knowledge"><div class="product_option">Knowledge</div></a>
+          <a href="/funding"><div class="product_option">Funding</div></a>
+      </div>
+        </div> -->
+        <a class="navitem" style="margin: 3% 0%" href="/mentorship">Mentorship</a>
+        <a class="navitem" style="margin: 3% 0%" href="/networking">Networking</a>
+        <a class="navitem" style="margin: 3% 0%" href="/community">Community</a>
+        <a class="navitem" style="margin: 3% 0%" href="/knowledge">Knowledge</a>
+        <div
+            class="memberBtn
+            style="margin: 3% 25%; padding: 2% 4%; text-align:center:"
+          >
+            <a href="/fundingform"></a>Get Funded</div>
+          <div class="header_dropdown">
+        <div onclick="toggleDropdown()" style="margin: 10% 5%; padding: 5% 2%;" class="resourcesBtn">Resources <img src="/images/dropdown.svg" alt="dropdown" /></div>
+        <div style="margin:5rem" id="resources_options_phn">
+            <div class="resources_option"><a href="/blog">Blog</a></div>
+            <div class="resources_option"><a href="/about">About Us</a></div>
+            <div class="resources_option"><a href="/newsletter">Sign The Newsletter</a></div>
+        </div>
+    </div>
+        <div style="cursor: pointer; margin: 3% 0%" onclick="closes()">
+          <a>Close</a>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

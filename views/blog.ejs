@@ -6,10 +6,9 @@
     <link rel="stylesheet" href="/css/blog.css" />
     <title>Reverr | Blogs</title>
   </head>
-  <body>
-    <%-include("contactheader")-%>
-    <%-include("header")-%>
 
+  <body>
+    <%-include("contactheader")-%> <%-include("header-white") -%>
     <section id="blog-intro">
       <div class="blog-heading">
         <img src="images/chain 1.png" alt="" />
@@ -55,7 +54,9 @@
             /></a>
             <p><%= data[i]?.publishedOn %></p>
             <h1>
-              <a href="/blog/<%= data[i].id %>"><%= data[i].heading %></a>
+              <a href="/blog/<%= data[i].id %>"
+                ><%= (data[i].heading).slice(0,30) %></a
+              >
             </h1>
             <p class="blog-text"><%= data[i].body %> ...</p>
           </div>
@@ -68,7 +69,9 @@
               ><img src="<%=data[i].image.imageUrl %>" alt=""
             /></a>
             <h1>
-              <a href="/blog/<%= data[i].id %>"><%= data[i].heading %></a>
+              <a href="/blog/<%= data[i].id %>"
+                ><%= (data[i].heading).slice(0,30) %></a
+              >
             </h1>
             <p><%= data[i]?.publishedOn %></p>
             <p class="blog-text"><%= data[i].body %> ...</p>
@@ -84,7 +87,9 @@
               ><img src="<%=data[i].image.imageUrl %>" alt=""
             /></a>
             <h1>
-              <a href="/blog/<%= data[i].id %>"><%= data[i].heading %></a>
+              <a href="/blog/<%= data[i].id %>"
+                ><%= (data[i].heading).slice(0,30) %></a
+              >
             </h1>
             <p><%= data[i].publishedOn %></p>
             <p class="blog-text"><%= data[i].body %> ...</p>
