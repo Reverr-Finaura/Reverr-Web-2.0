@@ -3,6 +3,7 @@ body {
   background-image: url("/images/Rectangle 2807.svg");
   background-repeat: no-repeat;
   background-position: right 66px;
+  background-size: contain;
 }
 
 a {
@@ -133,7 +134,7 @@ a {
 }
 
 .blog > a > img {
-  height: 15rem;
+  height: 12rem;
   max-width: 20rem;
   object-fit: contain;
 }
@@ -273,6 +274,11 @@ a {
     flex-direction: column;
     margin: auto;
     width: 50%;
+  }
+
+  .blog {
+    width: 100%;
+    text-align: center;
   }
 
   .blog > a > img {
