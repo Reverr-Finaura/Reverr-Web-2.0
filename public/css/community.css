@@ -1,5 +1,5 @@
 body {
-  background: #ffffff;
+  background: #f6f6f6;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -52,7 +52,7 @@ body {
 }
 
 .community__buttons_blue_btn {
-  background: #2A72DE;
+  background: #2a72de;
   color: white;
   border: none;
 }
@@ -499,8 +499,6 @@ body {
   .community__carousel-review {
     font-size: 14px;
   }
-
-
 }
 
 @media (max-width: 1024px) {

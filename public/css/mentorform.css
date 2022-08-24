@@ -1,10 +1,11 @@
 body {
-  background: #f6f6f6;
+  background: linear-gradient(167.37deg, #020e2c 9.15%, #09245e 64.83%);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   color: black;
   font-family: "Poppins", sans-serif;
+  color: white;
 }
 
 .forminput {

@@ -3,9 +3,9 @@
   margin: auto;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   background: rgba(42, 114, 222, 0.3);
-  gap: 42rem;
+  /* gap: 42rem; */
 }
 
 .contactheader__contacts {

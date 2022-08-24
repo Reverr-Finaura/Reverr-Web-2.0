@@ -1,9 +1,9 @@
 body {
-  background: #ffffff;
+  background: linear-gradient(167.37deg, #020E2C 9.15%, #09245E 64.83%);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  color: black;
+  color: white;
   font-family: "Poppins", sans-serif;
 }
 

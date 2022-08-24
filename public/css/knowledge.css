@@ -1,5 +1,5 @@
 body {
-  background: #ffffff;
+  background: #f6f6f6;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -12,7 +12,7 @@ body {
   align-items: flex-start;
   justify-content: space-between;
   background-repeat: no-repeat;
-  background-position:45rem 0rem;
+  background-position: 45rem 0rem;
 }
 
 .knowledge__main {
@@ -62,7 +62,7 @@ body {
 .knowledge__buttons_contact_us {
   background: white;
   color: rgba(0, 119, 183, 1);
-  border:2px solid rgba(42, 114, 222, 1);
+  border: 2px solid rgba(42, 114, 222, 1);
 }
 
 .knowledge__image > img {
@@ -108,10 +108,10 @@ body {
 }
 
 .card-row-1 {
-  background: #F6F6F6;
+  background: #f6f6f6;
   border-radius: 12px;
   padding: 3%;
-  border:4px solid rgba(42, 114, 222, 1);
+  border: 4px solid rgba(42, 114, 222, 1);
 }
 
 .card-img > img {

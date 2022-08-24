@@ -1,11 +1,9 @@
-body{
-  background: #000c12;
+body {
+  background: #f6f6f6;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
-
-
 
 #funding_page__intro {
   margin: auto;
@@ -13,10 +11,6 @@ body{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-image: url("/images/Ellipse 148.png"),
-    url("/images/Ellipse 149.png");
-  background-repeat: no-repeat, no-repeat;
-  background-position: 0 -1.5rem, 45rem 0rem;
 }
 
 .funding_page__main {
@@ -85,10 +79,6 @@ body{
   align-items: center;
   justify-content: space-around;
   margin: 1rem 0;
-  background-image: url("/images/Ellipse 149.png");
-
-  background-repeat: no-repeat;
-  background-position: 0rem 20rem;
 }
 
 .howitworks__heading {
@@ -234,11 +224,8 @@ body{
 }
 
 .capitalist {
-  background: linear-gradient(
-    45deg,
-    rgba(42, 114, 222, 0),
-    rgba(42, 114, 222, 0.75)
-  );
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 0.8rem;
   display: flex;
   flex-direction: column;

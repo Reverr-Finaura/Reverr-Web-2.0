@@ -1,11 +1,9 @@
-body{
-  background: #ffffff;
+body {
+  background: #f6f6f6;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
-
-
 
 #networking__intro {
   margin: 5rem auto;
