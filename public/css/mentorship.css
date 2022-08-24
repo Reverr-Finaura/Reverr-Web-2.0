@@ -174,8 +174,7 @@ b {
   margin: auto;
 }
 
-.card-row,
-.card-row-1 {
+.card-row {
   width: 100%;
   text-align: center;
   margin-top: 30px;
@@ -185,7 +184,10 @@ b {
   background: #f6f6f6;
   border: 4px solid #2a72de;
   border-radius: 12px;
-  padding: 3%;
+  padding: 1.5%;
+  text-align: center;
+  width: 14rem;
+  height: 23rem;
 }
 
 .card-row-1 p {
@@ -209,7 +211,7 @@ b {
   font-size: 16px;
   margin: 0 auto;
 }
-
+/* 
 .contact-sociallinks {
   margin-top: 2.5rem;
 }
@@ -224,6 +226,22 @@ b {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 50%;
   border: 6px solid #fff;
+} */
+
+.contact_btn > a > button {
+  padding: 5% 0;
+  font-size: 16px;
+  /* height: max-content; */
+  width: 12rem;
+  margin: 2em auto;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background-color: #2a72de;
+  color: #fff;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
 }
 
 @media (max-width: 1024px) {
@@ -319,8 +337,10 @@ b {
   }
 
   .card-row-1 {
-    max-width: 70%;
+    /* width: 40%; */
     text-align: center;
+    padding: 0;
+    /* height: max-content; */
     margin: 30px auto;
   }
   .card-row-1 p {
@@ -331,7 +351,7 @@ b {
     /* background-color: #fff;
     border: 5px solid #2a72de; */
     padding: 0.6em;
-    height: 5rem;
+    height: 7rem;
     border-radius: 100%;
   }
 
@@ -353,5 +373,10 @@ b {
 @media (min-width: 769px) {
   .card-container {
     display: flex;
+  }
+  .card-container-1 {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 3rem auto;
   }
 }
