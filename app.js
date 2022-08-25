@@ -99,6 +99,10 @@ app.get("/fundingform", function (req, res) {
   res.render("fundingform", { successful: false });
 });
 
+app.get("/privacypolicy", function (req, res) {
+  res.render("privacypolicy");
+});
+
 app.get("/blog", async function (req, res) {
   const content = await Blogs.get();
   var blogs = [];
