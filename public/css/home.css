@@ -205,6 +205,17 @@ body {
   display: flex;
   justify-content: space-around;
 }
+.tagline__card{
+  width: 22%;
+  text-align: justify;
+  cursor: pointer;
+  padding: 1% 1% 0.5%;
+}
+
+.tagline__card:hover{
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
 
 @media (max-width: 769px) {
   .tagline__container {
@@ -264,7 +275,7 @@ body {
   padding: 10%;
   margin: auto;
   background-size: cover;
-  height: 750px;
+  height: 600px;
 }
 
 .aim__para {
@@ -374,7 +385,9 @@ body {
 /* stats*/
 
 .stats {
-  margin: 8% 2%;
+  margin: 10% 10%;
+  width: 80%;
+  align-self: center;
 }
 
 .stats__heading {
@@ -536,7 +549,7 @@ body {
 
 .tagline__para {
   font-weight: 500;
-  font-size: 32px;
+  font-size: 28px;
   line-height: 48px;
   text-align: center;
 }
@@ -571,6 +584,11 @@ body {
   border-radius: 12px;
   width: 100%;
   padding: 15px;
+  text-align: center;
+}
+
+.funding__card a{
+  text-decoration: none;
 }
 
 .funding__para {
@@ -617,10 +635,9 @@ body {
 }
 
 .funding__heading {
-  font-size: 50px;
+  font-size: 36px;
   margin: 10px 0;
-  line-height: 204.5%;
-  /* or 65px */
+  line-height: 115%;
   text-align: center;
   color: #000000;
 }
@@ -699,6 +716,7 @@ img {
   font-size: 25px;
   padding: 10px 50px;
   opacity: 0.8;
+  color: white;
 }
 
 .text {
@@ -766,21 +784,29 @@ img {
   background-image: url("/images/carousal1.png");
   background-size: cover;
   background-repeat: no-repeat;
+  height: 600px;
+  border-radius: 16px;
 }
 .myslides3 {
   background-image: url("/images/carousal3.png");
   background-size: cover;
   background-repeat: no-repeat;
+  height: 600px;
+  border-radius: 16px;
 }
 .myslides2 {
   background-image: url("/images/carousal2.png");
   background-size: cover;
   background-repeat: no-repeat;
+  height: 600px;
+  border-radius: 16px;
 }
 .myslides4 {
   background-image: url("/images/carousal4.png");
   background-size: cover;
   background-repeat: no-repeat;
+  height: 600px;
+  border-radius: 16px;
 }
 
 @keyframes fade {
