@@ -23,6 +23,19 @@ body {
   width: 50%;
 }
 
+.knowledge__bgellipse1 {
+  position: absolute;
+  right: 0;
+  z-index: -999;
+}
+
+.knowledge__bgellipse2 {
+  position: absolute;
+  left: 0;
+  top: 70rem;
+  z-index: -999;
+}
+
 .knowledge__intro_heading > h1 {
   font-size: 50px;
   margin: 2.5rem 0;

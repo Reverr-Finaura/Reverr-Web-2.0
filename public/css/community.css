@@ -5,6 +5,20 @@ body {
   background-attachment: fixed;
 }
 
+.community__bgellipse1 {
+  position: absolute;
+  top: 8rem;
+  left: 0;
+  z-index: -999;
+}
+
+.community__bgellipse2 {
+  position: absolute;
+  top: 28rem;
+  left: 23rem;
+  z-index: -999;
+}
+
 #community__intro {
   margin: auto;
   width: 93%;
