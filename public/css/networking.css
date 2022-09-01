@@ -5,6 +5,10 @@ body {
   background-attachment: fixed;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .networking__bgellipse1 {
   position: absolute;
   right: 0;

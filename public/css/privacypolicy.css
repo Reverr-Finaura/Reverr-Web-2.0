@@ -7,6 +7,10 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 #privacypolicy__main {
   width: 80%;
   margin: 5rem auto;

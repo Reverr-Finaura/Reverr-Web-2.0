@@ -23,6 +23,10 @@ body {
   width: 50%;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .knowledge__bgellipse1 {
   position: absolute;
   right: 0;

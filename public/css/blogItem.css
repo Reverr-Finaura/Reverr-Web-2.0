@@ -5,6 +5,10 @@ body {
   background-attachment: fixed;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 #content {
   width: 70%;
   margin: auto auto 5rem;

@@ -5,6 +5,10 @@ body {
   background-attachment: fixed;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .community__bgellipse1 {
   position: absolute;
   top: 8rem;
