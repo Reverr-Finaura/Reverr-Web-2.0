@@ -8,6 +8,10 @@ body {
   color: white;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .forminput {
   width: 96%;
   background: #323544;

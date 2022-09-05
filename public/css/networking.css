@@ -5,6 +5,30 @@ body {
   background-attachment: fixed;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+.networking__bgellipse1 {
+  position: absolute;
+  right: 0;
+  z-index: -999;
+}
+
+.networking__bgellipse2 {
+  position: absolute;
+  left: 0;
+  top: 70rem;
+  z-index: -999;
+}
+
+.networking__bgellipse3 {
+  position: absolute;
+  right: 0;
+  top: 100rem;
+  z-index: -999;
+}
+
 #networking__intro {
   margin: 5rem auto;
   width: 93%;
@@ -178,8 +202,6 @@ body {
 }
 
 .card-img > img {
-  background-color: #fff;
-  border: 5px solid #2a72de;
   padding: 0.6em;
   height: 8rem;
   border-radius: 100%;

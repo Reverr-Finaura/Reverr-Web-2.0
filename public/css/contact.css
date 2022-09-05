@@ -5,6 +5,10 @@ body {
   background-attachment: fixed;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 #contactus-container {
   width: 80%;
   display: flex;

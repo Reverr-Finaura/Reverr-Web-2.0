@@ -5,12 +5,29 @@ body {
   background-attachment: fixed;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 #funding_page__intro {
   margin: auto;
   width: 93%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.funding__bgellipse1 {
+  position: absolute;
+  right: 0;
+  z-index: -999;
+}
+
+.funding__bgellipse2 {
+  position: absolute;
+  left: 0;
+  top: 70rem;
+  z-index: -999;
 }
 
 .funding_page__main {
@@ -183,8 +200,6 @@ body {
 }
 
 .card-img > img {
-  background-color: #fff;
-  border: 5px solid #2a72de;
   padding: 0.6em;
   height: 8rem;
   border-radius: 100%;
