@@ -200,6 +200,10 @@ body {
 .taggline__para {
   text-align: center;
 }
+.tagline__card {
+  width: 100%;
+  margin: 5px;
+}
 
 .tagline__container {
   display: flex;
@@ -575,6 +579,7 @@ body {
 
 .funding__para {
   color: rgb(0, 0, 0);
+  text-align: center;
 }
 
 .funding__button {
@@ -610,7 +615,8 @@ body {
 .funding__image {
   width: 130px;
   height: 130px;
-  margin: 10px 0;
+  display: block;
+  margin: auto;
   background: url("../images/eclipse80.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -619,7 +625,7 @@ body {
 .funding__heading {
   font-size: 50px;
   margin: 10px 0;
-  line-height: 204.5%;
+
   /* or 65px */
   text-align: center;
   color: #000000;
