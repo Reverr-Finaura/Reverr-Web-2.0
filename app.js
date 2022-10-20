@@ -5,6 +5,7 @@ const cors = require("cors");
 const bodyparser = require("body-parser");
 const { Mentors, Funding, Newsletter, Message, Blogs } = require("./config");
 var SibApiV3Sdk = require("sib-api-v3-sdk");
+const PORT = process.env.PORT || 8080;
 
 app.use(cors());
 app.use(bodyparser.urlencoded({ extended: false }));
@@ -303,6 +304,6 @@ app.post("/funding", async (req, res) => {
   }
 });
 
-app.listen(3000, (req, res) => {
-  console.log("Server up and running at port 3000");
+app.listen(PORT, (req, res) => {
+  console.log(`Express server up and running at - http://localhost:${PORT}`);
 });
