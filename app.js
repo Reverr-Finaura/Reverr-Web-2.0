@@ -89,7 +89,7 @@ app.get("/community", function (req, res) {
 });
 
 app.get("/networking", function (req, res) {
-  res.render("networking");
+  res.render("networking2");
 });
 
 app.get("/funding", function (req, res) {

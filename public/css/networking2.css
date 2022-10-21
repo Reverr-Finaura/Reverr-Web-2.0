@@ -1,0 +1,262 @@
+body {
+  background: #f6f6f6;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.intro-wrapper {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.intro {
+  width: 38%;
+}
+
+.intro button,
+.startup-networking__wrapper button {
+  padding: 8px;
+  width: 10rem;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: large;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.blue {
+  background-color: #0077b7;
+  color: white;
+  border: 2px solid #0077b7;
+}
+
+.white {
+  background-color: transparent;
+  color: #0077b7;
+  border: 2px solid #0077b7;
+  margin-left: 1rem;
+}
+
+.intro-img {
+  width: 30%;
+  margin-top: 5px;
+}
+
+/* STARTUP STARTS HERE */
+.startup-networking__wrapper {
+  text-align: center;
+}
+
+.startup-networking__head {
+  text-align: center;
+  width: 100%;
+}
+
+.startup-networking__head p {
+  font-size: 1.3rem;
+}
+
+.startup-networking__body {
+  margin-top: 1.5rem;
+}
+
+.items-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.items-wrapper .item1,
+.items-wrapper .item2 {
+  width: 35%;
+  height: 100%;
+  text-align: center;
+  padding: 5px;
+}
+
+.items-wrapper .arrow-right {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.startup-networking__wrapper button {
+  width: 30%;
+}
+
+.networking-methods__wrapper {
+  margin-top: 5rem;
+}
+
+.networking-methods__wrapper .content-wrapper {
+  display: flex;
+  width: 85%;
+  margin: 2rem auto 0rem auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.networking-mentods__item {
+  width: 48%;
+  padding: 40px;
+  border-radius: 10px;
+  background-color: #2a72de;
+  color: white;
+}
+
+.networking-mentods__item3 {
+  margin: 2.5rem auto 0px auto;
+}
+
+.community__wrapper {
+  margin-top: 5rem;
+}
+
+.community-head {
+  width: 85%;
+  margin: auto;
+  break-inside: 2px solid black;
+}
+
+.community-item {
+  display: flex;
+  width: 85%;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.item-tag {
+  width: 5%;
+  height: 150px;
+}
+
+.community-item__tag {
+  border-radius: 50px;
+  background-color: burlywood;
+  border: 1px solid burlywood;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.item-content {
+  width: 92%;
+  text-align: left;
+}
+
+.item-content h3,
+.item-content p {
+  margin: 0;
+}
+
+.testimonials-wrapper {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.testimonial-heading {
+  color: #2a72de;
+  font-size: 3.5rem;
+}
+
+.testimonial-body {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  margin-top: 5rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.testimonials-item {
+  color: white;
+  width: 30%;
+  padding: 20px;
+  text-align: left;
+  border-radius: 10px;
+  background-color: #0077b7;
+}
+
+@media screen and (max-width: 600px) {
+  .intro {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+  }
+  .intro h1 {
+    font-size: 2rem;
+  }
+
+  .intro h1,
+  .intro p {
+    text-align: left;
+  }
+  .intro-wrapper {
+    flex-direction: column;
+  }
+  .intro-img {
+    display: none;
+    /* width: 80%;
+    margin: 1.5rem auto; */
+  }
+
+  .intro button {
+    margin: 1rem auto 0px auto;
+  }
+
+  .items-wrapper {
+    flex-direction: column;
+  }
+  .items-wrapper .item1,
+  .items-wrapper .item2 {
+    width: 100%;
+  }
+
+  .items-wrapper .arrow-right {
+    display: none;
+  }
+
+  .startup-networking__head {
+    width: 90%;
+    margin: auto;
+  }
+
+  .startup-networking__wrapper button {
+    width: 60%;
+  }
+
+  .networking-methods__wrapper .content-wrapper {
+    flex-direction: column;
+  }
+  .networking-mentods__item,
+  .networking-mentods__item3 {
+    width: 100%;
+    margin-top: 2.5rem;
+  }
+
+  .networking-mentods__item :first-child {
+    margin-top: 0;
+  }
+  .testimonial-body {
+    flex-direction: column;
+  }
+  .testimonials-item {
+    width: 100%;
+    margin-top: 2rem;
+  }
+}
