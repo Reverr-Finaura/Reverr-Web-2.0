@@ -187,6 +187,8 @@ body {
   height: 31px;
   background: #2a72de;
   border-radius: 8px;
+  position: relative;
+  bottom: 0px;
 }
 .tagline__heading {
   opacity: 0.8;
