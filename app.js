@@ -5,7 +5,7 @@ const cors = require("cors");
 const bodyparser = require("body-parser");
 const { Mentors, Funding, Newsletter, Message, Blogs } = require("./config");
 var SibApiV3Sdk = require("sib-api-v3-sdk");
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 3000;
 
 app.use(cors());
 app.use(bodyparser.urlencoded({ extended: false }));
