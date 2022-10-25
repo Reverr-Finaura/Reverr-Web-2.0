@@ -8,370 +8,391 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="/css/home.css" />
   </head>
+  <style>
+
+    .mobile{
+      display: none;
+    }
+
+    @media (max-width: 900px){
+      .mobile{
+        display: block;
+      }
+      .main{
+        display: none;
+      }
+    }
+  </style>
   <body>
     <%- include('contactheader'); -%> <%- include('header'); -%>
-    <section class="hero__main">
-      <div class="hero__container">
-        <div class="hero__details">
-          <h1 class="hero__heading">
-            Making Your Startup Journey As Easy As Breathing!
-          </h1>
-          <p class="hero__para">
-            ‘’Attempting to offer you the greatest mentoring, direction, and
-            insights for the startup you're launching.’’
-          </p>
-          <button class="hero__button">Download our App</button>
-        </div>
-        <div class="hero__img-before">
-          <div class="hero__imgFlex">
-            <img src="/images/hero__rocket.png" class="hero__rocket" alt="" />
-            <div class="plane">
-              <img src="/images/hero__plane.png" alt="" />
+    <%- include('mobile'); -%> 
+    <div class="main">
+      <section class="hero__main">
+        <div class="hero__container">
+          <div class="hero__details">
+            <h1 class="hero__heading">
+              Making Your Startup Journey As Easy As Breathing!
+            </h1>
+            <p class="hero__para">
+              ‘’Attempting to offer you the greatest mentoring, direction, and
+              insights for the startup you're launching.’’
+            </p>
+            <button class="hero__button">Download our App</button>
+          </div>
+          <div class="hero__img-before">
+            <div class="hero__imgFlex">
+              <img src="/images/hero__rocket.png" class="hero__rocket" alt="" />
+              <div class="plane">
+                <img src="/images/hero__plane.png" alt="" />
+              </div>
             </div>
+            <div>
+              <img src="/images/hero-img.png" alt="" class="hero__img" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="tagg">
+        <h1 class="tagline__heading">OUR SERVICES</h1>
+        <div class="tagline__container">
+          <div class="tagline__card">
+            <img src="/images/taggline1.png" alt="" class="tagline__img" />
+            <h2 class="taglin__heading">Become a Mentor</h2>
+            <p class="taggline__para">
+              Tap here and start your mentoring journey at Reverr.
+            </p>
+            <button class="tagline__btn">Learn More</button>
+          </div>
+          <div class="tagline__card">
+            <img src="/images/taggline2.png" alt="" class="tagline__img" />
+            <h2 class="taglin__heading">Get your Start-Up Funded</h2>
+            <p class="taggline__para">
+              It is very simple to get funded with Reverr. You pitch your idea to
+              our team and we will engage ourselves in assessing the credibility
+              of your ideas. !
+            </p>
+            <button class="tagline__btn">Learn More</button>
+          </div>
+          <div class="tagline__card">
+            <img src="/images/taggline3.png" alt="" class="tagline__img" />
+            <h2 class="taglin__heading">Sign up the Newsletter</h2>
+            <p class="taggline__para">
+              You can sign-up to our newsletter to see fun content come up your
+              way.
+            </p>
+            <button class="tagline__btn">Learn More</button>
+          </div>
+          <div class="tagline__card">
+            <img src="/images/taggline4.png" alt="" class="tagline__img" />
+            <h2 class="taglin__heading">Join our Community</h2>
+            <p class="taggline__para">
+              Community is the space that we at Reverr provide you for interaction
+              and development. Here, we involve ourselves in fun activities that
+              are of paramount importance in one’s startup journey.
+            </p>
+            <button class="tagline__btn">Learn More</button>
+          </div>
+        </div>
+      </section>
+      <section class="aim">
+        <!-- <img src="/images/image57.png" class="aim__image" alt="" /> -->
+        <div class="aim__para--position aim__flex">
+          <div class="aim__heading">Our only AIM is to</div>
+          <div class="aim__para">
+            “ Help Entrepreneurs and Start-ups to grow ”
           </div>
           <div>
-            <img src="/images/hero-img.png" alt="" class="hero__img" />
+            <button class="aim__btn">
+              Grow with <span style="color: #2a72de">REVERR</span>
+            </button>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="tagg">
-      <h1 class="tagline__heading">OUR SERVICES</h1>
-      <div class="tagline__container">
-        <div class="tagline__card">
-          <img src="/images/taggline1.png" alt="" class="tagline__img" />
-          <h2 class="taglin__heading">Become a Mentor</h2>
-          <p class="taggline__para">
-            Tap here and start your mentoring journey at Reverr.
-          </p>
-          <button class="tagline__btn">Learn More</button>
+      </section>
+  
+      <section class="video">
+        <div class="video__flex">
+          <div>
+            <h1 class="video__heading">
+              Why is <span style="color: #2a72de">REVERR</span> for you.. ?
+            </h1>
+            <p class="video__para">
+              We were debilitated upon seeing the lack of hands-on support for
+              entrepreneurs trying to stand sturdily in the market, so we got you
+              REVERR. Reverr is one solution to your major problems.
+            </p>
+            <button class="video__btn">Join REVERR</button>
+          </div>
+          <div>
+            <!-- <video src="/images/Reverr.mp4" class="video__video"></video> -->
+            <video
+              controls=""
+              muted=""
+              poster=""
+              class="video__video"
+              autoplay=""
+              __idm_id__="24577"
+            >
+              <source src="/images/Reverr.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
         </div>
-        <div class="tagline__card">
-          <img src="/images/taggline2.png" alt="" class="tagline__img" />
-          <h2 class="taglin__heading">Get your Start-Up Funded</h2>
-          <p class="taggline__para">
-            It is very simple to get funded with Reverr. You pitch your idea to
-            our team and we will engage ourselves in assessing the credibility
-            of your ideas. !
-          </p>
-          <button class="tagline__btn">Learn More</button>
+      </section>
+  
+      <section class="stats">
+        <div class="stats__heading">Our Stats</div>
+        <div class="flex_stats">
+          <div class="stats__card">
+            <img
+              src="/images/stats_white.png"
+              class="stats__card--imageWhite"
+              alt=""
+            />
+            <div class="blue_blob"><div class="blue_blob_text">50</div></div>
+            <div class="stats__card--heading">Start ups registered</div>
+          </div>
+          <div class="stats__card">
+            <img
+              src="/images/stats_white.png"
+              class="stats__card--imageWhite"
+              alt=""
+            />
+            <div class="blue_blob"><div class="blue_blob_text">75+</div></div>
+            <div class="stats__card--heading">Mentors</div>
+          </div>
+          <div class="stats__card">
+            <img
+              src="/images/stats_white.png"
+              class="stats__card--imageWhite"
+              alt=""
+            />
+            <div class="blue_blob"><div class="blue_blob_text">25+</div></div>
+            <div class="stats__card--heading">Startups Funded</div>
+          </div>
+          <div class="stats__card">
+            <img
+              src="/images/stats_white.png"
+              class="stats__card--imageWhite"
+              alt=""
+            />
+            <div class="blue_blob"><div class="blue_blob_text">250+</div></div>
+            <div class="stats__card--heading">Community Members</div>
+          </div>
         </div>
-        <div class="tagline__card">
-          <img src="/images/taggline3.png" alt="" class="tagline__img" />
-          <h2 class="taglin__heading">Sign up the Newsletter</h2>
-          <p class="taggline__para">
-            You can sign-up to our newsletter to see fun content come up your
-            way.
-          </p>
-          <button class="tagline__btn">Learn More</button>
-        </div>
-        <div class="tagline__card">
-          <img src="/images/taggline4.png" alt="" class="tagline__img" />
-          <h2 class="taglin__heading">Join our Community</h2>
-          <p class="taggline__para">
-            Community is the space that we at Reverr provide you for interaction
-            and development. Here, we involve ourselves in fun activities that
-            are of paramount importance in one’s startup journey.
-          </p>
-          <button class="tagline__btn">Learn More</button>
-        </div>
-      </div>
-    </section>
-    <section class="aim">
-      <!-- <img src="/images/image57.png" class="aim__image" alt="" /> -->
-      <div class="aim__para--position aim__flex">
-        <div class="aim__heading">Our only AIM is to</div>
-        <div class="aim__para">
-          “ Help Entrepreneurs and Start-ups to grow ”
-        </div>
-        <div>
-          <button class="aim__btn">
-            Grow with <span style="color: #2a72de">REVERR</span>
-          </button>
-        </div>
-      </div>
-    </section>
-
-    <section class="video">
-      <div class="video__flex">
-        <div>
-          <h1 class="video__heading">
-            Why is <span style="color: #2a72de">REVERR</span> for you.. ?
-          </h1>
-          <p class="video__para">
-            We were debilitated upon seeing the lack of hands-on support for
-            entrepreneurs trying to stand sturdily in the market, so we got you
-            REVERR. Reverr is one solution to your major problems.
-          </p>
-          <button class="video__btn">Join REVERR</button>
-        </div>
-        <div>
-          <!-- <video src="/images/Reverr.mp4" class="video__video"></video> -->
-          <video
-            controls=""
-            muted=""
-            poster=""
-            class="video__video"
-            autoplay=""
-            __idm_id__="24577"
-          >
-            <source src="/images/Reverr.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-        </div>
-      </div>
-    </section>
-
-    <section class="stats">
-      <div class="stats__heading">Our Stats</div>
-      <div class="flex_stats">
-        <div class="stats__card">
+      </section>
+  
+      <section class="tagline">
+        <div class="flex__tagline">
           <img
-            src="/images/stats_white.png"
-            class="stats__card--imageWhite"
+            src="/images/tagline.png"
+            class="tagline__image"
+            width="160px"
             alt=""
           />
-          <div class="blue_blob"><div class="blue_blob_text">50</div></div>
-          <div class="stats__card--heading">Start ups registered</div>
-        </div>
-        <div class="stats__card">
-          <img
-            src="/images/stats_white.png"
-            class="stats__card--imageWhite"
-            alt=""
-          />
-          <div class="blue_blob"><div class="blue_blob_text">75+</div></div>
-          <div class="stats__card--heading">Mentors</div>
-        </div>
-        <div class="stats__card">
-          <img
-            src="/images/stats_white.png"
-            class="stats__card--imageWhite"
-            alt=""
-          />
-          <div class="blue_blob"><div class="blue_blob_text">25+</div></div>
-          <div class="stats__card--heading">Startups Funded</div>
-        </div>
-        <div class="stats__card">
-          <img
-            src="/images/stats_white.png"
-            class="stats__card--imageWhite"
-            alt=""
-          />
-          <div class="blue_blob"><div class="blue_blob_text">250+</div></div>
-          <div class="stats__card--heading">Community Members</div>
-        </div>
-      </div>
-    </section>
-
-    <section class="tagline">
-      <div class="flex__tagline">
-        <img
-          src="/images/tagline.png"
-          class="tagline__image"
-          width="160px"
-          alt=""
-        />
-        <div class="tagline__para">
-          Reverr as a platform is a startup for startups. Our team and we work
-          day and night to help you build a startup of your dreams and so far,
-          we’re a success.
-        </div>
-      </div>
-    </section>
-
-    <section class="funding">
-      <div class="grid__funding">
-        <div class="funding__card">
-          <img src="./images/funding3.png" class="funding__image" alt="" />
-          <div class="funding__heading">Mentorship</div>
-          <div class="funding__para">
-            We engage in providing mentoring services, funding services,
-            networking services and much more.
+          <div class="tagline__para">
+            Reverr as a platform is a startup for startups. Our team and we work
+            day and night to help you build a startup of your dreams and so far,
+            we’re a success.
           </div>
-          <a href="/mentorship"
-            ><button class="funding__button">Know More</button></a
-          >
         </div>
-        <div class="funding__card">
-          <img src="./images/funding1.png" class="funding__image" alt="" />
-          <div class="funding__heading">Networking</div>
-          <div class="funding__para">
-            All of our dealings are done online so you can remain in the comfort
-            of your space and still, your work won’t stop,
+      </section>
+  
+      <section class="funding">
+        <div class="grid__funding">
+          <div class="funding__card">
+            <img src="./images/funding3.png" class="funding__image" alt="" />
+            <div class="funding__heading">Mentorship</div>
+            <div class="funding__para">
+              We engage in providing mentoring services, funding services,
+              networking services and much more.
+            </div>
+            <a href="/mentorship"
+              ><button class="funding__button">Know More</button></a
+            >
           </div>
-          <a href="/networking"
-            ><button class="funding__button">Know More</button></a
-          >
-        </div>
-        <div class="funding__card">
-          <img src="./images/funding2.png" class="funding__image" alt="" />
-          <div class="funding__heading">Fundraising</div>
-          <div class="funding__para">
-            Your dedication makes us work harder to get funding for you and your
-            startup.
+          <div class="funding__card">
+            <img src="./images/funding1.png" class="funding__image" alt="" />
+            <div class="funding__heading">Networking</div>
+            <div class="funding__para">
+              All of our dealings are done online so you can remain in the comfort
+              of your space and still, your work won’t stop,
+            </div>
+            <a href="/networking"
+              ><button class="funding__button">Know More</button></a
+            >
           </div>
-          <a href="/fundingform"
-            ><button class="funding__button">Know More</button></a
-          >
-        </div>
-        <div class="funding__card">
-          <img src="./images/image 71.png" class="funding__image" alt="" />
-          <div class="funding__heading">Learning opportunities</div>
-          <div class="funding__para">
-            Our app is finally launched and a simple download from the playstore
-            will make your journey simpler than it has ever been.
+          <div class="funding__card">
+            <img src="./images/funding2.png" class="funding__image" alt="" />
+            <div class="funding__heading">Fundraising</div>
+            <div class="funding__para">
+              Your dedication makes us work harder to get funding for you and your
+              startup.
+            </div>
+            <a href="/fundingform"
+              ><button class="funding__button">Know More</button></a
+            >
           </div>
-          <a href="/knowledge"
-            ><button class="funding__button">Know More</button></a
-          >
+          <div class="funding__card">
+            <img src="./images/image 71.png" class="funding__image" alt="" />
+            <div class="funding__heading">Learning opportunities</div>
+            <div class="funding__para">
+              Our app is finally launched and a simple download from the playstore
+              will make your journey simpler than it has ever been.
+            </div>
+            <a href="/knowledge"
+              ><button class="funding__button">Know More</button></a
+            >
+          </div>
         </div>
-      </div>
-    </section>
-
-    <!-- <section class="carousel" aria-label="Gallery">
-        <ol class="carousel__viewport">
-          <li id="carousel_slide1" tabindex="0" class="carousel_slide">
-            <div class="carousel__snapper">
-              <a href="#carousel_slide4" class="carousel_prev"
-                >Go to last slide</a
+      </section>
+  
+      <!-- <section class="carousel" aria-label="Gallery">
+          <ol class="carousel__viewport">
+            <li id="carousel_slide1" tabindex="0" class="carousel_slide">
+              <div class="carousel__snapper">
+                <a href="#carousel_slide4" class="carousel_prev"
+                  >Go to last slide</a
+                >
+                <a href="#carousel_slide2" class="carousel_next"
+                  >Go to next slide</a
+                >
+              </div>
+            </li>
+            <li id="carousel_slide2" tabindex="0" class="carousel_slide">
+              <div class="carousel__snapper"></div>
+              <a href="#carousel_slide1" class="carousel_prev"
+                >Go to previous slide</a
               >
-              <a href="#carousel_slide2" class="carousel_next"
+              <a href="#carousel_slide3" class="carousel_next"
                 >Go to next slide</a
               >
-            </div>
-          </li>
-          <li id="carousel_slide2" tabindex="0" class="carousel_slide">
-            <div class="carousel__snapper"></div>
-            <a href="#carousel_slide1" class="carousel_prev"
-              >Go to previous slide</a
-            >
-            <a href="#carousel_slide3" class="carousel_next"
-              >Go to next slide</a
-            >
-          </li>
-          <li id="carousel_slide3" tabindex="0" class="carousel_slide">
-            <div class="carousel__snapper"></div>
-            <a href="#carousel_slide2" class="carousel_prev"
-              >Go to previous slide</a
-            >
-            <a href="#carousel_slide4" class="carousel_next"
-              >Go to next slide</a
-            >
-          </li>
-          <li id="carousel_slide4" tabindex="0" class="carousel_slide">
-            <div class="carousel__snapper"></div>
-            <a href="#carousel_slide3" class="carousel_prev"
-              >Go to previous slide</a
-            >
-            <a href="#carousel_slide1" class="carousel_next"
-              >Go to first slide</a
-            >
-          </li>
-        </ol>
-        <aside class="carousel__navigation">
-          <ol class="carousel__navigation-list">
-            <li class="carousel__navigation-item">
-              <a href="#carousel_slide1" class="carousel_navigation-button"
-                >Go to slide 1</a
+            </li>
+            <li id="carousel_slide3" tabindex="0" class="carousel_slide">
+              <div class="carousel__snapper"></div>
+              <a href="#carousel_slide2" class="carousel_prev"
+                >Go to previous slide</a
+              >
+              <a href="#carousel_slide4" class="carousel_next"
+                >Go to next slide</a
               >
             </li>
-            <li class="carousel__navigation-item">
-              <a href="#carousel_slide2" class="carousel_navigation-button"
-                >Go to slide 2</a
+            <li id="carousel_slide4" tabindex="0" class="carousel_slide">
+              <div class="carousel__snapper"></div>
+              <a href="#carousel_slide3" class="carousel_prev"
+                >Go to previous slide</a
               >
-            </li>
-            <li class="carousel__navigation-item">
-              <a href="#carousel_slide3" class="carousel_navigation-button"
-                >Go to slide 3</a
-              >
-            </li>
-            <li class="carousel__navigation-item">
-              <a href="#carousel_slide4" class="carousel_navigation-button"
-                >Go to slide 4</a
+              <a href="#carousel_slide1" class="carousel_next"
+                >Go to first slide</a
               >
             </li>
           </ol>
-        </aside>
-      </section> -->
-    <!-- <h2>Automatic Slideshow</h2>
-      <p>Change image every 2 seconds:</p> -->
-    <section class="corousel">
-      <div class="slideshow-container">
-        <div class="mySlides fade myslides1">
-          <div class="carousal__heading">Become a Mentor</div>
-          <div class="carousal__para">
-            Do you have a knack for entrepreneurship along with expertise in a
-            field and desire to inspire the next generation of leaders? If so,
-            join us today!
+          <aside class="carousel__navigation">
+            <ol class="carousel__navigation-list">
+              <li class="carousel__navigation-item">
+                <a href="#carousel_slide1" class="carousel_navigation-button"
+                  >Go to slide 1</a
+                >
+              </li>
+              <li class="carousel__navigation-item">
+                <a href="#carousel_slide2" class="carousel_navigation-button"
+                  >Go to slide 2</a
+                >
+              </li>
+              <li class="carousel__navigation-item">
+                <a href="#carousel_slide3" class="carousel_navigation-button"
+                  >Go to slide 3</a
+                >
+              </li>
+              <li class="carousel__navigation-item">
+                <a href="#carousel_slide4" class="carousel_navigation-button"
+                  >Go to slide 4</a
+                >
+              </li>
+            </ol>
+          </aside>
+        </section> -->
+      <!-- <h2>Automatic Slideshow</h2>
+        <p>Change image every 2 seconds:</p> -->
+      <section class="corousel">
+        <div class="slideshow-container">
+          <div class="mySlides fade myslides1">
+            <div class="carousal__heading">Become a Mentor</div>
+            <div class="carousal__para">
+              Do you have a knack for entrepreneurship along with expertise in a
+              field and desire to inspire the next generation of leaders? If so,
+              join us today!
+            </div>
+            <!-- <img src="./images/carousal1.png" style="width: 100%" /> -->
+            <a href="/mentorform"><button class="text">Know More</button></a>
           </div>
-          <!-- <img src="./images/carousal1.png" style="width: 100%" /> -->
-          <a href="/mentorform"><button class="text">Know More</button></a>
-        </div>
-
-        <div class="mySlides fade myslides2">
-          <div class="carousal__heading">Get Funded</div>
-          <div class="carousal__para">
-            Looking for funds to grow your venture? So don't wait any longer,
-            fill out the form now and get your startup funded so you can grow
-            seamlessly!
+  
+          <div class="mySlides fade myslides2">
+            <div class="carousal__heading">Get Funded</div>
+            <div class="carousal__para">
+              Looking for funds to grow your venture? So don't wait any longer,
+              fill out the form now and get your startup funded so you can grow
+              seamlessly!
+            </div>
+  
+            <!-- <img src="./images/carousal2.png" style="width: 100%" /> -->
+            <a href="/fundingform"><button class="text">Know More</button></a>
           </div>
-
-          <!-- <img src="./images/carousal2.png" style="width: 100%" /> -->
-          <a href="/fundingform"><button class="text">Know More</button></a>
-        </div>
-
-        <div class="mySlides fade myslides3">
-          <div class="carousal__heading">Signup to the Newsletter</div>
-          <div class="carousal__para">
-            Get the latest startup updates and insights by signing up for our
-            newsletter!
+  
+          <div class="mySlides fade myslides3">
+            <div class="carousal__heading">Signup to the Newsletter</div>
+            <div class="carousal__para">
+              Get the latest startup updates and insights by signing up for our
+              newsletter!
+            </div>
+            <!-- <img src="./images/carousal3.png" style="width: 100%" /> -->
+            <a href="/newsletter"><button class="text">Know More</button></a>
           </div>
-          <!-- <img src="./images/carousal3.png" style="width: 100%" /> -->
-          <a href="/newsletter"><button class="text">Know More</button></a>
-        </div>
-        <div class="mySlides fade myslides4">
-          <div class="carousal__heading">Join our Community</div>
-          <div class="carousal__para">
-            Join the community of the leaders of tomorrow now!
+          <div class="mySlides fade myslides4">
+            <div class="carousal__heading">Join our Community</div>
+            <div class="carousal__para">
+              Join the community of the leaders of tomorrow now!
+            </div>
+            <!-- <img src="./images/carousal4.png" style="width: 100%" /> -->
+            <a href="/community"><button class="text">Know More</button></a>
           </div>
-          <!-- <img src="./images/carousal4.png" style="width: 100%" /> -->
-          <a href="/community"><button class="text">Know More</button></a>
         </div>
-      </div>
-      <br />
-
-      <div style="text-align: center">
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-      </div>
-
-      <script>
-        let slideIndex = 0;
-        showSlides();
-
-        function showSlides() {
-          let i;
-          let slides = document.getElementsByClassName("mySlides");
-          let dots = document.getElementsByClassName("dot");
-          for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-          }
-          slideIndex++;
-          if (slideIndex > slides.length) {
-            slideIndex = 1;
-          }
-          for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-          }
-          slides[slideIndex - 1].style.display = "block";
-          dots[slideIndex - 1].className += " active";
-          setTimeout(showSlides, 5000); // Change image every 2 seconds
-        }
-      </script>
-    </section>
-    <%-include('testimonials');-%> <%- include('footer'); -%>
+        <br />
+  
+        <div style="text-align: center">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+  
+       
+      </section>
+      <%-include('testimonials');-%> 
+    </div>
+    <%- include('footer'); -%>
   </body>
+
+  <script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1;
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      setTimeout(showSlides, 5000); // Change image every 2 seconds
+    }
+  </script>
 </html>
