@@ -11,21 +11,21 @@
   <style>
 
     .mobile{
-      display: none;
+      display: block;
     }
 
     @media (max-width: 900px){
       .mobile{
-        display: block;
-      }
-      .main{
         display: none;
       }
+      /* .main{
+        display: none;
+      } */
     }
   </style>
   <body>
     <%- include('contactheader'); -%> <%- include('header'); -%>
-    <%- include('mobile'); -%> 
+    <!-- <%- include('mobile'); -%>  -->
     <div class="main">
       <section class="hero__main">
         <div class="hero__container">
@@ -52,7 +52,7 @@
           </div>
         </div>
       </section>
-      <section class="tagg">
+      <section class="tagg mobile" >
         <h1 class="tagline__heading">OUR SERVICES</h1>
         <div class="tagline__container">
           <div class="tagline__card">
@@ -313,7 +313,7 @@
         </section> -->
       <!-- <h2>Automatic Slideshow</h2>
         <p>Change image every 2 seconds:</p> -->
-      <section class="corousel">
+      <section class="corousel mobile">
         <div class="slideshow-container">
           <div class="mySlides fade myslides1">
             <div class="carousal__heading">Become a Mentor</div>

@@ -7,6 +7,21 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="css/community.css" />
+    <style>
+
+      .mobile{
+        display: block;
+      }
+  
+      @media (max-width: 900px){
+        .mobile{
+          display: none;
+        }
+        /* .main{
+          display: none;
+        } */
+      }
+    </style>
   </head>
   <body>
     <%- include('contactheader'); -%> <%- include('header'); -%>
@@ -213,7 +228,7 @@
 
     <section id="provides">
       <div class="provides__left">
-        <img src="/images/community-image-2.svg" alt="image" />
+        <img class="mobile" src="/images/community-image-2.svg" alt="image" />
         <div class="provides__button">
           <div class="provides__btn">
             <a href="https://chat.whatsapp.com/GYG93rm4dVSH5521jNvtej"

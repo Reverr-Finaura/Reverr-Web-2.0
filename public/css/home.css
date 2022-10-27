@@ -64,6 +64,13 @@ body {
   margin-left: 80px;
   margin-bottom: 30px;
 }
+
+@media (max-width: 440px){
+  .hero__img{
+    width: 60%
+  }
+}
+
 .plane::after {
   content: url("/images/here.png");
   position: relative;
