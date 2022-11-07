@@ -1,0 +1,396 @@
+body {
+    background: #F6F6F6;
+    background-repeat: no-repeat;
+    
+  }
+  *{
+    box-sizing: border-box;
+  }
+
+
+  #founder-section-1{
+display: flex;
+  }
+  .founder-section-1-left-col,.founder-section-1-right-col{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 3rem;
+  }
+
+  .founder-section-1-left-col>h1{
+    font-family: 'Gilroy';
+font-style: normal;
+font-weight: 600;
+font-size: 54px;
+line-height: 72px;
+letter-spacing: -0.04em;
+color: #0F172A;
+  }
+  .founder-section-1-left-col>p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 26px;
+    color: #475569;
+    margin-top: 0;
+  }
+  
+  .flounder-section-1-right-col>img{
+    width: 400px;
+    margin-left: 5rem;
+
+  }
+  .join-now-btnn{
+    background: #2A72DE;
+border-radius: 6px;
+width: 106px;
+height: 50px;
+border: none;
+font-size: 1.2rem;
+color: white;  
+margin-right: 1.5rem;
+cursor: pointer;
+margin-top: 1rem;
+}
+.explore-more-btnn{
+  background: transparent;
+border-radius: 6px;
+width: 136px;
+height: 50px;
+border: 1px solid #2A72DE;
+font-size: 1.2rem;
+color: #2A72DE;  
+cursor: pointer;
+margin-top: 1rem;
+
+}
+
+  /* OUR OFFERING */
+  .our-offering-section{
+    width: 100%;
+    min-height: 100vh;
+  }
+  .our-offering-title{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 52px;
+line-height: 62px;
+text-align: center;
+color: black;
+  }
+  .our-offering-sub-text{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 30px;
+text-align: center;
+color: #52525B;
+
+width: 551px;
+height: 90px;
+margin: 0 auto;
+  }
+  .offering-img-cont{
+    display: flex;
+    margin-top: 5rem;
+    margin: 5rem auto 0 auto;
+    width: max-content;
+    
+  }
+
+  .comment-box{
+    width: 190.41px;
+height: 82.3px;
+background: rgba(255, 255, 255, 0.85);
+box-shadow: 0px 5px 36px rgba(0, 0, 0, 0.12);
+backdrop-filter: blur(9.5px);
+border-radius: 19px;
+margin: 0 auto;
+display: flex;
+flex-direction: column;
+  }
+  .comment-box-comment{
+margin: 0;
+text-align: center;
+margin-top: 1rem;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 32px;
+color: #090914;
+  }
+  .comment-box-details{
+    margin: 0;
+    text-align: center;
+   
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 26px;
+color: #71717A;
+  }
+  .comment-box-arrow{
+    width: 0; 
+    height: 0; 
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid rgb(255, 255, 255);
+    margin: 0 auto;
+  }
+  .img-cont-3{
+    position: relative;
+    z-index: 5;
+    margin-top: -3.5rem;
+  }
+  .comment-box-cont3{
+    transform: rotate(2.18deg);
+
+  }
+  .img-cont-2,.img-cont-4{
+    position: relative;
+    z-index: 4;
+    margin-top: 0;
+  }
+  .img-cont-2,.img-cont-1{
+    margin-right: -2rem;
+  }
+  .img-cont-4,.img-cont-5{
+    margin-left: -2rem;
+  }
+  .comment-box-cont2{
+    transform: rotate(0.35deg);
+    margin-right: 1rem;
+  }
+.comment-box-cont4{
+    transform: rotate(-0.35deg);
+    margin-left: 1rem;
+  }
+  .img-cont-1,.img-cont-5{
+    position: relative;
+    z-index: 3;
+    margin-top: 5rem;
+  }
+  
+  .comment-box-cont1{
+    transform: rotate(-12.13deg);
+    margin-left: -5.5rem;
+  }
+  .comment-box-cont5{
+    transform: rotate(12.13deg);
+    margin-right: -5.5rem;
+  }
+  .img-3{
+width: 300px;
+  }
+  .img-2,.img-4{
+    width: 250px;
+  }
+  .img-1,.img-5{
+    width: 200px;
+  }
+  .btn-cont{
+    width: fit-content;
+    margin:2rem auto 4rem auto ;
+  }
+  .explore-more-btn{
+    padding: 16px 32px;
+    background: #2A72DE;
+border-radius: 6px;
+width: 196px;
+height: 58px;
+color: white;
+border: none;
+font-size: 1.2rem;
+cursor: pointer;
+  }
+
+  .holding-your-hand-section{
+    width: 100%;
+    min-height: 100vh;
+  }
+  .holding-your-hand-title{
+    width: 724px;
+height: 109px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 35px;
+line-height: 52px;
+text-align: center;
+color: #0077B7;
+margin: 0 auto;
+  }
+  .holding-your-hand-sub-text{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 30px;
+text-align: center;
+width: 865px;
+height: 89px;
+color: black;
+margin: 1.5rem auto;
+  }
+  .holding-your-hand-img-cont{
+display: flex;
+  }
+  .holding-your-hand-img-cont>img{
+    margin: 0 auto 1.5rem auto;
+    width: 80%;
+  }
+  .explore-journey-btn{
+    padding: 16px 16px;
+    background: #2A72DE;
+border-radius: 6px;
+width: 180px;
+height: 58px;
+color: white;
+border: none;
+font-size: 1.2rem;
+cursor: pointer;
+  }
+
+
+  /* HOW YOUR STARTUP CAN GROW */
+  .how-your-startup-can-grow-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .how-your-startup-can-grow-header>h1{
+    font-family: 'Gilroy';
+font-style: normal;
+font-weight: 500;
+font-size: 50px;
+line-height: 59px;
+display: flex;
+align-items: center;
+text-align: center;
+color: #000000;
+width: fit-content;
+  }
+  .how-your-startup-can-grow-header>h1>span{
+    color: #2A72DE;
+    margin-left: 1.2rem;
+  }
+  .how-your-startup-can-grow-header>p{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 36px;
+text-align: center;
+color: #000000;
+width: 84%;
+margin-top: 0;
+  }
+
+  .how-your-startup-can-grow-cont{
+    display: flex;
+    margin-top: 2rem;
+  }
+  .how-your-startup-can-grow-left-col
+  {
+    width: 70%;
+  }
+  .how-your-startup-can-grow-right-col{
+    width: 30%;
+    display: flex;
+  }
+.hyscg-left-col-row{
+  display: flex;
+  align-items: center;
+  margin-left: 3rem;
+}
+.hyscg-left-col-row>img{
+width: 85px;
+}
+.hyscg-left-col-row>p{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: black;
+  margin-left: 2rem;
+  width: 75%;
+}
+
+.how-your-startup-can-grow-right-col>img{
+  width: 400px;
+  margin: auto 0;
+}
+
+.become-reverr-btn{
+  width: 240px;
+height: 59px;
+background: #2A72DE;
+border-radius: 6px;
+color: white;
+border: none;
+font-size: 1.2rem;
+cursor: pointer;
+}
+ 
+
+  /* HOW REVERR HELP STARTUP */
+
+  #how-reverr-help-startup{
+    display: flex;
+    width: 100%;
+min-height:100vh ; 
+padding-left: 3rem;
+}
+.left-col,.right-col{
+    width: 50%;
+}
+
+.left-col>p{
+    font-family: 'Gilroy';
+font-style: normal;
+font-weight: 500;
+font-size: 50px;
+line-height: 59px;
+color: #202020;
+margin-bottom: 0;
+}
+.left-col>p>span{
+color: #2A72DE;
+}
+.left-col>h5,.left-col>ul{
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #202020;
+    width: 626px;
+height: max-content;
+margin-top: 2rem;
+}
+.right-col{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.right-col>img{
+    width: 80%;
+
+
+}
+
+
+
+
+
+
+
+  /* MEDIA QUERY */

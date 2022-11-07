@@ -45,6 +45,14 @@ app.get("/", function (req, res) {
   res.render("home");
 });
 
+app.get("/founder", function (req, res) {
+  res.render("founder");
+});
+
+app.get("/investor", function (req, res) {
+  res.render("investor");
+});
+
 app.get("/contactus", function (req, res) {
   res.render("contact", { successful: false });
 });
