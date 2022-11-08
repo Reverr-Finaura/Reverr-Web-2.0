@@ -10,7 +10,7 @@ body {
   #investor-section-1{
     display: flex;
     width: 100%;
-    margin-bottom: 2rem;
+    min-height: 70vh;
   }
   .investor-section-1-left-col,.investor-section-1-right-col{
     width: 50%;
@@ -82,32 +82,43 @@ text-align: center;
 color: #52525B;
 margin-bottom: 4rem;
   }
-  .investor-process-process-cont-1,.investor-process-process-cont-2{
-    display: flex;
+  .investor-process-process-cont-1{
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
     margin-top: 2rem;
+    padding: 1rem;
   }
   .investor-process-process-cont-1-box,.investor-process-process-cont-2-box{
-    width: 33.33%;
+    width: 95%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     position: relative;
+    padding: 1rem;
   }
   .arrow-img-cont{
     position: absolute;
-    right: -18%;
+    right: -25%;
     top: 10%;
+  }
+  .arrow-img-cont>img{
+    width: 80%;
   }
   .arrow-img-cont-down{
     position: absolute;
-    right: 5%;
-    bottom: -50%;
+    right: 0%;
+    bottom: -40%;
+  }
+  .arrow-img-cont-down>img{
+    width: 80%;
   }
   .arrow-img-cont-left{
     position: absolute;
     left: -10%;
     top: 10%;
+  }
+  .arrow-img-cont-left>img{
+    width: 80%;
   }
   .investor-process-process-cont-1-box>h4{
     text-align: center;
@@ -144,6 +155,7 @@ margin-left: 3rem;
   }
   .why-inest-with-reverr-img-left-cont,.why-inest-with-reverr-img-right-cont{
     width: 50%;
+    padding-left: 1rem;
   }
   .top-cont-card-1,.top-cont-card-2{
     width: 50%;
@@ -192,6 +204,7 @@ margin-left: 3rem;
     font-size: 30px;
     line-height: 60px;
     color: #FFFFFF;
+    width: 70%;
   }
   .sector-agnostic-header>a>button{
  color: white;   
@@ -228,6 +241,7 @@ color: #2A72DE;
     flex-direction: column;
     align-items: center;
     place-content: center;
+    padding-left: 1rem;
   }
   .register-investor-header{
     display: flex;
@@ -262,4 +276,202 @@ font-size: 1.1rem;
  
   .register-investor-right-cont>img{
     width: 400px;
+  }
+
+
+  /* MEDIA QUERY */
+
+  @media(max-width:1212px){
+.arrow-img-cont{
+  right: -34%;
+  top: 7%;
+}
+  }
+
+  @media(max-width:1024px){
+#investor-section-1{
+  flex-direction: column;
+  align-items: center;
+}
+.investor-section-1-left-col{
+  width: 85%;
+  text-align: center;
+  align-items: center;
+  padding-left: 0;
+}
+
+.investor-section-1-left-col>h1{
+  font-size: 2rem;
+}
+
+.investor-section-1-right-col>img{
+  width: 80%;
+}
+
+
+.investor-process-process-cont-1{
+  grid-template-columns:50% 50%
+}
+.order6{
+  order: 6;
+}
+.order5{
+  order: 5;
+}
+.order4{
+  order: 3;
+}
+.order3{
+  order: 4;
+}
+.order2{
+  order: 2;
+}
+.order1{
+  order: 1;
+}
+
+.arrow-img-cont-toggle{
+  transform: rotate(90deg);
+  width: fit-content;
+  height: fit-content;
+  top: auto;
+  bottom: -40%;
+  right: -28px;
+}
+.arrow-img-cont-toggle>img{
+  width: 70%;
+}
+.arrow-img-cont-down-toggle{
+  top: 0;
+  transform: scaley(-1) rotate(90deg);
+  width: fit-content;
+  height: fit-content;
+  left: -2rem;
+  
+}
+
+.arrow-img-cont-left-toggle{
+  transform: scaleX(-1);
+  left: auto;
+  right: -16%;
+}
+
+.arrow-img-cont-left-last-toggle{
+  transform: rotate(-90deg);
+top: 100%;
+left: -4%;
+  width: fit-content;
+  height: fit-content;
+}
+
+.why-inest-with-reverr-title{
+  text-align: center;
+  margin-left: 0;
+}
+.why-inest-with-reverr-img-cont{
+  flex-direction: column;
+  align-items: center;
+}
+.why-inest-with-reverr-img-left-cont{
+  width: 85%;
+}
+
+.sector-agnostic-cont{
+flex-direction: column;
+align-items: center;
+}
+.sector-agnostic-left-cont{
+  width: 85%;
+ 
+}
+.sector-agnostic-header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 0;
+}
+.sector-agnostic-header>h2{
+  width: 85%;
+  text-align: center;
+}
+
+.sector-agnostic-right-cont{
+  width: 85%;
+  margin-top: 1.5rem;
+}
+.sector-agnostic-right-cont>h2{
+  font-size: 2.5rem;
+  text-align: center;
+}
+.sector-agnostic-right-cont>img{
+  width: 70%;
+}
+
+.register-investor-cont{
+  flex-direction: column;
+  align-items: center;
+}
+.register-investor-left-cont{
+  width: 85%;
+  margin-bottom: 2rem;
+}
+
+.register-investor-header{
+  width: 90%;
+  align-items: center;
+}
+.register-investor-header>h2{
+  font-size: 2.5rem;
+}
+.register-investor-header>p{
+  font-size: 20px;
+}
+.register-investor-right-cont{
+  width: 80%;
+}
+.register-investor-right-cont>img{
+  width: 70%;
+}
+  }
+
+
+@media (max-width:760px){
+  .investor-process-process-cont-1{
+    grid-template-columns:100%
+  }
+  
+  .order4{
+    order: 4;
+  }
+  .order3{
+    order: 3;
+  }
+ 
+
+  .arrow-img-cont-down,.arrow-img-cont,.arrow-img-cont-left{
+    display: none;
+  }
+  .investor-process-process-cont-1-box>h4,.investor-process-process-cont-2-box>h4{
+    font-size: 1.5rem;
+  }
+  .investor-process-process-cont-1-box>p,.investor-process-process-cont-2-box>p{
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+}
+
+  @media(max-width:600px){
+    .why-inest-with-reverr-img-left-cont{
+      width: 95%;
+    }
+    .investor-section-1-right-col>img{
+      width: 90%;
+      margin-top: 2rem;
+    }
+    .sector-agnostic-header>h2{
+      width: 100%;
+      text-align: center;
+    }
   }
