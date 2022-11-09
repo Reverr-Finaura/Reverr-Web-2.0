@@ -41,8 +41,20 @@ function Email(user) {
     .catch(console.log);
 }
 
+// app.get("/", function (req, res) {
+//   res.render("home");
+// });
+
 app.get("/", function (req, res) {
-  res.render("home");
+  res.render("homeFinal");
+});
+
+app.get("/founder", function (req, res) {
+  res.render("founder");
+});
+
+app.get("/investor", function (req, res) {
+  res.render("investor");
 });
 
 app.get("/contactus", function (req, res) {
