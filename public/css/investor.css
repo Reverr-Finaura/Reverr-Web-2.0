@@ -319,10 +319,10 @@ font-size: 1.1rem;
   order: 5;
 }
 .order4{
-  order: 3;
+  order: 4;
 }
 .order3{
-  order: 4;
+  order: 3;
 }
 .order2{
   order: 2;
@@ -363,6 +363,9 @@ top: 100%;
 left: -4%;
   width: fit-content;
   height: fit-content;
+}
+.arrow-img-cont,.arrow-img-cont-toggle,.arrow-img-cont-down-toggle,.arrow-img-cont-left-toggle,.arrow-img-cont-left-last-toggle{
+  display: none;
 }
 
 .why-inest-with-reverr-title{

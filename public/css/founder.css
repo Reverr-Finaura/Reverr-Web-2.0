@@ -80,6 +80,7 @@ font-size: 52px;
 line-height: 62px;
 text-align: center;
 color: black;
+
   }
   .our-offering-sub-text{
     font-family: 'Poppins';
@@ -97,7 +98,7 @@ margin: 0 auto;
   .offering-img-cont{
     display: flex;
     margin-top: 5rem;
-    margin: 5rem auto 0 auto;
+    margin: 7rem auto 0 auto;
     width: max-content;
     
   }
@@ -222,6 +223,7 @@ cursor: pointer;
   .holding-your-hand-section{
     width: 100%;
     height: max-content;
+    margin-top: 7rem;
   }
   .holding-your-hand-title{
     width: 85%;
@@ -234,6 +236,9 @@ line-height: 52px;
 text-align: center;
 color: #0077B7;
 margin: 0 auto;
+justify-content: center;
+    align-items: center;
+    display: flex;
   }
   .holding-your-hand-sub-text{
     font-family: 'Poppins';
@@ -253,6 +258,7 @@ display: flex;
   .holding-your-hand-img-cont>img{
     margin: 2rem auto 1.5rem auto;
     width: 90%;
+    padding: 0 3.5rem;
   }
   .explore-journey-btn{
     padding: 16px 16px;
@@ -521,7 +527,8 @@ margin-top: 2rem;
   }
 
   @media(max-width:980px){
-    .offering-img-cont{
+   
+    .our-offering-section{
       display: none;
     }
   }
@@ -536,4 +543,5 @@ margin-top: 2rem;
     .our-offering-sub-text{
   width: 90%;
     }
+    
   }
