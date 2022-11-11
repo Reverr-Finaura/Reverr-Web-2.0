@@ -52,8 +52,35 @@
           document.getElementById("phnnav").style.display="none";
     }
 
+    function disableScroll() {
+    // Get the current page scroll position
+    scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+  
+        // if any scroll is attempted, set this to the previous value
+        window.onscroll = function() {
+            window.scrollTo(scrollLeft, scrollTop);
+        };
+}
+
+function OpenModal(){
+  document.getElementById("profilemodal").style.display="flex";
+ let profile=document.querySelector('.containerpl')
+ console.log('profilee is',profile)
+profile.style.display="flex"
+// disableScroll()
+
+}
+function CloseProfileModal(){
+  document.getElementById("profilemodal").style.display="none";
+  document.querySelector('.containerpl').
+profile.style.display="none"
+
+}
 </script>
   <body>
+
+
     <div class="topnav desk">
       <a href="/"
         ><img src="/images/ReverrBlack2.svg" alt="" />
@@ -73,10 +100,14 @@
           <a href="/funding"><div class="product_option">Funding</div></a>
       </div>
         </div> -->
-        <a href="/mentorship">Mentorship</a>
+        <!-- <a href="/mentorship">Mentorship</a>
         <a href="/networking">Networking</a>
         <a href="/community">Community</a>
-        <a href="/knowledge">Knowledge</a>
+        <a href="/knowledge">Knowledge</a> -->
+        <a href="/investor">For Investors</a>
+        <a href="/formentors">For Mentors</a>
+        <a href="/founder">For Founders</a>
+        <a href="/about">About Us</a>
                
         <div class="header_dropdown">
           <div onclick="toggleDropdown()" class="resourcesBtn">
@@ -84,13 +115,19 @@
           </div>
           <div id="resources_options">
             <a class="dropdown-link" href="/blog"><div class="resources_option">Blog</div></a>
-            <a class="dropdown-link" href="/about"><div class="resources_option">About Us</div></a>
+            <!-- <a class="dropdown-link" href="/about"><div class="resources_option">About Us</div></a> -->
             <a class="dropdown-link" href="/newsletter"><div class="resources_option">Sign The Newsletter</div></a>
+            <a class="dropdown-link" href="/networking"><div class="resources_option">Networking</div></a>
+          <a class="dropdown-link" href="/community"><div class="resources_option">Community</div></a>
+            <a class="dropdown-link" href="/knowledge"><div class="resources_option">Knowledge</div></a>
+            <a class="dropdown-link" href="/mentorship"><div class="resources_option">Mentorship</div></a>
+            <a class="dropdown-link" href="/fundingform"><div class="resources_option">Get Funded</div></a>
+             
           </div>
   </div>
     
       </div>
-      <a href="/fundingform" class="link-btn"><div class="memberBtn">Get Funded</div></div></a>
+      <a  class="link-btn"><div onclick="OpenModal()" class="memberBtn">Login</div></div></a>
     </div>
 
     <section class="nav phn" id="phnheader">
@@ -162,5 +199,9 @@
         </div>
       </div>
     </section>
+    <div id="profilemodal">  
+      <%- include('profilelogin'); -%>
+    <!-- <div onclick="CloseProfileModal()" id="cross"><p class="crosstext">X</p></div> -->
+  </div>
   </body>
 </html>

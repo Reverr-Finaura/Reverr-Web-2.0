@@ -152,7 +152,12 @@ app.get("/newsletter", function (req, res) {
 app.get("/mentorform", (req, res) => {
   res.render("mentorform", { successful: false });
 });
-
+app.get("/formentors", function (req, res) {
+  res.render("forMentors");
+});
+app.get("/profilelogin", function (req, res) {
+  res.render("profilelogin");
+});
 // app.post("/email", (req,res)=>{
 //   const user = {
 //     email: "mauricerana@gmail.com",

@@ -1,0 +1,122 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+
+}
+
+.containerpl{
+width: 75%;
+ display: flex;
+ align-items: center;
+ flex-direction: column;
+ margin: auto;
+ display: none;
+ box-shadow: 49px 15px 17px 7px rgba(0,0,0,0.56);
+-moz-box-shadow: 49px 15px 17px 7px rgba(0,0,0,0.56);
+box-shadow: 49px 15px 17px 7px rgba(0,0,0,0.56);
+
+}
+.main_headingpl{
+    margin-top: 2%;
+    /* background-color: aqua; */
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main_textpl{
+    
+font-family: 'Gilroy';
+font-style: normal;
+font-weight: 600;
+font-size: 5rem;
+line-height: 67px;
+text-align: center;
+color: #202020;
+}
+.reverr{
+   color:  #2A72DE;
+}
+
+
+.cardspl{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+    width: 100%;
+justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.profile_name_text{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 3rem;
+
+color: #2A72DE;
+
+
+}
+.cardview{
+    width: 100%;
+    height:20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.buttonpl{
+    margin-top: 0.5%;
+    display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+width: 65%;
+ height: 16%;
+background: #2A72DE;
+border-radius: 8px;
+}
+.button_text{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 1.2rem;
+line-height: 27px;
+/* identical to box height */
+
+text-align: center;
+
+color: #F6F6F6;
+}
+.crossmodal{
+    display: flex;
+ justify-content: end;
+    width: 100%;
+  
+}
+
+#cross{
+  margin-right: 1%;
+  cursor: pointer;
+  }
+  .crosstext{
+    font-size: 3rem;
+    margin-right: 15%;
+    font-weight: 900;
+  }
+@media all and (max-width:500px) {
+
+    .containerpl{
+        width: 100%;
+    }
+    .cardspl{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
