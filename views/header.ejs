@@ -62,19 +62,30 @@
             window.scrollTo(scrollLeft, scrollTop);
         };
 }
+// call this to Enable
+function enableScroll() {
+    window.onscroll = function() {
+     
+    };
+}
+
+
+
+
 
 function OpenModal(){
   document.getElementById("profilemodal").style.display="flex";
  let profile=document.querySelector('.containerpl')
  console.log('profilee is',profile)
 profile.style.display="flex"
-// disableScroll()
+disableScroll()
 
 }
 function CloseProfileModal(){
   document.getElementById("profilemodal").style.display="none";
-  document.querySelector('.containerpl').
-profile.style.display="none"
+  document.querySelector('.containerpl').style.display="none"
+enableScroll()
+
 
 }
 </script>
@@ -104,9 +115,10 @@ profile.style.display="none"
         <a href="/networking">Networking</a>
         <a href="/community">Community</a>
         <a href="/knowledge">Knowledge</a> -->
-        <a href="/investor">For Investors</a>
-        <a href="/formentors">For Mentors</a>
         <a href="/founder">For Founders</a>
+        <a href="/formentors">For Mentors</a>
+        <a href="/investor">For Investors</a>
+       
         <a href="/about">About Us</a>
                
         <div class="header_dropdown">
@@ -127,7 +139,7 @@ profile.style.display="none"
   </div>
     
       </div>
-      <a  class="link-btn"><div onclick="OpenModal()" class="memberBtn">Login</div></div></a>
+      <a  class="link-btn"><div onclick="OpenModal()" class="memberBtn">Login/SignUp</div></div></a>
     </div>
 
     <section class="nav phn" id="phnheader">
