@@ -11,6 +11,7 @@ body {
     display: flex;
     width: 100%;
     min-height: 70vh;
+    margin-top: 7rem;
   }
   .investor-section-1-left-col,.investor-section-1-right-col{
     width: 50%;
@@ -36,6 +37,7 @@ padding-left: 4rem;
   }
   .investor-section-1-btn-cont{
     width: fit-content;
+    margin-top: 2rem;
   }
   
   .join-now-btn{
@@ -214,6 +216,8 @@ border: none;
 width: 126px;
 height: 50px;
 font-size: 1.1rem;
+cursor: pointer;
+margin-top: 2rem;
   }
   .sector-agnostic-right-cont>h2{
    
@@ -262,6 +266,7 @@ font-style: normal;
 font-weight: 400;
 font-size: 24px;
 line-height: 36px;
+margin-top: 2rem;
 
   }
   .register-investor-header>a>button{
@@ -272,6 +277,8 @@ border: none;
 width: 126px;
 height: 50px;
 font-size: 1.1rem;
+margin-top: 2rem;
+cursor: pointer;
   }
  
   .register-investor-right-cont>img{

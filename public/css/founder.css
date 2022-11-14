@@ -10,12 +10,14 @@ body {
 
   #founder-section-1{
 display: flex;
+margin-top: 7rem;
   }
   .founder-section-1-left-col,.founder-section-1-right-col{
     width: 50%;
     display: flex;
     flex-direction: column;
     margin-left: 3rem;
+    margin: auto;
   }
 
   .founder-section-1-left-col>h1{
@@ -26,6 +28,7 @@ font-size: 54px;
 line-height: 72px;
 letter-spacing: -0.04em;
 color: #0F172A;
+margin-bottom: 1.5rem;
   }
   .founder-section-1-left-col>p{
     font-family: 'Inter';
@@ -35,11 +38,13 @@ color: #0F172A;
     line-height: 26px;
     color: #475569;
     margin-top: 0;
+    margin-bottom: 2rem;
   }
   
   .flounder-section-1-right-col>img{
     width: 400px;
     margin-left: 5rem;
+    
 
   }
   .join-now-btnn{
@@ -223,7 +228,7 @@ cursor: pointer;
   .holding-your-hand-section{
     width: 100%;
     height: max-content;
-    margin-top: 7rem;
+    
   }
   .holding-your-hand-title{
     width: 85%;
@@ -359,8 +364,11 @@ cursor: pointer;
   #how-reverr-help-startup{
     display: flex;
     width: 100%;
-min-height:100vh ; 
-padding-left: 3rem;
+height: max-content; 
+padding-left: 7rem;
+padding-right: 3rem;
+margin-bottom: 6rem;
+margin-top: 8rem;
 }
 .left-col{
     width: 65%;
