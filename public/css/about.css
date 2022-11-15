@@ -329,7 +329,7 @@ body {
 }
 
 #advisors {
-  width: 93%;
+  width: 90%;
   margin: auto;
 }
 
@@ -343,6 +343,8 @@ body {
   display: flex;
   margin: 3rem 1rem;
   align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .advisor-row {
@@ -350,10 +352,18 @@ body {
   flex: 33.33%;
   flex-direction: column;
   /* align-items: center; */
+  height: 400px;
+  width: 400px;
 }
 
 .advisor-img {
+max-height: 100%;
   max-width: 100%;
+  flex: 2;
+}
+.adv-img{
+  height: 300px;
+  width: 320px;
 }
 
 .adv-img-badge {
@@ -363,8 +373,9 @@ body {
 }
 
 .adv-info {
-  margin-left: 4rem;
+  margin-left: 0rem;
   color: black;
+  flex: 1;
 }
 .adv-info > h3 {
   font-size: 24px;
