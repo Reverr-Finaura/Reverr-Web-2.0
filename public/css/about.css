@@ -349,7 +349,7 @@ body {
 
 .advisor-row {
   display: flex;
-  flex: 33.33%;
+  /* flex: 33.33%; */
   flex-direction: column;
   /* align-items: center; */
   height: 400px;
@@ -362,8 +362,10 @@ max-height: 100%;
   flex: 2;
 }
 .adv-img{
+  border: 6px solid #2a72de;
   height: 300px;
   width: 320px;
+  border-radius: 160px;
 }
 
 .adv-img-badge {
