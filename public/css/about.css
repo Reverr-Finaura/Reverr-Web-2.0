@@ -352,8 +352,8 @@ body {
   /* flex: 33.33%; */
   flex-direction: column;
   /* align-items: center; */
-  height: 400px;
-  width: 400px;
+  height: 380px;
+  width: 420px;
 }
 
 .advisor-img {
@@ -363,21 +363,28 @@ max-height: 100%;
 }
 .adv-img{
   border: 6px solid #2a72de;
-  height: 320px;
-  width: 320px;
-  border-radius: 165px;
+  height: 280px;
+  width: 280px;
+  border-radius: 140px;
 }
 
 .adv-img-badge {
+ box-shadow:  10px 10px 5px 0px rgba(0,0,0,0.75);
   position: relative;
   left: -4rem;
   top: -2rem;
 }
-
+.pankaj{
+  margin-top: 3%;
+}
+.rajiv{
+  margin-top: 3%;
+  margin-right: -25%;
+}
 .adv-info {
   margin-left: 0rem;
   color: black;
-  flex: 1;
+width: 70%;
 }
 .adv-info > h3 {
   font-size: 24px;
@@ -581,6 +588,10 @@ max-height: 100%;
   #aboutus__intro {
     background: none;
     margin: auto;
+  }
+
+  .rajiv{
+margin: 0%;
   }
 
   .aboutus__intro_heading > h1 {
