@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
 }
-.mainsection{
+.mainsection {
   margin-left: -5%;
 }
 .mentor_section {
@@ -78,7 +78,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-cursor: pointer;
+  cursor: pointer;
   width: 15rem;
   height: 3rem;
   border-radius: 8px;
@@ -122,7 +122,7 @@ cursor: pointer;
   font-style: normal;
   font-weight: 600;
   font-size: 3rem;
-  line-height: 72px;
+  /* line-height: 72px; */
   color: #2a72de;
 }
 .cards {
@@ -146,8 +146,8 @@ cursor: pointer;
   flex-direction: column;
   justify-content: space-around;
 }
- .left_card{
-  margin-left: -30%
+.left_card {
+  margin-left: -30%;
 }
 .imageview {
   margin-top: 0.3%;
@@ -192,11 +192,12 @@ cursor: pointer;
   width: 222px;
   height: 58px;
   display: flex;
-  margin-top: 1%;
+  margin-top: 1.5rem;
   align-items: center;
   justify-content: center;
   align-self: center;
   background-color: #2a72de;
+  border-radius: 8px;
 }
 .botton_text {
   font-family: "Poppins";
@@ -219,10 +220,11 @@ cursor: pointer;
   font-weight: 700;
   font-size: 2.7rem;
   text-align: center;
-  color: #18181b;
+  /* color: #18181b; */
+  color: #2a72de;
 }
 .sub_heading {
-  margin-top: 0%;
+  margin-top: 1rem;
 }
 .subheading1 {
   font-family: "Plus Jakarta Sans";
@@ -426,10 +428,11 @@ cursor: pointer;
 .wait_text {
   font-family: "Poppins";
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 3rem;
 
-  color: #303030;
+  color: #2a72de;
+  /* color: #303030; */
 }
 .main_description {
   display: flex;
@@ -452,6 +455,7 @@ cursor: pointer;
   color: #202020;
 }
 .join_button {
+  margin-top: 2rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -464,7 +468,7 @@ cursor: pointer;
   background: #2a72de;
   border-radius: 6px;
 }
-.image3view{
+.image3view {
   margin-left: 10%;
 }
 .image3 {
@@ -517,11 +521,17 @@ cursor: pointer;
 
   color: #ffffff;
 }
+.section2,
+.section3,
+.section4,
+.section5 {
+  margin-top: 2.2rem;
+}
 @media all and (max-width: 500px) {
   .all {
     flex: 1;
   }
-  .mainsection{
+  .mainsection {
     margin-left: 0%;
   }
 
@@ -532,10 +542,11 @@ cursor: pointer;
     align-items: center;
     width: 100vw;
   }
-  .left_card{
-    margin-left: 0%
+  .left_card {
+    margin-left: 0%;
   }
   .left {
+    margin: 2rem auto;
     /* max-width: 100vw;
     height: 7vh;
     width: 75vw;
@@ -544,8 +555,8 @@ cursor: pointer;
     width: 70%;
     height: 7vh;
     border-radius: 5px;
-    margin-right: 18%;
-    margin-top: 8%;
+    /* margin-right: 18%; */
+    /* margin-top: 8%; */
   }
   .text {
     font-size: 2rem;
@@ -554,12 +565,15 @@ cursor: pointer;
     text-shadow: none;
   }
   .text1 {
-    font-size: 1.3rem;
+    font-size: 2rem;
+    width: 100%;
+    margin-bottom: 0.7rem;
   }
   .right_text {
     flex-wrap: wrap;
     width: 80vw;
     height: 48vh;
+    margin-left: 1rem;
   }
   .right {
     width: 70px;
@@ -567,9 +581,11 @@ cursor: pointer;
     border: none;
   }
   .text2 {
-    font-size: 10px;
+    font-size: 1rem;
+    margin-bottom: 1.2rem;
   }
   .section2 {
+    /* margin-top: 2rem; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -585,12 +601,15 @@ cursor: pointer;
     justify-content: center;
   }
   .join_text {
-    margin-right: 1%;
+    text-align: center;
+    margin: 1rem auto;
+    width: 85%;
+    line-height: normal;
+    font-size: 2rem;
   }
   .image3view {
-    margin-top: 9%;
     align-self: center;
-    margin-right: 10%;
+    margin: 2rem auto 0;
   }
   .image3 {
     max-width: 20.5rem;
@@ -607,7 +626,9 @@ cursor: pointer;
     width: 80%;
   }
   .buttoncontent {
-    width: 40vw;
+    margin: 0 auto;
+    width: 60vw;
+    height: 8vh;
   }
   .image_cards {
     display: flex;
@@ -635,6 +656,51 @@ cursor: pointer;
     order: 2;
   }
   .order_four {
+    order: 1;
+  }
+  .htext {
+    font-size: 2rem;
+    /* line-height: 72px; */
+  }
+  .section3 {
+    margin-top: 2rem;
+  }
+  .mainHeading {
+    font-size: 2.5rem;
+  }
+  .subheading1 {
+    font-size: 1.3rem;
+  }
+  .section4 {
+    margin: 2rem auto 0;
+  }
+  .quotetext {
+    text-align: center;
+    font-size: 1.8rem;
+  }
+  .contentinfo {
+    width: 100%;
+  }
+  .pctext1 {
+    text-align: center;
+    width: 100%;
+    margin: 1rem auto;
+    font-size: 2rem;
+  }
+  .section5 {
+    margin: 2rem auto;
+  }
+  .wait_text {
+    margin: 0px auto;
+    width: 95%;
+    text-align: center;
+    font-size: 2rem;
+  }
+  .join_button {
+    margin: 0 auto;
+  }
+  .join {
+    margin-top: 1rem;
     order: 1;
   }
 }
