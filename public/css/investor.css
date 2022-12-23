@@ -302,10 +302,10 @@ body {
 #why-inest-with-reverr,
 #sector-agnostic-main-cont,
 #register-investor {
-  margin-top: 1.3rem;
+  margin-top: 4rem;
 }
-#register-investor{
-  margin-bottom: 1.2rem;;
+#register-investor {
+  margin-bottom: 1.2rem;
 }
 @media (max-width: 1212px) {
   .arrow-img-cont {
