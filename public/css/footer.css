@@ -27,7 +27,12 @@ a {
   font-size: 22px;
   font-family: "Philosopher", sans-serif;
 }
-
+.footer__main_brand_name_by{
+  margin-bottom: 1rem;
+  margin-top: .5rem;
+  font-size: 20px;
+  font-family: "Philosopher", sans-serif;
+}
 .footer__main_left {
   display: flex;
   flex-direction: column;

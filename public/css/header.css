@@ -21,7 +21,15 @@ body {
   margin-top: 0;
   color: #2A72DE;
 }
-
+.brand-name_by{
+  font-family: "Philosopher";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  margin-top: .5rem;
+  color: #2A72DE;
+}
 .topnav a img {
   width: 100px;
 }
