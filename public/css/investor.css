@@ -10,7 +10,7 @@ body {
   display: flex;
   width: 100%;
   min-height: 70vh;
-  margin-top: 7rem;
+  margin-top: 6rem;
 }
 .investor-section-1-left-col,
 .investor-section-1-right-col {
@@ -26,11 +26,15 @@ body {
   place-content: center;
 }
 .investor-section-1-left-col > h1 {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 40px;
+  font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 54px;
+    line-height: 72px;
+    letter-spacing: -0.04em;
+    color: #0F172A;
   width: 80%;
+  margin: auto;
   /* line-height: 60px; */
   /* width: fit-content; */
 
@@ -39,14 +43,17 @@ body {
 .investor-section-1-btn-cont {
   /* width: fit-content; */
   width: 100%;
-  margin-top: 2rem;
+  margin: auto;
+  /* margin-top: 2rem; */
+  padding-left: 5rem;
 }
 
 .join-now-btn {
   width: 130px;
   height: 50px;
-  background: #2a72de;
-  border-radius: 6px;
+  background: linear-gradient(99.34deg, #2A72DE -1.95%, rgba(42, 114, 222, 0) 163.98%);
+box-shadow: 0px 2.4417px 9.15638px -0.610425px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
   color: white;
   font-size: 1.1rem;
   margin-right: 1.5rem;
@@ -57,7 +64,7 @@ body {
   width: 130px;
   height: 50px;
   background: transparent;
-  border-radius: 6px;
+  border-radius: 25px;
   color: #2a72de;
   font-size: 1.1rem;
   margin-right: 1.5rem;
@@ -65,7 +72,7 @@ body {
   cursor: pointer;
 }
 .investor-section-1-right-col > img {
-  width: 400px;
+  width: 450px;
 }
 .investor-process-header > h2 {
   font-family: "Poppins";
@@ -77,17 +84,29 @@ body {
   color: #18181b;
   /* font-family: "Plus Jakarta Sans"; */
 }
+#investor-process{
+  display: flex;
+  flex-direction: column;
+}
 .investor-process-header > p {
-  font-family: "Plus Jakarta Sans";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 28px;
-  text-align: center;
-  color: #52525b;
-  margin-bottom: 4rem;
+  font-family: 'Segoe UI';
+font-style: normal;
+font-weight: 600;
+font-size: 1rem;
+line-height: 19px;
+/* or 169% */
+
+text-align: center;
+letter-spacing: 2.4417px;
+
+/* gray/600 */
+
+color: #52525B;
+margin-top: 1rem;
 }
 .investor-process-process-cont-1 {
+  width: 80%;
+  margin: auto;
   display: grid;
   grid-template-columns: 33.33% 33.33% 33.33%;
   margin-top: 2rem;
@@ -101,6 +120,59 @@ body {
   align-items: center;
   position: relative;
   padding: 1rem;
+}
+.arrow-img{
+  position: absolute;
+  right: 0;
+  top: 40%;
+}
+.investor-process-process-cont-1-box-con{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 295px;
+height: 180px;
+padding: 1rem;
+background: linear-gradient(119.93deg, rgba(255, 255, 255, 0.35) 4.68%, rgba(255, 255, 255, 0.3) 91.73%);
+box-shadow: 0px 2.4417px 14.6502px -0.610425px rgba(0, 0, 0, 0.15);
+backdrop-filter: blur(6.10425px);
+
+/* Note: backdrop-filter has minimal browser support */
+
+border-radius: 9px;
+position: relative;
+z-index: 3;
+}
+.investor-process-process-cont-1-box-con-img1{
+  position: absolute;
+  z-index: -1;
+  left: -29px;
+  top: -56px;
+}
+.investor-process-process-cont-1-box-con-img2{
+  position: absolute;
+  z-index: -1;
+  right: -22px;
+  bottom: -22px;
+}
+.investor-process-process-cont-1-box-con-img3{
+position: absolute;
+z-index: -1;
+right: -22px;
+top: -20px;
+
+}
+.investor-process-process-cont-1-box-con-img4{
+  position: absolute;
+z-index: -1;
+top: -20px;
+right: -20px;
+}
+.investor-process-process-cont-1-box-con>h4{
+  font-size: 12px;
+  line-height: 20px;
+  margin-top: 1rem;
 }
 .arrow-img-cont {
   position: absolute;
@@ -137,8 +209,9 @@ body {
   /* width: 205px; */
   height: 59px;
   padding: 0 2rem;
-  background: #2a72de;
-  border-radius: 6px;
+  background: linear-gradient(95.64deg, #2A72DE -8.23%, rgba(42, 114, 222, 0.80125) 45.89%, rgba(42, 114, 222, 0.826094) 72.94%, rgba(42, 114, 222, 0.64) 100%);
+box-shadow: 0px 2.4417px 14.6502px -0.610425px rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
   color: white;
   font-size: 1.1rem;
   margin: 2rem auto;
@@ -187,12 +260,13 @@ body {
   place-content: center;
 }
 .why-inest-with-reverr-img-right-cont > img {
-  width: 400px;
+  width: 470px;
 }
 
 #sector-agnostic-main-cont {
-  background-color: black;
+  background: linear-gradient(180deg, #000000 -40.96%, rgba(0, 0, 0, 0.68331) 8.35%, rgba(0, 0, 0, 0.474481) 49.94%, rgba(0, 0, 0, 0) 100%);
   padding-bottom: 1rem;
+  padding: 1rem;
 }
 .sector-agnostic-cont {
   display: flex;
@@ -221,10 +295,10 @@ body {
   width: 70%;
 }
 .sector-agnostic-header > a > button {
-  color: white;
-  background: #2a72de;
-  border-radius: 6px;
-  border: none;
+  color: #2a72de;
+  background: transparent;
+  border-radius: 25px;
+  border: 2px solid #2a72de;
   width: 126px;
   height: 50px;
   font-size: 1.1rem;
@@ -234,10 +308,10 @@ body {
 .sector-agnostic-right-cont > h2 {
   font-family: "Poppins";
   font-style: normal;
-  font-weight: 550;
+  font-weight: 400;
   font-size: 30px;
   line-height: 60px;
-  color: #2a72de;
+  color: white;
 }
 .sector-agnostic-right-cont > img {
   width: 400px;
@@ -281,8 +355,9 @@ body {
 }
 .register-investor-header > a > button {
   color: white;
-  background: #2a72de;
-  border-radius: 6px;
+  background: linear-gradient(95.64deg, #2A72DE -8.23%, rgba(42, 114, 222, 0.80125) 45.89%, rgba(42, 114, 222, 0.826094) 72.94%, rgba(42, 114, 222, 0.64) 100%);
+box-shadow: 0px 2.4417px 14.6502px -0.610425px rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
   border: none;
   width: 126px;
   height: 50px;
@@ -291,8 +366,10 @@ body {
 
   cursor: pointer;
 }
-
-.register-investor-right-cont > img {
+.register-investor-right-cont>div{
+  background-image: url("/images/Group 62667300.png");
+}
+.register-investor-right-cont>div> img {
   width: 400px;
 }
 
@@ -333,6 +410,7 @@ body {
   }
   .investor-process-header > h2 {
     font-size: 2.2rem;
+    margin-bottom: .5rem;
   }
   .investor-section-1-right-col > img {
     width: 80%;
@@ -473,7 +551,9 @@ body {
   .investor-process-process-cont-1 {
     grid-template-columns: 100%;
   }
-
+  .arrow-img{
+    display: none;
+  }
   .order4 {
     order: 4;
   }
@@ -498,6 +578,12 @@ body {
 }
 
 @media (max-width: 600px) {
+  .investor-section-1-btn-cont {
+    /* width: fit-content; */
+    width: 100%;
+    margin-top: 2rem;
+    padding-left: 0;
+  }
   .why-inest-with-reverr-img-right-cont > img {
     width: 320px;
   }
@@ -529,7 +615,8 @@ body {
     text-align: center;
     background-color: #fafafa;
     padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-bottom: 0rem;
+    margin-bottom: 1.5rem;
     width: 70%;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     border-radius: 8px;

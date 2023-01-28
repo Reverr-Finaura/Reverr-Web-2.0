@@ -23,9 +23,9 @@ body {
 }
 
 .founder-section-1-left-col>h1 {
-  font-family: 'Gilroy';
+  font-family: 'Poppins';
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 54px;
   line-height: 72px;
   letter-spacing: -0.04em;
@@ -45,16 +45,18 @@ body {
 }
 
 .flounder-section-1-right-col>img {
-  width: 400px;
-  margin-left: 5rem;
+  /* width: 400px; */
+  /* margin-left: 5rem; */
+  width: 100%;
 
 
 }
 
 .join-now-btnn {
-  background: #2A72DE;
-  border-radius: 6px;
-  width: 106px;
+  background: linear-gradient(99.34deg, #2A72DE -1.95%, rgba(42, 114, 222, 0) 163.98%);
+  box-shadow: 0px 2.4417px 9.15638px -0.610425px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  width: 126px;
   height: 50px;
   border: none;
   font-size: 1.2rem;
@@ -66,7 +68,7 @@ body {
 
 .explore-more-btnn {
   background: transparent;
-  border-radius: 6px;
+  border-radius: 25px;
   width: 136px;
   height: 50px;
   border: 1px solid #2A72DE;
@@ -81,6 +83,7 @@ body {
 .our-offering-section {
   width: 100%;
   min-height: 100vh;
+  margin-top: 6rem;
 }
 
 .our-offering-title {
@@ -240,8 +243,9 @@ body {
 
 .explore-more-btn {
   padding: 16px 32px;
-  background: #2A72DE;
-  border-radius: 6px;
+  background: linear-gradient(95.64deg, #2A72DE -8.23%, rgba(42, 114, 222, 0.80125) 45.89%, rgba(42, 114, 222, 0.826094) 72.94%, rgba(42, 114, 222, 0.64) 100%);
+  box-shadow: 0px 2.4417px 14.6502px -0.610425px rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
   width: 196px;
   height: 58px;
   color: white;
@@ -253,11 +257,12 @@ body {
 .holding-your-hand-section {
   width: 100%;
   height: max-content;
+  margin-top: 6rem;
 
 }
 
 .holding-your-hand-title {
-  width: 85%;
+  width: 49%;
   height: 109px;
   font-family: 'Poppins';
   font-style: normal;
@@ -279,7 +284,7 @@ body {
   font-size: 20px;
   line-height: 30px;
   text-align: center;
-  width: 85%;
+  width: 50%;
   height: 89px;
   color: black;
   margin: 1.5rem auto;
@@ -291,14 +296,14 @@ body {
 
 .holding-your-hand-img-cont>img {
   margin: 2rem auto 1.5rem auto;
-  width: 90%;
+  width: 600px;
   padding: 0 3.5rem;
 }
 
 .explore-journey-btn {
   padding: 16px 16px;
   background: #2A72DE;
-  border-radius: 6px;
+  border-radius: 25px;
   width: 180px;
   height: 58px;
   color: white;
@@ -402,7 +407,7 @@ body {
   display: flex;
   width: 100%;
   height: max-content;
-  padding-left: 7rem;
+  padding-left: 3rem;
   padding-right: 3rem;
   margin-bottom: 6rem;
   margin-top: 8rem;
@@ -410,6 +415,8 @@ body {
 
 .left-col {
   width: 65%;
+  order: 2;
+  padding-left: 6rem;
 }
 
 .right-col {
@@ -440,6 +447,23 @@ body {
   width: 85%;
   height: max-content;
   margin-top: 2rem;
+}
+.how-reverr-help-startup_Button{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 12.4668px;
+line-height: 17px;
+/* identical to box height */
+background: linear-gradient(95.64deg, #2A72DE -8.23%, rgba(42, 114, 222, 0.80125) 45.89%, rgba(42, 114, 222, 0.826094) 72.94%, rgba(42, 114, 222, 0.64) 100%);
+box-shadow: 0px 1.99468px 11.9681px -0.49867px rgba(0, 0, 0, 0.2);
+color: #FFFFFF;
+border: none;
+height: 40px;
+width: 130px;
+margin-top: 2rem;
+border-radius: 25px;
+cursor: pointer;
 }
 
 .right-col {
@@ -539,9 +563,9 @@ body {
     font-size: 20px;
   }
 
-  .flounder-section-1-right-col>img {
+  /* .flounder-section-1-right-col>img {
     margin-left: 5rem;
-  }
+  } */
 
   .img-cont-1, .img-cont-2 {
     margin-right: -6rem;
@@ -708,4 +732,18 @@ body {
     margin-left: 4rem;
   }
   
+}
+
+@media(max-width:800px){
+  .holding-your-hand-title{
+    width: 80%;
+    margin-bottom: 1rem;
+  }
+  .holding-your-hand-sub-text{
+    width: 80%;
+  }
+  .holding-your-hand-img-cont>img{
+    margin-top: 0rem;
+    width: 450px;
+  }
 }

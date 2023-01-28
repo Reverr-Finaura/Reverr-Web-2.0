@@ -50,7 +50,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  gap: 1rem;
+  gap: 4rem;
 }
 
 .topnav-right a.active-link {
@@ -101,7 +101,7 @@ body {
   border-radius: 10px !important;
 } */
 
-.memberBtn {
+/* .memberBtn {
   font-size: 16px !important;
   background: transparent !important;
   color: white;
@@ -111,6 +111,18 @@ body {
   text-align: center;
   font-weight: 600;
   border-radius: 10px;
+} */
+.memberBtn {
+  font-size: 16px !important;
+  background: transparent !important;
+  color:  #2A72DE;
+  /* background-color: #2A72DE !important; */
+  padding: 7px 0;
+  width: 7rem;
+  text-align: center;
+  font-weight: 600;
+  border-radius: 21px;
+  border: 1px solid  #2A72DE;
 }
 
 .resourcesBtn {
