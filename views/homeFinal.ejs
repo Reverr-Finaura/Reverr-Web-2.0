@@ -55,22 +55,22 @@
             <div class="home-section-1-cont-2-subcont">
 
                 <div class="home-section-1-cont-2-box boxx-first">
-                    <h1>250+</h1>
+                    <div><h1 id="number001">250</h1><span>+</span></div>
                     <p class="home-section-1-cont-2-box-text1">Founders</p>
                     <!-- <p class="home-section-1-cont-2-box-text2">We’ve helped over 4,000 amazing global companies.</p> -->
                 </div>
                 <div class="home-section-1-cont-2-box">
-                    <h1>75+</h1>
+                    <div><h1 id="number002">75</h1><span>+</span></div>
                     <p class="home-section-1-cont-2-box-text1">Mentors</p>
                     <!-- <p class="home-section-1-cont-2-box-text2">We have return rankings best in the industry in INDIA</p> -->
                 </div>
                 <div class="home-section-1-cont-2-box">
-                    <h1>50+</h1>
+                    <div><h1 id="number003">50</h1><span>+</span></div>
                     <p class="home-section-1-cont-2-box-text1">VC’s</p>
                     <!-- <p class="home-section-1-cont-2-box-text2">Our app has been downloaded over 10k times.</p> -->
                 </div>
                 <div class="home-section-1-cont-2-box boxx-last">
-                    <h1>10+</h1>
+                    <div><h1 id="number004">10</h1><span>+</span></div>
                     <p class="home-section-1-cont-2-box-text1">Ecosystem Partners</p>
                     <!-- <p class="home-section-1-cont-2-box-text2">We’re proud of our 5-star rating with over 200 reviews.</p> -->
                 </div>
@@ -200,4 +200,27 @@
 <body>
     
 </body>
+<script>
+    let speed=20
+   function incEltNbr(id) {
+  elt = document.getElementById(id);
+  endNbr = Number(document.getElementById(id).innerHTML);
+  incNbrRec(0, endNbr, elt);
+}
+function incNbrRec(i, endNbr, elt) {
+  if (i <= endNbr) {
+    elt.innerHTML = i;
+    setTimeout(function() {//Delay a bit before calling the function again.
+      incNbrRec(i + 1, endNbr, elt);
+    }, speed);
+  }
+}
+setTimeout(()=>{
+    incEltNbr("number001");
+incEltNbr("number002");
+incEltNbr("number003");
+incEltNbr("number004");
+},1000)
+
+</script>
 </html>

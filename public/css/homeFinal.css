@@ -193,6 +193,30 @@ z-index: 1;
 
 }
 
+.home-section-1-cont-2-box>div{
+  display: flex;
+  align-items: center;
+}
+.home-section-1-cont-2-box>div>h1{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 73px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #2A72DE;
+}
+.home-section-1-cont-2-box>div>span{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 73px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #2A72DE;
+}
 
 .home-section-1-cont-2-box>h1 {
   font-family: 'Poppins';
