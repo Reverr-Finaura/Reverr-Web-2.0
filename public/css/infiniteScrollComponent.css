@@ -9,7 +9,7 @@
 
 @keyframes scroll {
 	0% { transform: translateX(0); }
-	100% { transform: translateX(calc(-250px * 7))}
+	100% { transform: translateX(calc(-250px * 16))}
 }
 
 
@@ -21,7 +21,7 @@
 	margin: auto;
 	overflow:hidden;
 	position: relative;
-	width: 80%;
+	width: 90%;
     margin-top: 4rem;
 
 }
@@ -47,9 +47,10 @@
 	}
 	
 	.slide-track {
-		animation: scroll 40s linear infinite;
+		animation: scroll 70s linear infinite;
 		display: flex;
-		width: calc(250px * 14);
+		/* width: calc(250px * 14); */
+		width: calc(250px * 24);
         margin-top: 3rem;
         height: 151px;
 	}
@@ -69,4 +70,18 @@
 	}
 	.taxAsvisoryIconn{
 		height: 140px!important;
+	}
+
+	.taxAsvisoryIconnn{
+		width: 180px!important;
+		height: 100px!important;
+	}
+	.taxAsvisoryIcond{
+		width: 210px!important;
+		height: 130px!important;
+	}
+	.taxAsvisoryIconav{
+		width: 150px!important;
+		height: 100px!important;
+		margin-top: 1.5rem;
 	}
