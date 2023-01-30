@@ -102,7 +102,8 @@
       const btnLeft = document.querySelector(".slider__btn--left");
       const btnRight = document.querySelector(".slider__btn--right");
       const dotContainer = document.querySelector(".dots");
-
+const doc=document.getElementById("carousel-container")
+console.log(doc)
       let curSlide = 0;
       const maxSlide = slides.length;
 
@@ -162,7 +163,10 @@
         activateDot(0);
       };
       init();
-
+// AUTOMATIC SLIDING 
+  setInterval(()=>{
+  nextSlide()
+},2000)
       // Event handlers
       btnRight.addEventListener("click", nextSlide);
       btnLeft.addEventListener("click", prevSlide);
@@ -181,5 +185,8 @@
       });
     };
     slider();
+
+  
+
   </script>
 </html>

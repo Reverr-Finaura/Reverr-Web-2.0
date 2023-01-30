@@ -18,12 +18,20 @@ body {
   width: 30%;
   order: 2;
   margin-right: auto;
+  position: relative;
 }
 
-.home-section-1-left-cont>img {
+.home-section-1-cont_img {
   width: 98%;
 }
 
+.rocket_home_animated{
+width: 40%;
+height: 40%;
+position: absolute;
+left: -60px;
+transform: rotate(-35deg);
+}
 .home-section-1-right-cont {
   width: 60%;
   display: flex;
@@ -71,8 +79,8 @@ z-index: 3;
   height: 100px;
 }
 .home-section-1-right-cont-top-part-top>span>img{
-  width: 100%;
-  height: 100%;
+  width: 70%;
+  height: 70%;
   transform: rotate(90deg);
 }
 

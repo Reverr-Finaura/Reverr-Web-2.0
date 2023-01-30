@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/homeFinal.css" />
     <title>Home</title>
+    <link rel="icon" type="image/x-icon" href="/images/ReverrBlack2.svg">
     <%-include("header")-%>
 
     <section id="home-section-1">
         <div class="home-section-1-cont">
             <div class="home-section-1-left-cont">
-                <img src="/images/Group 6267148.png" alt="home">
+                <img class="home-section-1-cont_img" src="/images/Group 6267147.png" alt="home">
+                <img class="rocket_home_animated" src="/images/MlCmEoDb6V.gif" alt="rocket">
             </div>
             <div class="home-section-1-right-cont">
                 <div class="home-section-1-right-cont-top-part">
@@ -97,7 +99,7 @@
     <section id="home-section-2">
         <div class="home-section-2-header">
             <h1>Stay Connected with <span>REVERR</span></h1>
-            <p>The most Start-Up community that connects with your Startup buddies, Mentors and Investors Across the globe . Track spending and categorize expenses so you can see how is startup growing.</p>
+            <p>The most engaging Start-Up community that connects with your Startup buddies, Mentors and Investors Across the globe . Track spending and categorize expenses so you can see how is startup growing.</p>
                 <a href="#"><button>Get Started</button></a>
         </div>
         <div class="home-section-2-img-cont">
@@ -115,7 +117,7 @@
     <h1>MAKING STARTUP INVESTMENT FEEL LIKE A WALK IN THE GARDEN!</h1>
     <!-- <h1>Making a community to keeps Start-ups <span>CONNECTED</span> </h1> -->
     <p>REVERR aims to provide a seamless infrastructure for both the startups and investors to enable easy flow of capital.</p>
-    <a href="https://investor.reverr.io/"><button class="home-section-3-left-cont-input-cont_button">Get Started</button></a>
+    <a href=" https://forms.gle/jXM3HzmXPegTfsvK8"><button class="home-section-3-left-cont-input-cont_button">Get Started</button></a>
 <div class="home-section-3-left-cont-input-cont">
     <!-- <input type="text" name="resource" id="resouce" placeholder="Finance, Start-up">
     <img src="/images/Icon.png" alt="search-icon">
@@ -201,26 +203,47 @@
     
 </body>
 <script>
-    let speed=20
+    let speed=50
    function incEltNbr(id) {
   elt = document.getElementById(id);
   endNbr = Number(document.getElementById(id).innerHTML);
   incNbrRec(0, endNbr, elt);
+ 
 }
+function incEltNbr1(id) {
+  elt = document.getElementById(id);
+  endNbr = Number(document.getElementById(id).innerHTML);
+  
+  incNbrRec1(0,endNbr,elt);
+}
+
+function incNbrRec1(i,endNbr,elt){
+    // elt.innerHTML = i;
+    // for(i=0;i<=endNbr;i+50){
+    //     incNbrRec(i, endNbr, elt);   
+    // }
+    if (i <= endNbr) {
+    elt.innerHTML = i;
+    setTimeout(function() {//Delay a bit before calling the function again.
+      incNbrRec1(i +2, endNbr, elt);
+    }, 55);
+  }
+}
+
 function incNbrRec(i, endNbr, elt) {
   if (i <= endNbr) {
     elt.innerHTML = i;
     setTimeout(function() {//Delay a bit before calling the function again.
       incNbrRec(i + 1, endNbr, elt);
-    }, speed);
+    }, 100);
   }
 }
 setTimeout(()=>{
-    incEltNbr("number001");
+incEltNbr1("number001");
 incEltNbr("number002");
 incEltNbr("number003");
 incEltNbr("number004");
-},1000)
+},500)
 
 </script>
 </html>

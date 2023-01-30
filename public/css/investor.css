@@ -26,14 +26,21 @@ body {
   place-content: center;
 }
 .investor-section-1-left-col > h1 {
-  font-family: 'Poppins';
+  /* font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
     font-size: 54px;
     line-height: 72px;
     letter-spacing: -0.04em;
     color: #0F172A;
-  width: 80%;
+  width: 80%; */
+  font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 62px;
+    letter-spacing: 0.03em;
+    color: #2A72DE!important;
   margin: auto;
   /* line-height: 60px; */
   /* width: fit-content; */
@@ -46,6 +53,7 @@ body {
   margin: auto;
   /* margin-top: 2rem; */
   padding-left: 5rem;
+  margin-top: -2.5rem;
 }
 
 .join-now-btn {
@@ -384,6 +392,12 @@ box-shadow: 0px 2.4417px 14.6502px -0.610425px rgba(0, 0, 0, 0.2);
 #register-investor {
   margin-bottom: 1.2rem;
 }
+
+.lineContainerrr{
+  text-align: center;
+  margin-top: 2rem;
+}
+
 @media (max-width: 1212px) {
   .arrow-img-cont {
     right: -34%;
@@ -392,6 +406,9 @@ box-shadow: 0px 2.4417px 14.6502px -0.610425px rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 1024px) {
+  .investor-section-1-btn-cont {
+margin: auto;
+  }
   #investor-section-1 {
     flex-direction: column;
     align-items: center;
