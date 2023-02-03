@@ -9,7 +9,7 @@
 
 @keyframes scroll {
 	0% { transform: translateX(0); }
-	100% { transform: translateX(calc(-250px * 16))}
+	100% { transform: translateX(calc(-250px * 20))}
 }
 
 
@@ -47,17 +47,17 @@
 	}
 	
 	.slide-track {
-		animation: scroll 70s linear infinite;
+		animation: scroll 90s linear infinite;
 		display: flex;
 		/* width: calc(250px * 14); */
-		width: calc(250px * 24);
+		width: calc(250px * 30);
         margin-top: 3rem;
         height: 151px;
 	}
 	
 	.slide {
 		height: 100%;
-		width: 14.33%;
+		width: 15.33%;
 	}
     .slide>img{
         height: 180px;
@@ -71,7 +71,10 @@
 	.taxAsvisoryIconn{
 		height: 140px!important;
 	}
-
+.rhmcIcon{
+	height: 140px!important;
+	height: 100px!important;
+}
 	.taxAsvisoryIconnn{
 		width: 180px!important;
 		height: 100px!important;
