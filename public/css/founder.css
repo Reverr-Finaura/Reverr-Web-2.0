@@ -478,9 +478,13 @@ body {
   flex-direction: column;
   gap: 1.3rem;
   margin-top: 2rem;
+  
+  
 }
 .left-col > ul > li {
   font-family: "Poppins";
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .how-reverr-help-startup_Button {
@@ -520,7 +524,7 @@ body {
 
 .video__video {
   /* padding: 0px 20px; */
-  width: 75%;
+  width: 85%;
   height: 60%;
   border-radius: 22px;
   display: block;
