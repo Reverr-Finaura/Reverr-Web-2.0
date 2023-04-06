@@ -1,0 +1,75 @@
+body {
+  background: linear-gradient(167.37deg, #020e2c 9.15%, #09245e 64.83%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.registerform {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.registerform h1 {
+  margin: 0 !important;
+  font-size: 30px;
+}
+
+.form {
+  width: 60%;
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.forminput {
+  width: 100%;
+  background: #323544;
+  border: none;
+  padding: 2% 2%;
+  color: white;
+  outline: none;
+  border-radius: 5px;
+  margin-bottom: 2%;
+}
+
+.radio_cont {
+  display: flex;
+  flex-direction: column;
+}
+
+.radio_div,
+.checkbox_div {
+  margin: 0.3rem 0;
+}
+
+.btn-blue {
+  align-self: end;
+  font-size: 16px !important;
+  background-color: #0077b7 !important;
+  padding: 2% 8%;
+  border-radius: 8px;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  border: none;
+  margin: 2% 0%;
+  text-decoration: none;
+}
+
+@media (max-width: 550px) {
+  .btn-blue {
+    align-self: inherit;
+    margin: 15% 0%;
+  }
+}

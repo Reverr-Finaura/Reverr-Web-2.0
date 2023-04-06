@@ -158,6 +158,9 @@ app.get("/formentors", function (req, res) {
 app.get("/profilelogin", function (req, res) {
   res.render("profilelogin");
 });
+app.get("/registerform", function (req, res) {
+  res.render("register");
+});
 // app.post("/email", (req,res)=>{
 //   const user = {
 //     email: "mauricerana@gmail.com",

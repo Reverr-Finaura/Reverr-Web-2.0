@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Register</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/registerform.css" />
+  </head>
+  <body>
+    <%- include('contactheader'); -%> <%- include('header-white'); -%>
+    <div class="registerform">
+      <h1>Onboarding Form</h1>
+      <form class="form">
+        <p>Full Name <span style="color: red">*</span></p>
+        <input
+          type="text"
+          name="name"
+          placeholder="Your Name"
+          class="forminput"
+          required
+        />
+        <p>Email Id<span style="color: red">*</span></p>
+        <input
+          type="text"
+          name="email"
+          placeholder="Your Email"
+          class="forminput"
+          required
+        />
+        <p>Contact Number <span style="color: red">*</span></p>
+        <input
+          type="text"
+          name="mobile"
+          placeholder="Your Contact Number"
+          class="forminput"
+          required
+        />
+        <p>Age<span style="color: red">*</span></p>
+        <input
+          type="text"
+          name="age"
+          placeholder="Your Age"
+          class="forminput"
+          required
+        />
+        <p>Linkedin Profile Url <span style="color: red">*</span></p>
+        <input
+          type="text"
+          name="linkedin"
+          placeholder="https://www.linkedin.com/"
+          class="forminput"
+          required
+        />
+        <p>
+          Name of the Industry your startup belongs to<span style="color: red"
+            >*</span
+          >
+        </p>
+        <div class="radio_cont">
+          <div class="radio_div">
+            <input
+              type="radio"
+              name="startupindustry"
+              value="Health Tech"
+              id="Health Tech"
+            />
+            <label for="Health Tech">Health Tech</label>
+          </div>
+          <div class="radio_div">
+            <input
+              type="radio"
+              name="startupindustry"
+              value="Edtech"
+              id="Edtech"
+            />
+            <label for="Edtech">Edtech</label>
+          </div>
+          <div class="radio_div">
+            <input
+              type="radio"
+              name="startupindustry"
+              value="FinTech"
+              id="FinTech"
+            />
+            <label for="FinTech">FinTech</label>
+          </div>
+          <div class="radio_div">
+            <input
+              type="radio"
+              name="startupindustry"
+              value="Delivery"
+              id="Delivery"
+            />
+            <label for="Delivery">Delivery</label>
+          </div>
+          <div class="radio_div">
+            <input
+              type="radio"
+              name="startupindustry"
+              value="eCommerce"
+              id="eCommerce"
+            />
+            <label for="eCommerce">eCommerce</label>
+          </div>
+          <div class="radio_div">
+            <input
+              type="radio"
+              name="startupindustry"
+              value="Artificial Intelligence"
+              id="Artificial Intelligence"
+            />
+            <label for="Artificial Intelligence">Artificial Intelligence</label>
+          </div>
+          <div class="radio_div">
+            <input
+              type="radio"
+              name="startupindustry"
+              value="Shared Mobility"
+              id="Shared Mobility"
+            />
+            <label for="Shared Mobility">Shared Mobility</label>
+          </div>
+          <div class="radio_div">
+            <input
+              type="radio"
+              name="startupindustry"
+              value="Other"
+              id="Other"
+            />
+            <label for="Other">Other</label>
+          </div>
+        </div>
+        <p>What fits best for your startup?<span style="color: red">*</span></p>
+        <div class="checkbox_div">
+          <input type="checkbox" name="startup_fit" value="B2B" id="B2B" />
+          <label for="B2B">B2B</label><br />
+        </div>
+        <div class="checkbox_div">
+          <input type="checkbox" name="startup_fit" value="B2C" id="B2C" />
+          <label for="B2C">B2C</label><br />
+        </div>
+        <div class="checkbox_div">
+          <input type="checkbox" name="startup_fit" value="B2B2C" id="B2B2C" />
+          <label for="B2B2C">B2B2C</label><br />
+        </div>
+        <div class="checkbox_div">
+          <input
+            type="checkbox"
+            name="startup_fit"
+            value="Software"
+            id="Software"
+          />
+          <label for="Software">Software</label><br />
+        </div>
+        <div class="checkbox_div">
+          <input
+            type="checkbox"
+            name="startup_fit"
+            value="Marketplace"
+            id="Marketplace"
+          />
+          <label for="Marketplace">Marketplace</label><br />
+        </div>
+        <div class="checkbox_div">
+          <input type="checkbox" name="startup_fit" value="AI/ML" id="AI/ML" />
+          <label for="AI/ML">AI/ML</label><br />
+        </div>
+        <div class="checkbox_div">
+          <input type="checkbox" name="startup_fit" value="IoT" id="IoT" />
+          <label for="IoT">IoT</label><br />
+        </div>
+        <div class="checkbox_div">
+          <input
+            type="checkbox"
+            name="startup_fit"
+            value="Hardware"
+            id="Hardware"
+          />
+          <label for="Hardware">Hardware</label><br />
+        </div>
+        <div class="checkbox_div">
+          <input
+            type="checkbox"
+            name="startup_fit"
+            value="Infrastructure"
+            id="Infrastructure"
+          />
+          <label for="Infrastructure">Infrastructure</label><br />
+        </div>
+        <div class="checkbox_div">
+          <input
+            type="checkbox"
+            name="startup_fit"
+            value="Supply Chain / Logistics"
+            id="Supply Chain / Logistics"
+          />
+          <label for="Supply Chain / Logistics">Supply Chain / Logistics</label
+          ><br />
+        </div>
+        <div class="checkbox_div">
+          <input
+            type="checkbox"
+            name="startup_fit"
+            value="Provide Services"
+            id="Provide Services"
+          />
+          <label for="Provide Services">Provide Services</label><br />
+        </div>
+        <div class="checkbox_div">
+          <input
+            type="checkbox"
+            name="startup_fit"
+            value="Consultancy"
+            id="Consultancy"
+          />
+          <label for="Consultancy">Consultancy</label><br />
+        </div>
+        <div class="checkbox_div">
+          <input type="checkbox" name="startup_fit" value="Other" id="Other" />
+          <label for="Other">Other</label><br />
+        </div>
+        <p>
+          The current stage of your startup<span style="color: red">*</span>
+        </p>
+        <div class="radio_cont">
+          <div class="radio_div">
+            <input
+              type="radio"
+              name="stage"
+              value="Ideation Stage"
+              id="Ideation Stage"
+            />
+            <label for="Ideation Stage">Ideation Stage</label>
+          </div>
+          <div class="radio_div">
+            <input
+              type="radio"
+              name="stage"
+              value="MVP Testing"
+              id="MVP Testing"
+            />
+            <label for="MVP Testing">MVP Testing</label>
+          </div>
+          <div class="radio_div">
+            <input
+              type="radio"
+              name="stage"
+              value="Product Building"
+              id="Product Building"
+            />
+            <label for="Product Building">Product Building</label>
+          </div>
+          <div class="radio_div">
+            <input
+              type="radio"
+              name="stage"
+              value="Getting Traction"
+              id="Getting Traction"
+            />
+            <label for="Getting Traction">Getting Traction</label>
+          </div>
+          <div class="radio_div">
+            <input
+              type="radio"
+              name="stage"
+              value="Growth Stage"
+              id="Growth Stage"
+            />
+            <label for="Growth Stage">Growth Stage</label>
+          </div>
+          <div class="radio_div">
+            <input
+              type="radio"
+              name="stage"
+              value="Pre-Revenue Stage"
+              id="Pre-Revenue Stage"
+            />
+            <label for="Pre-Revenue Stage">Pre-Revenue Stage</label>
+          </div>
+          <div class="radio_div">
+            <input
+              type="radio"
+              name="stage"
+              value="Generating Revenue"
+              id="Generating Revenue"
+            />
+            <label for="Generating Revenue">Generating Revenue</label>
+          </div>
+          <div class="radio_div">
+            <input type="radio" name="stage" value="Other" id="Other-stage" />
+            <label for="Other-stage">Other</label>
+          </div>
+        </div>
+        <p>What do you need support with?<span style="color: red">*</span></p>
+        <div class="checkbox_div">
+          <input
+            type="checkbox"
+            name="support"
+            value="Mentorship"
+            id="Mentorship"
+          />
+          <label for="Mentorship">Mentorship</label><br />
+        </div>
+        <div class="checkbox_div">
+          <input
+            type="checkbox"
+            name="support"
+            value="Networking"
+            id="Networking"
+          />
+          <label for="Networking">Networking</label><br />
+        </div>
+        <div class="checkbox_div">
+          <input
+            type="checkbox"
+            name="support"
+            value="Co-founder connects"
+            id="Co-founder connects"
+          />
+          <label for="Co-founder connects">Co-founder connects</label><br />
+        </div>
+        <div class="checkbox_div">
+          <input type="checkbox" name="support" value="Funding" id="Funding"" />
+          <label for="Funding">Funding</label><br />
+        </div>
+        <div class="checkbox_div">
+          <input
+            type="checkbox"
+            name="support"
+            value="Legal Compliance & Tech"
+            id="Legal Compliance & Tech"
+          />
+          <label for="Legal Compliance & Tech">Legal Compliance & Tech</label
+          ><br />
+        </div>
+        <div class="checkbox_div">
+          <input
+            type="checkbox"
+            name="support"
+            value="Knowledge"
+            id="Knowledge"
+          />
+          <label for="Knowledge">Knowledge</label><br />
+        </div>
+        <div class="checkbox_div">
+          <input
+            type="checkbox"
+            name="support"
+            value="Other"
+            id="Other-support"
+          />
+          <label for="Other-support">Other</label><br />
+        </div>
+        <button type="submit" class="btn-blue">Submit</button>
+      </form>
+    </div>
+    <%- include('footerNew'); -%>
+  </body>
+</html>
