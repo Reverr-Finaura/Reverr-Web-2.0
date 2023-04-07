@@ -3,7 +3,14 @@ var app = express();
 var path = require("path");
 const cors = require("cors");
 const bodyparser = require("body-parser");
-const { Mentors, Funding, Newsletter, Message, Blogs } = require("./config");
+const {
+  Mentors,
+  Funding,
+  Newsletter,
+  Message,
+  Blogs,
+  OnboardRegister,
+} = require("./config");
 var SibApiV3Sdk = require("sib-api-v3-sdk");
 const PORT = process.env.PORT || 3000;
 
@@ -159,8 +166,19 @@ app.get("/profilelogin", function (req, res) {
   res.render("profilelogin");
 });
 app.get("/registerform", function (req, res) {
-  res.render("register");
+  res.render("register", { successful: false });
 });
+
+app.post("/register", async (req, res) => {
+  const data = req.body;
+  try {
+    await OnboardRegister.add(data);
+    return res.render("register", { successful: true });
+  } catch (error) {
+    res.send("error: " + error);
+  }
+});
+
 // app.post("/email", (req,res)=>{
 //   const user = {
 //     email: "mauricerana@gmail.com",

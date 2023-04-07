@@ -16,4 +16,15 @@ const Message = db.collection("Message");
 const Funding = db.collection("Funding");
 const Newsletter = db.collection("Newsletter");
 const Blogs = db.collection("Blogs");
-module.exports = { Mentors, Funding, Newsletter, Message, Blogs };
+const OnboardRegister = db
+  .collection("Forms")
+  .doc("onboardingForm")
+  .collection("onboarding");
+module.exports = {
+  Mentors,
+  Funding,
+  Newsletter,
+  Message,
+  Blogs,
+  OnboardRegister,
+};

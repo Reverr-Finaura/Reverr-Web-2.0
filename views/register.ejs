@@ -9,10 +9,28 @@
     <link rel="stylesheet" href="css/registerform.css" />
   </head>
   <body>
-    <%- include('contactheader'); -%> <%- include('header-white'); -%>
+    <%- include('contactheader'); -%> <%- include('header-white'); -%> <%
+    if(successful == true) {%>
+    <div style="width: 70%; margin: 0 auto">
+      <div
+        style="
+          background-color: #03c04a;
+          text-align: center;
+          padding: 0.5% 0.7%;
+        "
+      >
+        <h3 style="color: white">Registration Successful</h3>
+      </div>
+      <div style="text-align: center">
+        <a href="/" style="text-decoration: none"
+          ><h1 style="color: white">Click here to go HOME</h1></a
+        >
+      </div>
+    </div>
+    <% } else { %>
     <div class="registerform">
       <h1>Onboarding Form</h1>
-      <form class="form">
+      <form action="/register" method="post" class="form">
         <p>Full Name <span style="color: red">*</span></p>
         <input
           type="text"
@@ -23,7 +41,7 @@
         />
         <p>Email Id<span style="color: red">*</span></p>
         <input
-          type="text"
+          type="email"
           name="email"
           placeholder="Your Email"
           class="forminput"
@@ -31,7 +49,7 @@
         />
         <p>Contact Number <span style="color: red">*</span></p>
         <input
-          type="text"
+          type="tel"
           name="mobile"
           placeholder="Your Contact Number"
           class="forminput"
@@ -39,7 +57,7 @@
         />
         <p>Age<span style="color: red">*</span></p>
         <input
-          type="text"
+          type="number"
           name="age"
           placeholder="Your Age"
           class="forminput"
@@ -47,7 +65,7 @@
         />
         <p>Linkedin Profile Url <span style="color: red">*</span></p>
         <input
-          type="text"
+          type="url"
           name="linkedin"
           placeholder="https://www.linkedin.com/"
           class="forminput"
@@ -134,21 +152,26 @@
         </div>
         <p>What fits best for your startup?<span style="color: red">*</span></p>
         <div class="checkbox_div">
-          <input type="checkbox" name="startup_fit" value="B2B" id="B2B" />
+          <input type="checkbox" name="startup_best_fit" value="B2B" id="B2B" />
           <label for="B2B">B2B</label><br />
         </div>
         <div class="checkbox_div">
-          <input type="checkbox" name="startup_fit" value="B2C" id="B2C" />
+          <input type="checkbox" name="startup_best_fit" value="B2C" id="B2C" />
           <label for="B2C">B2C</label><br />
         </div>
         <div class="checkbox_div">
-          <input type="checkbox" name="startup_fit" value="B2B2C" id="B2B2C" />
+          <input
+            type="checkbox"
+            name="startup_best_fit"
+            value="B2B2C"
+            id="B2B2C"
+          />
           <label for="B2B2C">B2B2C</label><br />
         </div>
         <div class="checkbox_div">
           <input
             type="checkbox"
-            name="startup_fit"
+            name="startup_best_fit"
             value="Software"
             id="Software"
           />
@@ -157,24 +180,29 @@
         <div class="checkbox_div">
           <input
             type="checkbox"
-            name="startup_fit"
+            name="startup_best_fit"
             value="Marketplace"
             id="Marketplace"
           />
           <label for="Marketplace">Marketplace</label><br />
         </div>
         <div class="checkbox_div">
-          <input type="checkbox" name="startup_fit" value="AI/ML" id="AI/ML" />
+          <input
+            type="checkbox"
+            name="startup_best_fit"
+            value="AI/ML"
+            id="AI/ML"
+          />
           <label for="AI/ML">AI/ML</label><br />
         </div>
         <div class="checkbox_div">
-          <input type="checkbox" name="startup_fit" value="IoT" id="IoT" />
+          <input type="checkbox" name="startup_best_fit" value="IoT" id="IoT" />
           <label for="IoT">IoT</label><br />
         </div>
         <div class="checkbox_div">
           <input
             type="checkbox"
-            name="startup_fit"
+            name="startup_best_fit"
             value="Hardware"
             id="Hardware"
           />
@@ -183,7 +211,7 @@
         <div class="checkbox_div">
           <input
             type="checkbox"
-            name="startup_fit"
+            name="startup_best_fit"
             value="Infrastructure"
             id="Infrastructure"
           />
@@ -192,7 +220,7 @@
         <div class="checkbox_div">
           <input
             type="checkbox"
-            name="startup_fit"
+            name="startup_best_fit"
             value="Supply Chain / Logistics"
             id="Supply Chain / Logistics"
           />
@@ -202,7 +230,7 @@
         <div class="checkbox_div">
           <input
             type="checkbox"
-            name="startup_fit"
+            name="startup_best_fit"
             value="Provide Services"
             id="Provide Services"
           />
@@ -211,14 +239,19 @@
         <div class="checkbox_div">
           <input
             type="checkbox"
-            name="startup_fit"
+            name="startup_best_fit"
             value="Consultancy"
             id="Consultancy"
           />
           <label for="Consultancy">Consultancy</label><br />
         </div>
         <div class="checkbox_div">
-          <input type="checkbox" name="startup_fit" value="Other" id="Other" />
+          <input
+            type="checkbox"
+            name="startup_best_fit"
+            value="Other"
+            id="Other"
+          />
           <label for="Other">Other</label><br />
         </div>
         <p>
@@ -293,11 +326,15 @@
             <label for="Other-stage">Other</label>
           </div>
         </div>
-        <p>What do you need support with?<span style="color: red">*</span></p>
+        <p>
+          What do you need startup_support with?<span style="color: red"
+            >*</span
+          >
+        </p>
         <div class="checkbox_div">
           <input
             type="checkbox"
-            name="support"
+            name="startup_support"
             value="Mentorship"
             id="Mentorship"
           />
@@ -306,7 +343,7 @@
         <div class="checkbox_div">
           <input
             type="checkbox"
-            name="support"
+            name="startup_support"
             value="Networking"
             id="Networking"
           />
@@ -315,20 +352,21 @@
         <div class="checkbox_div">
           <input
             type="checkbox"
-            name="support"
+            name="startup_support"
             value="Co-founder connects"
             id="Co-founder connects"
           />
           <label for="Co-founder connects">Co-founder connects</label><br />
         </div>
         <div class="checkbox_div">
-          <input type="checkbox" name="support" value="Funding" id="Funding"" />
+          <input type="checkbox" name="startup_support" value="Funding"
+          id="Funding"" />
           <label for="Funding">Funding</label><br />
         </div>
         <div class="checkbox_div">
           <input
             type="checkbox"
-            name="support"
+            name="startup_support"
             value="Legal Compliance & Tech"
             id="Legal Compliance & Tech"
           />
@@ -338,7 +376,7 @@
         <div class="checkbox_div">
           <input
             type="checkbox"
-            name="support"
+            name="startup_support"
             value="Knowledge"
             id="Knowledge"
           />
@@ -347,15 +385,15 @@
         <div class="checkbox_div">
           <input
             type="checkbox"
-            name="support"
+            name="startup_support"
             value="Other"
-            id="Other-support"
+            id="Other-startup_support"
           />
-          <label for="Other-support">Other</label><br />
+          <label for="Other-startup_support">Other</label><br />
         </div>
         <button type="submit" class="btn-blue">Submit</button>
       </form>
     </div>
-    <%- include('footerNew'); -%>
+    <%}%> <%- include('footerNew'); -%>
   </body>
 </html>
