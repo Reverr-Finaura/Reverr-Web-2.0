@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 body {
   background: #f6f6f6;
   background-repeat: no-repeat;
@@ -18,26 +19,27 @@ body {
   display: flex;
   flex-direction: column;
   margin-left: 3rem;
-  margin: auto;
+  /* margin: auto; */
 }
 
 .founder-section-1-left-col > h1 {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 54px;
-  line-height: 72px;
-  letter-spacing: -0.04em;
-  color: #0f172a;
+  font-family: 'Exo';
+font-style: normal;
+font-weight: 700;
+font-size: 3.2rem;
+line-height: 49px;
+letter-spacing: 0.095em;
+color: #0F172A;
   margin-bottom: 1.5rem;
 }
 
 .founder-section-1-left-col > p {
-  font-family: "Inter";
+  font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
-  line-height: 26px;
+  font-size: 1.3rem;
+  line-height: 22px;
+  letter-spacing: 0.055em;
   color: #475569;
   margin-top: 0;
   margin-bottom: 2rem;
@@ -46,7 +48,13 @@ body {
 .flounder-section-1-right-col > img {
   /* width: 400px; */
   /* margin-left: 5rem; */
-  width: 100%;
+  /* width: 100%; */
+  right: 7rem;
+  position: absolute;
+  height: 27rem;
+  width: 47rem;
+  top: 8rem;
+
 }
 
 .join-now-btnn {
@@ -87,27 +95,27 @@ body {
 }
 
 .our-offering-title {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 52px;
-  line-height: 62px;
-  text-align: center;
-  color: black;
+  font-family: 'Exo';
+font-style: normal;
+font-weight: 700;
+font-size: 2.2rem;
+line-height: 53px;
+text-align: center;
+letter-spacing: 3.42115px;
+color: #090914;
 }
 
 .our-offering-sub-text {
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 1.5rem;
+  line-height: 18px;
   text-align: center;
-  color: #52525b;
-
-  width: 551px;
+  color: #52525B;
+  width: max-content;
   height: 90px;
-  margin: 0 auto;
+  margin: 1.5rem auto 0 auto;
 }
 
 .offering-img-cont {
@@ -272,13 +280,15 @@ body {
 .holding-your-hand-title {
   width: 49%;
   height: 109px;
-  font-family: "Poppins";
+  font-family: 'Exo';
   font-style: normal;
-  font-weight: 600;
-  font-size: 35px;
-  line-height: 52px;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 33px;
   text-align: center;
-  color: #0077b7;
+  letter-spacing: 0.05em;
+  
+  color: #0077B7;
   margin: 0 auto;
   justify-content: center;
   align-items: center;
@@ -294,7 +304,7 @@ body {
   text-align: center;
   width: 50%;
   height: 89px;
-  color: black;
+  color: #52525B;
   margin: 1.5rem auto;
 }
 
@@ -304,7 +314,7 @@ body {
 
 .holding-your-hand-img-cont > img {
   margin: 2rem auto 1.5rem auto;
-  width: 600px;
+  width: 650px;
   padding: 0 3.5rem;
 }
 
@@ -436,6 +446,13 @@ body {
 .how_reverr_title {
   font-size: 2.5rem;
   text-align: center;
+  font-family: 'Exo';
+font-style: normal;
+font-weight: 700;
+line-height: 33px;
+letter-spacing: 0.075em;
+
+color: #202020;
 }
 .how_reverr_title > span {
   color: #2a72de;
@@ -482,7 +499,14 @@ body {
   
 }
 .left-col > ul > li {
-  font-family: "Poppins";
+  font-family: 'Exo';
+font-style: normal;
+font-weight: 400;
+font-size: 1.4rem;
+line-height: 34px;
+letter-spacing: 0.015em;
+
+color: #202020;
   text-align: justify;
   text-justify: inter-word;
 }

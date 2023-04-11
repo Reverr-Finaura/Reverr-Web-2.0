@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 body {
   margin: 0;
   font-family: "Poppins", sans-serif !important;
@@ -13,13 +15,13 @@ body {
 }
 
 .brand-name {
-  font-family: "Philosopher";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 20px;
+  font-family: 'Lora';
+font-style: normal;
+font-weight: 700;
+font-size: 21px;
+line-height: 19px;
+color: #2A72DE;
   margin-top: 0;
-  color: #2A72DE;
 }
 .brand-name_by{
   font-family: "Philosopher";
@@ -52,12 +54,21 @@ body {
   justify-content: space-around;
   gap: 4rem;
 }
-
+.topnav-right a{
+  font-family: 'Noto Sans', sans-serif;
+  font-style: normal;
+font-weight: 700;
+font-size: 1rem;
+line-height: 17px;
+text-align: center;
+letter-spacing: 0.07em;
+color: #323232;
+}
 .topnav-right a.active-link {
-  font-family: "Poppins";
+  font-family: 'Noto Sans', sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 18px;
   display: flex;
   align-items: center;
@@ -113,6 +124,7 @@ body {
   border-radius: 10px;
 } */
 .memberBtn {
+  font-family: 'Noto Sans', sans-serif;
   font-size: 16px !important;
   background: transparent !important;
   color:  #2A72DE;
@@ -120,7 +132,7 @@ body {
   padding: 7px 0;
   width: 7rem;
   text-align: center;
-  font-weight: 600;
+  font-weight: 500;
   border-radius: 21px;
   border: 1px solid  #2A72DE;
 }

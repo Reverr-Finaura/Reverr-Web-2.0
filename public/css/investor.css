@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 body {
   background: #f6f6f6;
   background-repeat: no-repeat;
@@ -34,18 +36,15 @@ body {
     letter-spacing: -0.04em;
     color: #0F172A;
   width: 80%; */
-  font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 50px;
-    line-height: 62px;
-    letter-spacing: 0.03em;
-    color: #2A72DE!important;
-  margin: auto;
-  /* line-height: 60px; */
-  /* width: fit-content; */
-
+  font-family: 'Exo';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 39.0672px;
+  line-height: 49px;
+  letter-spacing: 0.095em;
   color: #202020;
+  margin: auto;
+  width: 80%;
 }
 .investor-section-1-btn-cont {
   /* width: fit-content; */
@@ -97,15 +96,20 @@ box-shadow: 0px 2.4417px 9.15638px -0.610425px rgba(0, 0, 0, 0.25);
   flex-direction: column;
 }
 .investor-process-header > p {
-  font-family: 'Segoe UI';
-font-style: normal;
-font-weight: 600;
-font-size: 1rem;
-line-height: 19px;
-/* or 169% */
 
-text-align: center;
-letter-spacing: 2.4417px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 22px;
+  /* or 110% */
+  
+  text-align: center;
+  letter-spacing: 2px;
+  
+  /* gray/600 */
+  
+  color: #52525B;
 
 /* gray/600 */
 
@@ -178,9 +182,18 @@ top: -20px;
 right: -20px;
 }
 .investor-process-process-cont-1-box-con>h4{
-  font-size: 12px;
-  line-height: 20px;
   margin-top: 1rem;
+  font-family: 'Quicksand';
+font-style: normal;
+font-weight: 700;
+font-size: 1rem;
+line-height: 16px;
+/* or 140% */
+
+text-align: center;
+letter-spacing: 0.305213px;
+text-transform: capitalize;
+
 }
 .arrow-img-cont {
   position: absolute;
@@ -244,6 +257,16 @@ box-shadow: 0px 2.4417px 14.6502px -0.610425px rgba(0, 0, 0, 0.2);
 .left-top-cont,
 .left-bottom-cont {
   display: flex;
+  font-family: 'Exo';
+font-style: normal;
+font-weight: 700;
+font-size: 1rem;
+line-height: 26px;
+text-align: center;
+letter-spacing: 0.07em;
+text-transform: capitalize;
+
+color: #18181B;
 }
 .why-inest-with-reverr-img-left-cont,
 .why-inest-with-reverr-img-right-cont {
