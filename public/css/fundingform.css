@@ -12,7 +12,7 @@ body {
 }
 
 .forminput {
-  width: 96%;
+  width: 100%;
   background: #323544;
   border: none;
   padding: 2% 2%;
@@ -128,7 +128,7 @@ body {
   line-height: 10px;
 }
 
-@media (max-width: 550px) {
+/* @media (max-width: 550px) {
   .desk {
     display: none !important;
   }
@@ -153,4 +153,4 @@ body {
   .h1head {
     font-size: 24px !important;
   }
-}
+} */

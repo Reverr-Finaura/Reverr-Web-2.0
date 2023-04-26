@@ -31,13 +31,13 @@
     >
   </div>
   <% } else { %>
-    <div class="desk" style=" padding: 2% 25%; padding-bottom: 8%;">
+    <div class="fundingform" style=" padding: 2% 25%; padding-bottom: 8%;">
         <div style="text-align:center">
         <h1> Funding Form</h1>
         <img src="/images/fundingform.png" width="40%" alt="">
         </div>
         <form action="/funding" method="post" class="form">
-            <h1>Startup Details</h1>
+            <!-- <h1>Startup Details</h1>
             <div style="display: flex; flex-direction: row; justify-content: space-between;">
                 <div class="left">
                     <p>Name <span style="color: red;">*</span></p>
@@ -78,9 +78,9 @@
 
             <div style="display: flex; flex-direction: row; justify-content: space-between;">
                 <div class="left">
-                    <p>Industry <span style="color: red;">*</span></p>
+                    <p>Industry <span style="color: red;">*</span></p> -->
                     <!-- <input type="text" name="industry" placeholder="Industry" class="forminput2" required> -->
-                    <select name="industry" style="width: 240px;" class="forminput2" required>
+                    <!-- <select name="industry" style="width: 240px;" class="forminput2" required>
                         <option value="Agritech">Agritech</option>
                         <option value="AI-ML-M2M">AI-ML-M2M</option>
                         <option value="Biotech">Biotech</option>
@@ -130,9 +130,9 @@
 
             <div style="display: flex; flex-direction: row; justify-content: space-between;">
                 <div class="left">
-                    <p>Company stage <span style="color: red;">*</span></p>
+                    <p>Company stage <span style="color: red;">*</span></p> -->
                     <!-- <input type="text" name="stage" placeholder="stage" class="forminput2" required> -->
-                    <select name="stage" style="width: 240px;" class="forminput2" required>
+                    <!-- <select name="stage" style="width: 240px;" class="forminput2" required>
                         <option value="Idea">Idea</option>
                         <option value="Prototype">Prototype</option>
                         <option value="Minimum Viable Product">Minimum Viable Product</option>
@@ -150,7 +150,7 @@
                         <option value="Other">Other</option>
                       </select>
                 </div>
-            </div>
+            </div> -->
 
             <!-- <div style="display: flex; flex-direction: row; justify-content: space-between;">
                 <div class="left">
@@ -170,7 +170,7 @@
             </div>
              -->
 
-            <div style="display: flex; flex-direction: row; justify-content: space-between;">
+            <!-- <div style="display: flex; flex-direction: row; justify-content: space-between;">
                 <div class="left">
                     <p>Elevator Pitch </p>
                     <input type="file" name="filename-ElevatorPitch" id="file1" class="file">
@@ -192,7 +192,7 @@
                       <input type="button" id="btn10" class="btn09" value="select">
                     </div>   
                 </div>
-            </div>
+            </div> -->
           
             
   
@@ -208,7 +208,7 @@
                 </div>
             </div> -->
 
-            <p>Demo video link</p>
+            <!-- <p>Demo video link</p>
             <input type="text" name="demovideo" placeholder="Demo video link" class="forminput">
 
             <div style="display: flex; flex-direction: row; justify-content: space-between;">
@@ -247,15 +247,63 @@
                     <p>Email Address <span style="color: red;">*</span></p>
                     <input type="text" name="Email" placeholder="Email Address" class="forminput2" required>
                 </div>
-            </div>
+            </div> -->
+
+            <p>Full Name <span style="color: red">*</span></p>
+        <input
+          type="text"
+          name="FounderName"
+          placeholder="Your Name"
+          class="forminput"
+          required
+        />
+
+        <p>Startup Name <span style="color: red">*</span></p>
+        <input
+          type="text"
+          name="CompanyName"
+          placeholder="Your Startup Name"
+          class="forminput"
+          required
+        />
+
+        <p>Email <span style="color: red">*</span></p>
+        <input
+          type="email"
+          name="ProfessionalEmail"
+          placeholder="Your Email"
+          class="forminput"
+          required
+        />
+        <p>Phone No <span style="color: red">*</span></p>
+        <input
+          type="tel"
+          name="ContactNumber"
+          placeholder="Your Phone No"
+          class="forminput"
+          required
+        />
+        <p>Website <span style="color: red">*</span></p>
+        <input
+          type="url"
+          name="website"
+          placeholder="Your Name"
+          class="forminput"
+          required
+        />
+        <p>Elevator Pitch <span style="color: red;">*</span></p>
+        <input type="file" name="UploadedFileName" placeholder="ElevatorPitch" class="forminput" required>
+    
+
 
             <button type="submit" class="btn-blue" style="float: right; margin-right: 0% ;">Apply</button>
         </form>
     </div>
-    <div class="phn" style=" padding: 2% 15%; padding-bottom: 18%;">
-        <div style="text-align:center">
+
+    <!-- <div class="phn" style=" padding: 2% 15%; padding-bottom: 18%;"> -->
+        <!-- <div style="text-align:center"> -->
         <!-- <h1 style="font-size: 24px;">Mentor Signup Form</h1> -->
-        <img src="./image/fundingform.png" width="40%" alt="">
+        <!-- <img src="./image/fundingform.png" width="40%" alt="">
         </div>
         <form action="/funding" method="post" class="form">
             <h1>Startup Details</h1>
@@ -322,7 +370,7 @@
                         <option value="Other">Other</option>
                       </select>
                 </div>
-            </div>
+            </div> -->
 
             <!-- <div>
                 <div class="left">
@@ -342,7 +390,7 @@
             </div>
              -->
 
-            <div>
+            <!-- <div>
                 <div class="left">
                     <p>Elevator Pitch <span style="color: red;">*</span></p>
                     <input type="file" name="file-ElevatorPitch" id="file1" class="file">
@@ -366,7 +414,7 @@
             </div>
             
             <input type="text" name="pitchdeck" id="pitch" style="display: none;">
-            <input type="text" name="ElevatorPitch" id="elevator" style="display: none;">
+            <input type="text" name="ElevatorPitch" id="elevator" style="display: none;"> -->
             
   
 
@@ -381,7 +429,7 @@
                 </div>
             </div> -->
 
-            <p>Demo video link</p>
+            <!-- <p>Demo video link</p>
             <input type="text" name="demovideo" placeholder="Demo video link" class="forminput">
 
             <div>
@@ -423,9 +471,9 @@
             </div>
 
             <button type="submit" class="btn-blue" style="float: right; margin-right: 0% ; margin-top: 5%;">Apply</button>
-        </form>
+        </form> -->
         <%}%>
-    </div>
+    <!-- </div> -->
 </body>
 <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-storage.js"></script>
