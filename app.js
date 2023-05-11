@@ -169,6 +169,10 @@ app.get("/registerform", function (req, res) {
   res.render("register", { successful: false });
 });
 
+app.get("/titanoftomorrow", function (req, res) {
+  res.render("TOT");
+});
+
 app.post("/register", async (req, res) => {
   const data = req.body;
   try {
