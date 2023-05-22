@@ -51,17 +51,21 @@
   font-size: 104px;
   font-weight: 400;
   line-height: 78px;
-  letter-spacing: 0.32em;
+  letter-spacing: 0.27em;
   text-align: center;
-  margin: 0.5rem 0;
-  color: #ffffff;
+  margin: 0.7rem 0;
+  color: #fff;
+  text-shadow: 0px 0px 16px #00000079;
 }
 
 .tot_span {
   font-size: 52px;
+  font-family: "Fast Hand", sans-serif;
   font-weight: 400;
   color: #ffffff;
   line-height: 70px;
+  text-shadow: 0px 0px 16px #00000079;
+
   letter-spacing: 0.32em;
   text-align: center;
 }
@@ -185,7 +189,7 @@
   display: flex;
   margin: 0 auto;
   align-items: center;
-  gap: 4rem;
+  gap: 7rem;
   justify-content: center;
   flex-wrap: wrap;
 }
@@ -195,6 +199,21 @@
 }
 
 .info_number {
+  font-family: "Montserrat";
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 78px;
+  letter-spacing: 0.2em;
+  text-align: center;
+  color: #88dcf7;
+}
+
+.info_number_uniq {
+  display: flex;
+}
+
+.info_number_uniq > p,
+.info_number_uniq > span {
   font-family: "Montserrat";
   font-size: 64px;
   font-weight: 700;
@@ -216,9 +235,9 @@
 
 .details_imgs {
   display: flex;
-  gap: 4rem;
+  gap: 6rem;
   align-items: center;
-  margin: 4rem auto;
+  margin: 6rem auto;
   justify-content: center;
   flex-wrap: wrap;
 }
@@ -230,7 +249,7 @@
 
 .info_item > p {
   font-family: "Montserrat";
-  font-size: 36px;
+  font-size: 20px;
   font-weight: 700;
   line-height: 44px;
   letter-spacing: 0.17em;
@@ -542,11 +561,13 @@
 
 .faqs_accordion {
   margin: 2rem 0;
+  width: 100%;
 }
 
 .accordion_item {
   margin: 2rem auto;
   display: flex;
+  /* min-width: 700px; */
   flex-direction: column;
   align-items: center;
 }
@@ -576,23 +597,26 @@ button.accordion.is-open:after {
   content: "-";
 }
 
-button.accordion:hover,
+/* button.accordion:hover,
 button.accordion.is-open {
   background-color: #171717;
-}
+} */
 
 button.accordion.is-open {
   border-radius: 22px 22px 0 0;
 }
 
 .accordion-content {
-  background-color: #696969;
+  /* background-color: #696969; */
+  background: #eaff98;
   padding: 0 20px;
   max-height: 0px;
+  /* display: none; */
   overflow: hidden;
+  line-height: 30px;
   width: 80%;
   border-radius: 0 0 22px 22px;
-  transition: max-height 0.3s ease-in-out;
+  transition: all 0.3s ease;
 }
 
 @media (max-width: 1024px) {
@@ -651,7 +675,7 @@ button.accordion.is-open {
 
 @media (max-width: 600px) {
   .tot_main_heading {
-    letter-spacing: 0.2em;
+    letter-spacing: 0.1em;
   }
 
   .timing_heading {
@@ -672,7 +696,8 @@ button.accordion.is-open {
   }
 
   .tot_main_heading {
-    letter-spacing: 0;
+    letter-spacing: 0.2em;
+    font-size: 60px;
   }
 
   .tot_bg > img {

@@ -1,0 +1,45 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/pass.css" />
+    <title>Passes</title>
+  </head>
+  <body>
+    <%- include('header'); -%>
+    <section class="passes_container">
+      <p class="intro_text">
+        Choose between a <strong>startup pass </strong>or a
+        <strong>general pass </strong>to get access to this phenomenal event!
+      </p>
+      <div class="pass_boxes">
+        <div class="pass_box">
+          <p class="pass_type">General pass</p>
+          <div class="box_bottom">
+            <p class="pass_price">Rs. 2500</p>
+            <p class="pass_info">
+              Whether you're a student, a professional, or simply interested in
+              the latest trends in your industry, our general pass has something
+              for everyone.
+            </p>
+            <button class="buy_pass">Buy Now</button>
+          </div>
+        </div>
+        <div class="pass_box" style="background: #eaff98">
+          <p class="pass_type">Start-up pass</p>
+          <div class="box_bottom">
+            <p class="pass_price">Rs. 5000</p>
+            <p class="pass_info">
+              Are you an established Start-Up planning to attend this event?
+              Take your startup to the next level with the ToT startup pass.
+            </p>
+            <button class="buy_pass">Buy Now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <%- include('footer'); -%>
+  </body>
+</html>

@@ -173,6 +173,10 @@ app.get("/titanoftomorrow", function (req, res) {
   res.render("TOT");
 });
 
+app.get("/passes", function (req, res) {
+  res.render("passpricing");
+});
+
 app.post("/register", async (req, res) => {
   const data = req.body;
   try {

@@ -45,24 +45,29 @@
           Well, we're talking about a one-of-a-kind extravaganza that's going to
           blow your mind and leave you buzzing with inspiration.
         </p>
-        <button class="tot_register">Register Now!</button>
+        <a href="/passes">
+          <button class="tot_register">Register Now!</button>
+        </a>
       </section>
       <section class="tot_info">
         <div class="details">
           <div class="info">
-            <p class="info_number">1</p>
+            <p class="info_number" id="number001">1</p>
             <p class="info_text">Day</p>
           </div>
           <div class="info">
-            <p class="info_number">12</p>
+            <p class="info_number" id="number002">12</p>
             <p class="info_text">Tracks</p>
           </div>
           <div class="info">
-            <p class="info_number">25</p>
+            <p class="info_number" id="number003">25</p>
             <p class="info_text">Speakers</p>
           </div>
           <div class="info">
-            <p class="info_number">2000+</p>
+            <div class="info_number_uniq">
+              <p id="number004">2000</p>
+              <span>+</span>
+            </div>
             <p class="info_text">Attendees</p>
           </div>
         </div>
@@ -99,7 +104,9 @@
             </p>
           </div>
         </div>
-        <button class="tot_register">Register Now!</button>
+        <a href="/passes">
+          <button class="tot_register">Register Now!</button>
+        </a>
       </section>
       <section class="tot_speakers">
         <p class="tot_heading">Our Key Speakers</p>
@@ -199,7 +206,9 @@
             <p class="book_pass_subheading">
               Looking forward to purchase your tickets?
             </p>
-            <button class="tot_register">Register Now!</button>
+            <a href="/passes">
+              <button class="tot_register">Register Now!</button>
+            </a>
           </div>
           <img src="/images/book_tot_pass.png" alt="" class="book_pass_img" />
         </div>
@@ -262,17 +271,62 @@
         this.classList.toggle("is-open");
 
         let content = this.nextElementSibling;
-        console.log(content);
+        // console.log(content);
 
         if (content.style.maxHeight) {
           //this is if the accordion is open
           content.style.maxHeight = null;
+          content.style.padding = "0 20px";
         } else {
           //if the accordion is currently closed
-          content.style.maxHeight = content.scrollHeight + "px";
-          console.log(content.style.maxHeight);
+          content.style.maxHeight = content.scrollHeight + "10px";
+          content.style.padding = "20px";
+          // console.log(content.style.maxHeight);
         }
       };
     });
+
+    let speed = 50;
+    function incEltNbr(id) {
+      elt = document.getElementById(id);
+      endNbr = Number(document.getElementById(id).innerHTML);
+      incNbrRec(0, endNbr, elt);
+    }
+    function incEltNbr1(id) {
+      elt = document.getElementById(id);
+      endNbr = Number(document.getElementById(id).innerHTML);
+      console.log(endNbr);
+      incNbrRec1(0, endNbr, elt);
+    }
+
+    function incNbrRec1(i, endNbr, elt) {
+      // elt.innerHTML = i;
+      // for(i=0;i<=endNbr;i+50){
+      //     incNbrRec(i, endNbr, elt);
+      // }
+      if (i <= endNbr) {
+        elt.innerHTML = i;
+        setTimeout(function () {
+          //Delay a bit before calling the function again.
+          incNbrRec1(i + 50, endNbr, elt);
+        }, 100);
+      }
+    }
+
+    function incNbrRec(i, endNbr, elt) {
+      if (i <= endNbr) {
+        elt.innerHTML = i;
+        setTimeout(function () {
+          //Delay a bit before calling the function again.
+          incNbrRec(i + 1, endNbr, elt);
+        }, 100);
+      }
+    }
+    setTimeout(() => {
+      incEltNbr("number001");
+      incEltNbr("number002");
+      incEltNbr("number003");
+      incEltNbr1("number004");
+    }, 500);
   </script>
 </html>
