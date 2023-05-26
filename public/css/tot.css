@@ -157,10 +157,11 @@
   padding: 1rem 2rem;
   margin: 4rem auto;
   font-family: "Montserrat";
-  font-size: 30px;
+  font-size: 26px;
   font-weight: 700;
   line-height: 37px;
   letter-spacing: 0.03em;
+  text-transform: uppercase;
   text-align: center;
   cursor: pointer;
 }
@@ -573,6 +574,7 @@
 }
 
 button.accordion {
+  font-family: "Poppins";
   width: 80%;
   background-color: #0f0f0f;
   border: none;
