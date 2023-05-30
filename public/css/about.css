@@ -1275,7 +1275,11 @@ color: #FFFFFF;
     margin: auto;
   }
 }
-
+@media(max-width:600px){
+  .our_core_values_imageCont>img{
+    width: 70%;
+  }
+}
 @media (max-width: 425px) {
   .vision_intro>button {
     margin-left: 2rem;
