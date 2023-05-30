@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    
     <title>Reverr</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -12,8 +13,9 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Gideon+Roman&family=Montserrat&family=Philosopher&family=Poppins:wght@400;700&display=swap"
       rel="stylesheet"
-    />
-    <link rel="stylesheet" href="/css/header-white.css" />
+      />
+      <link rel="stylesheet" href="/css/header-white.css" />
+      <link rel="icon" type="image/x-icon" href="/images/ReverrBlack2.svg">
   </head>
   <script>
     var isBtnDropdownOpen=false;
@@ -52,16 +54,57 @@
           document.getElementById("phnnav").style.display="none";
     }
 
+    function disableScroll() {
+    // Get the current page scroll position
+    scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+  
+        // if any scroll is attempted, set this to the previous value
+        window.onscroll = function() {
+            window.scrollTo(scrollLeft, scrollTop);
+        };
+}
+// call this to Enable
+function enableScroll() {
+    window.onscroll = function() {
+     
+    };
+}
+
+
+
+
+
+function OpenModal(){
+  document.getElementById("profilemodal").style.display="flex";
+ let profile=document.querySelector('.containerpl')
+ console.log('profilee is',profile)
+profile.style.display="flex"
+disableScroll()
+
+}
+function CloseProfileModal(){
+  document.getElementById("profilemodal").style.display="none";
+  document.querySelector('.containerpl').style.display="none"
+enableScroll()
+
+
+}
 </script>
   <body>
+
+
     <div class="topnav desk">
       <a href="/"
-        ><img src="/images/ReverrWhite.svg" alt="" />
-        <p class="brand-name">REVERR</p></a
+      ><img src="/images/ReverrWhite.svg" alt="" />
+
+        <p class="brand-name">REVERR</p>
+        <!-- <p class="brand-name_by">By Dsqaure Venture LLP</p> -->
+        </a
       >
 
       <div class="topnav-right">
-        <a class="active-link" href="/">Home</a>
+        <a  href="/">Home</a>
         <!-- <div class="products_dropdown">
           <div onclick="toggleProductsDropdown()" class="productBtn">
           <div>Products</div>
@@ -73,24 +116,36 @@
           <a href="/funding"><div class="product_option">Funding</div></a>
       </div>
         </div> -->
-        <a href="/mentorship">Mentorship</a>
+        <!-- <a href="/mentorship">Mentorship</a>
         <a href="/networking">Networking</a>
         <a href="/community">Community</a>
-        <a href="/knowledge">Knowledge</a>
-               
-        <div class="header_dropdown">
+        <a href="/knowledge">Knowledge</a> -->
+        <a href="/founder">For Founders</a>
+        <a href="/investor">For Investors</a>
+        <a href="/formentors">For Mentors</a>
+        <a href="/blog">Blogs</a>
+       
+        <a href="/about">About Us</a>
+          <!-- <a class="dropdown-link" href="/about"><div class="resources_option">About Us</div></a> -->       
+        <!-- <div class="header_dropdown">
           <div onclick="toggleDropdown()" class="resourcesBtn">
           <div>Resources <img src="/images/dropdown.svg" alt="dropdown" /></div>
           </div>
           <div id="resources_options">
             <a class="dropdown-link" href="/blog"><div class="resources_option">Blog</div></a>
-            <a class="dropdown-link" href="/about"><div class="resources_option">About Us</div></a>
             <a class="dropdown-link" href="/newsletter"><div class="resources_option">Sign The Newsletter</div></a>
+            <a class="dropdown-link" href="/networking"><div class="resources_option">Networking</div></a>
+          <a class="dropdown-link" href="/community"><div class="resources_option">Community</div></a>
+            <a class="dropdown-link" href="/knowledge"><div class="resources_option">Knowledge</div></a>
+            <a class="dropdown-link" href="/mentorship"><div class="resources_option">Mentorship</div></a>
+            <a class="dropdown-link" href="/fundingform"><div class="resources_option">Get Funded</div></a>
+             
           </div>
-  </div>
+  </div> -->
     
       </div>
-      <a href="/fundingform" class="link-btn"><div class="memberBtn">Get Funded</div></div></a>
+      <!-- <a  class="link-btn"><div onclick="OpenModal()" class="memberBtn">Login/SignUp</div></div></a> -->
+      <a  class="link-btn"><div onclick="OpenModal()" class="memberBtn">Login</div></div></a>
     </div>
 
     <section class="nav phn" id="phnheader">
@@ -112,8 +167,8 @@
           "
           onclick="show()"
         >
-          <a> <img src="/images/ReverrWhite.svg" style="width: 60px" alt="logo" /></a>
-          <a><h1 class="headingphn" style="color: white;">&nbsp;Reverr</h1> </a>
+          <a> <img src="/images/ReverrBlack2.svg" style="width: 60px" alt="logo" /></a>
+          <a><h1 class="headingphn">&nbsp;Reverr</h1> </a>
         </div>
       </div>
       <div
@@ -125,7 +180,7 @@
           align-items: center;
           text-align: center;
           padding: 2%;
-          color: white;
+          color: black;
         "
       >
         <a class="navitem" style="margin: 3% 0%" href="/">Home </a>
@@ -162,5 +217,9 @@
         </div>
       </div>
     </section>
+    <div id="profilemodal">  
+      <%- include('profilelogin'); -%>
+    <!-- <div onclick="CloseProfileModal()" id="cross"><p class="crosstext">X</p></div> -->
+  </div>
   </body>
 </html>

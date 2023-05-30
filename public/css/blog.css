@@ -2,7 +2,7 @@ body {
   background-color: #f6f6f6 !important;
   background-image: url("/images/Rectangle 2807.svg");
   background-repeat: no-repeat;
-  background-position: right 66px;
+  background-position: right 56px;
   background-size: contain;
 }
 
@@ -19,7 +19,7 @@ a {
   width: 93%;
   /* background-size: contain; */
   margin: auto;
-  /* margin-top: -2%; */
+  margin: 5rem auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,6 +35,7 @@ a {
   font-size: 56px;
   color: #ffffff;
   font-weight: 700;
+  line-height: 39px;
 }
 
 .blog-heading > img {
@@ -46,6 +47,8 @@ a {
   font-size: 22px;
   width: 50%;
   color: #fff;
+  margin: 2rem auto;
+  line-height: 40px;
   text-align: center;
 }
 
@@ -63,6 +66,7 @@ a {
 
 .sample-blog {
   display: flex;
+  margin: 2.5rem 0;
 }
 
 .blog-slider {
@@ -128,8 +132,10 @@ a {
 
 .blog-container {
   display: flex;
-  gap: 6.5rem;
-  width: 93%;
+  /* gap: 6.5rem; */
+  /* width: 93%; */
+  justify-content: space-around;
+  align-items: center;
   margin: auto auto 3rem;
 }
 
@@ -140,6 +146,7 @@ a {
 .blog > a > img {
   height: 12rem;
   max-width: 20rem;
+  margin-bottom: 1rem;
   object-fit: contain;
 }
 
@@ -152,11 +159,22 @@ a {
   color: black;
 }
 
+.blog > h1 {
+  font-size: 24px;
+  /* text-align: center; */
+  margin: 0.6rem 0;
+}
+
 .blog-text {
   font-size: 18px !important;
   overflow: hidden;
   text-overflow: ellipsis;
   max-height: 20rem;
+}
+@media (max-width: 1340px) and (min-width: 1025px) {
+  #recent-post > h1 {
+    color: black;
+  }
 }
 
 @media (max-width: 1024px) and (min-width: 769px) {
@@ -167,14 +185,13 @@ a {
   .blog-heading > h1 {
     font-size: 42px;
   }
-
+  #recent-post > h1 {
+    color: black;
+  }
   #blog-intro > p {
     color: black;
   }
 
-  #recent-post > h1 {
-    color: black;
-  }
   .sample-blog-img {
     width: 22rem;
   }
@@ -195,15 +212,13 @@ a {
   .blog > p {
     font-size: 20px;
   }
-  .blog > h1 {
-    font-size: 24px;
-  }
+
   .blog-text {
     font-size: 16px !important;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 970px) {
   body {
     background-size: contain;
   }
@@ -232,6 +247,7 @@ a {
 
   .sample-blog-img {
     width: 20rem;
+    margin-bottom: 2rem;
   }
 
   .left-caret {
@@ -256,6 +272,7 @@ a {
   .blog-content > h1 {
     text-align: center;
     font-size: 24px;
+    margin: 1rem 0;
   }
 
   #recent-post > h1 {
@@ -283,6 +300,7 @@ a {
   .blog {
     width: 100%;
     text-align: center;
+    margin-bottom: 1.4rem;
   }
 
   .blog > a > img {
@@ -292,11 +310,6 @@ a {
 
   .blog > p {
     font-size: 16px;
-    text-align: center;
-  }
-
-  .blog > h1 {
-    font-size: 24px;
     text-align: center;
   }
 
@@ -315,10 +328,9 @@ a {
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 768px) {
   body {
-    background-position: top;
-    background-size: contain;
+    background: none;
   }
   .blog-heading > h1,
   #recent-post > h1,

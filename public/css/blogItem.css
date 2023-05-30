@@ -40,6 +40,7 @@ body {
 .details {
   display: flex;
   gap: 1rem;
+  align-items: baseline;
 }
 
 .blog-author {
@@ -53,7 +54,7 @@ body {
 
 @media (max-width: 1024px) {
   #content > img {
-    height: 20rem;
+    height: 17rem;
   }
 
   #content > h1 {
@@ -70,8 +71,12 @@ body {
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 600px) {
   #content > img {
     height: 13rem;
+  }
+  .details {
+    flex-direction: column;
+    gap: 0rem;
   }
 }

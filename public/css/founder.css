@@ -455,11 +455,11 @@ body {
 .how_reverr_title > span {
   color: #2a72de;
 }
-.left-col {
-  /* width: 55%; */
-  /* order: 2; */
-  /* padding-left: 6rem; */
-}
+/* .left-col {
+  width: 55%;
+  order: 2;
+  padding-left: 6rem;
+} */
 
 .right-col {
   width: 50%;
@@ -763,9 +763,6 @@ body {
     font-size: 18px;
   }
 
-  .flounder-section-1-right-col > img {
-  }
-
   .join-now-btnn,
   .explore-more-btnn {
     font-size: 17px;
@@ -837,7 +834,7 @@ body {
   }
   .holding-your-hand-img-cont > img {
     margin-top: 0rem;
-    width: 25em;
+    width: 30em;
   }
 }
 

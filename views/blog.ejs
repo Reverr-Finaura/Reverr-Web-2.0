@@ -4,11 +4,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/blog.css" />
+    <link rel="icon" type="image/x-icon" href="/images/ReverrBlack2.svg" />
+
     <title>Reverr | Blogs</title>
   </head>
 
   <body>
-    <%-include("contactheader")-%> <%-include("header-white") -%>
+    <%-include("contactheader") -%> <%-include("header-white") -%>
     <section id="blog-intro">
       <div class="blog-heading">
         <img src="images/chain 1.png" alt="" />
@@ -68,12 +70,12 @@
             <a href="/blog/<%= data[i].id %>"
               ><img src="<%=data[i].image.imageUrl %>" alt=""
             /></a>
+            <p><%= data[i]?.publishedOn %></p>
             <h1>
               <a href="/blog/<%= data[i].id %>"
                 ><%= (data[i].heading).slice(0,30) %></a
               >
             </h1>
-            <p><%= data[i]?.publishedOn %></p>
             <p class="blog-text"><%= data[i].body %> ...</p>
           </div>
           <% } %>
@@ -86,12 +88,12 @@
             <a href="/blog/<%= data[i].id %>"
               ><img src="<%=data[i].image.imageUrl %>" alt=""
             /></a>
+            <p><%= data[i].publishedOn %></p>
             <h1>
               <a href="/blog/<%= data[i].id %>"
                 ><%= (data[i].heading).slice(0,30) %></a
               >
             </h1>
-            <p><%= data[i].publishedOn %></p>
             <p class="blog-text"><%= data[i].body %> ...</p>
           </div>
           <% } %>
@@ -102,10 +104,10 @@
             <a href="/blog/<%= data[i].id %>"
               ><img src="<%=data[i].image.imageUrl %>" alt=""
             /></a>
+            <p><%= data[i].publishedOn %></p>
             <h1>
               <a href="/blog/<%= data[i].id %>"><%= data[i].heading %></a>
             </h1>
-            <p><%= data[i].publishedOn %></p>
             <p class="blog-text"><%= data[i].body %> ...</p>
           </div>
           <% } %>
@@ -118,10 +120,10 @@
             <a href="/blog/<%= data[i]?.id %>"
               ><img src="<%=data[i]?.image.imageUrl %>" alt=""
             /></a>
+            <p><%= data[i]?.publishedOn %></p>
             <h1>
               <a href="/blog/<%= data[i]?.id %>"><%= data[i]?.heading %></a>
             </h1>
-            <p><%= data[i]?.publishedOn %></p>
             <p class="blog-text"><%= data[i]?.body %> ...</p>
           </div>
           <% } %>
@@ -132,10 +134,10 @@
             <a href="/blog/<%= data[i]?.id %>"
               ><img src="<%=data[i]?.image.imageUrl %>" alt=""
             /></a>
+            <p><%= data[i]?.publishedOn %></p>
             <h1>
               <a href="/blog/<%= data[i]?.id %>"><%= data[i]?.heading %></a>
             </h1>
-            <p><%= data[i]?.publishedOn %></p>
             <p class="blog-text"><%= data[i]?.body %> ...</p>
           </div>
           <% } %>
