@@ -47,6 +47,10 @@
             isProductsDropdownOpen = true;  
         }
     }
+    function toggleOpenClose(){
+      if(document.getElementById("phnnav").style.display==="none"){ document.getElementById("phnnav").style.display="flex";return}
+      if(document.getElementById("phnnav").style.display==="flex"){ document.getElementById("phnnav").style.display="none";return}
+    }
     function show(){
         document.getElementById("phnnav").style.display="flex";
     }
@@ -165,7 +169,7 @@ enableScroll()
             align-items: center;
             cursor: pointer;
           "
-          onclick="show()"
+          onclick="toggleOpenClose()"
         >
           <a> <img src="/images/ReverrBlack2.svg" style="width: 60px" alt="logo" /></a>
           <a><h1 class="headingphn">&nbsp;Reverr</h1> </a>
@@ -195,27 +199,22 @@ enableScroll()
           <a href="/funding"><div class="product_option">Funding</div></a>
       </div>
         </div> -->
-        <a class="navitem" style="margin: 3% 0%" href="/mentorship">Mentorship</a>
-        <a class="navitem" style="margin: 3% 0%" href="/networking">Networking</a>
-        <a class="navitem" style="margin: 3% 0%" href="/community">Community</a>
-        <a class="navitem" style="margin: 3% 0%" href="/knowledge">Knowledge</a>
-        <div
-            class="memberBtn
-            style="margin: 3% 25%; padding: 2% 4%; text-align:center:"
-          >
-            <a href="/fundingform"></a>Get Funded</div>
-          <div class="header_dropdown">
-        <div onclick="toggleDropdown()" style="margin: 10% 5%; padding: 5% 2%;" class="resourcesBtn">Resources <img src="/images/dropdown.svg" alt="dropdown" /></div>
-        <div style="margin:5rem" id="resources_options_phn">
-            <div class="resources_option"><a href="/blog">Blog</a></div>
-            <div class="resources_option"><a href="/about">About Us</a></div>
-            <div class="resources_option"><a href="/newsletter">Sign The Newsletter</a></div>
-        </div>
-    </div>
-        <div style="cursor: pointer; margin: 3% 0%" onclick="closes()">
-          <a>Close</a>
-        </div>
+        <a class="navitem" style="margin: 3% 0%" href="/founder">For Founders</a>
+        <a class="navitem" style="margin: 3% 0%" href="/investor">For Investors</a>
+        <a class="navitem" style="margin: 3% 0%" href="/formentors">For Mentors</a>
+        <a class="navitem" style="margin: 3% 0%" href="/blog">Blogs</a>
+        <a  class="navitem"><div onclick="OpenModal()" class="memberBtn">Login</div></div></a>
+        <div class="header_dropdown">
+          <!-- <div onclick="toggleDropdown()" style="margin: 10% 5%; padding: 5% 2%;" class="resourcesBtn">Resources <img src="/images/dropdown.svg" alt="dropdown" /></div> -->
+          <div style="margin:5rem" id="resources_options_phn">
+              <div class="resources_option"><a href="/blog">Blog</a></div>
+              <div class="resources_option"><a href="/about">About Us</a></div>
+              <div class="resources_option"><a href="/newsletter">Sign The Newsletter</a></div>
+          </div>
       </div>
+   
+       
+      
     </section>
     <div id="profilemodal">  
       <%- include('profilelogin'); -%>
