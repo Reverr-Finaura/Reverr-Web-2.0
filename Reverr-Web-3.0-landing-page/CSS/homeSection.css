@@ -37,6 +37,7 @@
   left: 0;
   top: 50%;
   transform: translateY(-50%);
+  z-index: 1;
 }
 
 .people4,
@@ -47,6 +48,7 @@
   right: 0;
   top: 50%;
   transform: translateY(-50%);
+  z-index: 1;
 }
 
 .people1,
@@ -127,6 +129,8 @@ img.people5 {
   letter-spacing: 0.02em;
 
   color: #F8F8F8;
+  position: relative;
+  z-index: 2;
 
 }
 
@@ -270,6 +274,7 @@ img.people5 {
   align-items: center;
   letter-spacing: 0.1em;
   color: #4CC9FF;
+  display: inline-table;
 }
 
 .number-section p {
@@ -331,8 +336,9 @@ img.people5 {
   flex-direction: column;
 
 }
-.partners-section h2{
-  
+
+.partners-section h2 {
+
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 700;
@@ -345,30 +351,33 @@ img.people5 {
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 1em;
-  
+
   /* grad */
-  
+
   background: linear-gradient(90deg, #FFFFFF 27.88%, #00B3FF 91.27%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
- text-align: center;  
+  text-align: center;
 
 
 }
-.partners-section img{
+
+.partners-section img {
   width: 250px;
 }
-.partners-section .upper-section, .partners-section  .lower-section{
+
+.partners-section .upper-section,
+.partners-section .lower-section {
   display: flex;
   justify-content: space-evenly;
-   align-items: center;
+  align-items: center;
 }
 
 
 
-.partners-section .upper-section{
+.partners-section .upper-section {
   /* display: inline-block; */
   white-space: nowrap;
   animation: scrollNamesLeft 90s linear infinite;
@@ -387,8 +396,9 @@ img.people5 {
   100% {
     transform: translateX(-100%);
   }
-} 
-.partners-section .lower-section{
+}
+
+.partners-section .lower-section {
   /* display: inline-block; */
   white-space: nowrap;
   animation: scrollNamesRight 90s linear infinite;
@@ -559,7 +569,7 @@ img.people5 {
   align-items: center;
   width: 100%;
   position: relative;
-    top: 170px;
+  top: 170px;
 }
 
 .customer-review-heading {
@@ -575,7 +585,7 @@ img.people5 {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   margin-bottom: 30px;
- 
+
 }
 
 .review-card {
@@ -590,7 +600,7 @@ img.people5 {
   flex-direction: column;
   margin: 20px;
   position: relative;
-    z-index: 2;
+  z-index: 2;
 }
 
 .review-card .upper-part {
@@ -642,7 +652,7 @@ img.people5 {
   margin-bottom: 20px;
   /* Add space below the slider */
   overflow-x: hidden;
-  
+
 }
 
 .review-card {
@@ -704,7 +714,7 @@ img.people5 {
   width: -webkit-fill-available;
   justify-content: end;
   margin-bottom: 8em;
-  
+
 }
 
 .download-section .upper-section h2 {
@@ -992,23 +1002,472 @@ a {
 
 
 /*  */
-.grp-dots1{
-  position:absolute;
+.grp-dots1 {
+  position: absolute;
   left: 100px;
   top: 100px;
   z-index: 1;
 }
-.grp-dots2{
+
+.grp-dots2 {
   position: absolute;
-    right: 100px;
-    bottom: 0px;
-    z-index: 1;
+  right: 100px;
+  bottom: 0px;
+  z-index: 1;
 }
-.star2{
+
+.star2 {
   left: 23%;
-    top: 45%;
+  top: 45%;
 }
-.star1{
+
+.star1 {
   right: 20%;
-    top: 18%;
+  top: 18%;
+}
+
+/* responsive code is here*/
+@media only screen and (max-width: 930px) {
+
+  .card-section {
+    width: 100%;
+  }
+
+  .navbar {
+    gap: 30px;
+  }
+
+  .reverr-logo {
+    padding: 5px 1px 1px 25px;
+    width: 90px;
+    height: 70px;
+  }
+
+  .investor-section .right-section {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+
+  .investor-section .right-section img {
+    width: 62% !important;
+  }
+
+  .investor-section .left-section h2 {
+    font-size: 50px;
+  }
+
+  .number-section {
+
+    align-items: unset;
+  }
+
+  .number-section div {
+    margin-right: 10px;
+  }
+
+  .number-section div span {
+    font-size: 40px;
+  }
+
+  .vision-para {
+    font-size: 35px;
+  }
+
+  .vision-img {
+    width: 30em !important;
+  }
+
+  .download-section .upper-section .right-section {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+
+  .download-section .upper-section .right-section img {
+    width: 70% !important;
+  }
+
+  .download-section .upper-section h2 {
+    font-size: 65px;
+    line-height: 72px;
+  }
+
+  .poster p {
+    font-size: 43px;
+    line-height: 51px;
+
+    margin-bottom: 1em;
+  }
+
+  .detail-section h2 {
+    font-size: 50px;
+
+  }
+  .dropdown-content {
+    
+    width: 90%;
+    top: 400%;
+}
+
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+  .iphone-section img {
+    margin: 1px;
+    height: 14em;
+  }
+
+  .home-section {
+    height: 45em;
+  }
+
+  .detail-section {
+    padding: 10px 10px 10px 10px;
+  }
+
+  .detail-section h2 {
+    font-size: 25px;
+    line-height: 40px;
+  }
+
+  .btn1,
+  .btn2 {
+    height: 40px;
+  }
+
+  .reverr-logo {
+    padding: 5px 1px 1px 0px;
+    width: 60px;
+    height: auto;
+
+  }
+
+  .navbar-right a {
+    font-size: 17px;
+    padding-right: 4px;
+  }
+
+  .login-btn {
+    font-size: 20.0572px;
+    line-height: 9px;
+
+    padding: 1px;
+    width: 96.3px;
+    height: 39.82px;
+  }
+
+  .navbar {
+    justify-content: center;
+  }
+
+  
+
+  .investor-section .right-section img {
+    width: 62% !important;
+    position: relative;
+    top: -168px;
+  }
+
+
+  
+
+  .partners-section h2 {
+
+    font-size: 50px;
+    line-height: 80px;
+
+  }
+
+  .partners-section img {
+    width: 170px;
+  }
+  .download-section .btn-section img {
+    height: 40px;
+    
+}
+.founders , .mentors , .vcs , .ecosystem{
+       /* width: 20px; */
+}
+/* .founders h2,.mentors h2,.vcs h2, .ecosystem h2{
+       font-size: 20px !important;
+} */
+.founders span,.mentors span,.vcs span, .ecosystem span{
+       font-size: 26px !important;
+}
+.founders p,.mentors p,.vcs p, .ecosystem p{
+       font-size: 20px !important;
+}
+.mission img {
+  width: 17em !important;
+}
+.vision-img {
+  width: 22em !important;
+}
+
+  .review-card .right-section h2 {
+
+    font-weight: 700;
+    font-size: 30 
+    .6667px;
+    line-height: 40px;
+
+  }
+
+  .review-card {
+    padding: 31px;
+    width: 356px;
+    height: 338px;
+
+    margin: 8px;
+
+  }
+
+  .customer-review-heading {
+
+    font-size: 60px;
+    line-height: 77px;
+
+  }
+
+  .card {
+    padding: 15px;
+    width: 33%;
+    border-radius: 20px;
+  }
+  .upper-section .left-section {
+    
+    width: 70%;
+}
+.download-section .upper-section .right-section {
+ 
+  position: relative;
+  top: -341px;
+  right: 50px;
+}
+.download-section .upper-section .right-section img {
+  width: 89% !important;
+}
+.poster .right-section img{
+  
+  width: 120%;
+
+}
+.mission div{
+  padding: 15px  !important;
+}
+.vision-para {
+  font-size:20px;
+  line-height: 40px;
+}
+.navbar-right a {
+  font-size: 116%;
+  padding-right: 0px;
+  margin: 5px;
+}
+
+.investor-section .left-section {
+  width: 56%;
+  position: unset;
+  left: 70px;
+}
+/* .investor-section .right-section{
+  display: none;
+} */
+
+.our-product-menu {
+ 
+  padding-right: 22px;
+}
+.dropdown-content {
+  width: 95%;
+  top: 430%;
+}
+.dropdown-data-block {
+ 
+  padding: 8px 4px 8px 4px;
+  
+}
+.dropdown-data-block img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+.dropdown-content-right {
+   width: 50%;
+  
+}
+.submenu div {
+  
+  padding: 5px 5px 5px 5px;
+  margin-bottom: 0px;
+  margin-left: 10px;
+ 
+}
+.submenu h3 {
+
+  margin-left: 20px;
+ 
+}
+.navbar-right {
+
+  padding: 5px;
+}
+.navbar-right a {
+  font-size: 116%;
+  padding-right: 5px;
+  margin: 5px;
+}
+.navbar {
+  gap: 0px;
+}
+.navbar{
+  padding-left:5px ;
+}
+img.people2 {
+  
+  height: 66px;
+}
+img.people5 {
+  
+  height: 66px;
+}
+img.people1 {
+  transform: translate3d(119px, -302px, 10px);
+  height: 35px;
+}
+img.people4 {
+  transform: translate3d(-19px, -200px, 10px);
+  height: 46px;
+}
+.number-section p {
+  width: 25%;
+}
+.investor-section .right-section{
+display:none !important;
+}
+.investor-section .left-section {
+width: -webkit-fill-available;
+position: unset;
+left: 70px;
+}
+.number-section {
+display: flex;
+margin-bottom: 60px;
+width: -webkit-fill-available;
+justify-content: space-evenly;
+align-items: unset;
+}
+.founders h2, .mentors h2, .vcs h2, .ecosystem h2 {
+font-size: 36px !important;
+}
+
+.investor-section-h2{font-size: 40px !important;}
+.btn-section button{
+  font-size: 18px;
+}
+.investor-section .left-section{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.poster button {
+  font-size: 18px;
+}
+.poster p {
+font-size: 28px;
+line-height: 41px;
+margin-bottom: 1em;
+}
+.review-card .right-section h2 {
+  font-weight: 700;
+  font-size: 18px !important;
+  line-height: 31px;
+}
+
+.review-card .right-section p {
+    font-size: 19.6667px;
+  }
+.review-card .middle-section p {
+     font-size: 17px;
+  line-height: 25px;
+
+}
+
+.review-card-img{
+width: 29%;
+}
+.review-card {
+  padding: 21px;
+  width: 250px;
+  height: 254px;
+  margin: 6px;
+}
+.customer-review-card {
+      width: 90%;
+}
+.peoples-spread {
+  display: none;
+}
+.detail-section {
+  
+  height: 275px;
+ }
+
+.login-btn {
+  font-size: 14.0572px;
+  line-height: 0px;
+  padding: 1px;
+  width: 54.3px;
+  height: 24.82px;
+}
+.reverr-logo {
+  padding: 5px 1px 1px 0px;
+  width: 40px;
+  height: auto;
+}
+img.dropdown-sign {
+  width: 13px;
+  padding: 0px;
+  margin: 0px;
+}
+.navbar-right a {
+  font-size: 61%;
+  padding-right: 5px;
+  margin: 5px;
+}
+
+.download-section {
+
+  padding: 15em 0em 0em 0em;
+}
+.number-section{
+  padding-left: 15px;
+}
+
+.rechtangle1 {
+  
+  height: 9em;
+  
+}
+
+.grp-dots2 {
+  right: 50px;
+  width: 80px;
+}
+.grp-dots1{
+
+  width: 80px;
+}
+.grp-dots1 {
+  position: absolute;
+  left: 100px;
+  top: 219px;
+  z-index: 1;
+}
 }
