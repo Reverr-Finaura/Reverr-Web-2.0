@@ -1,0 +1,307 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.login-btn {
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 19.0572px;
+  line-height: 29px;
+  color: #222222;
+
+  padding: 11.9107px 23.8215px;
+  gap: 11.91px;
+
+  width: 120.3px;
+  height: 52.82px;
+  background: linear-gradient(90.65deg, #00B3FF 41.99%, #4CC9FF 76.54%);
+  border-radius: 59.5537px;
+  border: none;
+  cursor: pointer;
+
+}
+
+.reverr-logo {
+
+  padding: 5px 1px 1px 50px;
+  width: 100px;
+  height: 71px;
+  filter: drop-shadow(0px 2.81708px 2.81708px rgba(0, 0, 0, 0.25));
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  gap: 160px;
+  position: fixed;
+  width: 100%;
+  height: 105px;
+  background: rgba(0, 17, 50, 0.5);
+  backdrop-filter: blur(3.33333px);
+  z-index: 10;
+}
+
+.navbar-right a {
+  font-family: 'Poppins';
+  font-style: italic;
+  font-weight: 500;
+  font-size: 20px;
+  /* line-height: 30px; */
+  color: #FFFFFF;
+  padding-right: 40px;
+  text-decoration: none;
+  display: block;
+
+
+}
+
+.navbar-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* our products dropdown */
+.custom-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+
+
+.dropdown-content {
+  position: fixed;
+  top: 380%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 10px;
+  /* padding: 20px; */
+  display: none;
+  width: 65%;
+  display: none;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+
+
+
+
+.our-product-menu {
+  display: flex;
+  align-items: center;
+  padding-right: 36px;
+}
+
+.dropdown-sign {
+  cursor: pointer;
+}
+
+.dropdown-data h2 {
+  font-family: 'Reem Kufi';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  /* line-height: 37px; */
+  letter-spacing: 0.01em;
+  color: #000000;
+  margin: 0px;
+
+}
+
+.dropdown-data p {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  /* line-height: 20px; */
+  letter-spacing: 0.01em;
+  margin: 0px;
+
+  color: rgba(0, 0, 0, 0.8);
+
+}
+
+.dropdown-data-block {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  width: 100%;
+  cursor: pointer;
+  margin-bottom: 1px;
+  padding: 8px 6px 8px 20px;
+  background-color: white;
+
+}
+
+/* .dropdown-content a {
+    display: flex;
+    text-decoration: none;
+
+    align-items: center; */
+/* color: #333; */
+/* width: 100%;
+   
+  } */
+.dropdown-data-block:hover {
+  background: #EAF6FF;
+  border-radius: 10px;
+}
+
+.dropdown-data-block img {
+
+  width: 50px;
+  height: 50px;
+  margin-right: 23px;
+
+}
+
+.dropdown-content-left {
+  background-color: white;
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+  padding: 20px 0px 20px 15px;
+  border-radius: 20px;
+
+}
+
+.dropdown-content-right {
+  background: #EAF6FF;
+  border-radius: 0px 20px 20px 0px;
+  width: 45%;
+  display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* sub menu */
+.submenu {
+  display: none;
+}
+
+.submenu h2 {
+  font-family: 'Reem Kufi';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+
+  letter-spacing: 0.01em;
+  color: #000000;
+  margin: 0px;
+  margin-bottom: 2px;
+}
+
+.submenu p {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  /* line-height: 20px; */
+  letter-spacing: 0.01em;
+  margin: 0px;
+  margin-bottom: 5px;
+  color: #000000;
+}
+
+.submenu li {
+  /* height: 60px; */
+}
+
+.submenu div {
+
+  display: flex;
+  /* justify-content: initial; */
+  align-items: baseline;
+  cursor: pointer;
+  /* margin-bottom: 1px; */
+  /* padding: 8px 6px 8px 20px; */
+  background-color: #EAF6FF;
+  flex-direction: column;
+
+  padding: 10px 15px 10px 15px;
+
+  margin-bottom: 0px;
+  margin-left: 20px;
+  height: -webkit-fill-available;
+  width: -webkit-fill-available;
+}
+
+.submenu div a {
+  line-height: 0px !important;
+  height: 60px;
+  display: block;
+}
+
+.submenu h3 {
+  margin-top: 35px;
+  left: 10px;
+  margin-left: 35px;
+  margin-bottom: 15px;
+  font-weight: 100;
+}
+
+.submenu div:hover {
+  background: #D3EDFC;
+  border-radius: 13.3333px;
+
+
+}
+.empty-design{
+  margin-top: 30px;
+  justify-content: center;
+  align-items: center !important;
+  cursor: default !important;
+}
+
+.empty-design p{
+  font-family: 'Reem Kufi';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 25px;
+  letter-spacing: 0.01em;
+  color: #515151;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+.empty-design img{
+  /* margin-bottom: 150px; */
+}
+.submenu .empty-design:hover {
+  background: unset;
+  border-radius: 13.3333px;
+  
+}
+.empty-design button{
+  font-family: 'Reem Kufi';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.01em;
+  color: #FFFFFF;
+  background: #222222;
+  padding: 7px 15px 7px 15px;
+  border-radius: 25px;
+  position: absolute;
+    bottom: 30px;
+    right: 30px;
+ 
+}
+.empty-design img {
+  margin-bottom: 20px;
+  max-width: 285px;
+}
