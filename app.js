@@ -57,7 +57,8 @@ app.get("/", function (req, res) {
 });
 
 app.get("/founder", function (req, res) {
-  res.render("founder");
+  // res.render("founder");
+  res.render("newfounder");
 });
 
 app.get("/investor", function (req, res) {
