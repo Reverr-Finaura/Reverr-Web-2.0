@@ -53,7 +53,7 @@ function Email(user) {
 // });
 
 app.get("/", function (req, res) {
-  res.render("homeFinal");
+  res.render("newlandingpage");
 });
 
 app.get("/founder", function (req, res) {
