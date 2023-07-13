@@ -36,7 +36,7 @@ body{
 
 /* home section */
 .home--section{
-    background: url("./Images/home-background.png");
+    background: url("../images/Images/home-background.png");
     background-size: cover; /* Adjust to your needs */
     background-position: center center; /* Adjust to your needs */
 }
@@ -111,7 +111,7 @@ letter-spacing: 1.05px;
 
 /* strip section */
 .strip-section{
-    background-image: url("./Images/strip.png");
+    background-image: url("../images/Images/strip.png");
     background-size: cover; /* Adjust to your needs */
     background-position: center center; /* Adjust to your needs */
     margin-top: 32px;
@@ -131,7 +131,7 @@ letter-spacing: 1.05px;
 
 /* raaya section */
 .reverr-spaces-section{
-    background-image: url("./Images/SPACES\ BG.png");
+    background-image: url("../images/Images/SPACES\ BG.png");
     background-size: cover; /* Adjust to your needs */
     background-position: center center; /* Adjust to your needs */
     display: flex;
@@ -189,7 +189,7 @@ letter-spacing: 1.05px;
 
 /* raaya section */
 .raaya-section{
-    background-image: url("./Images/RAAYA\ BG.png");
+    background-image: url("../images/Images/RAAYA\ BG.png");
     background-size: cover; /* Adjust to your needs */
     background-position: center center; /* Adjust to your needs */
     display: flex;
@@ -254,7 +254,7 @@ letter-spacing: 1.05px;
 /* mission section */
 
 .our-mission-section{
-    background-image: url(./Images/Ellipse\ 1002.png);
+    background-image: url("../images/Images/Ellipse\ 1002.png");
     background-size: cover;
     background-position: center center;
     position: relative;
@@ -431,7 +431,7 @@ letter-spacing: 1.05px;
 /* rectangle section  */
 
 .rechtangle1 {
-    background-image: url(/Images/Rectangle1.png);
+    background-image: url("../images/Images/Rectangle1.png");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -465,7 +465,7 @@ letter-spacing: 1.05px;
   .scrolling-container {
     display: inline-block;
     white-space: nowrap;
-    animation: scrollNames 100s linear infinite;
+    animation: scrollNames 150s linear infinite;
   }
   
   .item {
@@ -503,6 +503,14 @@ letter-spacing: 1.05px;
     letter-spacing: 0.1em;
   
     color: #001132;
+    color: #001132;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 3.2px;
   }
 
 img.arrow {
