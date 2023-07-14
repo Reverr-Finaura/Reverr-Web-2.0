@@ -773,3 +773,9 @@ animation: incubators 8s infinite;
     animation: translate-infinite 4s infinite linear;
 
   }
+
+  @media screen and (max-width: 1380px) {
+  .mission-center-img{
+    width: 40%;
+  }
+  }
