@@ -1,0 +1,84 @@
+/* navbar css */
+.navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   
+  }
+  .navigation ul{
+    display: flex;
+    
+  }
+  .navigation ul li{
+    text-align: center;
+  font-family: Poppins !important;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.4px;
+  color: #fff;
+  list-style: none;
+  text-decoration: none;
+  
+  font-size: 25px;
+  margin: 0px 45px;
+  cursor: pointer;
+  
+  }
+  .navigation ul a{
+    text-decoration: none;
+  }
+  .navbar--section{
+      background: var(--bg-main, #030B18);
+      backdrop-filter: blur(3.3333334922790527px);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 13px;
+  }
+  .sign-btn{
+      color: var(--flowkit-charcoal, #222);
+      font-size: 20px;
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      display: flex;
+      width: 120.298px;
+      padding: 11.911px 23.821px;
+      justify-content: center;
+      align-items: center;
+      gap: 11.911px;
+      border-radius: 59.554px;
+      background: var(--blueeee, linear-gradient(97deg, #00B3FF 57.09%, #4CC9FF 100%));
+      cursor: pointer;
+      text-decoration: none;
+      margin: 0px 15px;
+      border: none;
+      outline: none;
+    }
+    .login-btn{
+      color: #fff;
+      font-size: 20px;
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      display: flex;
+      width: 120.298px;
+      padding: 11.911px 23.821px;
+      justify-content: center;
+      align-items: center;
+      gap: 11.911px;
+      border-radius: 59.554px;
+      border: 2px solid  #00B3FF ;
+      cursor: pointer;
+      text-decoration: none;
+      background-color: unset;
+      margin: 0px 15px;
+      outline: none;
+      
+  }
+  

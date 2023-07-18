@@ -12,12 +12,15 @@ body {
 
 * {
   box-sizing: border-box;
+  margin:0;
+  padding:0;
 }
+
 
 .AboutusWrapper{
   background: var(--linear, linear-gradient(179deg, rgba(1, 25, 90, 0.50) 0%, rgba(83, 33, 224, 0.20) 61.96%, rgba(5, 21, 64, 0.50) 100%));
   position: relative;
-  top: -139px;
+  top: -114px;
   
 }
 #aboutus__intro {
