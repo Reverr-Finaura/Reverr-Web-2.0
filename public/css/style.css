@@ -17,7 +17,7 @@ body{
 .home--section .left-section h1{
     color: #F8F8F8;
 font-size: 52.525px;
-font-family: Poppins;
+font-family: 'Poppins', sans-serif;
 font-style: normal;
 font-weight: 600;
 line-height: normal;
@@ -33,7 +33,7 @@ letter-spacing: 1.05px;
     flex-shrink: 0;
     color: #FFF;
     font-size: 26.023px;
-    font-family: Poppins;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -55,7 +55,7 @@ letter-spacing: 1.05px;
     border: none;
     color: #000;
     font-size: 22px;
-    font-family: Poppins;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -127,7 +127,7 @@ letter-spacing: 1.05px;
 .reverr-spaces-section p{
     color: #FFF;
     font-size: 22px;
-    font-family: Poppins;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -154,7 +154,7 @@ letter-spacing: 1.05px;
     border: none;
     color: #000;
     font-size: 22px;
-    font-family: Poppins;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -183,7 +183,7 @@ letter-spacing: 1.05px;
 .raaya-section .content .heading{
     color: #F8B533 ;
     font-size: 22px;
-    font-family: Poppins;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -193,7 +193,7 @@ letter-spacing: 1.05px;
 .raaya-section .content .intro{
     color: #FFF;
     font-size: 22px;
-    font-family: Poppins;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -211,7 +211,7 @@ letter-spacing: 1.05px;
     border: none;
     color: #000;
     font-size: 22px;
-    font-family: Poppins;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -244,7 +244,7 @@ letter-spacing: 1.05px;
 .mission-heading{
     /* color: #FFF; */
     font-size: 22px;
-    font-family: Poppins;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -256,7 +256,7 @@ letter-spacing: 1.05px;
 .our-mission-section p{
     color: #FFF;
     font-size: 30px;
-    font-family: Poppins;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -310,7 +310,7 @@ letter-spacing: 1.05px;
  .map--section p {
        color: #FFF;
      text-align: center;
-     font-family: Poppins;
+     font-family: 'Poppins', sans-serif;
      font-size: 26.023px;
      font-style: normal;
      font-weight: 400;
@@ -345,7 +345,7 @@ letter-spacing: 1.05px;
 .bottom .left-section p{
     color: #FFF;
     text-align: center;
-    font-family: Poppins;
+    font-family: 'Poppins', sans-serif;
     font-size: 26.023px;
     font-style: normal;
     font-weight: 400;
@@ -365,7 +365,7 @@ letter-spacing: 1.05px;
     border: none;
     color: #000;
     font-size: 22px;
-    font-family: Poppins;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -374,7 +374,7 @@ letter-spacing: 1.05px;
 }
 .footer-section small{
     text-align: center;
-    font-family: Poppins;
+    font-family: 'Poppins', sans-serif;
     font-size: 21px;
     font-style: normal;
     font-weight: 600;
@@ -392,7 +392,7 @@ letter-spacing: 1.05px;
     flex-direction: column;
 }
 .footer-section p{
-    font-family: Poppins;
+    font-family: 'Poppins', sans-serif;
     font-size: 24.371px;
     font-style: normal;
     font-weight: 600;
@@ -688,7 +688,7 @@ animation: incubators 8s infinite;
 .questioning{
     color: #fff;
     text-align: center;
-    font-family: Poppins;
+    font-family: 'Poppins', sans-serif;
     font-size: 22px;
     font-style: normal;
     font-weight: 600;
@@ -700,7 +700,7 @@ animation: incubators 8s infinite;
 .type{
     color: #1dbbff;
     text-align: center;
-    font-family: Poppins;
+    font-family: 'Poppins', sans-serif;
     font-size: 50px;
     font-style: normal;
     font-weight: 800;

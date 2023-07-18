@@ -12,17 +12,16 @@
   }
   .navigation ul li{
     text-align: center;
-  font-family: Poppins !important;
-  font-size: 20px;
+    font-family: 'Poppins', sans-serif;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   line-height: normal;
   letter-spacing: 1.4px;
   color: #fff;
   list-style: none;
   text-decoration: none;
   
-  font-size: 25px;
+  font-size: 16px;
   margin: 0px 45px;
   cursor: pointer;
   
@@ -37,11 +36,12 @@
       justify-content: space-between;
       align-items: center;
       padding: 13px;
+      padding-bottom: 2px;
   }
   .sign-btn{
       color: var(--flowkit-charcoal, #222);
-      font-size: 20px;
-      font-family: Poppins;
+      font-size: 16px;
+      font-family: 'Poppins', sans-serif;
       font-style: normal;
       font-weight: 600;
       line-height: normal;
@@ -61,8 +61,8 @@
     }
     .login-btn{
       color: #fff;
-      font-size: 20px;
-      font-family: Poppins;
+      font-size: 16px;
+      font-family: 'Poppins', sans-serif;
       font-style: normal;
       font-weight: 600;
       line-height: normal;
