@@ -171,8 +171,8 @@ a {
 .blog > p {
   font-size: 24px;
   color: white;
-  margin-left:1rem;
-  margin-bottom: 1rem;
+  margin:1rem;
+  
 }
 
 .blog > h1 > a {
