@@ -6,32 +6,6 @@ body{
     background-color: #060f1e;
 }
 
-/* navbar css */
-.navbar--section{
-    background: var(--bg-main, #030B18);
-    backdrop-filter: blur(3.3333334922790527px);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 13px;
-}
-.login-btn{
-    color: var(--flowkit-charcoal, #222);
-    font-size: 20px;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    display: flex;
-    width: 120.298px;
-    padding: 11.911px 23.821px;
-    justify-content: center;
-    align-items: center;
-    gap: 11.911px;
-    border-radius: 59.554px;
-    background: var(--blueeee, linear-gradient(97deg, #00B3FF 57.09%, #4CC9FF 100%));
-    cursor: pointer;
-}
 
 
 /* home section */
