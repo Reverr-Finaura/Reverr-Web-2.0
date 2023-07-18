@@ -10,11 +10,10 @@
   </head>
 
   <body>
-    <%-include("contactheader") -%> <%-include("header-white") -%>
     <section id="blog-intro">
       <div class="blog-heading">
-        <img src="images/chain 1.png" alt="" />
-        <h1>REVERR BLOGS</h1>
+        <!--<img src="images/chain 1.png" alt="" /> -->
+        <h1>Welcome to <span style="color:#2a72de ;">REVERR BLOGS</span></h1>
       </div>
       <p>
         Get the best and latest insights of the concepts from the
@@ -25,6 +24,13 @@
     <section id="recent-post">
       <h1>Recent Posts</h1>
       <div class="sample-blog">
+        <div class="blog-content">
+          <p><%= data[0].publishedOn %></p>
+          <h1>
+            <a href="/blog/<%= data[0].id %>"><%= data[0].heading %></a>
+          </h1>
+          <p><%= data[0].body %></p>
+        </div>
         <div class="blog-slider">
           <img src="/images/caret1.png" alt="" class="left-caret" />
           <img
@@ -34,13 +40,7 @@
           />
           <img src="/images/caret2.png" alt="" class="right-caret" />
         </div>
-        <div class="blog-content">
-          <p><%= data[0].publishedOn %></p>
-          <h1>
-            <a href="/blog/<%= data[0].id %>"><%= data[0].heading %></a>
-          </h1>
-          <p><%= data[0].body %></p>
-        </div>
+        
       </div>
       <div class="blog-section-btns">
         <a><button id="sectionOneBtn">Section 01</button></a>

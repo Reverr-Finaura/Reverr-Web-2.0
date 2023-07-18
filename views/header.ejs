@@ -1,115 +1,115 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    
-    <title>Reverr</title>
-    <link rel="icon" type="image/x-icon" href="/images/ReverrBlack2.svg">
-    <meta name="description" content="" />
-    <meta name="facebook-domain-verification" content="uv0tsh8vrgup8gn7wrgxbsxungm1sh" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Gideon+Roman&family=Montserrat&family=Philosopher&family=Poppins:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="/css/header.css" />
-  </head>
-  <script>
-    var isBtnDropdownOpen=false;
-    var isProductsDropdownOpen=false;
-    function toggleDropdown () {
 
-        if(isBtnDropdownOpen){
-            document.getElementById("resources_options").style.display="none";
-            document.getElementById("resources_options_phn").style.display="none";
-            isBtnDropdownOpen = false;
-        }
-        else{
-            document.getElementById("resources_options").style.display="flex";
-            document.getElementById("resources_options_phn").style.display="flex";
-            isBtnDropdownOpen = true;  
-        }
-    }
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    function toggleProductsDropdown () {
-      
-        if(isProductsDropdownOpen){
-            document.getElementById("product_options").style.display="none";
-            document.getElementById("product_options_phn").style.display="none";
-            isProductsDropdownOpen = false;
-        }
-        else{
-            document.getElementById("product_options").style.display="flex";
-            document.getElementById("product_options_phn").style.display="flex";
-            isProductsDropdownOpen = true;  
-        }
-    }
-    function toggleOpenClose(){
-      if(document.getElementById("phnnav").style.display==="none"){ document.getElementById("phnnav").style.display="flex";return}
-      if(document.getElementById("phnnav").style.display==="flex"){ document.getElementById("phnnav").style.display="none";return}
-    }
-    function show(){
-        document.getElementById("phnnav").style.display="flex";
-    }
-    function closes(){
-          document.getElementById("phnnav").style.display="none";
-    }
+  <title>Reverr</title>
+  <link rel="icon" type="image/x-icon" href="/images/ReverrBlack2.svg">
+  <meta name="description" content="" />
+  <meta name="facebook-domain-verification" content="uv0tsh8vrgup8gn7wrgxbsxungm1sh" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Gideon+Roman&family=Montserrat&family=Philosopher&family=Poppins:wght@400;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="/css/header.css" />
+</head>
+<script>
+  var isBtnDropdownOpen = false;
+  var isProductsDropdownOpen = false;
+  function toggleDropdown() {
 
-    function disableScroll() {
+    if (isBtnDropdownOpen) {
+      document.getElementById("resources_options").style.display = "none";
+      document.getElementById("resources_options_phn").style.display = "none";
+      isBtnDropdownOpen = false;
+    }
+    else {
+      document.getElementById("resources_options").style.display = "flex";
+      document.getElementById("resources_options_phn").style.display = "flex";
+      isBtnDropdownOpen = true;
+    }
+  }
+
+  function toggleProductsDropdown() {
+
+    if (isProductsDropdownOpen) {
+      document.getElementById("product_options").style.display = "none";
+      document.getElementById("product_options_phn").style.display = "none";
+      isProductsDropdownOpen = false;
+    }
+    else {
+      document.getElementById("product_options").style.display = "flex";
+      document.getElementById("product_options_phn").style.display = "flex";
+      isProductsDropdownOpen = true;
+    }
+  }
+  function toggleOpenClose() {
+    if (document.getElementById("phnnav").style.display === "none") { document.getElementById("phnnav").style.display = "flex"; return }
+    if (document.getElementById("phnnav").style.display === "flex") { document.getElementById("phnnav").style.display = "none"; return }
+  }
+  function show() {
+    document.getElementById("phnnav").style.display = "flex";
+  }
+  function closes() {
+    document.getElementById("phnnav").style.display = "none";
+  }
+
+  function disableScroll() {
     // Get the current page scroll position
     scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
-  
-        // if any scroll is attempted, set this to the previous value
-        window.onscroll = function() {
-            window.scrollTo(scrollLeft, scrollTop);
-        };
-}
-// call this to Enable
-function enableScroll() {
-    window.onscroll = function() {
-     
+
+      // if any scroll is attempted, set this to the previous value
+      window.onscroll = function () {
+        window.scrollTo(scrollLeft, scrollTop);
+      };
+  }
+  // call this to Enable
+  function enableScroll() {
+    window.onscroll = function () {
+
     };
-}
+  }
 
 
 
 
 
-function OpenModal(){
-  document.getElementById("profilemodal").style.display="flex";
- let profile=document.querySelector('.containerpl')
- console.log('profilee is',profile)
-profile.style.display="flex"
-// disableScroll()
+  function OpenModal() {
+    document.getElementById("profilemodal").style.display = "flex";
+    let profile = document.querySelector('.containerpl')
+    console.log('profilee is', profile)
+    profile.style.display = "flex"
+    // disableScroll()
 
-}
-function CloseProfileModal(){
-  document.getElementById("profilemodal").style.display="none";
-  document.querySelector('.containerpl').style.display="none"
-enableScroll()
+  }
+  function CloseProfileModal() {
+    document.getElementById("profilemodal").style.display = "none";
+    document.querySelector('.containerpl').style.display = "none"
+    enableScroll()
 
 
-}
+  }
 </script>
-  <body>
 
+<body>
 
-    <div class="topnav desk">
-      <a href="/"
-        ><img src="/images/ReverrBlack2.svg" alt="" />
-        <p class="brand-name">REVERR</p>
-        <!-- <p class="brand-name_by">By Dsqaure Venture LLP</p> -->
-        </a
-      >
+  <div class="NavWrapper">
+  <div class="topnav desk">
+    <a href="/"><img src="/images/ReverrBlack2.svg" alt="" />
+      <p class="brand-name">REVERR</p>
+      <!-- <p class="brand-name_by">By Dsqaure Venture LLP</p> -->
+    </a>
 
-      <div class="topnav-right">
-        <a  href="/">Home</a>
-        <!-- <div class="products_dropdown">
+    <div class="topnav-right">
+      <a href="/">Home</a>
+      <!-- <div class="products_dropdown">
           <div onclick="toggleProductsDropdown()" class="productBtn">
           <div>Products</div>
         </div>
@@ -120,18 +120,18 @@ enableScroll()
           <a href="/funding"><div class="product_option">Funding</div></a>
       </div>
         </div> -->
-        <!-- <a href="/mentorship">Mentorship</a>
+      <!-- <a href="/mentorship">Mentorship</a>
         <a href="/networking">Networking</a>
         <a href="/community">Community</a>
         <a href="/knowledge">Knowledge</a> -->
-        <a href="/founder">For Founders</a>
-        <a href="/investor">For Investors</a>
-        <a href="/formentors">For Mentors</a>
-        <a href="/blog">Blogs</a>
-       
-        <a href="/about">About Us</a>
-          <!-- <a class="dropdown-link" href="/about"><div class="resources_option">About Us</div></a> -->       
-        <!-- <div class="header_dropdown">
+      <a href="/founder">For Founders</a>
+      <a href="/investor">For Investors</a>
+      <a href="/formentors">For Mentors</a>
+      <a href="/blog">Blogs</a>
+
+      <a href="/about">About Us</a>
+      <!-- <a class="dropdown-link" href="/about"><div class="resources_option">About Us</div></a> -->
+      <!-- <div class="header_dropdown">
           <div onclick="toggleDropdown()" class="resourcesBtn">
           <div>Resources <img src="/images/dropdown.svg" alt="dropdown" /></div>
           </div>
@@ -146,38 +146,38 @@ enableScroll()
              
           </div>
   </div> -->
-    
-      </div>
-      <!-- <a  class="link-btn"><div onclick="OpenModal()" class="memberBtn">Login/SignUp</div></div></a> -->
-      <a  class="link-btn"><div onclick="OpenModal()" class="memberBtn">Login</div></div></a>
-    </div>
 
-    <section class="nav phn" id="phnheader">
-      <div
-        style="
+    </div>
+    <!-- <a  class="link-btn"><div onclick="OpenModal()" class="memberBtn">Login/SignUp</div></div></a> -->
+    <a class="link-btn">
+      <div onclick="OpenModal()" class="memberBtn">Login</div>
+  </a>
+  </div>
+
+  </div>
+
+
+  <section class="nav phn" id="phnheader">
+    <div style="
           display: flex;
           flex-direction: row;
           justify-content: space-between;
           align-items: center;
           justify-content: center;
-        "
-      >
-        <div
-          style="
+        ">
+      <div style="
             display: flex;
             flex-direction: row;
             align-items: center;
             cursor: pointer;
-          "
-          onclick="toggleOpenClose()"
-        >
-          <a> <img src="/images/ReverrBlack2.svg" style="width: 60px" alt="logo" /></a>
-          <a><h1 class="headingphn">&nbsp;Reverr</h1> </a>
-        </div>
+          " onclick="toggleOpenClose()">
+        <a> <img src="/images/ReverrBlack2.svg" style="width: 60px" alt="logo" /></a>
+        <a>
+          <h1 class="headingphn">&nbsp;Reverr</h1>
+        </a>
       </div>
-      <div
-        id="phnnav"
-        style="
+    </div>
+    <div id="phnnav" style="
           display: none;
           width: 100%;
           flex-direction: column;
@@ -185,10 +185,9 @@ enableScroll()
           text-align: center;
           padding: 2%;
           color: black;
-        "
-      >
-        <a class="navitem" style="margin: 3% 0%" href="/">Home </a>
-        <!-- <div class="products_dropdown">
+        ">
+      <a class="navitem" style="margin: 3% 0%" href="/">Home </a>
+      <!-- <div class="products_dropdown">
           <div onclick="toggleProductsDropdown()" class="productBtn">
           <div>Products</div>
         </div>
@@ -199,33 +198,38 @@ enableScroll()
           <a href="/funding"><div class="product_option">Funding</div></a>
       </div>
         </div> -->
-        <a class="navitem" style="margin: 3% 0%" href="/founder">For Founders</a>
-        <a class="navitem" style="margin: 3% 0%" href="/investor">For Investors</a>
-        <a class="navitem" style="margin: 3% 0%" href="/formentors">For Mentors</a>
-        <a class="navitem" style="margin: 3% 0%" href="/blog">Blogs</a>
-        <a  class="navitem"><div onclick="OpenModal()" class="memberBtn">Login</div></div></a>
+      <a class="navitem" style="margin: 3% 0%" href="/founder">For Founders</a>
+      <a class="navitem" style="margin: 3% 0%" href="/investor">For Investors</a>
+      <a class="navitem" style="margin: 3% 0%" href="/formentors">For Mentors</a>
+      <a class="navitem" style="margin: 3% 0%" href="/blog">Blogs</a>
+      <a class="navitem">
+        <div onclick="OpenModal()" class="memberBtn">Login</div>
+    </div></a>
 
-        <!-- <div
+
+    <!-- <div
             class="memberBtn
             style="margin: 3% 25%; padding: 2% 4%; text-align:center:"
           >
             <a href="/fundingform"></a>Get Funded</div> -->
-          <div class="header_dropdown">
-        <!-- <div onclick="toggleDropdown()" style="margin: 10% 5%; padding: 5% 2%;" class="resourcesBtn">Resources <img src="/images/dropdown.svg" alt="dropdown" /></div> -->
-        <div style="margin:5rem" id="resources_options_phn">
-            <div class="resources_option"><a href="/blog">Blog</a></div>
-            <div class="resources_option"><a href="/about">About Us</a></div>
-            <div class="resources_option"><a href="/newsletter">Sign The Newsletter</a></div>
-        </div>
+    <div class="header_dropdown">
+      <!-- <div onclick="toggleDropdown()" style="margin: 10% 5%; padding: 5% 2%;" class="resourcesBtn">Resources <img src="/images/dropdown.svg" alt="dropdown" /></div> -->
+      <div style="margin:5rem" id="resources_options_phn">
+        <div class="resources_option"><a href="/blog">Blog</a></div>
+        <div class="resources_option"><a href="/about">About Us</a></div>
+        <div class="resources_option"><a href="/newsletter">Sign The Newsletter</a></div>
+      </div>
     </div>
-        <!-- <div style="cursor: pointer; margin: 3% 0%" onclick="closes()">
+    <!-- <div style="cursor: pointer; margin: 3% 0%" onclick="closes()">
           <a>Close</a>
         </div> -->
-      </div>
-    </section>
-    <div id="profilemodal">  
-      <%- include('profilelogin'); -%>
-    <!-- <div onclick="CloseProfileModal()" id="cross"><p class="crosstext">X</p></div> -->
+    </div>
+  </section>
+  <div id="profilemodal">
+    <%- include('profilelogin'); -%>
+      <!-- <div onclick="CloseProfileModal()" id="cross"><p class="crosstext">X</p></div> -->
   </div>
-  </body>
+
+</body>
+
 </html>

@@ -8,10 +8,12 @@ body {
 .topnav {
   height: fit-content;
   width: 95%;
-  margin: 2% auto;
+  margin: 0% auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background: rgba(0, 17, 50, 0.50);
+backdrop-filter: blur(3.3333334922790527px);
 }
 
 .brand-name {

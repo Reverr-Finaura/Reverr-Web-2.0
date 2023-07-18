@@ -9,8 +9,7 @@
 </head>
 
 <body>
-  <%-include('contactheader');-%> <%-include('header');-%>
-
+     <div class="AboutusWrapper">
       <section id="aboutus__intro">
         <div class="aboutus__intro">
         <div class="aboutus__main">
@@ -21,8 +20,11 @@
                 <span style="
                   text-decoration: line-through;
                   text-decoration-color: #2a72de;
+                  color: white;
                 ">YOUR</span>
-                 JOURNEY
+                 <span style="
+                 color:#2a72de ;
+               ">JOURNEY</span>
               </h1>
             </div>
             <div class="aboutus__text_content">
@@ -46,8 +48,8 @@
           <img src="/images/Tourist Welcome.png" alt="aboutus" />
         </div>
       </div>
-        <p class="about_us_intro_line_divider"></p>
       </section>
+      </div>
 
       <!-- <section id="what-we-do">
         <h1>What we do</h1>
@@ -136,7 +138,6 @@
           <div class="what_we_do_Cont"><img class="what_we_do_Cont_img" src="/images/do (3).svg" alt=""></div>
         </div>
         <div class="what_we_do_button">Join our Community !</div>
-        <p class="what_we_do_line_divider"></p>
       </section>
 
       <!-- <section id="mission-section">
@@ -181,11 +182,13 @@
           <p class="our_vision_header_cont_text">Our <span>Vision</span></p>
           <p class="our_vision_header_cont_line2"></p>
         </div>
-        <img class="our_vision_image" src="/images/Business Decision Making.svg" alt="image">
+        <div class="ImgTextWrapper">
+        <img class="our_vision_image" src="/images/lady.png" alt="image">
         <div class="our_vision_infoCont">
           <p>Our vision is to enable and empower the early-stage startups and founders of the world to assist them in manifesting their ideas and impact the world through innovative technologies with absolute ease by bringing together like-minded people and resources required to make a venture successful. We believe that every business idea is a unique story in itself.
           </p>
         </div>
+      </div>
         <button class="our_vision_btn">See more ></button>
         <p class="what_we_do_line_divider"></p>
       </section>
@@ -259,7 +262,7 @@
         <div class="team-title">
           <div class="team-title-cont">
           <p class="our_vision_header_cont_line1"></p>
-          <h1>Our <span>Advisors</span></h1>
+          <h1 style="color: white;">Our <span>Advisors</span></h1>
         </div>
           <!-- <img src="images/tri-arrow 2.png" alt="aerrow" /> -->
         </div>
@@ -333,7 +336,6 @@
             </div>
           </div>
         </div>
-        <p class="what_we_do_line_divider"></p>
 
       </section>
 
@@ -381,17 +383,23 @@
       </section> -->
 
 <section id="our_core_values">
-  <h1>Our <span>Core Values</span> </h1>
-  <p class="our_core_values_info">An organization thrives with the right set <br> of values in place.</p>
+  
+  <h1 style="color: #2a72de;">Our <span>Core Values</span> </h1>
+  <p class="our_core_values_info" style="color: white;">An organization thrives with the right set  of values in place.</p>
+  <img class="circleImage" src="/images/circle.svg" alt="img">
   <div class="our_core_values_imageCont">
-    <img src="/images/Frame 6267355.svg" alt="img">
-    <img src="/images/Frame 6267356.svg" alt="img">
-    <img src="/images/Frame 6267358.svg" alt="img">
-    <img src="/images/Frame 6267357.svg" alt="img">
+   
+    <img class="imgSize" src="/images/1download.svg" alt="img">
+    <img class="imgSize" src="/images/2download.svg" alt="img">
+    <img class="imgSize" src="/images/3download.svg" alt="img">
+    <img class="imgSize" src="/images/4download.svg" alt="img">
   </div>
+  <img class="circleImage2" src="/images/circle2.svg" alt="img">
 </section>
 
       <section id="about-end">
+        <!--<img  class="halfCircle" src="/images/halfcircleabouttoend.svg" alt="img"> -->
+        <div class="upperWoImg">
         <div class="about-quote">
           <!-- <img src="images/q1.png" alt="" class="q1" /> -->
           <p>
@@ -408,6 +416,12 @@
             <button class="about-btn-app">Download our app</button>
           </a>
         </div>
+        </div>
+        <div  class="lowerWImg">
+         <!-- <img class="bluerecbox" src="/images/bluerecbox.svg" alt="" class="q1" /> -->
+
+        </div>
+        <img  class="downCircle" src="/images/downcircleabouttoend.svg" alt="img">
       </section>
       <%-include('footerNew');-%>
 </body>
