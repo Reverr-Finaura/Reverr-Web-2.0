@@ -92,7 +92,40 @@ body {
   color: white;
 }
 
-@media (max-width: 1024px) {
+
+@media (max-width:550px){
+  #content> img{
+    height: 22rem;
+    width: 23rem;
+    margin-top: 10rem;
+  }
+  #content{
+    width: 74rem;
+    margin-left: 10rem;
+  }
+  #content > h1{
+    font-size: 27px;
+  }
+  #content>p{
+    font-size: 23px;
+    margin-top:5rem;
+  }
+
+
+}
+@media (max-width:420px){
+  #content{
+    margin-top: 10rem;
+  }
+  #content>p{
+    font-size: 27px;
+    margin-top: 5rem;
+  }
+  
+
+}
+
+/*@media (max-width: 1024px) {
   #content > img {
     height: 17rem;
   }
@@ -120,3 +153,5 @@ body {
     gap: 0rem;
   }
 }
+*/
+

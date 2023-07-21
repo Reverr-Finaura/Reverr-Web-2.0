@@ -194,7 +194,109 @@ a {
   max-height: 14rem;
   color: white;
 }
-@media (max-width: 1340px) and (min-width: 1025px) {
+
+@media screen and (max-width:550px) {
+  #blog-intro{
+    width: 96rem;
+    height: 11rem;
+    margin-top: 4rem;
+  }
+  .blog-heading > h1{
+    display: flex;
+  }
+  #recent-post{
+    width: 95rem;
+    margin-left: 1rem;
+    margin-top: -5rem
+  }
+  .blog > a > img{
+    margin-left: 2rem;
+  }
+  
+  
+ 
+}
+@media  screen and (max-width:420px) {
+  #recent-post{
+    height: 149rem;
+  }
+  .sample-blog{
+    flex-direction: column-reverse;
+    height: 61rem;
+    width: 94rem;
+  }
+  .blog-slider{
+    margin-left: 27rem;
+    height: 35rem;
+    width: 45rem;
+
+  }
+  .blog-content{
+    height: 32rem;
+    width: 93rem;
+    margin-bottom: 3rem;
+  }
+  .blog > a > img{
+    margin-left: 2rem;
+  }
+
+  
+}
+@media (max-width:390px) {
+  .sample-blog{
+    height: 60rem;
+    width: 88rem;
+    margin-left: 1rem;
+  }
+  .blog-content{
+    width: 84rem;
+  }
+  .blog-section-btns{
+    width: 79rem;
+    margin-left: 7rem;
+  }
+  .blog-container{
+    width: 79rem;
+  }
+  #blog-intro{
+    margin-left: -3rem;
+  }
+  .blog > a > img{
+    margin-left: 1rem;
+  }
+
+  
+}
+@media (max-width:360px) {
+  .sample-blog{
+    height: 60rem;
+    width: 82rem;
+    margin-left: 1rem;
+  }
+  .blog-content{
+    width: 80rem;
+  }
+  .blog-section-btns{
+    width: 76rem;
+    margin-left: 7rem;
+  }
+  .blog-container{
+    width: 77rem;
+    margin-left: 5rem;
+  }
+  #blog-intro{
+    margin-left:-5rem;
+  }
+  .menu-icon{
+    margin-right: 5rem;
+  }
+  .blog > a > img{
+    margin-left: 1rem;
+  }
+
+  
+}
+/*@media (max-width: 1340px) and (min-width: 1025px) {
   #recent-post > h1 {
     color: black;
   }
@@ -306,7 +408,7 @@ a {
 
   .blog-section-btns {
     flex-direction: column;
-    /* justify-content: end; */
+    /* justify-content: end; 
     align-items: center;
   }
 
@@ -328,7 +430,7 @@ a {
 
   .blog > a > img {
     height: 16.2rem;
-    /* margin-left: 14%; */
+    /* margin-left: 14%; 
   }
 
   .blog > p {
@@ -370,4 +472,4 @@ a {
     width: 80%;
     margin: auto;
   }
-}
+}*/

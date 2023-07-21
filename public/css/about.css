@@ -995,7 +995,227 @@ color: #FFFFFF;
   border: 2px solid #2a72de!important;
 }
 
-@media(max-width:1216px){
+
+
+@media screen and (max-width:550px) {
+  .AboutusWrapper{
+    width: 97rem;
+    z-index: 1;
+  }
+  .aboutus_intro{
+    margin-left: 3rem;
+  }
+  /*.about_us_text_content>p{
+    font-size: 40px;
+  }*/
+  .aboutus__image>img{
+    height: 36rem;
+    width: 21rem;
+  }
+ /* .aboutus__text_content>p{
+    font-size: 40px;
+  }
+  .aboutus__buttons>a>button{
+    font-size: 28px;
+  }
+  */
+  
+  #what_we_do{
+    width: 89rem;
+  }
+  .what_we_do_heading{
+    font-size: 3rem;
+  }
+  .what_we_do_line_divider{
+    top: -6rem;
+    margin-top: 7rem;
+  }
+  .what_we_do_info{
+    font-size: 21px;
+  }
+  
+  #our_vision{
+    width: 97rem;
+  }
+  .our_vision_header_cont{
+    top: 119rem;
+  }
+  .our_vision_infoCont>p {
+    font-size: 27px;
+  }
+  .our_vision_infoCont{
+    margin-top: 17rem;
+  }
+  #team-section{
+    width:97rem
+  }
+  #advisors{
+    width: 97rem;
+  }
+  #our_core_values{
+    width: 97rem;
+    height: 61rem;
+  }
+  /*.our_core_values_imageCont{
+    flex-wrap: wrap;
+  }*/
+  .our_core_values_info{
+    font-size: 27px;
+  }
+  .circleImage{
+    left: -5rem;
+    top: 287rem;
+  }
+  .circleImage2{
+    top: 317rem;
+    left: 77rem;
+    width: 21rem;
+    height: 27rem;
+  }
+  .imgSize{
+    height: 40rem;
+    width: 18rem;
+  }
+  
+  #about-end{
+    width: 97rem;
+  }
+  .navigation.show{
+    z-index: 99999999;
+  }
+}
+@media (max-width:420px){
+
+}
+@media screen and (max-width:380px) {
+  .AboutusWrapper{
+    width: 95rem;
+  }
+ /* .about_us_text_content>p{
+    font-size: 40px;
+  }*/
+  .aboutus__image>img{
+    height: 36rem;
+    width: 21rem;
+  }
+ /* .aboutus__text_content>p{
+    font-size: 40px;
+  }
+  .aboutus__buttons>a>button{
+    font-size: 28px;
+  }
+  */
+  
+  #what_we_do{
+    width: 86rem;
+  }
+  .what_we_do_heading{
+    font-size: 3rem;
+  }
+  .what_we_do_Cont{
+    width: 159px;
+    width: 52%;
+  }
+  .what_we_do_Cont_img{
+    height: 16rem;
+    width: 14rem;
+  }
+  .what_we_do_doCont{
+    flex-wrap: nowrap;
+    margin-right: 33rem;
+  }
+  .what_we_do_line_divider{
+    top: -6rem;
+    margin-top: 7rem;
+    width: 31rem;
+  }
+  .what_we_do_info{
+    font-size: 21px;
+  }
+  #our_vision{
+    width: 95rem;
+  }
+  .our_vision_header_cont{
+    top: 104rem;
+  }
+  .our_vision_infoCont>p {
+    font-size: 27px;
+  }
+  .our_vision_infoCont{
+    margin-top: 17rem;
+  }
+  #team-section{
+    width:95rem
+  }
+  #advisors{
+    width: 95rem;
+  }
+  #our_core_values{
+    width: 95rem;
+    height: 49rem;
+  }
+  .our_core_values_info{
+    font-size: 27px;
+  }
+  .our_core_values_imageCont{
+    flex-wrap: nowrap;
+  }
+  .circleImage{
+    left: -3rem;
+    top: 267rem;
+    width: 21rem;
+    height: 24rem;
+  }
+  .circleImage2{
+    top: 289rem;
+    left: 77rem;
+    width: 18rem;
+    height: 26rem;
+  }
+  .imgSize{
+    height: 27rem;
+    width: 13rem;
+  }
+  
+  #about-end{
+    width: 95rem;
+  }
+  .navigation.show{
+    z-index: 99999999;
+  }
+}
+@media (max-width:360px){
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*@media(max-width:1216px){
   .aboutus__intro{
     display: flex;
     flex-direction: column;
@@ -1113,9 +1333,9 @@ color: #FFFFFF;
 
   .wwd-left-content>h4 {
     font-size: 18px;
-    /* margin-top: 2rem; */
-  }
-
+    /* margin-top: 2rem; 
+  }*/
+/*
   .wwd-left-content>p {
     font-size: 14px;
     line-height: 20px;
@@ -1145,8 +1365,8 @@ color: #FFFFFF;
     font-size: 16px;
     text-align: center;
     margin: auto;
-    /* margin-left: 0.6rem; */
-  }
+    /* margin-left: 0.6rem;} 
+  
 
   .mission_img>img {
     height: 10rem;
@@ -1197,7 +1417,7 @@ color: #FFFFFF;
 
   #team-section {
     flex-direction: column;
-    /* align-items: center; */
+    /* align-items: center; 
     width: 75%;
     margin: auto;
     margin-top: 2.5rem;
@@ -1205,7 +1425,7 @@ color: #FFFFFF;
 
   .team-members {
     display: block;
-    /* margin: auto; */
+    /* margin: auto; 
   }
 
   .team-title>h1 {
@@ -1219,7 +1439,7 @@ color: #FFFFFF;
   .member-img {
     margin: auto;
     /* width: 50%; */
-    /* height: 17rem; */
+    /* height: 17rem; 
   }
 
   .member-img>img {
@@ -1260,7 +1480,7 @@ color: #FFFFFF;
   .advisor-row {
     margin-bottom: 2rem;
     margin-left: 2rem;
-    /* align-items: center; */
+    /* align-items: center; 
   }
 
   .adv-info>h3 {
@@ -1364,7 +1584,7 @@ color: #FFFFFF;
 
   /* .aboutus__intro {
     margin-top: 100px;
-  } */
+  } 
 
   .aboutus__main {
     width: 80%;
@@ -1428,9 +1648,9 @@ color: #FFFFFF;
   /* .adv-img-badge {
     left: 9rem;
     top: -4rem;
-  } */
+  } 
 
   .vision_intro>img {
     height: 7rem;
   }
-}
+}*/

@@ -11,12 +11,17 @@
 </head>
 <body>
     <div class="navbar--section">
+      <div class="menu-icon" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
         <div class="logo-block">
           <img style="width: 95px; margin: 10px 30px;" src="./images/logo.png" />
         </div>
-        <div class="navigation">
+        <div class="navigation" id="menu">
   
-          <ul>
+          <ul class="Ulclass">
             <a href="./" ><li>Home</li></a>
             
             <a href="./about"><li>About us</li></a>
@@ -25,12 +30,22 @@
           <a style="text-decoration: none; "  href="https://webapp.reverr.io/login">
             <button class="login-btn">Log in</button>
           </a>
-          <a style="text-decoration: none; "  href="https://webapp.reverr.io/signup">
+          <a style="text-decoration: none;margin-top: 11px; "  href="https://webapp.reverr.io/signup">
             <button  class="sign-btn">Sign Up</button>
           </a>
         </div>
+        
+        
      
       </div>
+
+
+      <script>
+        function toggleMenu() {
+          const menu = document.getElementById('menu');
+          menu.classList.toggle('show');
+        }
+      </script>
     
 </body>
 </html>
