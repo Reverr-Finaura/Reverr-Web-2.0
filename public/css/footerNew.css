@@ -154,7 +154,7 @@ color: #FFFFFF;
 
 @media (max-width:500px) {
     #_footer{
-        width: 28rem;
+        /* width: 28rem; */
     }
     ._footersection1{
         flex-direction: column;

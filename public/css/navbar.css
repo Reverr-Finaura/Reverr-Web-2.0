@@ -97,7 +97,7 @@
 @media (max-width:500px) {
   .navbar--section{
   position:relative;
-  width: 27rem;
+  /* width: 27rem; */
   height: 7rem;
   z-index:999999999999999;
   }
@@ -110,17 +110,18 @@
     background-color: #060f1e;
     border-radius: 3px;
     position: relative;
-    top: 12rem;
-    right: 5rem;
+    right: 5.5rem;
     width: 12rem;
     height: 21rem;
     z-index: inherit;
+    padding: 20px;
+    top: 16rem;
 
   }
   .menu-icon {
     display: flex;
     position: absolute;
-    right: 6rem;
+    right: 3rem;
     flex-direction: column;
   }
   .bar {
