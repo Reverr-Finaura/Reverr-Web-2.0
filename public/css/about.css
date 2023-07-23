@@ -994,8 +994,283 @@ color: #FFFFFF;
   background-color: transparent!important;
   border: 2px solid #2a72de!important;
 }
+.member_info>h5{
+  font-size: 18px
+}
+.member-info>p{
+  font-size: 15px;
+}
 
 
+@media (max-width:500px) {
+  .AboutusWrapper{
+    width:27em;
+    height: 37rem;
+    z-index: 1;
+  }
+  .aboutus__main{
+    margin-top: 1rem;
+  }
+  .aboutus__image{
+    top: 7rem;
+    right: 11rem;
+  }
+  .aboutus__image>img{
+    height: 11rem;
+  }
+  .aboutus__intro_heading{
+    margin-left: 2rem;
+  }
+  .aboutus__intro_heading>h1{
+    font-size: 23px;
+  }
+  .aboutus__text_content{
+    position:relative;
+    top: 12rem;
+    left: -1rem;
+  }
+  .aboutus__text_content>p{
+    width: 20em;
+    font-size: 14px;
+  }
+  .aboutus__buttons{
+    width: -webkit-fill-available;
+    position: relative;
+    top: 12em;
+    left: 2em;
+  }
+  .aboutus__buttons>a>button{
+    width: 7rem;
+    margin: 1rem 1rem 1rem 1rem;
+  }
+  .aboutus__buttons_contact_us{
+    width: 7rem;
+  }
+  #what_we_do{
+    width: 22em;
+  }
+  .what_we_do_heading{
+    margin-left: -1em;
+    margin-top: -3em;
+  }
+  .what_we_do_info{
+    margin-left: 1em;
+    width: 18rem;
+  }
+  .what_we_do_doCont{
+    margin-left: 83px;
+    margin-top: 0rem;
+    gap: 0em;
+  }
+  .what_we_do_Cont_img{
+    width: 77%;
+  }
+  .what_we_do_Cont{
+    width: 200px;
+    height: 170px;
+  }
+  .what_we_do_button{
+    margin-top: 1rem;
+    margin-left: 3rem;
+  }
+  #our_vision{
+    width: 27rem;
+  }
+  .our_vision_header_cont{
+    left: 10rem;
+    height: 5rem;
+    width: 18rem;
+    top: 106rem;
+  }
+  .our_vision_header_cont_line1{
+    width: 11.64px;
+  }
+  .our_vision_header_cont_text{
+    font-size: 1.2rem;
+  }
+  .our_vision_header_cont_line2{
+    width: 11.64px;
+  }
+  .our_vision_image{
+    height: 12rem;
+    width: 15rem;
+    position: relative;
+    left: -9rem;
+  }
+  .our_vision_infoCont{
+   margin-top: 1rem;
+    width: 11rem;
+    position: relative;
+    left: -9rem;
+    top: 3rem;
+  }
+  .our_vision_infoCont>p{
+    font-size: 13px;
+    width: 13rem;
+  }
+  .what_we_do_line_divider{
+    width: 185.26px;
+    top: -2rem;
+    left: 2rem;
+  }
+
+  #team_section{
+    width: 18rem;
+    height: 51rem;
+  }
+  .team-title-cont{
+    margin-left: 4rem;
+  }
+  .team-title-cont>h1{
+    font-size: 1.2rem;
+    width: 12rem;
+  }
+  .team-members{
+    flex-wrap: wrap;
+    margin-right: 1rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    gap: 1rem;
+  }
+  .member-img{
+    height: 11rem;
+    width: 7rem;
+  }
+  
+  .member-img>img{
+    height: 74%;
+    width: 89%;
+  }
+  .member-link{
+    width: 2rem;
+    height: 2rem;
+    top: 6rem;
+    right: 1rem;
+  }
+  
+  .member-link>a>img{
+    width: 100%;
+    height: 100%;
+  }
+  .member-details{
+    margin-top: -3rem;
+  }
+  .member-info>h5{
+    font-size: 15px;
+  }
+  .member-info>p{
+    font-size: 10px;
+  }
+  #advisors{
+    height: 48rem;
+    width: 27rem;
+  }
+  .advisor-details{
+    margin-top: 2rem;
+  }
+  .adv-img{
+    height: 8rem;
+    width: 8rem;
+  }
+  .adv-info>h3{
+    font-size: 15px;
+  }
+  .adv-info>p{
+    font-size: 10px;
+  }
+  .advisor-row{
+    height: 12rem;
+    width: 10rem;
+  }
+  .advisor-details-first-row{
+    flex-wrap: wrap;
+  gap: 1rem;
+  margin-left: -1rem;
+  }
+  .advisor-details-second-row{
+    margin-top: -7rem;
+    margin-left: -1rem;
+  }
+  .adv-img-badge{
+    top: 6rem;
+  }
+  .our_core_values_imageCont>img{
+    height: 11rem;
+    width: 10rem;
+  }
+  #our_core_values{
+    height: 39rem;
+    width: 28rem;
+  }
+  #our_core_values>h1{
+    font-size: 1.2rem;
+    margin-left: -6rem;
+  }
+  .our_core_values_info{
+    font-size: 1rem;
+    width: 24rem;
+  }
+  .circleImage{
+    height: 10rem;
+    width: 10rem;
+    top: 243rem;
+  }
+  .our_core_values_imageCont{
+    flex-wrap: wrap;
+    margin-left: 0rem;
+  }
+  .circleImage2{
+    height: 10rem;
+    width: 10rem;
+    top: 264rem;
+    right: -2rem;
+  }
+  #about-end{
+    width: 27rem;
+    margin-left: 0rem;
+    height: 25rem;
+  }
+  .about-quote>p{
+    font-size: 15px;
+    margin-left: 0rem;
+    margin-top: 1rem;
+  }
+  .upperWoImg{
+    margin-top: 14rem;
+  }
+  .about-quote{
+    height: 10rem;
+    width: 22rem;
+    position: absolute;
+  }
+  .about-btns{
+    width: 24rem;
+    height: 9rem;
+    margin-top: -1rem;
+    margin-left: 3rem;
+  }
+  .about-btns>a>button{
+    font-size: 10px;
+    width: 105px;
+  }
+  .bluerecbox{
+    position: absolute;
+    top: -2rem;
+    right: 2rem;
+    height: 20rem;
+    width: 23rem;
+  }
+
+
+  }
+
+
+  
+
+
+
+
+/*
 
 @media screen and (max-width:550px) {
   .AboutusWrapper{
@@ -1007,7 +1282,7 @@ color: #FFFFFF;
   }
   /*.about_us_text_content>p{
     font-size: 40px;
-  }*/
+  }.
   .aboutus__image>img{
     height: 36rem;
     width: 21rem;
@@ -1017,8 +1292,8 @@ color: #FFFFFF;
   }
   .aboutus__buttons>a>button{
     font-size: 28px;
-  }
-  */
+  }.
+  
   
   #what_we_do{
     width: 89rem;
@@ -1058,7 +1333,7 @@ color: #FFFFFF;
   }
   /*.our_core_values_imageCont{
     flex-wrap: wrap;
-  }*/
+  }.
   .our_core_values_info{
     font-size: 27px;
   }
@@ -1093,7 +1368,7 @@ color: #FFFFFF;
   }
  /* .about_us_text_content>p{
     font-size: 40px;
-  }*/
+  }.
   .aboutus__image>img{
     height: 36rem;
     width: 21rem;
@@ -1104,7 +1379,7 @@ color: #FFFFFF;
   .aboutus__buttons>a>button{
     font-size: 28px;
   }
-  */
+  .
   
   #what_we_do{
     width: 86rem;
@@ -1187,6 +1462,7 @@ color: #FFFFFF;
 @media (max-width:360px){
 
 }
+*/
 
 
 

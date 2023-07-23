@@ -194,8 +194,96 @@ a {
   max-height: 14rem;
   color: white;
 }
+@media (max-width:500px) {
+  .blog > h1{
+    margin: 1.6rem 1rem;
+  }
+  .right-caret{
+    height: 2rem;
+  }
+  .left-caret{
+    height: 2rem;
+  }
+  .blog-heading > h1{
+    font-size: 20px;
+    margin-left: 0rem;
+    margin-top: -4rem;
+  }
+  #blog-intro{
+    width: 18rem;
+    margin-left: 3rem;
+  }
+  #blog-intro > p{
+    font-size: 15px;
+    margin-left: 1rem;
+    margin-top: -1rem;
+    width: 15rem;
+  }
+  #recent-post{
+    margin-top: -7rem;
+    width: 23rem;
+    margin-left: 1rem;
+  }
+  #recent-post > h1{
+    font-size: 18px;
+  }
+  .sample-blog{
+    flex-direction: column-reverse;
+    height: 43rem;
+    width: 21rem;
+  }
+  .blog-content{
+    padding-left: 0rem;
+  }
+  .blog-content > p{
+    font-size: 15px;
+  }
+  .blog-content > h1 > a{
+    font-size: 18px;
+  }
+  .blog-slider{
+    margin-left: 3rem;
+  }
+  .sample-blog-img{
+    width: 10rem;
+    height: 10rem;
+  }
+  .blog-section-btns > a > button{
+    font-size: 10px;
+    width: 61px;
+  }
+  .blog-container{
+    flex-wrap: wrap;
+    margin-left: 2rem;
+  }
+  .blog{
+    margin-bottom: 1rem;
+    height: 31rem;
+    width: 19rem;
+    margin-left: -3rem;
+  }
+  .blog > a > img{
+    height: 10rem;
+    width: 12rem;
+    margin-top: 1rem;
+    margin-left: 3rem;
+  }
+  .blog > p{
+    font-size: 14px;
+    margin-top: -1rem;
 
-@media screen and (max-width:550px) {
+  }
+  .blog > h1 > a{
+    font-size: 18px;
+  }
+  .blog-section-btns{
+    justify-content: start;
+    margin-left: 3rem;
+  }
+
+  }
+
+/*@media screen and (max-width:550px) {
   #blog-intro{
     width: 96rem;
     height: 11rem;

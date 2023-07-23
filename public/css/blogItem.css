@@ -92,8 +92,44 @@ body {
   color: white;
 }
 
+@media (max-width:500px) {
+  .buttonWrapper{
+    left: 2rem;
+  }
+  .arrowClass{
+    height: 1rem;
+    width: 1rem;
+    top: -6px;
+  }
+  .backButton{
+    font-size: 10px;
+    width: 4rem;
+    height: 2rem;
+  }
+  #content > h1{
+    font-size: 17px;
+  }
+  #content > img{
+    width: 10rem;
+    height: 10rem;
+  }
+  .blog-author{
+    font-size: 15px !important;
+  }
+  .date{
+    font-size: 15px !important;
+  }
+  #content > p{
+    line-height: 23px;
+    font-size: 14px;
+    width: 21rem;
+  }
+  
+  
+}
 
-@media (max-width:550px){
+
+/*@media (max-width:550px){
   #content> img{
     height: 22rem;
     width: 23rem;
