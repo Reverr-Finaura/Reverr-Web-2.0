@@ -210,19 +210,20 @@ a {
     margin-top: -4rem;
   }
   #blog-intro{
-    width: 18rem;
+    width:-webkit-fill-available;
     margin-left: 3rem;
   }
   #blog-intro > p{
     font-size: 15px;
-    margin-left: 1rem;
+    margin-left: 0;
     margin-top: -1rem;
-    width: 15rem;
+    width: -webkit-fill-available;
   }
   #recent-post{
     margin-top: -7rem;
-    width: 23rem;
+    width: -webkit-fill-available;
     margin-left: 1rem;
+    margin-right: 1rem;
   }
   #recent-post > h1{
     font-size: 18px;
@@ -230,22 +231,23 @@ a {
   .sample-blog{
     flex-direction: column-reverse;
     height: 43rem;
-    width: 21rem;
+    width: -webkit-fill-available;
   }
   .blog-content{
     padding-left: 0rem;
   }
   .blog-content > p{
     font-size: 15px;
+    width: -webkit-fill-available;
   }
   .blog-content > h1 > a{
     font-size: 18px;
   }
   .blog-slider{
-    margin-left: 3rem;
+    margin-left: 1rem;
   }
   .sample-blog-img{
-    width: 10rem;
+    width: -webkit-fill-available;
     height: 10rem;
   }
   .blog-section-btns > a > button{
@@ -259,16 +261,18 @@ a {
   .blog{
     margin-bottom: 1rem;
     height: 31rem;
-    width: 19rem;
-    margin-left: -3rem;
+    width: -webkit-fill-available;
+    margin-left: -1rem;
+    margin-top: 1rem;
   }
   .blog > a > img{
     height: 10rem;
-    width: 12rem;
+    width:-webkit-fill-available;
     margin-top: 1rem;
-    margin-left: 3rem;
+    margin-left: 1rem;
   }
   .blog > p{
+    width: -webkit-fill-available;
     font-size: 14px;
     margin-top: -1rem;
 
@@ -277,7 +281,7 @@ a {
     font-size: 18px;
   }
   .blog-section-btns{
-    justify-content: start;
+    justify-content: center;
     margin-left: 3rem;
   }
 
