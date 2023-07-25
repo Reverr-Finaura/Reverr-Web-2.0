@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
 body {
   background-color: #060f1e;
   background-repeat: no-repeat;
@@ -67,7 +73,7 @@ body {
 
 #content > p {
   color: #FFF;
-  font-family: Poppins;
+  font-family: exo;
   font-size: 25px;
   font-style: normal;
   font-weight: 400;
@@ -112,6 +118,7 @@ body {
     height: 2rem;
   }
   #content > h1{
+    font-family:exo;
     width: -webkit-fill-available;
     font-size: 19px;
   }
@@ -120,9 +127,11 @@ body {
     height: 14rem;
   }
   .blog-author{
+    font-family: exo;
     font-size: 15px !important;
   }
   .date{
+    font-family: exo;
     font-size: 15px !important;
   }
   #content > p{

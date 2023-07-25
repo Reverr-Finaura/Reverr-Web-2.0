@@ -15,6 +15,9 @@ body {
   margin: 0;
   padding: 0;
 }
+a{
+  text-decoration: none;
+}
 .aboutus__intro_heading{
   font-family: Reem Kufi;
 }
@@ -1067,7 +1070,7 @@ color: #FFFFFF;
     width: -webkit-fill-available;
     margin-left: 23px;
     margin-top: 1rem;
-    gap: 0em;
+    gap: 2em;
   }
   .what_we_do_Cont_img{
     width: 77%;
@@ -1132,7 +1135,7 @@ color: #FFFFFF;
     width: -webkit-fill-available;
   }
   .team-title-cont{
-    margin-left: 4rem;
+    margin-left: 5rem;
   }
   .team-title-cont>h1{
     font-size: 1.2rem;
@@ -1143,23 +1146,23 @@ color: #FFFFFF;
     margin-right: 1rem;
     margin-left: 2rem;
     margin-top: 2rem;
-    gap: 1rem;
+    gap: 3rem;
     width: -webkit-fill-available;
     margin-bottom: 0rem;
   }
   .member-img{
-    height: 11rem;
-    width: 7rem;
+    height: 14rem;
+    width: 10rem;
   }
   
   .member-img>img{
-    height: 74%;
-    width: 89%;
+    height: 76%;
+    width: 90%;
   }
   .member-link{
     width: 2rem;
     height: 2rem;
-    top: 6rem;
+    top: 9rem;
     right: 1rem;
   }
   
@@ -1171,10 +1174,10 @@ color: #FFFFFF;
     margin-top: -3rem;
   }
   .member-info>h5{
-    font-size: 15px;
+    font-size: 18px;
   }
   .member-info>p{
-    font-size: 10px;
+    font-size: 13px;
   }
   #advisors{
     height: unset;
@@ -1184,30 +1187,30 @@ color: #FFFFFF;
     margin-top: 2rem;
   }
   .adv-img{
-    height: 8rem;
-    width: 8rem;
+    height: 10rem;
+    width: 10rem;
   }
   .adv-info>h3{
-    font-size: 15px;
+    font-size: 17px;
   }
   .adv-info>p{
-    font-size: 10px;
+    font-size: 13px;
   }
   .advisor-row{
-    height: 12rem;
-    width: 10rem;
+    height: 14rem;
+    width: 12rem;
 
   }
   .advisor-details-first-row{
     flex-wrap: wrap;
-  gap:2rem;
+  gap:5rem;
   margin-left: 1rem;
   }
   .advisor-details-second-row{
     margin-bottom: 2rem;
-    gap: 2rem;
+    gap: 5rem;
     flex-wrap: wrap;
-    margin-top: -8rem;
+    margin-top: -7rem;
     margin-left: 1rem;
   }
   .adv-img-badge{
@@ -1231,19 +1234,19 @@ color: #FFFFFF;
     width: -webkit-fill-available;
     margin-left: 1rem;
   }
-  .circleImage{display: none;
+  .circleImage{
     height: 10rem;
     width: 10rem;
-    top: 263rem;
+    top: 300rem;
   }
   .our_core_values_imageCont{
     flex-wrap: wrap;
     margin-left: 2rem;
   }
-  .circleImage2{display: none;
+  .circleImage2{
     height: 10rem;
     width: 10rem;
-    top: 285rem;
+    top: 323rem;
     right: 0rem;
   }
   #about-end{
