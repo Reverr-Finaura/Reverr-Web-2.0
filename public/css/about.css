@@ -15,6 +15,9 @@ body {
   margin: 0;
   padding: 0;
 }
+a{
+  text-decoration: none;
+}
 .aboutus__intro_heading{
   font-family: Reem Kufi;
 }
@@ -1004,40 +1007,46 @@ color: #FFFFFF;
 
 @media (max-width:500px) {
   .AboutusWrapper{
-    width:27em;
+    width: -webkit-fill-available;
     height: 37rem;
     z-index: 1;
+  }
+  .aboutus__intro{
+    width: -webkit-fill-available;
+    margin-left: 0rem;
   }
   .aboutus__main{
     margin-top: 1rem;
   }
   .aboutus__image{
     top: 7rem;
-    right: 11rem;
+    right: 5rem;
   }
   .aboutus__image>img{
     height: 11rem;
   }
   .aboutus__intro_heading{
-    margin-left: 2rem;
+    width: 12rem;
+    margin-left: 6rem;
   }
   .aboutus__intro_heading>h1{
     font-size: 23px;
   }
   .aboutus__text_content{
-    position:relative;
-    top: 12rem;
-    left: -1rem;
+    position:absolute;
+    top: 19rem;
+    left: 4rem;
   }
   .aboutus__text_content>p{
-    width: 20em;
+    width: -webkit-fill-available;
+    text-align: center;
     font-size: 14px;
   }
   .aboutus__buttons{
     width: -webkit-fill-available;
-    position: relative;
-    top: 12em;
-    left: 2em;
+    position: absolute;
+    top: 29em;
+    left: 4em;
   }
   .aboutus__buttons>a>button{
     width: 7rem;
@@ -1047,20 +1056,21 @@ color: #FFFFFF;
     width: 7rem;
   }
   #what_we_do{
-    width: 22em;
+    width: -webkit-fill-available;
   }
   .what_we_do_heading{
-    margin-left: -1em;
+    margin-left: -1rem;
     margin-top: -3em;
   }
   .what_we_do_info{
-    margin-left: 1em;
-    width: 18rem;
+    margin-left: -2rem;
+    width: -webkit-fill-available;
   }
   .what_we_do_doCont{
-    margin-left: 83px;
-    margin-top: 0rem;
-    gap: 0em;
+    width: -webkit-fill-available;
+    margin-left: 23px;
+    margin-top: 1rem;
+    gap: 2em;
   }
   .what_we_do_Cont_img{
     width: 77%;
@@ -1071,16 +1081,22 @@ color: #FFFFFF;
   }
   .what_we_do_button{
     margin-top: 1rem;
-    margin-left: 3rem;
   }
   #our_vision{
-    width: 27rem;
+    width:-webkit-fill-available;
+    height: 26rem;
   }
   .our_vision_header_cont{
-    left: 10rem;
+    position: unset;
+   /* left: 10rem;
+    
+    top: 106rem;*/
     height: 5rem;
-    width: 18rem;
-    top: 106rem;
+    width: 12rem;
+  }
+  .ImgTextWrapper{
+  height: 22rem;
+  width: -webkit-fill-available;
   }
   .our_vision_header_cont_line1{
     width: 11.64px;
@@ -1093,33 +1109,33 @@ color: #FFFFFF;
   }
   .our_vision_image{
     height: 12rem;
-    width: 15rem;
-    position: relative;
-    left: -9rem;
+    width: 7rem;
+    margin-left: 3rem;
+    margin-top: 4rem;
   }
   .our_vision_infoCont{
-   margin-top: 1rem;
-    width: 11rem;
-    position: relative;
-    left: -9rem;
-    top: 3rem;
+    margin-top: 2rem;
+    width: -webkit-fill-available;
+    padding:0;
+    margin-left: 0rem;
+  
   }
   .our_vision_infoCont>p{
     font-size: 13px;
-    width: 13rem;
+    width: -webkit-fill-available;
+    text-align: left;
   }
   .what_we_do_line_divider{
-    width: 185.26px;
-    top: -2rem;
-    left: 2rem;
+    width: 157.26px;
+    position: unset;
+    margin: 1rem 0rem 2rem 9rem;
   }
 
-  #team_section{
-    width: 18rem;
-    height: 51rem;
+  #team-section{
+    width: -webkit-fill-available;
   }
   .team-title-cont{
-    margin-left: 4rem;
+    margin-left: 5rem;
   }
   .team-title-cont>h1{
     font-size: 1.2rem;
@@ -1130,21 +1146,23 @@ color: #FFFFFF;
     margin-right: 1rem;
     margin-left: 2rem;
     margin-top: 2rem;
-    gap: 1rem;
+    gap: 3rem;
+    width: -webkit-fill-available;
+    margin-bottom: 0rem;
   }
   .member-img{
-    height: 11rem;
-    width: 7rem;
+    height: 14rem;
+    width: 10rem;
   }
   
   .member-img>img{
-    height: 74%;
-    width: 89%;
+    height: 76%;
+    width: 90%;
   }
   .member-link{
     width: 2rem;
     height: 2rem;
-    top: 6rem;
+    top: 9rem;
     right: 1rem;
   }
   
@@ -1156,77 +1174,83 @@ color: #FFFFFF;
     margin-top: -3rem;
   }
   .member-info>h5{
-    font-size: 15px;
+    font-size: 18px;
   }
   .member-info>p{
-    font-size: 10px;
+    font-size: 13px;
   }
   #advisors{
-    height: 48rem;
-    width: 27rem;
+    height: unset;
+    width: -webkit-fill-available;
   }
   .advisor-details{
     margin-top: 2rem;
   }
   .adv-img{
-    height: 8rem;
-    width: 8rem;
+    height: 10rem;
+    width: 10rem;
   }
   .adv-info>h3{
-    font-size: 15px;
+    font-size: 17px;
   }
   .adv-info>p{
-    font-size: 10px;
+    font-size: 13px;
   }
   .advisor-row{
-    height: 12rem;
-    width: 10rem;
+    height: 14rem;
+    width: 12rem;
+
   }
   .advisor-details-first-row{
     flex-wrap: wrap;
-  gap: 1rem;
-  margin-left: -1rem;
+  gap:5rem;
+  margin-left: 1rem;
   }
   .advisor-details-second-row{
+    margin-bottom: 2rem;
+    gap: 5rem;
+    flex-wrap: wrap;
     margin-top: -7rem;
-    margin-left: -1rem;
+    margin-left: 1rem;
   }
   .adv-img-badge{
     top: 6rem;
   }
   .our_core_values_imageCont>img{
     height: 11rem;
-    width: 10rem;
+    width: 8rem;
   }
   #our_core_values{
-    height: 39rem;
-    width: 28rem;
+    height: 40rem;
+    width: -webkit-fill-available;
+    margin-top: -9rem;
   }
   #our_core_values>h1{
     font-size: 1.2rem;
-    margin-left: -6rem;
+    margin-left: 0rem;
   }
   .our_core_values_info{
     font-size: 1rem;
-    width: 24rem;
+    width: -webkit-fill-available;
+    margin-left: 1rem;
   }
   .circleImage{
     height: 10rem;
     width: 10rem;
-    top: 243rem;
+    top: 300rem;
   }
   .our_core_values_imageCont{
     flex-wrap: wrap;
-    margin-left: 0rem;
+    margin-left: 2rem;
   }
   .circleImage2{
     height: 10rem;
     width: 10rem;
-    top: 264rem;
-    right: -2rem;
+    top: 323rem;
+    right: 0rem;
   }
   #about-end{
-    width: 27rem;
+    width: -webkit-fill-available;
     margin-left: 0rem;
     height: 25rem;
   }
@@ -1236,28 +1260,35 @@ color: #FFFFFF;
     margin-top: 1rem;
   }
   .upperWoImg{
-    margin-top: 14rem;
+   width: 20rem;
+   position: relative;
+   top: 6rem;
+   left: 2rem;
   }
   .about-quote{
-    height: 10rem;
-    width: 22rem;
+    height: 5rem;
+    width: 21rem;
+    top: 1rem;
+    margin-left: 0rem;
     position: absolute;
   }
   .about-btns{
-    width: 24rem;
-    height: 9rem;
-    margin-top: -1rem;
-    margin-left: 3rem;
+    width: 10rem;
+    height: 3rem;
+    margin-top: 7rem;
+    margin-right: 6rem;
+    gap: 1rem;
   }
   .about-btns>a>button{
     font-size: 10px;
     width: 105px;
+    margin: 0rem;
   }
   .bluerecbox{
     position: absolute;
     top: -2rem;
     right: 2rem;
-    height: 20rem;
+    height: 18rem;
     width: 23rem;
   }
 
