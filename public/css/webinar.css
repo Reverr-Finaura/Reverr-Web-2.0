@@ -6,6 +6,9 @@
 
 
 .home--section {
+    background-image: url("../images/webinar-home-bg.jpeg");
+    background-size: cover; /* Adjust to your needs */
+    background-position: center center; /* Adjust to your needs */
     display: flex;
     /* justify-content: center; */
     flex-direction: column;
