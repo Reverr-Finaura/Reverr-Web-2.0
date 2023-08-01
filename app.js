@@ -151,6 +151,9 @@ app.get("/blog/:id", async function (req, res) {
 app.get("/mentorship", function (req, res) {
   res.render("mentorship");
 });
+app.get("/webinar", function (req, res) {
+  res.render("webinar");
+});
 
 app.get("/test", function (req, res) {
   res.render("test");
