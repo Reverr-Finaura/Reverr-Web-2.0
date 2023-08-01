@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title></title>
-    <link rel="stylesheet" href="css/webinar.css" />
-  </head>
-  <body>
-    <%-include("navbar");-%>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title></title>
+  <link rel="stylesheet" href="css/webinar.css" />
+</head>
+
+<body>
+  <%-include("navbar");-%>
 
     <div class="home--section">
       <div class="heading1">Unlock the Secrets to</div>
@@ -20,10 +22,10 @@
         <div class="left-section">
           <h5 class="heading">Registration ends in 👇</h5>
           <div class="blocks">
-            <div class="block block1">05 <span>DAYS</span></div>
-            <div class="block block2">05 <span>HOURS</span></div>
-            <div class="block block3">05 <span>MINS</span></div>
-            <div class="block block4">05 <span>SECS</span></div>
+            <div class="block block1"><h3 id="days"></h3> <span>DAYS</span></div>
+            <div class="block block2"><h3 id="hours"></h3> <span>HOURS</span></div>
+            <div class="block block3"><h3 id="mins"></h3> <span>MINS</span></div>
+            <div class="block block4"><h3 id="secs"></h3> <span>SECS</span></div>
           </div>
           <button class="register">Register at ₹99/- only</button>
         </div>
@@ -79,32 +81,78 @@
     <div class="featured">
       <h3 class="heading">Featured in</h3>
       <div class="featuredImg">
-        <img class="img" src="/images/addidas.png" />
-        <img class="img" src="/images/spotify.png" />
-        <img class="img" src="/images/google.png" />
-        <img class="img" src="/images/netflix.png" />
-        <img class="img" src="/images/addidas.png" />
-        <img class="img" src="/images/spotify.png" />
-        <img class="img" src="/images/google.png" />
-        <img class="img" src="/images/netflix.png" />
+        <div class="rechtangle1">
+          <div class="names">
+            <div class="scrolling-container">
+              <div class="item">
+                <img src="images/white-star.png" />
+                <div><img class="img" src="/images/addidas.png" /></div>
+                
+              </div>
+              <div class="item">
+                <img src="images/white-star.png" />
+                <div><img class="img" src="/images/spotify.png" /></div>
+                
+              </div>
+              <div class="item">
+                <img src="images/white-star.png" />
+                <div><img id="imgG" src="/images/google.png" /></div>
+                
+              </div>
+              <div class="item">
+                <img src="images/white-star.png" />
+                <div><img class="img" src="/images/netflix.png" /></div>
+                
+              </div>
+              <div class="item">
+                <img src="images/white-star.png" />
+                <div><img class="img" src="/images/addidas.png" /></div>
+                
+              </div>
+              <div class="item">
+                <img src="images/white-star.png" />
+                <div><img class="img" src="/images/spotify.png" /></div>
+              </div>
+              <div class="item">
+                <img src="images/white-star.png" />
+                <div><img id="imgG" src="/images/google.png" /></div>
+              </div>
+              <div class="item">
+                <img src="images/white-star.png" />
+                <div><img class="img" src="/images/netflix.png" /></div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
- 
-   
-  
+
+
+
     <div class="section3">
       <div class="heading3">
         <h1>Why attend?</h1>
       </div>
       <div class="content3">
-        <img src="/images/sec3_1.jpeg" alt="img" />
-        <img src="/images/sec3_2.jpeg" alt="img" />
-        <img src="/images/sec3_3.jpeg" alt="img" />
+        <div class="content3_inner" id="content3_inner1">
+          <img src="/images/sec3_1.png" alt="img" />
+          <div class="text">Access to<br> Valuable Resources</div>
+        </div>
+        <div class="content3_inner" id="content3_inner2">
+          <img src="/images/sec3_2.png" alt="img" />
+          <div class="text">Network with<br> like-minded entrepreneurs</div>
+
+        </div>
+        <div id="content3_inner3" class="content3_inner">
+          <img src="/images/sec3_3.png" alt="img" />
+          <div class="text">Insights from real<br> success stories</div>
+
+        </div>
       </div>
       <div class="bottom3">
         <h2>Take the first step toward funding your dream! 🚀</h2>
-        <a href="" class="register3btn">Register at Rs 99/- only</a>
+        <button class="register">Register at ₹99/- only</button>
       </div>
     </div>
     <div class="section4">
@@ -178,35 +226,65 @@
         <p>worth <span style="font-weight: bolder"> Rs 12,000/-</span></p>
       </div>
       <div class="content6">
-        <img src="./images/sec6_1.jpeg" alt="img" />
-        <img src="./images/sec6_2.jpeg" alt="img" />
-        <img src="./images/sec6_3.jpg" alt="img" />
-        <img src="./images/sec6_4.jpeg" alt="img" />
+        <div class="content6_inner" style="background: linear-gradient(90deg, #CA2FE3 0%, #ED80FF 100%);">
+          <div class="wrapperTP">
+            <p class="para6">01</p>
+            <div class="text_6">Email and Elevator Pitch Template</div>
+          </div>
+          <img src="./images/sec6_1.png" alt="img" />
+        </div>
+        <div class="content6_inner" style="background: linear-gradient(90deg, #0DCC42 0%, #72E42D 100%);
+        ">
+          <div class="wrapperTP">
+            <p class="para6">02</p>
+            <div class="text_6">Fundraising Toolkit</div>
+          </div>
+          <img src="./images/sec6_2.png" alt="img" />
+        </div>
+        <div class="content6_inner" style="background: linear-gradient(90deg, #0D70CC 0%, #7EC1FF 100%);">
+          <div class="wrapperTP">
+            <p class="para6">03</p>
+            <div class="text_6">Investor Data</div>
+          </div>
+          <img src="./images/sec6_3.png" alt="img" />
+        </div>
+        <div class="content6_inner" style="background: linear-gradient(90deg, #CC8B0D 0%, #E4B12D 100%);
+        ">
+          <div class="wrapperTP">
+            <p class="para6">04</p>
+            <div class="text_6">50+ Templates to Success</div>
+          </div>
+          <img src="./images/sec6_4.png" alt="img" />
+        </div>
+
+
+
+
       </div>
       <div class="bottom6">
         <h3>Registration ends in 👇</h3>
         <div class="counter">
           <div class="counter_child">
-            <h3>05</h3>
+            <h3 id="days1"></h3>
             <p>Days</p>
           </div>
           <div class="counter_child">
-            <h3>05</h3>
+            <h3 id="hours1"></h3>
             <p>Hours</p>
           </div>
           <div class="counter_child">
-            <h3>05</h3>
+            <h3 id="mins1"></h3>
             <p>Mins</p>
           </div>
           <div class="counter_child">
-            <h3>05</h3>
+            <h3 id="secs1"></h3>
             <p>Secs</p>
           </div>
         </div>
-        <a href="" class="register6btn">Register at Rs 99/- only</a>
+        <button class="register">Register at ₹99/- only</button>
       </div>
     </div>
-    
+
     <div class="customer-review-section">
       <h2 class="customer-review-heading">Testimonials</h2>
       <!-- <img class="grp-dots1" src="/Images/grp-dots.png" /> -->
@@ -419,7 +497,18 @@
         </div>
       </div>
       <div class="bottom8">
-        <img src="./images/sec8_2.png" alt="img" />
+        <div class="bottom8_inner">
+       
+          <div class="inner8_1">5000 startups transformed</div>
+          <div class="inner8_2">You could be next</div>
+       
+          
+          <button class="register1">Register at ₹99/- only</button>
+        </div>
+        <div class="wrapperImg">
+          <img class="img1" src="./images/sec8_ellipse.png" alt="img"/>
+        <img class="img2" src="./images/sec8.png" alt="img" />
+      </div>
       </div>
     </div>
 
@@ -483,7 +572,38 @@
           behavior: "smooth",
         });
       });
+
+
+      var countDownDate = new Date("5 Aug, 2023 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function(){
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("days").innerHTML = days
+  document.getElementById("hours").innerHTML = hours
+  document.getElementById("mins").innerHTML = minutes
+  document.getElementById("secs").innerHTML = seconds
+
+  document.getElementById("days1").innerHTML = days
+  document.getElementById("hours1").innerHTML = hours
+  document.getElementById("mins1").innerHTML = minutes
+  document.getElementById("secs1").innerHTML = seconds
+},1000)
     </script>
-  </body>
-  <%- include('footerNew'); -%>
+</body>
+<%- include('footerNew'); -%>
+
 </html>

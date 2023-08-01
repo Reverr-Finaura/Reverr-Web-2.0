@@ -51,6 +51,9 @@ function Email(user) {
 // app.get("/", function (req, res) {
 //   res.render("home");
 // });
+app.get('/web',function(req,res){
+  res.render('webinar')
+})
 
 app.get("/", function (req, res) {
   res.render("newlandingpage");
