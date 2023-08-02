@@ -37,11 +37,26 @@
   }
   
   .scrolling-container {
-    display: flex;
-    /* white-space: nowrap; */
-    justify-content: space-between;
-    /* animation: scrollNames 100s linear infinite; */
+    display: inline-block;
+    white-space: nowrap;
+    animation: scrollNames 150s linear infinite;
   }
+  
+  .item {
+    display: inline-block;
+    margin-right: 40px;
+  }
+  
+  @keyframes scrollNames {
+    0% {
+      transform: translateX(0);
+    }
+  
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
   
   .item {
     display: inline-block;
@@ -586,9 +601,21 @@ background-clip: text;
   .stars img {
     width: 37px;
 }
+@media  (max-width: 370px) {
+
+    .navigation.show {
+        right: 5rem ;
+    }
+}
 
 /* responsive under 500px */
 @media screen and (max-width: 500px) {
+    .customer-review-heading {
+    
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 120px;
+    }
     .home--section {
         height: 75em;
     }
@@ -633,6 +660,7 @@ background-clip: text;
 
     .home--section .left-section {
         margin-bottom: 50px;
+        margin-left: unset !important;
     }
 
     button.register {
@@ -680,15 +708,14 @@ background-clip: text;
     }
 
     .featuredImg {
-        overflow-x: scroll;
+        overflow-x: unset !important;
         height: 5rem;
     }
-
+  
     .home--section .block {
-        width: 65px;
-        height: 65px;
+        width: 52px;
+        height: 69px;
         padding: 6px;
-
         margin: 4px;
         margin-bottom: 4em;
     }
@@ -716,44 +743,48 @@ background-clip: text;
         font-size: 12px;
       
     }
+    .content3_inner{
+        width: -webkit-fill-available !important;
+    }
+    .content3{
+        margin-top: 1.5rem !important;
+    }
+    .review-card{
+        width: 60%;
+        padding: 24px;
+        padding-bottom: 30px;
+    
+    }
+    .review-card .right-section h2{
+           font-size: 20px;
+        text-align: left;
+        margin-left: 50px;
+        line-height: 27px;
+    }
+    .review-card .middle-section p{
+       font-size: 15px;
+        line-height: unset;
+    }
+    .item {
+        margin-right: 50px !important;
+    }
+    .item div img {
+        width: 120px !important;
+        height: auto;
+        padding: 0px;
+        margin: 0px;
+    }
+    .scrolling-container {
+       
+        animation: scrollNames 10s linear infinite;
+    }
+    .rechtangle1 {
+        
+        width: -webkit-fill-available !important;
+    }
+    
 }
 
-@media screen and (max-width: 300px) {
-    .home--section .block {
-        width: 52px;
-        height: 64px;
-        padding: 2px;
-        margin: 4px;
-        margin-bottom: 4em;
-    }
-    button.register {
-        display: inline-flex;
-        padding: 10px 35px 10px 35px;
-        border: 3.253px solid var(--stroke-blue, #001946);
-        background: var(--blue, linear-gradient(97deg, #00B3FF 57.09%, #4CC9FF 100%));
-        color: #000;
-        font-family: Poppins;
-        font-size: 16px;
-    }
-    .home--section {
-       
-        padding: 5em 0px 5em 0px;
-     
-    }
-    .speakerImg {
-        width: 12em;
-        position: unset;
-    }
-    .information {
-        margin-top: unset;
-        flex-wrap: wrap;
-    }
-    .info {
-        width: 41%;
-        margin-right: 10px;
-        margin-bottom: 17px;
-    }
-}
 
 
 body {
@@ -1510,6 +1541,11 @@ letter-spacing: 0.32px;
     font-weight: 200;
 }
 @media (max-width:500px) {
+    .item div img {
+       
+        width: 90px  !important;
+        height: auto;
+    }
     .section1{
         width: -webkit-fill-available;
     }
@@ -1640,7 +1676,7 @@ letter-spacing: 0.32px;
     flex-wrap: wrap;
     }
     .content3 img{
-        width: 8rem;
+        width:auto;
         height: 13rem;
     }
     .bottom3{
@@ -1780,7 +1816,155 @@ letter-spacing: 0.32px;
         right: 1rem;
     }
 
-
+    .content3 img {
+        width: auto;
+        height: 6rem;
+    }
+    .customer-review-heading {
+    
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 120px;
+    }
+    .section4 h1 {
+        font-size: 30px;
+       
+        font-weight: 500;
+       }
+    .review-card .middle-section p {
+        font-size: 12px;
+        line-height: unset;
+    }
+    .review-card .right-section h2 {
+        font-size: 15px;
+        text-align: left;
+        margin-left: 9px;
+        line-height: 25px;
+    }
+    
+    .upper-part img {
+        width: 75px;
+        height: 75px;
+        border-radius: 25px;
+        object-fit: cover;
+    }
+    .content8_inner h3 {
+        font-size: 11px;
+     
+    }
+    .heading8 h1 {
+        width: 100%;
+        font-size: 24px;
+    }
+    .dpclass.show {
+    
+        font-size: 10px;
+    }
+    .section3 {
+        width: -webkit-fill-available;
+        padding-left: 30px !important;
+        padding-right: 31px !important;
+    }
+    .heading3 h1 {
+        font-size: 30px;
+    }
 
 }
 
+@media screen and (max-width: 300px) {
+    .home--section .block {
+        width: 52px;
+        height: 64px;
+        padding: 2px;
+        margin: 4px;
+        margin-bottom: 4em;
+    }
+    button.register {
+        display: inline-flex;
+        padding: 10px 35px 10px 35px;
+        border: 3.253px solid var(--stroke-blue, #001946);
+        background: var(--blue, linear-gradient(97deg, #00B3FF 57.09%, #4CC9FF 100%));
+        color: #000;
+        font-family: Poppins;
+        font-size: 16px;
+    }
+    .home--section {
+       
+        padding: 5em 0px 5em 0px;
+     
+    }
+    .speakerImg {
+        width: 12em;
+        position: unset;
+    }
+    .information {
+        margin-top: unset;
+        flex-wrap: wrap;
+    }
+    .info {
+        width: 41%;
+        margin-right: 10px;
+        margin-bottom: 17px;
+    }
+    .content3 img {
+        width: auto;
+        height: 6rem;
+    }
+    .customer-review-heading {
+    
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 120px;
+    }
+    .section4 h1 {
+        font-size: 30px;
+       
+        font-weight: 500;
+       }
+    .review-card .middle-section p {
+        font-size: 12px;
+        line-height: unset;
+    }
+    .review-card .right-section h2 {
+        font-size: 15px;
+        text-align: left;
+        margin-left: 9px;
+        line-height: 25px;
+    }
+    
+    .upper-part img {
+        width: 75px;
+        height: 75px;
+        border-radius: 25px;
+        object-fit: cover;
+    }
+    .content8_inner h3 {
+        font-size: 11px;
+     
+    }
+    .heading8 h1 {
+        width: 100%;
+        font-size: 24px;
+    }
+    .dpclass.show {
+    
+        font-size: 10px;
+    }
+    .section3 {
+        width: -webkit-fill-available;
+        padding-left: 30px !important;
+        padding-right: 31px !important;
+    }
+    .heading3 h1 {
+        font-size: 30px;
+    }
+    .navigation.show {
+        right: 8rem !important;
+    }
+}
+@media  (max-width: 370px) {
+
+    .navigation.show {
+        right: 8rem !important ;
+    }
+}
