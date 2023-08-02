@@ -17,7 +17,7 @@
     align-items: center;
     position: relative;
     z-index: 999999;
-    background-color: #00b3ff;
+    /* background-color: #00b3ff; */
     top: -8em;
     width: 88rem;
   }
@@ -25,7 +25,7 @@
   .names {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    /* align-items: center; */
     /* transform: rotate(-2deg); */
     width: -webkit-fill-available;
   }
@@ -37,14 +37,22 @@
   }
   
   .scrolling-container {
-    display: inline-block;
-    white-space: nowrap;
-    animation: scrollNames 100s linear infinite;
+    display: flex;
+    /* white-space: nowrap; */
+    justify-content: space-between;
+    /* animation: scrollNames 100s linear infinite; */
   }
   
   .item {
     display: inline-block;
-    margin-right: 40px;
+    margin-right: 70px;
+  }
+
+  .item div img{
+    margin: 0px;
+    border-radius: 0px;
+    height: 35px;
+    width: 105px;
   }
   
   @keyframes scrollNames {
@@ -100,7 +108,8 @@ button:hover .arrow{
 
 
 .home--section {
-    background-image: url("../images/webinar-home-bg.jpeg");
+    background: linear-gradient(181deg, #0A0D2B 0%, rgba(57, 58, 63, 0.05) 58.65%, #0E0F36 100%), url("../images/webinar-home-bg.jpeg"), lightgray 50% / cover no-repeat;
+    /* background-image: url("../images/webinar-home-bg.jpeg"); */
     background-size: cover; /* Adjust to your needs */
     background-position: center center; /* Adjust to your needs */
     display: flex;
@@ -322,9 +331,9 @@ p.dateTime {
 .rightp {
     color: #FFF;
     font-family: Poppins;
-    font-size: 25px;
+    font-size: 22px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     line-height: normal;
     letter-spacing: 0.32px;
     text-transform: uppercase;
@@ -359,8 +368,21 @@ p.dateTime {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.487px;
+}
+
+.goldit {
+    background: var(--gold, linear-gradient(131deg, #FFF278 31.55%, #F8B533 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -1058,7 +1080,7 @@ body {
 .content3_inner{
     border-radius: 34px;
 }
-#content3_inner1{
+/* #content3_inner1{
     background: linear-gradient(180deg, #7DC1FF 0%, #0E71CC 100%);
 
 
@@ -1073,14 +1095,16 @@ body {
     background: linear-gradient(180deg, #E8B32D 0%, #CB8A0C 100%);
 
 
-}
+} */
 .content3_inner{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 30px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     width: 16rem;
-    height: 17rem;
 }
 .content3_inner img{
     height: 8rem;
