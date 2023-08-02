@@ -3,6 +3,9 @@
     padding: 0px;
     font-family: Poppins;
 }
+a{
+    text-decoration: none;
+}
 .rechtangle1 {
     background-image: url("../images/Images/Rectangle1.png");
     background-size: cover;
@@ -269,6 +272,7 @@ p.dateTime {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 1px 2px 1px 2px;
 }
 
 .zoomImg {
@@ -1868,6 +1872,11 @@ letter-spacing: 0.32px;
     .heading3 h1 {
         font-size: 30px;
     }
+  
+.card .left {
+    display: flex;
+    justify-content: center;
+}
 
 }
 
