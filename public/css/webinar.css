@@ -45,14 +45,14 @@
   
   .item {
     display: inline-block;
-    margin-right: 70px;
+    margin-right: 100px;
   }
 
   .item div img{
     margin: 0px;
     border-radius: 0px;
-    height: 35px;
-    width: 105px;
+    height: 40px;
+    width: 120px;
   }
   
   @keyframes scrollNames {
