@@ -1,58 +1,79 @@
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/about.css" />
+    <title>About Us</title>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-EGWDJKWYH7"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/about.css" />
-  <title>About Us</title>
-</head>
+      gtag("config", "G-EGWDJKWYH7");
+    </script>
+  </head>
 
-<body>
-  <%-include("navbar");-%>
-     <div class="AboutusWrapper">
+  <body>
+    <%-include("navbar");-%>
+    <div class="AboutusWrapper">
       <section id="aboutus__intro">
         <div class="aboutus__intro">
-        <div class="aboutus__main">
-          <div class="aboutus__main_left">
-            <div class="aboutus__intro_heading">
-              <h1 class="aboutus__intro_heading__ourText" style="color: #2a72de">OUR</h1>
-              <h1>
-                <span style="
-                  text-decoration: line-through;
-                  text-decoration-color: #2a72de;
-                  color: white;
-                ">YOUR</span>
-                 <span style="
-                 color:#2a72de ;
-               ">JOURNEY</span>
-              </h1>
+          <div class="aboutus__main">
+            <div class="aboutus__main_left">
+              <div class="aboutus__intro_heading">
+                <h1
+                  class="aboutus__intro_heading__ourText"
+                  style="color: #2a72de"
+                >
+                  OUR
+                </h1>
+                <h1>
+                  <span
+                    style="
+                      text-decoration: line-through;
+                      text-decoration-color: #2a72de;
+                      color: white;
+                    "
+                    >YOUR</span
+                  >
+                  <span style="color: #2a72de">JOURNEY</span>
+                </h1>
+              </div>
+              <div class="aboutus__text_content">
+                <p>
+                  Reverr is an ecosystem designed for startup founders at every
+                  stage, from Idea to IPO acting as a go to buddy for the
+                  startup founders throughout their journey.
+                </p>
+              </div>
             </div>
-            <div class="aboutus__text_content">
-              <p>
-                Reverr is an ecosystem designed for startup founders at every
-                stage, from Idea to IPO acting as a go to buddy for the startup
-                founders throughout their journey.
-              </p>
+            <div class="aboutus__buttons">
+              <a href="https://chat.whatsapp.com/GYG93rm4dVSH5521jNvtej"
+                ><button class="aboutus__buttons_know_more">Join Now</button></a
+              >
+              <a href="">
+                <button class="aboutus__buttons_contact_us">
+                  Explore More
+                </button>
+              </a>
             </div>
           </div>
-          <div class="aboutus__buttons">
-            <a href="https://chat.whatsapp.com/GYG93rm4dVSH5521jNvtej"><button class="aboutus__buttons_know_more">
-                Join Now
-              </button></a>
-            <a href="">
-              <button class="aboutus__buttons_contact_us">Explore More</button>
-            </a>
+          <div class="aboutus__image">
+            <img src="/images/changeImage1.png" alt="aboutus" />
           </div>
         </div>
-        <div class="aboutus__image">
-          <img src="/images/changeImage1.png" alt="aboutus" />
-        </div>
-      </div>
       </section>
-      </div>
+    </div>
 
-      <!-- <section id="what-we-do">
+    <!-- <section id="what-we-do">
         <h1>What we do</h1>
         <div class="wwd-text-content">
           <p>
@@ -128,20 +149,31 @@
         </div>
       </section> -->
 
-      <!-- WHAT WE DO SECTION -->
-      <section id="what_we_do">
-        <h1 class="what_we_do_heading">What do we <span>DO?</span></h1>
-        <p class="what_we_do_info">We assist  startups operating at different stages with fundraising based on their stage and requirements.</p>
-        <div class="what_we_do_doCont">
-          <div class="what_we_do_Cont"><img class="what_we_do_Cont_img" src="/images/do.svg" alt=""></div>
-          <div class="what_we_do_Cont"><img class="what_we_do_Cont_img" src="/images/do (4).svg" alt=""></div>
-          <div class="what_we_do_Cont"><img class="what_we_do_Cont_img" src="/images/do (2).svg" alt=""></div>
-          <div class="what_we_do_Cont"><img class="what_we_do_Cont_img" src="/images/do (3).svg" alt=""></div>
+    <!-- WHAT WE DO SECTION -->
+    <section id="what_we_do">
+      <h1 class="what_we_do_heading">What do we <span>DO?</span></h1>
+      <p class="what_we_do_info">
+        We assist  startups operating at different stages with fundraising based
+        on their stage and requirements.
+      </p>
+      <div class="what_we_do_doCont">
+        <div class="what_we_do_Cont">
+          <img class="what_we_do_Cont_img" src="/images/do.svg" alt="" />
         </div>
-        <div class="what_we_do_button">Join our Community !</div>
-      </section>
+        <div class="what_we_do_Cont">
+          <img class="what_we_do_Cont_img" src="/images/do (4).svg" alt="" />
+        </div>
+        <div class="what_we_do_Cont">
+          <img class="what_we_do_Cont_img" src="/images/do (2).svg" alt="" />
+        </div>
+        <div class="what_we_do_Cont">
+          <img class="what_we_do_Cont_img" src="/images/do (3).svg" alt="" />
+        </div>
+      </div>
+      <div class="what_we_do_button">Join our Community !</div>
+    </section>
 
-      <!-- <section id="mission-section">
+    <!-- <section id="mission-section">
         <div class="mission_intro">
           <h1>Our Mission</h1>
           <p>
@@ -157,7 +189,7 @@
         </div>
       </section> -->
 
-      <!-- <section id="vision-section">
+    <!-- <section id="vision-section">
         <div class="vision_img">
           <h1>Our Vision</h1>
           <img src="images/image 55.png" alt="vision-img" />
@@ -177,174 +209,198 @@
         </div>
       </section> -->
 
-      <section id="our_vision">
-        <div class="our_vision_header_cont">
-          <p class="our_vision_header_cont_line1"></p>
-          <p class="our_vision_header_cont_text">Our <span>Vision</span></p>
-          <p class="our_vision_header_cont_line2"></p>
-        </div>
-        <div class="ImgTextWrapper">
-        <img class="our_vision_image" src="/images/lady.png" alt="image">
+    <section id="our_vision">
+      <div class="our_vision_header_cont">
+        <p class="our_vision_header_cont_line1"></p>
+        <p class="our_vision_header_cont_text">Our <span>Vision</span></p>
+        <p class="our_vision_header_cont_line2"></p>
+      </div>
+      <div class="ImgTextWrapper">
+        <img class="our_vision_image" src="/images/lady.png" alt="image" />
         <div class="our_vision_infoCont">
-          <p>Our vision is to enable and empower the early-stage startups and founders of the world to assist them in manifesting their ideas and impact the world through innovative technologies with absolute ease by bringing together like-minded people and resources required to make a venture successful.
+          <p>
+            Our vision is to enable and empower the early-stage startups and
+            founders of the world to assist them in manifesting their ideas and
+            impact the world through innovative technologies with absolute ease
+            by bringing together like-minded people and resources required to
+            make a venture successful.
           </p>
-          <br>
-          <p> We believe that every business idea is a unique story in itself.</p>
+          <br />
+          <p>
+            We believe that every business idea is a unique story in itself.
+          </p>
         </div>
       </div>
-       <!-- <button class="our_vision_btn">See more ></button>-->
-        <p class="what_we_do_line_divider"></p>
-      </section>
+      <!-- <button class="our_vision_btn">See more ></button>-->
+      <p class="what_we_do_line_divider"></p>
+    </section>
 
-      <section id="team-section">
-        <div class="team-title">
-          <div class="team-title-cont">
+    <section id="team-section">
+      <div class="team-title">
+        <div class="team-title-cont">
           <p class="our_vision_header_cont_line1"></p>
-          <h1 style="color: white;">Meet our <span>Team</span></h1>
+          <h1 style="color: white">Meet our <span>Team</span></h1>
         </div>
-          <!-- <img src="images/tri-arrow 2.png" alt="aerrow" /> -->
-        </div>
-        <!-- <hr /> -->
-        <div class="team-members">
-          <div class="team-member">
-            <div class="member-img three">
-              <img src="images/deepak.jpeg" alt="member-img" />
-              <div class="member-link">
-                <a href="https://www.linkedin.com/in/deepaksoni/">
-                  <img src="images/linkedin.png" alt="linkedin-logo" />
-                </a>
-              </div>
-            </div>
-            <div class="member-details">
-              <div class="member-info">
-                <h5 class="h5">Deepak Soni</h5>
-                <p class="h5p">Chief Finanicial Officer</p>
-              </div>
+        <!-- <img src="images/tri-arrow 2.png" alt="aerrow" /> -->
+      </div>
+      <!-- <hr /> -->
+      <div class="team-members">
+        <div class="team-member">
+          <div class="member-img three">
+            <img src="images/deepak.jpeg" alt="member-img" />
+            <div class="member-link">
+              <a href="https://www.linkedin.com/in/deepaksoni/">
+                <img src="images/linkedin.png" alt="linkedin-logo" />
+              </a>
             </div>
           </div>
-          
-
-          <div class="team-member">
-            <div class="member-img two">
-              <img src="images/jatin.jpeg" alt="member-img" />
-              <div class="member-link">
-                <a href="https://www.linkedin.com/in/jatin-khurana-4352561ab/">
-                  <img src="images/linkedin.png" alt="linkedin-logo" />
-                </a>
-              </div>
-            </div>
-            <div class="member-details">
-              <div class="member-info">
-                <h5 class="h5">Jatin Khurana</h5>
-                <p class="h5p">Chief Executive Officer</p>
-              </div>
-              
-            </div>
-          </div>
-
-          
-          <div class="team-member">
-            <div class="member-img one">
-              <img src="images/maurice.jpeg" alt="member-img" />
-              <div class="member-link">
-                <a href="https://www.linkedin.com/in/maurice-rana-396384213/">
-                  <img src="images/linkedin.png" alt="linkedin-logo" />
-                </a>
-              </div>
-            </div>
-            <div class="member-details">
-              <div class="member-info">
-                <h5 class="h5">Maurice Rana</h5>
-                <p class="h5p">Chief Technology Officer</p>
-              </div>
-              
+          <div class="member-details">
+            <div class="member-info">
+              <h5 class="h5">Deepak Soni</h5>
+              <p class="h5p">Chief Finanicial Officer</p>
             </div>
           </div>
         </div>
-      </section>
 
-      <section id="advisors">
-        <div class="team-title">
-          <div class="team-title-cont">
+        <div class="team-member">
+          <div class="member-img two">
+            <img src="images/jatin.jpeg" alt="member-img" />
+            <div class="member-link">
+              <a href="https://www.linkedin.com/in/jatin-khurana-4352561ab/">
+                <img src="images/linkedin.png" alt="linkedin-logo" />
+              </a>
+            </div>
+          </div>
+          <div class="member-details">
+            <div class="member-info">
+              <h5 class="h5">Jatin Khurana</h5>
+              <p class="h5p">Chief Executive Officer</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="team-member">
+          <div class="member-img one">
+            <img src="images/maurice.jpeg" alt="member-img" />
+            <div class="member-link">
+              <a href="https://www.linkedin.com/in/maurice-rana-396384213/">
+                <img src="images/linkedin.png" alt="linkedin-logo" />
+              </a>
+            </div>
+          </div>
+          <div class="member-details">
+            <div class="member-info">
+              <h5 class="h5">Maurice Rana</h5>
+              <p class="h5p">Chief Technology Officer</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="advisors">
+      <div class="team-title">
+        <div class="team-title-cont">
           <p class="our_vision_header_cont_line1"></p>
-          <h1 style="color: white;">Our <span>Advisors</span></h1>
+          <h1 style="color: white">Our <span>Advisors</span></h1>
         </div>
-          <!-- <img src="images/tri-arrow 2.png" alt="aerrow" /> -->
-        </div>
-        <div class="advisor-details">
-          <div class="advisor-details-first-row">
-            <div class="advisor-row">
-              <div class="advisor-img">
-                <img src="images/samyukt.png" alt="adv-img" class="adv-img" />
-                <a href="https://www.linkedin.com/in/samyukth-sridharan/">
-                  <img src="images/linkedin.png" alt="linkedin-logo" class="adv-img-badge" />
-                </a>
-              </div>
-              <div class="adv-info">
-                <h3>Samyukth Sridharan</h3>
-                <p>Co-Founder at Rippl | Ex-COO Cleartrip</p>
-              </div>
+        <!-- <img src="images/tri-arrow 2.png" alt="aerrow" /> -->
+      </div>
+      <div class="advisor-details">
+        <div class="advisor-details-first-row">
+          <div class="advisor-row">
+            <div class="advisor-img">
+              <img src="images/samyukt.png" alt="adv-img" class="adv-img" />
+              <a href="https://www.linkedin.com/in/samyukth-sridharan/">
+                <img
+                  src="images/linkedin.png"
+                  alt="linkedin-logo"
+                  class="adv-img-badge"
+                />
+              </a>
             </div>
-
-            <div class="advisor-row">
-              <div class="advisor-img">
-                <img src="images/mani1.png" alt="adv-img" class="adv-img" />
-                <a href="https://www.linkedin.com/in/rsmaninz/ "><img src="images/linkedin.png" alt="linkedin-logo"
-                    class="adv-img-badge" /></a>
-              </div>
-              <div class="adv-info">
-                <h3>Mani Subra</h3>
-                <p>Head- Strategy, Landmark Immigration & Consultants Pvt Ltds</p>
-              </div>
-            </div>
-
-            <div class="advisor-row">
-              <div class="advisor-img">
-                <img src="images/rai.png" alt="adv-img" class="adv-img" />
-                <a href="https://www.linkedin.com/in/shoumitra-rai-choudhuri-3143a176/ ">
-                  <img src="images/linkedin.png" alt="linkedin-logo" class="adv-img-badge" />
-                </a>
-              </div>
-              <div class="adv-info">
-                <h3>Shoumitra Rai Choudhuri</h3>
-                <p>Ex- McCann Erickson | Ex-JWT | Ex- DDB</p>
-              </div>
+            <div class="adv-info">
+              <h3>Samyukth Sridharan</h3>
+              <p>Co-Founder at Rippl | Ex-COO Cleartrip</p>
             </div>
           </div>
 
-          <div class="advisor-details-second-row">
-            <div class="advisor-row">
-              <div class="advisor-img">
-                <img src="images/Ca.png" alt="adv-img" class="adv-img" />
-                <a href="https://www.linkedin.com/in/ca-rajiv-hira-2a34a16/ ">
-                  <img src="images/linkedin.png" alt="linkedin-logo" class="adv-img-badge" />
-                </a>
-              </div>
-              <div class="adv-info">
-                <h3>CA. Rajiv Hira</h3>
-                <p>
-                  Managing Partner- RHMC Management Consultants |Ex- Standard
-                  Charted | Ex- ICICI Bank
-                </p>
-              </div>
+          <div class="advisor-row">
+            <div class="advisor-img">
+              <img src="images/mani1.png" alt="adv-img" class="adv-img" />
+              <a href="https://www.linkedin.com/in/rsmaninz/ "
+                ><img
+                  src="images/linkedin.png"
+                  alt="linkedin-logo"
+                  class="adv-img-badge"
+              /></a>
             </div>
-            <div class="advisor-row">
-              <div class="advisor-img">
-                <img src="images/pankaj.png" alt="adv-img" class="adv-img" />
-                <a href="https://www.linkedin.com/in/pankaj-dawar-9556b350/ ">
-                  <img src="images/linkedin.png" alt="linkedin-logo" class="adv-img-badge" /></a>
-              </div>
-              <div class="adv-info">
-                <h3>Pankaj Dawar</h3>
-                <p>CEO- XL Informatics</p>
-              </div>
+            <div class="adv-info">
+              <h3>Mani Subra</h3>
+              <p>Head- Strategy, Landmark Immigration & Consultants Pvt Ltds</p>
+            </div>
+          </div>
+
+          <div class="advisor-row">
+            <div class="advisor-img">
+              <img src="images/rai.png" alt="adv-img" class="adv-img" />
+              <a
+                href="https://www.linkedin.com/in/shoumitra-rai-choudhuri-3143a176/ "
+              >
+                <img
+                  src="images/linkedin.png"
+                  alt="linkedin-logo"
+                  class="adv-img-badge"
+                />
+              </a>
+            </div>
+            <div class="adv-info">
+              <h3>Shoumitra Rai Choudhuri</h3>
+              <p>Ex- McCann Erickson | Ex-JWT | Ex- DDB</p>
             </div>
           </div>
         </div>
 
-      </section>
+        <div class="advisor-details-second-row">
+          <div class="advisor-row">
+            <div class="advisor-img">
+              <img src="images/Ca.png" alt="adv-img" class="adv-img" />
+              <a href="https://www.linkedin.com/in/ca-rajiv-hira-2a34a16/ ">
+                <img
+                  src="images/linkedin.png"
+                  alt="linkedin-logo"
+                  class="adv-img-badge"
+                />
+              </a>
+            </div>
+            <div class="adv-info">
+              <h3>CA. Rajiv Hira</h3>
+              <p>
+                Managing Partner- RHMC Management Consultants |Ex- Standard
+                Charted | Ex- ICICI Bank
+              </p>
+            </div>
+          </div>
+          <div class="advisor-row">
+            <div class="advisor-img">
+              <img src="images/pankaj.png" alt="adv-img" class="adv-img" />
+              <a href="https://www.linkedin.com/in/pankaj-dawar-9556b350/ ">
+                <img
+                  src="images/linkedin.png"
+                  alt="linkedin-logo"
+                  class="adv-img-badge"
+              /></a>
+            </div>
+            <div class="adv-info">
+              <h3>Pankaj Dawar</h3>
+              <p>CEO- XL Informatics</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <!-- <section id="core_values">
+    <!-- <section id="core_values">
         <div class="cv_container">
           <div class="cv_intro">
             <img src="images/sharp-donut 1.png" alt="" />
@@ -387,24 +443,24 @@
         </div>
       </section> -->
 
-<section id="our_core_values">
-  
-  <h1 style="color: #2a72de;">Our <span>Core Values</span> </h1>
-  <p class="our_core_values_info" style="color: white;">An organization thrives with the right set  of values in place.</p>
-  <img class="circleImage" src="/images/circle.svg" alt="img">
-  <div class="our_core_values_imageCont">
-   
-    <img class="imgSize" src="/images/1download.svg" alt="img">
-    <img class="imgSize" src="/images/2download.svg" alt="img">
-    <img class="imgSize" src="/images/3download.svg" alt="img">
-    <img class="imgSize" src="/images/4download.svg" alt="img">
-  </div>
-  <img class="circleImage2" src="/images/circle2.svg" alt="img">
-</section>
+    <section id="our_core_values">
+      <h1 style="color: #2a72de">Our <span>Core Values</span></h1>
+      <p class="our_core_values_info" style="color: white">
+        An organization thrives with the right set of values in place.
+      </p>
+      <img class="circleImage" src="/images/circle.svg" alt="img" />
+      <div class="our_core_values_imageCont">
+        <img class="imgSize" src="/images/1download.svg" alt="img" />
+        <img class="imgSize" src="/images/2download.svg" alt="img" />
+        <img class="imgSize" src="/images/3download.svg" alt="img" />
+        <img class="imgSize" src="/images/4download.svg" alt="img" />
+      </div>
+      <img class="circleImage2" src="/images/circle2.svg" alt="img" />
+    </section>
 
-      <section id="about-end">
-        <!--<img  class="halfCircle" src="/images/halfcircleabouttoend.svg" alt="img"> -->
-        <div class="upperWoImg">
+    <section id="about-end">
+      <!--<img  class="halfCircle" src="/images/halfcircleabouttoend.svg" alt="img"> -->
+      <div class="upperWoImg">
         <div class="about-quote">
           <!-- <img src="images/q1.png" alt="" class="q1" /> -->
           <p>
@@ -421,13 +477,17 @@
             <button class="about-btn-app">Download our app</button>
           </a>
         </div>
-        </div>
-        <div  class="lowerWImg">
-          <img class="bluerecbox" src="/images/rightsideimage.png" alt="" class="q1" /> 
-          <!--<img  class="downCircle" src="/images/downcircleabouttoend.svg" alt="img">  -->
-        </div>
-       </section>
-      <%-include('footerNew');-%>
-</body>
-
+      </div>
+      <div class="lowerWImg">
+        <img
+          class="bluerecbox"
+          src="/images/rightsideimage.png"
+          alt=""
+          class="q1"
+        />
+        <!--<img  class="downCircle" src="/images/downcircleabouttoend.svg" alt="img">  -->
+      </div>
+    </section>
+    <%-include('footerNew');-%>
+  </body>
 </html>

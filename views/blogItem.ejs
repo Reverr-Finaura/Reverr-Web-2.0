@@ -1,40 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Blog</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/css/blogItem.css" />
+    <link rel="icon" type="image/x-icon" href="/images/ReverrBlack2.svg" />
 
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Blog</title>
-  <meta name="description" content="" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="/css/blogItem.css" />
-  <link rel="icon" type="image/x-icon" href="/images/ReverrBlack2.svg" />
-</head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-EGWDJKWYH7"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-<body>
-  <a class="buttonWrapper"  href="/blog">
-    <img class="arrowClass" src="/images/arrowMark.svg" alt="img" >
-    <button class="backButton" > Blogs </button>
-  </a> 
-  
+      gtag("config", "G-EGWDJKWYH7");
+    </script>
+  </head>
+
+  <body>
+    <a class="buttonWrapper" href="/blog">
+      <img class="arrowClass" src="/images/arrowMark.svg" alt="img" />
+      <button class="backButton">Blogs</button>
+    </a>
+
     <section id="content">
-
-      <h1>
-        <%= data.heading %>
-      </h1>
-      <img src="<%= data.image.imageUrl %>"  alt="img"/>
+      <h1><%= data.heading %></h1>
+      <img src="<%= data.image.imageUrl %>" alt="img" />
       <div class="details">
-        <p class="blog-author"><b>
-            <%= data.author %>
-          </b></p>
-        <p class="date"><b>
-            <%= data.publishedOn %>
-          </b></p>
+        <p class="blog-author"><b> <%= data.author %> </b></p>
+        <p class="date"><b> <%= data.publishedOn %> </b></p>
       </div>
-      <p>
-        <%= data.body %>
-      </p>
+      <p><%= data.body %></p>
     </section>
     <%-include("footerNew")-%>
-</body>
+  </body>
 </html>

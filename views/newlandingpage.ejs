@@ -5,9 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Reverr</title>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-EGWDJKWYH7"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-EGWDJKWYH7");
+    </script>
   </head>
   <body>
-
     <%-include("navbar");-%>
     <div class="home--section">
       <div class="left-section">
@@ -17,10 +30,10 @@
           <p>We cater to all the stakeholders in the ecosystem.</p>
         </div>
         <a href="https://webapp.reverr.io/">
-        <button class="join-btn">
-          Join Reverr
-          <img class="arrow" src="./images/arrow.png" />
-        </button>
+          <button class="join-btn">
+            Join Reverr
+            <img class="arrow" src="./images/arrow.png" />
+          </button>
         </a>
       </div>
       <div class="right-section">
@@ -81,8 +94,8 @@
     <div class="strip-section">
       <p>The startup ecosystem was bound for innovation so</p>
       <p>
-        we introduced<span style="color: #2abfff"
-          > Two Revolutionizing Concepts</span
+        we introduced<span style="color: #2abfff">
+          Two Revolutionizing Concepts</span
         >
       </p>
     </div>
@@ -102,9 +115,9 @@
           <p>Reverr Spaces.</p>
         </div>
         <a href="https://webapp.reverr.io/">
-        <button>
-          Try Reverr Spaces <img class="arrow" src="./images/arrow.png" />
-        </button>
+          <button>
+            Try Reverr Spaces <img class="arrow" src="./images/arrow.png" />
+          </button>
         </a>
       </div>
       <div class="right-part">
@@ -115,20 +128,20 @@
       <img class="raaya-img" src="./images/Raaya.png" />
       <div class="content">
         <p class="heading">Empowering startup ecosystem stakeholders</p>
-        <p class="intro" style="width: 70%;">
+        <p class="intro" style="width: 70%">
           Introducing RAAYA, the unparalleled GPT-powered AI companion for your
           startup or firm. With Raaya by your side, unlock limitless knowledge
           and insights into the dynamic realm of startups.
         </p>
         <a href="https://webapp.reverr.io/login">
-        <button>
-          Discover Raaya <img class="arrow" src="./images/arrow.png" />
-        </button>
+          <button>
+            Discover Raaya <img class="arrow" src="./images/arrow.png" />
+          </button>
         </a>
       </div>
       <img class="raaya-lower-img" src="./images/RAAYA (1).png" />
       <img
-       class="raaya-digital-img"
+        class="raaya-digital-img"
         style="position: absolute; bottom: 70px; z-index: 99999999; width: 26em"
         class="raays-lower-img-center"
         src="./images/Contact-image 1.png"
@@ -200,10 +213,10 @@
             aspirations, and where we, as dreamers, make a difference.
           </p>
           <a href="https://webapp.reverr.io/">
-          <button>
-            ENTER THE WORLD OF REVERR
-            <img class="arrow" src="./images/arrow.png" />
-          </button>
+            <button>
+              ENTER THE WORLD OF REVERR
+              <img class="arrow" src="./images/arrow.png" />
+            </button>
           </a>
         </div>
         <div class="right-section">
@@ -236,33 +249,31 @@
 
       setInterval(displayNextName, 4000); // Display the next name every 3 seconds
 
+      // Get the scrolling container element
+      var container = document.querySelector(".scrolling-container");
 
-        // Get the scrolling container element
-        var container = document.querySelector(".scrolling-container");
+      // Get the list of items inside the container
+      var items = container.querySelectorAll(".item");
 
-        // Get the list of items inside the container
-        var items = container.querySelectorAll(".item");
-
-        // Duplicate the items
-        var itemArray = Array.from(items);
-        itemArray.forEach(function (item) {
-          var clone = item.cloneNode(true);
-          container.appendChild(clone);
-        });
-        itemArray.forEach(function (item) {
-          var clone = item.cloneNode(true);
-          container.appendChild(clone);
-        });
-        itemArray.forEach(function (item) {
-          var clone = item.cloneNode(true);
-          container.appendChild(clone);
-        });
-        itemArray.forEach(function (item) {
-          var clone = item.cloneNode(true);
-          container.appendChild(clone);
-        });
-        // console.log("node is cloning");
-
+      // Duplicate the items
+      var itemArray = Array.from(items);
+      itemArray.forEach(function (item) {
+        var clone = item.cloneNode(true);
+        container.appendChild(clone);
+      });
+      itemArray.forEach(function (item) {
+        var clone = item.cloneNode(true);
+        container.appendChild(clone);
+      });
+      itemArray.forEach(function (item) {
+        var clone = item.cloneNode(true);
+        container.appendChild(clone);
+      });
+      itemArray.forEach(function (item) {
+        var clone = item.cloneNode(true);
+        container.appendChild(clone);
+      });
+      // console.log("node is cloning");
     </script>
   </body>
   <%- include('footerNew'); -%>
