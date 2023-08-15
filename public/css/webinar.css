@@ -1454,12 +1454,14 @@ letter-spacing: 0.32px;
 .img1{
     height: 6rem;
     width: 12rem;
+    position: relative;
+    top: 3px;
+    right: 20px;
 }
 .img2{
     height: 20rem;
     width: 10rem;
     position: absolute;
-    right: 26rem;
 }
 .bottom8 img{
     border-radius: 35px;
