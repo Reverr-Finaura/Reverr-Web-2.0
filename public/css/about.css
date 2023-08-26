@@ -1961,3 +1961,73 @@ color: #FFFFFF;
     height: 7rem;
   }
 }*/
+
+@media (max-width: 380px){
+ 
+
+
+.upperWoImg{
+ width:90%;
+}
+.about-quote{
+width:90%
+}
+.our_vision_image {
+    margin-left: 0rem;
+
+}
+.team-title-cont {
+    margin-left: 2rem;
+}
+
+#team-section {
+        padding: 1rem;
+}
+
+.AboutusWrapper {
+
+    height: 41rem;
+}
+
+
+.aboutus__buttons>a>button {
+    font-size: 9px;
+}
+.aboutus__intro_heading {
+    margin-left: 3rem;
+}
+#our_vision {
+    width: -webkit-fill-available;
+    height: 30rem;
+}
+.aboutus__buttons>a>button {
+  width: 6rem;
+  margin: 6px;
+}
+.aboutus__buttons {
+      top: 36em;
+  left: 2em;
+}
+.what_we_do_line_divider {
+   display: none;
+}
+#our_vision {
+  width: -webkit-fill-available;
+  height: 34rem;
+  display: flex;
+  justify-content: unset;
+}
+.our_vision_header_cont {
+  position: unset;
+  height: 5rem;
+  width: 12rem;
+  display: flex;
+  align-items: center;
+  margin-left: 16%;
+  margin: unset;
+  /* padding-left: 11%; */
+  margin-left: 14%;
+}
+
+
+}
