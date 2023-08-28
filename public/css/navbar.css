@@ -149,6 +149,11 @@
   .navigation a {
     margin: 5px;
   }
+  .navigation ul a {
+
+    width: -webkit-fill-available;
+   
+}
 }
 /*
 @media screen and (max-width: 550px) {
