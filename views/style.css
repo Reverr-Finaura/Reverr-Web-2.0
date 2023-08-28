@@ -293,6 +293,8 @@ letter-spacing: 1.05px;
     align-items: center;
     justify-content: center;
     line-height: 46px;
+    position: relative;
+    z-index: 999999;
 
 }
 .mission-bottom-img{
