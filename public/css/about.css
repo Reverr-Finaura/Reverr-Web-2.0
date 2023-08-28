@@ -1080,7 +1080,7 @@ color: #FFFFFF;
     margin-top: -3em;
   }
   .what_we_do_info{
-    margin-left: -2rem;
+    /* margin-left: -2rem; */
     width: -webkit-fill-available;
   }
   .what_we_do_doCont{
@@ -1998,10 +1998,6 @@ color: #FFFFFF;
 @media (max-width: 380px){
  
 
-
-.upperWoImg{
- width:90%;
-}
 .about-quote{
 width:90%
 }
@@ -2024,7 +2020,7 @@ width:90%
 
 
 .aboutus__buttons>a>button {
-    font-size: 9px;
+    /* font-size: ; */
 }
 .aboutus__intro_heading {
     margin-left: 3rem;
@@ -2038,7 +2034,7 @@ width:90%
   margin: 6px;
 }
 .aboutus__buttons {
-      top: 36em;
+      top: 33em;
   left: 2em;
 }
 .what_we_do_line_divider {
@@ -2089,6 +2085,15 @@ width:90%
 
   right: unset;
 }
+.upperWoImg {
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-quote>p{
+text-align:center;
+}
 
 }
