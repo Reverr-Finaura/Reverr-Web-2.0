@@ -779,7 +779,7 @@ animation: incubators 8s infinite;
     }
     .bottom .left-section button{
         padding: 5px 10px 5px 10px;
-        font-size: 20px;
+        font-size: 17px;
      font-weight: 300;
     
     }
@@ -814,7 +814,7 @@ animation: incubators 8s infinite;
     }
     
     .home--section .left-section h1{
-    font-size: 33px;
+    font-size: 31px;
     text-align: center;
     letter-spacing: .5px;
   }
@@ -822,7 +822,7 @@ animation: incubators 8s infinite;
     .join-btn
     {
       padding: 5px 10px 5px 10px;
-      font-size: 20px;
+      font-size: 17px;
       font-weight: 300;
     }
     
@@ -851,7 +851,7 @@ animation: incubators 8s infinite;
     
     
     .reverr-spaces-heading{
-    font-size: 58px;
+    font-size: 51px;
     font-weight: 600;
   }
     
@@ -861,9 +861,9 @@ animation: incubators 8s infinite;
     
     .reverr-spaces-section button{
     padding: 5px 10px 5px 10px;
-        font-size: 20px;
+        font-size: 17px;
         font-weight: 300;
-        margin-top: 26px;}
+        margin-top: 10px;}
     
     .reverr-spaces-section .right-part img{
     width: 23em;
@@ -873,7 +873,7 @@ animation: incubators 8s infinite;
     
     
     .raaya-img{
-        width: 19em;
+        width: 50%;
         margin-top: 4em;}
     
     .raaya-section{
@@ -897,6 +897,7 @@ animation: incubators 8s infinite;
     .our-mission-section p{
         width: 95%;
         font-size: 22px;
+        margin-top: 0rem;
     
     }
     
@@ -926,7 +927,7 @@ animation: incubators 8s infinite;
       flex-direction: column;
       align-items: center;
       margin-left: unset;
-      margin-top: 90px;
+      margin-top: 59px;
   }
     
   }

@@ -254,6 +254,11 @@ a {
   .blog-content > p{
     font-size: 15px;
     width: -webkit-fill-available;
+    margin-top: 5px;
+    margin-left: 16px;
+    margin-bottom: 10px;
+    max-height: 421px;
+
   }
   .blog-content > h1 > a{
     font-size: 18px;
