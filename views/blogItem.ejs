@@ -28,12 +28,12 @@
 
     <section id="content">
       <h1><%= data.heading %></h1>
-      <img src="<%= data.image.imageUrl %>" alt="img" />
+      <img src="<%= data.imgSrc %>" alt="img" />
       <div class="details">
         <p class="blog-author"><b> <%= data.author %> </b></p>
         <p class="date"><b> <%= data.publishedOn %> </b></p>
       </div>
-      <p><%= data.body %></p>
+      <p><%- data.body %></p>
     </section>
     <%-include("footerNew")-%>
   </body>

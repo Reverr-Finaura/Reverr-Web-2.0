@@ -11,6 +11,7 @@ const {
   Blogs,
   OnboardRegister,
 } = require("./config");
+const { JSDOM } = require("jsdom");
 var SibApiV3Sdk = require("sib-api-v3-sdk");
 const PORT = process.env.PORT || 3000;
 
@@ -127,11 +128,40 @@ app.get("/privacypolicy", function (req, res) {
   res.render("privacypolicy");
 });
 
+const extractBlogImg = (htmlContent) => {
+  const dom = new JSDOM(htmlContent);
+    const imgElement = dom.window.document.querySelector('img');
+    return imgElement ? imgElement.getAttribute("src") : null
+}
+
+const extractText = (htmlContent) => {
+  const dom = new JSDOM(htmlContent);
+  const pElement = dom.window.document.querySelector('p');
+  if(pElement){
+    const spanElement = dom.window.document.querySelector('span');
+    if(spanElement){
+      return  spanElement.textContent;
+    }else{
+      return pElement.textContent;
+    }
+  }else{
+    return "no text"
+  }
+} 
+
 app.get("/blog", async function (req, res) {
   const content = await Blogs.get();
   var blogs = [];
   content.forEach((doc) => {
-    blogs.push(doc.data());
+    const blogData = doc.data();
+    const imgSrc = extractBlogImg(blogData.body);
+    const bodyText = extractText(blogData.body);
+    const newBlogData = {
+      ...blogData,
+      imgSrc,
+      bodyText,
+    }
+    blogs.push(newBlogData);
   });
   res.render("blog", {
     data: blogs,
@@ -143,7 +173,12 @@ app.get("/blog/:id", async function (req, res) {
   const content = await Blogs.where("id", "==", id).get();
   var blog;
   content.forEach((doc) => {
-    blog = doc.data();
+    const blogData = doc.data();
+    const imgSrc = extractBlogImg(blogData.body);
+    blog = {
+      ...blogData,
+      imgSrc,
+    };
   });
   res.render("blogItem", { data: blog });
 });
