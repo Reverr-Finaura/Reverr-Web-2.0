@@ -111,23 +111,26 @@ a {
   border-radius: 1rem;
 }
 .blog-content{
-  padding-left: 1rem;
+  padding-left: 4rem;
 }
 
 .blog-content > p {
-  font-size: 25px;
+  font-size: 20px;
   color: white;
   max-height: 27rem;
   overflow: hidden;
   text-overflow: ellipsis;
   margin-top: 1rem;
-  margin-left: 1rem;
+  font-family: 'Exo';
+}
+
+.blog-content h1 {
+  font-family: 'Exo';
 }
 
 .blog-content > h1 > a {
   font-size: 27px;
   color: rgb(246, 241, 241);
-  margin-left: 1rem;
 }
 
 .blog-section-btns {
@@ -158,7 +161,7 @@ a {
   /* gap: 6.5rem; */
   /* width: 93%; */
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
   margin: auto auto 3rem;
 }
 

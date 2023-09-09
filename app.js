@@ -3,6 +3,7 @@ var app = express();
 var path = require("path");
 const cors = require("cors");
 const bodyparser = require("body-parser");
+const cheerio = require("cheerio");
 const {
   Mentors,
   Funding,
@@ -11,7 +12,6 @@ const {
   Blogs,
   OnboardRegister,
 } = require("./config");
-const { JSDOM } = require("jsdom");
 var SibApiV3Sdk = require("sib-api-v3-sdk");
 const PORT = process.env.PORT || 3000;
 
@@ -129,25 +129,29 @@ app.get("/privacypolicy", function (req, res) {
 });
 
 const extractBlogImg = (htmlContent) => {
-  const dom = new JSDOM(htmlContent);
-    const imgElement = dom.window.document.querySelector('img');
-    return imgElement ? imgElement.getAttribute("src") : null
+  const $ = cheerio.load(htmlContent);
+   return $("img").attr("src");
 }
 
 const extractText = (htmlContent) => {
-  const dom = new JSDOM(htmlContent);
-  const pElement = dom.window.document.querySelector('p');
-  if(pElement){
-    const spanElement = dom.window.document.querySelector('span');
-    if(spanElement){
-      return  spanElement.textContent;
-    }else{
-      return pElement.textContent;
-    }
-  }else{
-    return "no text"
-  }
+  let text = "";
+  const $ = cheerio.load(htmlContent);
+  $("p").each((index, Element) => {
+    const spanText = $(Element).text().replace(/https?:\/\/\S+/gi, '');
+    text+= spanText;
+  })
+  return text
 } 
+
+
+
+const removeStyles = (htmlContent) => {
+  const $ = cheerio.load(htmlContent);
+  $("[style]").removeAttr("style");
+  // $("*:empty").remove();
+  return $.html();
+}
+
 
 app.get("/blog", async function (req, res) {
   const content = await Blogs.get();
@@ -174,10 +178,12 @@ app.get("/blog/:id", async function (req, res) {
   var blog;
   content.forEach((doc) => {
     const blogData = doc.data();
-    const imgSrc = extractBlogImg(blogData.body);
+    const modifiedHtml = removeStyles(blogData.body)
+    const imgSrc = extractBlogImg(modifiedHtml);
     blog = {
       ...blogData,
       imgSrc,
+      modifiedHtml,
     };
   });
   res.render("blogItem", { data: blog });
