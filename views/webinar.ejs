@@ -821,24 +821,7 @@
 
     
 
-      // Add event listeners to enable slider navigation
-      const slider = document.querySelector(".customer-review-card");
-      const leftNav = document.querySelector(".slider-nav-left");
-      const rightNav = document.querySelector(".slider-nav-right");
 
-      leftNav.addEventListener("click", () => {
-        slider.scrollBy({
-          left: -512, // Adjust the scroll distance as needed
-          behavior: "smooth",
-        });
-      });
-
-      rightNav.addEventListener("click", () => {
-        slider.scrollBy({
-          left: 512, // Adjust the scroll distance as needed
-          behavior: "smooth",
-        });
-      });
 
       var countDownDate = new Date("30 Sep, 2023 14:37:25").getTime();
 
