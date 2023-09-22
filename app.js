@@ -155,6 +155,10 @@ app.get("/webinar", function (req, res) {
   res.render("webinar");
 });
 
+app.get("/refreshedbyreverr", function (req, res) {
+  res.render("webinar");
+});
+
 app.get("/test", function (req, res) {
   res.render("test");
 });
