@@ -11,7 +11,7 @@ a{
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    height: 6em;
+    height: 30em;
     position: relative;
     top: -225px;
     margin-bottom: -320px;
@@ -43,7 +43,7 @@ a{
 
        /* display: inline-block  !important; */
        /* white-space: nowrap; */
-       animation: scrollReviews 60s linear infinite;
+       animation: scrollReviews 40s linear infinite;
        cursor: pointer;
    }
    .customer-review-card:hover{
@@ -100,10 +100,13 @@ a{
     
     
     height: 40%;
-    width: 40%;
+    /* width: 40%; */
     margin-right: 12%;
     margin-bottom: 10%;
     border-radius: 11px;
+    
+    width: 150px;
+
 
   }
   
