@@ -71,6 +71,12 @@ app.get("/investor", function (req, res) {
 app.get("/contactus", function (req, res) {
   res.render("contact", { successful: false });
 });
+app.get("/privacypolicywa", function (req, res) {
+  res.render("privacypolicyWA");
+});
+app.get("/termsncondwa", function (req, res) {
+  res.render("termsncondWA");
+});
 
 app.post("/contactus", async function (req, res) {
   const message = req.body;
