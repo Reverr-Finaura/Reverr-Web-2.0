@@ -51,9 +51,9 @@ function Email(user) {
 // app.get("/", function (req, res) {
 //   res.render("home");
 // });
-app.get('/web',function(req,res){
-  res.render('webinar')
-})
+app.get("/web", function (req, res) {
+  res.render("webinar");
+});
 
 app.get("/", function (req, res) {
   res.render("newlandingpage");
@@ -132,16 +132,17 @@ app.get("/fundingform", function (req, res) {
 app.get("/privacypolicy", function (req, res) {
   res.render("privacypolicy");
 });
-app.get("/termsandconditions", function (req, res) {    
-var file = path.join(__dirname, '/public/files/tnc.pdf');    
-res.download(file, function (err) {
-       if (err) {
-           console.log("Error");
-           console.log(err);
-       } else {
-           console.log("Success");
-       }    
-});
+app.get("/termsandconditions", function (req, res) {
+  // var file = path.join(__dirname, "/public/files/tnc.pdf");
+  // res.download(file, function (err) {
+  //   if (err) {
+  //     console.log("Error");
+  //     console.log(err);
+  //   } else {
+  //     console.log("Success");
+  //   }
+  // });
+  res.render("termsncond");
 });
 
 app.get("/blog", async function (req, res) {
