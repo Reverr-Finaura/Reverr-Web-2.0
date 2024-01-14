@@ -471,9 +471,6 @@ datalist option {
   .btn_flex_div > button {
     margin: 1rem 0;
   }
-  .inputWraper {
-    flex-direction: column;
-  }
 
   .emoji-rating {
     font-size: 25px;
@@ -492,7 +489,7 @@ datalist option {
 @media (max-width: 600px) {
   #getFeedbackPage {
     margin: auto;
-    margin-top: 7rem;
+    /* margin-top: 7rem; */
   }
 
   .getFeedbackPageSubTitle {
@@ -508,10 +505,6 @@ datalist option {
   .getFeedbackPageOuter {
     width: 90%;
     margin: auto 2rem;
-  }
-
-  .inputWraper {
-    flex-direction: column;
   }
 }
 
@@ -542,8 +535,8 @@ datalist option {
   .funding_input_div > label {
     margin-right: 1rem;
     width: 50%;
-    font-size: 17px;
-    line-height: 20px;
+    font-size: 15px;
+    line-height: 22px;
   }
 
   .funding_input_div > input,
@@ -572,9 +565,21 @@ datalist option {
     width: auto;
   }
 
+  .funding_input_div:nth-child(1),
+  .funding_input_div:nth-child(4) > input {
+    margin-right: 10px;
+  }
   .funding_input_div > label {
     margin-bottom: 0.6rem;
     line-height: 20px;
+  }
+
+  .funding_input_div:nth-child(1) > input {
+    margin-right: 30px;
+  }
+
+  .checkbox-container {
+    margin-right: 30px;
   }
 
   .container {
