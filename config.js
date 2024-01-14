@@ -16,6 +16,7 @@ const Message = db.collection("Message");
 const Funding = db.collection("Funding");
 const Newsletter = db.collection("Newsletter");
 const Blogs = db.collection("Blogs");
+const Feedback = db.collection("Feedback");
 const OnboardRegister = db
   .collection("Forms")
   .doc("onboardingForm")
@@ -27,4 +28,5 @@ module.exports = {
   Message,
   Blogs,
   OnboardRegister,
+  Feedback,
 };

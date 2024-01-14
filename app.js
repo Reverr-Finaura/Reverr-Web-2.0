@@ -10,6 +10,7 @@ const {
   Message,
   Blogs,
   OnboardRegister,
+  Feedback,
 } = require("./config");
 var SibApiV3Sdk = require("sib-api-v3-sdk");
 const PORT = process.env.PORT || 3000;
@@ -145,6 +146,10 @@ app.get("/termsandconditions", function (req, res) {
   res.render("termsncond");
 });
 
+app.get("/feedbackform", function (req, res) {
+  res.render("feedbackform");
+});
+
 app.get("/blog", async function (req, res) {
   const content = await Blogs.get();
   var blogs = [];
@@ -204,6 +209,10 @@ app.get("/titanoftomorrow", function (req, res) {
 
 app.get("/passes", function (req, res) {
   res.render("passpricing");
+});
+
+app.get("/feedbacksubmission", function (req, res) {
+  res.render("feedbacksubmission");
 });
 
 app.post("/register", async (req, res) => {
@@ -375,6 +384,18 @@ app.post("/funding", async (req, res) => {
     // return res.redirect("/");
     return res.render("fundingform", { successful: true });
   } catch (err) {
+    return res.json(err);
+  }
+});
+
+app.post("/feedback", async (req, res) => {
+  const feedback = req.body;
+  console.log(feedback);
+  try {
+    await Feedback.add(feedback);
+    return res.redirect("feedbacksubmission");
+  } catch (err) {
+    console.log(err);
     return res.json(err);
   }
 });

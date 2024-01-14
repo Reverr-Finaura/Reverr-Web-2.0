@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Page</title>
+    <link rel="stylesheet" href="css/feedbackform.css">
+</head>
+
+<body>
+    <%-include("navbar");-%>
+        <section id='getFeedbackPage'>
+
+            <div class='getFeedbackPageOuter'>
+                <div class='header'>
+                    <h1 class='getFeedbackPageTitle'>
+                        Share Your <span>Feedback!</span>
+                    </h1>
+                </div>
+                <div>
+                    <form action="/feedback" method="post">
+                        <div class='getFeedbackPageForm'>
+                            <!-- Contact No. -->
+                            <div class="funding_input_div">
+                                <label for="">Contact No.<span style="color: red; margin-left: 4px;">*</span></label>
+                                <input type='text' name='Phone' placeholder='+91 -' required />
+                            </div>
+
+                            <!-- Feedback question 1 -->
+                            <div class='funding_input_div'>
+                                <label for="rating">Rate your experience:<span
+                                        style="color: red; margin-left: 4px;">*</span></label>
+                                <div id="rating" class="emoji-rating">
+                                    <div class="emoji-wrapper">
+                                        <input type="radio" name="rating" value="1" id="mood-1" required>
+                                        <label for="mood-1">😡</label>
+                                        <div id="selectedEmojiText-1"></div>
+                                    </div>
+                                    <div class="emoji-wrapper">
+                                        <input type="radio" name="rating" value="2" id="mood-2">
+                                        <label for="mood-2">🙁</label>
+                                        <div id="selectedEmojiText-2"></div>
+                                    </div>
+                                    <div class="emoji-wrapper">
+                                        <input type="radio" name="rating" value="3" id="mood-3">
+                                        <label for="mood-3">😐</label>
+                                        <div id="selectedEmojiText-3"></div>
+                                    </div>
+                                    <div class="emoji-wrapper">
+                                        <input type="radio" name="rating" value="4" id="mood-4">
+                                        <label for="mood-4">😊</label>
+                                        <div id="selectedEmojiText-4"></div>
+                                    </div>
+                                    <div class="emoji-wrapper">
+                                        <input type="radio" name="rating" value="5" id="mood-5">
+                                        <label for="mood-5">😍</label>
+                                        <div id="selectedEmojiText-5"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- Feedback Question 2 -->
+                            <div class='funding_input_div'>
+                                <label for="experience">Raaya is designed to guide you on your entrepreneurial journey.
+                                    Rate your overall satisfaction with the experience on a
+                                    scale of 1-5.(1 is Highly Satisfied and 5 is Highly Dissatisfied)
+                                    <span style="color: red; margin-left: 4px;">*</span>
+                                </label>
+
+                                <div class="container">
+                                    <input type="range" id="experience" min="1" max="5" value="3" class="slider"
+                                        list="tickmarks" name="experience" required>
+                                    <datalist id="tickmarks">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </datalist>
+                                </div>
+                            </div>
+
+                            <!-- Feedback Question 3 -->
+                            <div class='funding_input_div'>
+                                <label for="likes">What did you like?<span
+                                        style="color: red; margin-left: 4px;">*</span>
+                                </label>
+                                <div class="checkbox-container">
+
+                                    <div class="input-container">
+                                        <label for="diverse_offerings" class="checkbox-label">Diverse
+                                            Offerings</label>
+                                        <input type="checkbox" id="diverse_offerings" name="likes"
+                                            value="diverse_offerings" class="checkbox-input" required>
+                                    </div>
+
+                                    <div class="input-container">
+                                        <label for="useful_resources" class="checkbox-label">Useful Resources and
+                                            Guidance</label>
+                                        <input type="checkbox" id="useful_resources" name="likes"
+                                            value="useful_resources" class="checkbox-input">
+
+                                    </div>
+
+                                    <div class="input-container">
+                                        <label for="agent_support" class="checkbox-label">Agent Support</label>
+                                        <input type="checkbox" id="agent_support" name="likes" value="agent_support"
+                                            class="checkbox-input">
+                                    </div>
+
+                                    <div class="input-container">
+
+                                        <label for="swiftness_responsiveness" class="checkbox-label">Swiftness and
+                                            Responsiveness</label>
+                                        <input type="checkbox" id="swiftness_responsiveness" name="likes"
+                                            value="swiftness_responsiveness" class="checkbox-input">
+                                    </div>
+
+                                    <div class="input-container">
+                                        <label for="overall_experience" class="checkbox-label">Overall
+                                            Experience</label>
+                                        <input type="checkbox" id="overall_experience" name="likes"
+                                            value="overall_experience" class="checkbox-input">
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class='funding_input_div'>
+                                <label for="recommendation">How likely are you to recommend Raaya to
+                                    others?<span style="color: red; margin-left: 4px;">*</span></label>
+                                <select id="recommendation" name="recommendation" required>
+                                    <option value="">-</option>
+                                    <option value="highly_likely">Highly Likely</option>
+                                    <option value="likely">Likely</option>
+                                    <option value="neutral">Neutral</option>
+                                    <option value="unlikely">Unlikely</option>
+                                    <option value="highly_unlikely">Highly Unlikely</option>
+                                </select>
+                            </div>
+
+
+
+                            <!-- Feedback Question 5 -->
+                            <div class='funding_input_div'>
+                                <label for="review">Write a review and share your suggestions and feedback for us to
+                                    make
+                                    relevant changes to enhance the user experience.<span
+                                        style="color: red; margin-left: 4px;">*</span></label>
+                                <textarea id="review" name="review" rows="4" required></textarea>
+                            </div>
+
+                            <!-- Feedback question 6 -->
+                            <div class='funding_input_div'>
+                                <label for="highlights">Are there any specific highlights?</label>
+                                <!-- <input type="text" id="highlights" name="highlights"> -->
+                                <textarea id="highlights" name="highlights"></textarea>
+                            </div>
+
+
+                            <div class='btn_flex_div'>
+                                <button class='getFundedPageApplyButton'>
+                                    submit
+                                </button>
+                            </div>
+                        </div>
+                </div>
+                </form>
+
+            </div>
+            </div>
+        </section>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                var ratingContainer = document.getElementById("rating");
+
+                ratingContainer.addEventListener("change", function (event) {
+                    var selectedEmoji = event.target.value;
+                    var expressionText = getExpressionText(selectedEmoji);
+                    var selectedIndex = event.target.id.split("-")[1];
+                    var selectedEmojiText = document.getElementById("selectedEmojiText-" + selectedIndex);
+                    selectedEmojiText.textContent = expressionText;
+
+                    // Clear text for other emojis
+                    document.querySelectorAll('input[name="rating"]').forEach(function (input) {
+                        var otherIndex = input.id.split("-")[1];
+                        if (otherIndex !== selectedIndex) {
+                            var otherEmojiText = document.getElementById("selectedEmojiText-" + otherIndex);
+                            otherEmojiText.textContent = "";
+                        }
+                    });
+                });
+
+                document.querySelectorAll('input[name="rating"]').forEach(function (input) {
+                    input.addEventListener('change', function () {
+                        var selectedIndex = input.id.split("-")[1];
+                        var selectedEmojiText = document.getElementById("selectedEmojiText-" + selectedIndex);
+
+                        if (input.checked) {
+                            var expressionText = getExpressionText(input.value);
+                            selectedEmojiText.textContent = expressionText;
+
+                            // Clear text for other emojis
+                            document.querySelectorAll('input[name="rating"]').forEach(function (otherInput) {
+                                var otherIndex = otherInput.id.split("-")[1];
+                                if (otherIndex !== selectedIndex) {
+                                    var otherEmojiText = document.getElementById("selectedEmojiText-" + otherIndex);
+                                    otherEmojiText.textContent = "";
+                                }
+                            });
+                        } else {
+                            selectedEmojiText.textContent = "";
+                        }
+                    });
+                });
+
+                function getExpressionText(emojiValue) {
+                    switch (emojiValue) {
+                        case "1":
+                            return "Angry";
+                        case "2":
+                            return "Sad";
+                        case "3":
+                            return "Neutral";
+                        case "4":
+                            return "Happy";
+                        case "5":
+                            return "Awesome!";
+                        default:
+                            return "";
+                    }
+                }
+            });
+
+        </script>
+
+</body>
+<%- include('footerNew'); -%>
+
+</html>
