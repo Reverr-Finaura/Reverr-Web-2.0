@@ -434,24 +434,29 @@ input[type="text"] {
 .slider::-ms-tooltip {
   display: none;
 }
-#tickmarks,
-datalist {
+
+#tickmarks {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   padding: 0 14px;
   cursor: default;
+  font-size: 13px;
 }
 
-datalist option {
+#tickmarks > p {
   position: relative;
   display: flex;
   justify-content: center;
   text-align: center;
-  width: 2px;
   color: white;
   height: 10px;
-  line-height: 40px;
-  margin: 0 0 0px 0;
+  width: 2px;
+  line-height: 20px;
+}
+
+#tickmarks > p:nth-child(5) {
+  margin-right: 2px;
 }
 
 @media (max-width: 600px) {
@@ -578,12 +583,16 @@ datalist option {
     margin-right: 30px;
   }
 
-  .checkbox-container {
-    margin-right: 30px;
-  }
-
   .container {
     margin-top: 1rem;
     width: 100%;
+  }
+
+  .slider {
+    width: 90%;
+  }
+
+  #tickmarks {
+    width: 81%;
   }
 }

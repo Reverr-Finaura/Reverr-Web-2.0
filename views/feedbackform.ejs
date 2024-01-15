@@ -19,12 +19,18 @@
                     </h1>
                 </div>
                 <div>
-                    <form action="/feedback" method="post">
+                    <form action="/feedback" method="post" id="feedbackform" onsubmit="resetForm()">
                         <div class='getFeedbackPageForm'>
+                            <div class="funding_input_div">
+                                <label for="name">Name<span style="color: red; margin-left: 4px;">*</span></label>
+                                <input type='text' name='Name' placeholder='Name' required id="name" />
+                            </div>
+
                             <!-- Contact No. -->
                             <div class="funding_input_div">
-                                <label for="">Contact No.<span style="color: red; margin-left: 4px;">*</span></label>
-                                <input type='text' name='Phone' placeholder='+91 -' required />
+                                <label for="contact">Contact No.<span
+                                        style="color: red; margin-left: 4px;">*</span></label>
+                                <input type='text' name='Phone' placeholder='+91 -' required id="contact" />
                             </div>
 
                             <!-- Feedback question 1 -->
@@ -63,22 +69,23 @@
 
                             <!-- Feedback Question 2 -->
                             <div class='funding_input_div'>
-                                <label for="experience">Raaya is designed to guide you on your entrepreneurial journey.
+                                <label for="experience">
                                     Rate your overall satisfaction with the experience on a
-                                    scale of 1-5.(1 is Highly Satisfied and 5 is Highly Dissatisfied)
+                                    scale of 1-5.
                                     <span style="color: red; margin-left: 4px;">*</span>
                                 </label>
 
                                 <div class="container">
                                     <input type="range" id="experience" min="1" max="5" value="3" class="slider"
                                         list="tickmarks" name="experience" required>
-                                    <datalist id="tickmarks">
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
-                                    </datalist>
+                                    <div id="tickmarks">
+                                        <p value="1">Highly <br>Satisfied</br> </p>
+                                        <p value="2">2</p>
+                                        <p value="3">3</p>
+                                        <p value="4">4</p>
+                                        <p value="5">Highly<br>Dissatisfied</br> </p>
+                                    </div>
+
                                 </div>
                             </div>
 
@@ -93,7 +100,7 @@
                                         <label for="diverse_offerings" class="checkbox-label">Diverse
                                             Offerings</label>
                                         <input type="checkbox" id="diverse_offerings" name="likes"
-                                            value="diverse_offerings" class="checkbox-input" required>
+                                            value="diverse_offerings" class="checkbox-input">
                                     </div>
 
                                     <div class="input-container">
@@ -130,6 +137,40 @@
                             <div class='funding_input_div'>
                                 <label for="recommendation">How likely are you to recommend Raaya to
                                     others?<span style="color: red; margin-left: 4px;">*</span></label>
+                                </label>
+                                <div class="checkbox-container">
+
+                                    <div class="input-container">
+                                        <label for="highly_likely" class="checkbox-label">Highly Likely</label>
+                                        <input type="radio" id="highly_likely" name="recommendation"
+                                            value="highly_likely" class="checkbox-input" required>
+                                    </div>
+                                    <div class="input-container">
+                                        <label for="likely" class="checkbox-label">Likely</label>
+                                        <input type="radio" id="likely" name="recommendation" value="likely"
+                                            class="checkbox-input">
+                                    </div>
+                                    <div class="input-container">
+                                        <label for="neutral" class="checkbox-label">Neutral</label>
+                                        <input type="radio" id="neutral" name="recommendation" value="neutral"
+                                            class="checkbox-input">
+                                    </div>
+                                    <div class="input-container">
+                                        <label for="unlikely" class="checkbox-label">Unlikely</label>
+                                        <input type="radio" id="unlikely" name="recommendation" value="unlikely"
+                                            class="checkbox-input">
+                                    </div>
+                                    <div class="input-container">
+                                        <label for="highly_unlikely" class="checkbox-label">Highly Unlikely</label>
+                                        <input type="radio" id="highly_unlikely" name="recommendation"
+                                            value="highly_unlikely" class="checkbox-input">
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- <div class='funding_input_div'>
+                                <label for="recommendation">How likely are you to recommend Raaya to
+                                    others?<span style="color: red; margin-left: 4px;">*</span></label>
                                 <select id="recommendation" name="recommendation" required>
                                     <option value="">-</option>
                                     <option value="highly_likely">Highly Likely</option>
@@ -138,7 +179,7 @@
                                     <option value="unlikely">Unlikely</option>
                                     <option value="highly_unlikely">Highly Unlikely</option>
                                 </select>
-                            </div>
+                            </div> -->
 
 
 
@@ -160,7 +201,7 @@
 
 
                             <div class='btn_flex_div'>
-                                <button class='getFundedPageApplyButton'>
+                                <button class='getFundedPageApplyButton' type="submit">
                                     submit
                                 </button>
                             </div>
@@ -218,7 +259,7 @@
                 function getExpressionText(emojiValue) {
                     switch (emojiValue) {
                         case "1":
-                            return "Angry";
+                            return "Disappointed";
                         case "2":
                             return "Sad";
                         case "3":
@@ -231,6 +272,11 @@
                             return "";
                     }
                 }
+
+                function resetForm() {
+                    document.getElementById("feedbackform").reset();
+                }
+
             });
 
         </script>
